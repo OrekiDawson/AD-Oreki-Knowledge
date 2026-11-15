@@ -14,9 +14,9 @@ translation_status: "STRUCTURE CHECKED"
 review_status: "STRUCTURE CHECKED"
 ---
 
-**现实（Reality）**是游戏的第三个、也是最后一个主要威望层：购买最终[时间研究](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)后解锁，该研究需要 $\text{e}4,000$ [永恒点数](https://antimatterdimensions.wiki.gg/wiki/Eternity_Points)与前 13 行[成就](https://antimatterdimensions.wiki.gg/wiki/Achievements)。开始一次新现实会重置到此为止的整个游戏进度，换取现实机器、一枚符文与一个复兴点数。
+**现实（Reality）**是游戏的第三个、也是最后一个主要威望层：购买最终[[ow-time-studies|时间研究]]后解锁，该研究需要 $\text{e}4,000$ [[ow-eternity|永恒点数]]与前 13 行[成就](https://antimatterdimensions.wiki.gg/wiki/Achievements)。开始一次新现实会重置到此为止的整个游戏进度，换取现实机器、一枚符文与一个复兴点数。
 
-现实在第一次执行新现实时引入[符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs)、[现实升级](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades)与[复兴](https://antimatterdimensions.wiki.gg/wiki/Perks)；同时引入[黑洞](https://antimatterdimensions.wiki.gg/wiki/Black_Hole)与[自动机](https://antimatterdimensions.wiki.gg/wiki/Automator)，后两者还有额外条件才能完全解锁。购买现实时间研究可以让玩家预览现实页签及其前 3 个子页签；执行第一次现实重置后才会显示黑洞与自动机页签。
+现实在第一次执行新现实时引入[符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs)、[[ow-reality-upgrades|现实升级]]与[复兴](https://antimatterdimensions.wiki.gg/wiki/Perks)；同时引入[[ow-black-hole|黑洞]]与[自动机](https://antimatterdimensions.wiki.gg/wiki/Automator)，后两者还有额外条件才能完全解锁。购买现实时间研究可以让玩家预览现实页签及其前 3 个子页签；执行第一次现实重置后才会显示黑洞与自动机页签。
 
 这个威望层随「现实更新（Reality Update）」加入游戏——这是桌面版耗时 4.5 年开发的最后一个主要内容更新。该更新于 2022 年 12 月 17 日在网页版（与 Steam 版同步）发布，并于 2024 年 4 月 1 日移植到 Android。
 
@@ -30,7 +30,7 @@ review_status: "STRUCTURE CHECKED"
 
 ## 现实机器
 
-**现实机器**是现实威望层的主要货币，可用于购买[现实升级](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades)或[黑洞](https://antimatterdimensions.wiki.gg/wiki/Black_Hole)。它的数量基于当前现实中达到的最高永恒点数，再加上玩家在永恒时本应获得的永恒点数。现实机器的获取有 3 条不同公式，使用哪一条取决于玩家当前的情况。
+**现实机器**是现实威望层的主要货币，可用于购买[[ow-reality-upgrades|现实升级]]或[[ow-black-hole|黑洞]]。它的数量基于当前现实中达到的最高永恒点数，再加上玩家在永恒时本应获得的永恒点数。现实机器的获取有 3 条不同公式，使用哪一条取决于玩家当前的情况。
 
 线性成长（$1-10$ RM）：$\left\lfloor\frac{27}{4,000}\log_{10}(EP)-26\right\rfloor$
 
@@ -55,7 +55,7 @@ review_status: "STRUCTURE CHECKED"
 
 ## 符文等级
 
-现实中的符文有一个等级，基于多种因素；随着游戏推进，这些因素会变得更复杂（例如玩家购买现实升级「**Measure of Forever**」后，永恒次数会提升符文等级）。符文的等级默认由永恒点数、[复制器](https://antimatterdimensions.wiki.gg/wiki/Replicanti)与[膨胀时间](https://antimatterdimensions.wiki.gg/wiki/Dilated_Time)的组合决定，最低为 1 级。符文的类型、效果与稀有度是随机的。
+现实中的符文有一个等级，基于多种因素；随着游戏推进，这些因素会变得更复杂（例如玩家购买现实升级「**Measure of Forever**」后，永恒次数会提升符文等级）。符文的等级默认由永恒点数、[[ow-replicanti|复制器]]与[膨胀时间](https://antimatterdimensions.wiki.gg/wiki/Dilated_Time)的组合决定，最低为 1 级。符文的类型、效果与稀有度是随机的。
 
 这 3 项初始因素使用玩家在当前现实中达到的最高值。
 
@@ -83,7 +83,7 @@ review_status: "STRUCTURE CHECKED"
 
 ### 现实升级
 
-主条目：[现实升级](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades)
+主条目：[[ow-reality-upgrades|现实升级]]
 
 **现实升级**是一组消耗现实机器的升级，购买前需要先满足各自的条件。
 
@@ -95,7 +95,7 @@ review_status: "STRUCTURE CHECKED"
 
 ### 黑洞
 
-主条目：[黑洞](https://antimatterdimensions.wiki.gg/wiki/Black_Hole)
+主条目：[[ow-black-hole|黑洞]]
 
 **黑洞**会以周期循环让整个游戏运行得更快，影响到此为止游戏中的一切内容，效果等同于让游戏开够相应的时间。该功能需要 $100$ 现实机器解锁。
 
@@ -109,11 +109,11 @@ review_status: "STRUCTURE CHECKED"
 
 - 这个威望层的名字可能来自《反物质维度》官方 Discord 服务器中的一个高级身份组「Reality Dimension」。该身份组创建于 2017 年 12 月 14 日，比现实更新及其内容公布早一年多。
 - 现实是三个威望层中唯一一个主要货币名称不以「Points（点数）」结尾的层。
-- 现实也是三个威望层中唯一一个解锁条件不同于 1.80e308 [反物质](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions) / [无限点数](https://antimatterdimensions.wiki.gg/wiki/Infinity_Points)的层。
+- 现实也是三个威望层中唯一一个解锁条件不同于 1.80e308 [[ow-antimatter-dimensions|反物质]] / [[ow-infinity|无限点数]]的层。
 
 ## 来源与许可
 
-- 原文：[Reality](https://antimatterdimensions.wiki.gg/wiki/Reality)（修订 ID `3235`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-reality|Reality]]（修订 ID `3235`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Reality&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与表格、统一术语、移除缩略图/信息框/导航模板、图片未转载；本页按相同许可共享。
 - 原文以子模板嵌入符文、现实升级、复兴、黑洞与自动机的完整子页面；本页保留主条目正文与入口，这些子页列入后续批次。

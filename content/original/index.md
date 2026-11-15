@@ -39,6 +39,8 @@ tags:
 > - **VERIFIED AGAINST GAME**：关键机制/数值已与源码或运行证据交叉核实。
 >
 > 已审校覆盖率 = （REVIEWED + VERIFIED）÷ 合规正文页总数；结构核对覆盖率 = STRUCTURE CHECKED ÷ 总数。重定向页、消歧义页与站点元页面不进入分母。
+>
+> 2026-11-15 的内容修正（动态模板文本、繁体、外链内链化、占位符解释）与逐页问题清单见 [2026-11-15 内容审校记录](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/translation/reviews/2026-11-15-content-review.md)。
 
 ## 第一批（已完成翻译与结构核对）
 

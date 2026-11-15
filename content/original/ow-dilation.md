@@ -14,15 +14,15 @@ translation_status: "STRUCTURE CHECKED"
 review_status: "STRUCTURE CHECKED"
 ---
 
-**时间膨胀（Time Dilation）**是[永恒威望层](https://antimatterdimensions.wiki.gg/wiki/Eternity)引入的最后一个主要机制。它包含一个被修改、被削弱的永恒；首次完成它会解锁两种新货币——超光速粒子（Tachyon Particles）与膨胀时间（Dilated Time），可用于购买膨胀升级。
+**时间膨胀（Time Dilation）**是[[ow-eternity|永恒威望层]]引入的最后一个主要机制。它包含一个被修改、被削弱的永恒；首次完成它会解锁两种新货币——超光速粒子（Tachyon Particles）与膨胀时间（Dilated Time），可用于购买膨胀升级。
 
-购买 [EC11 与 EC12](https://antimatterdimensions.wiki.gg/wiki/Eternity_Challenges#Challenges)研究下方的对应[时间研究](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)即可解锁膨胀；这需要总共 $12,900$ [时间之理](https://antimatterdimensions.wiki.gg/wiki/Time_Studies#Theorems)，并且已经各完成永恒挑战 11 与 12 五（5）次。该研究本身消耗 $5,000$ 时间之理，但会永久解锁这个机制。
+购买 [[ow-eternity-challenges|EC11 与 EC12]]研究下方的对应[[ow-time-studies|时间研究]]即可解锁膨胀；这需要总共 $12,900$ [[ow-time-studies|时间之理]]，并且已经各完成永恒挑战 11 与 12 五（5）次。该研究本身消耗 $5,000$ 时间之理，但会永久解锁这个机制。
 
-它还会解锁时间之理的被动生成，使最后四个[时间维度](https://antimatterdimensions.wiki.gg/wiki/Time_Dimensions)在现实中可用（玩家在获得膨胀研究后可以购买最后四个时间维度，成本从 $\text{1e6}$ 到 $\text{1e9}$ 时间之理不等）。此外，该机制的一项升级还带来一个优势：可以同时购买[维度分叉](https://antimatterdimensions.wiki.gg/wiki/Time_Studies#Mutually%20Exclusive%20Studies)的全部三条时间研究路径。
+它还会解锁时间之理的被动生成，使最后四个[[ow-time-dimensions|时间维度]]在现实中可用（玩家在获得膨胀研究后可以购买最后四个时间维度，成本从 $\text{1e6}$ 到 $\text{1e9}$ 时间之理不等）。此外，该机制的一项升级还带来一个优势：可以同时购买[[ow-time-studies|维度分叉]]的全部三条时间研究路径。
 
 ## 膨胀永恒
 
-在膨胀状态下进行的[永恒](https://antimatterdimensions.wiki.gg/wiki/Eternity)会把所有[反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)、[无限维度](https://antimatterdimensions.wiki.gg/wiki/Infinity_Dimensions)与[时间维度](https://antimatterdimensions.wiki.gg/wiki/Time_Dimensions)倍率的*指数*，以及[计数频率](https://antimatterdimensions.wiki.gg/wiki/Tickspeed)倍率的*指数*都提高 $\ ^0.75$ 次方，从而显著削弱它们的威力。膨胀时间会触发一次永恒重置。
+在膨胀状态下进行的[[ow-eternity|永恒]]会把所有[[ow-antimatter-dimensions|反物质维度]]、[[ow-infinity-dimensions|无限维度]]与[[ow-time-dimensions|时间维度]]倍率的*指数*，以及[计数频率](https://antimatterdimensions.wiki.gg/wiki/Tickspeed)倍率的*指数*都提高 $\ ^0.75$ 次方，从而显著削弱它们的威力。膨胀时间会触发一次永恒重置。
 
 膨胀后的数值用下式计算：$10^x \to 10^{x^{0.75}}$，左侧的值被变换为右侧的值。例如倍率 $1\text{e}10,000$ 会降低为 $1\text{e}1,000$，因为 $10,000^{0.75}=1,000$。这个指数常数可以通过一项膨胀升级提高，以减轻膨胀惩罚。
 
@@ -38,7 +38,7 @@ $$Tachyons = TP_{Mult}\times\left(\frac{\log_{10}\left(AM_{\text{膨胀中最高
 
 ## 膨胀时间
 
-**膨胀时间（DT）**是由超光速粒子生产的通用货币，基础比率为 1:1（即每 1 TP 每秒 1 DT）。膨胀时间通过达到阈值转化为超光速星系，方式类似于[时间维度](https://antimatterdimensions.wiki.gg/wiki/Time_Dimensions)提供的计数频率升级。膨胀时间也可以用于购买各种升级。
+**膨胀时间（DT）**是由超光速粒子生产的通用货币，基础比率为 1:1（即每 1 TP 每秒 1 DT）。膨胀时间通过达到阈值转化为超光速星系，方式类似于[[ow-time-dimensions|时间维度]]提供的计数频率升级。膨胀时间也可以用于购买各种升级。
 
 ## 超光速星系
 
@@ -54,9 +54,9 @@ $$Tachyons = TP_{Mult}\times\left(\frac{\log_{10}\left(AM_{\text{膨胀中最高
 | --- | --- | --- | --- |
 | 136 | I told you already, time is relative | 膨胀时间。 | — |
 | 137 | Now you're thinking with dilation! | 在膨胀状态下于 $1$ 分钟或更短时间内获得 $\text{e}260,000$ 反物质。 | 膨胀状态下获得 $\times 2$ 膨胀时间与时间之理。 |
-| 138 | This is what I have to do to get rid of you. | 在膨胀状态下、没有任何时间研究时达到 $\text{e}26,000$ [无限点数](https://antimatterdimensions.wiki.gg/wiki/Infinity_Points)。 | 移除主动与挂机时间研究路径中时间研究 131 与 133 的负面效果。 |
+| 138 | This is what I have to do to get rid of you. | 在膨胀状态下、没有任何时间研究时达到 $\text{e}26,000$ [[ow-infinity|无限点数]]。 | 移除主动与挂机时间研究路径中时间研究 131 与 133 的负面效果。 |
 | 161 | that's where you're wrong kiddo | 在膨胀状态下获得 $\text{e}100,000,000$ 反物质。 | — |
-| 187 | The One with Dilated Time | 在[被毁灭](https://antimatterdimensions.wiki.gg/wiki/Pelle)状态下解锁膨胀。 | 每项可重复膨胀时间倍率升级的倍率提高 $\times 1.35$。 |
+| 187 | The One with Dilated Time | 在[[ow-pelle|被毁灭]]状态下解锁膨胀。 | 每项可重复膨胀时间倍率升级的倍率提高 $\times 1.35$。 |
 
 > 成就名称保留英文原文（游戏内名称为英文），描述与奖励已翻译；图标为媒体，未转载。
 
@@ -66,7 +66,7 @@ $$Tachyons = TP_{Mult}\times\left(\frac{\log_{10}\left(AM_{\text{膨胀中最高
 
 ## 来源与许可
 
-- 原文：[Dilation](https://antimatterdimensions.wiki.gg/wiki/Dilation)（修订 ID `3323`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-dilation|Dilation]]（修订 ID `3323`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Dilation&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与表格、统一术语、移除导航模板与信息框、图片未转载；本页按相同许可共享。
 - 原页以子模板嵌入膨胀升级表；本页保留主条目正文、公式与相关成就，升级子页列入后续批次。

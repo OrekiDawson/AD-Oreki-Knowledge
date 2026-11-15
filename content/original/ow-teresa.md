@@ -18,7 +18,7 @@ review_status: "STRUCTURE CHECKED"
 >
 > 证明你的价值。
 
-**特蕾莎（Teresa，符号 Ϟ）**是第一位[天神](https://antimatterdimensions.wiki.gg/wiki/Celestials)，主题围绕[现实](https://antimatterdimensions.wiki.gg/wiki/Reality)层机制。她通过[成就 147](https://antimatterdimensions.wiki.gg/wiki/Achievements)解锁，该成就要求买齐全部[现实升级](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades)。
+**特蕾莎（Teresa，符号 Ϟ）**是第一位[[ow-celestials|天神]]，主题围绕[[ow-reality|现实]]层机制。她通过[成就 147](https://antimatterdimensions.wiki.gg/wiki/Achievements)解锁，该成就要求买齐全部[[ow-reality-upgrades|现实升级]]。
 
 特蕾莎引入的核心机制是[RM 容器灌注](#rm-容器灌注)。
 
@@ -29,11 +29,11 @@ review_status: "STRUCTURE CHECKED"
 | 称号 | 现实之神（Celestial of Reality） |
 | 别号 | 谄媚者（Sycophant） |
 | 解锁条件 | [成就 147](https://antimatterdimensions.wiki.gg/wiki/Achievements) |
-| 相关货币 | [现实机器（RM）](https://antimatterdimensions.wiki.gg/wiki/Reality)、[复兴点数（PP）](https://antimatterdimensions.wiki.gg/wiki/Perks) |
+| 相关货币 | [[ow-reality|现实机器（RM）]]、[复兴点数（PP）](https://antimatterdimensions.wiki.gg/wiki/Perks) |
 | 机制 | [RM 容器](#rm-容器灌注)、[复兴点数商店](#复兴点数商店)、音乐符文 |
-| 增益 | 提升 RM 获取；被动 [EP](https://antimatterdimensions.wiki.gg/wiki/Eternity) 产出 |
+| 增益 | 提升 RM 获取；被动 [[ow-eternity|EP]] 产出 |
 | 现实解锁条件 | 向容器灌注 $1\text{e}14$ RM |
-| 现实惩罚 | [IP](https://antimatterdimensions.wiki.gg/wiki/Infinity) 与 EP 获取变为 $x^{0.55}$；来自[符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs#Types)的[时间之理](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)产出被禁用 |
+| 现实惩罚 | [[ow-infinity|IP]] 与 EP 获取变为 $x^{0.55}$；来自[符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs#Types)的[[ow-time-studies|时间之理]]产出被禁用 |
 | 现实奖励 | 强化[符文献祭](https://antimatterdimensions.wiki.gg/wiki/Glyphs#Glyph_Sacrifice) |
 | 现实特性 | 可重复挑战，完成得越好奖励越高 |
 | 加入版本 | 网页版：现实更新（2022 年 12 月 17 日）；Android：现实更新（2024 年 4 月 1 日）；Steam 与 iOS：首发即包含 |
@@ -42,7 +42,7 @@ review_status: "STRUCTURE CHECKED"
 
 ### RM 容器灌注
 
-该机制允许把已获得的[现实机器](https://antimatterdimensions.wiki.gg/wiki/Reality)抽走灌注，把灌注的 RM 转化为 RM 获取加成；加成上限为 $1\text{e}24$ RM，提供 $\times 250$ 的 RM 乘数。容器是对数式的：要让容器达到 $50\%$ 的容量，需要灌注 $1\text{e}12$ RM。
+该机制允许把已获得的[[ow-reality|现实机器]]抽走灌注，把灌注的 RM 转化为 RM 获取加成；加成上限为 $1\text{e}24$ RM，提供 $\times 250$ 的 RM 乘数。容器是对数式的：要让容器达到 $50\%$ 的容量，需要灌注 $1\text{e}12$ RM。
 
 来自容器的 RM 乘数：
 
@@ -57,9 +57,9 @@ $$
 | glyphLevel | $1\text{e}6$ | 开始现实时已解锁全部[永恒升级](https://antimatterdimensions.wiki.gg/wiki/Eternity_Upgrades) | $\times 3.97$ |  |
 | undo | $1\text{e}10$ | 解锁装备[符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs)的「撤销」选项 | $\times 9.95$ |  |
 | run | $1\text{e}14$ | 解锁[特蕾莎的现实](#现实) | $\times 25.00$ |  |
-| epGen | $1\text{e}18$ | 解锁被动[永恒点数](https://antimatterdimensions.wiki.gg/wiki/Eternity)产出 | $\times 62.80$ | 本现实内，每秒获得「本现实峰值 EP」在每分钟维度下的 $1\%$ |
+| epGen | $1\text{e}18$ | 解锁被动[[ow-eternity|永恒点数]]产出 | $\times 62.80$ | 本现实内，每秒获得「本现实峰值 EP」在每分钟维度下的 $1\%$ |
 | shop | $1\text{e}21$ | 解锁[复兴点数商店](#复兴点数商店) | $\times 125.00$ |  |
-| effarig | $1\text{e}24$ | 解锁[鹿颈长](https://antimatterdimensions.wiki.gg/wiki/Effarig)，远古遗物之神 | $\times 250.00$ |  |
+| effarig | $1\text{e}24$ | 解锁[[ow-effarig|鹿颈长]]，远古遗物之神 | $\times 250.00$ |  |
 
 ### 复兴点数商店
 
@@ -77,12 +77,12 @@ $$
 
 ## 现实
 
-向容器灌注超过 $1\text{e}14$ RM 后，会引入一种类似[挑战](https://antimatterdimensions.wiki.gg/wiki/Challenges)的新机制。不过与[无限](https://antimatterdimensions.wiki.gg/wiki/Infinity)、[永恒](https://antimatterdimensions.wiki.gg/wiki/Eternity)这类层数更多、处境更艰难的挑战不同：进入被削弱的[现实](https://antimatterdimensions.wiki.gg/wiki/Reality)所带的缺点与削弱比普通挑战、无限挑战与永恒挑战都多。特蕾莎的现实一旦进入就会施加这些惩罚：
+向容器灌注超过 $1\text{e}14$ RM 后，会引入一种类似[[ow-challenges|挑战]]的新机制。不过与[[ow-infinity|无限]]、[[ow-eternity|永恒]]这类层数更多、处境更艰难的挑战不同：进入被削弱的[[ow-reality|现实]]所带的缺点与削弱比普通挑战、无限挑战与永恒挑战都多。特蕾莎的现实一旦进入就会施加这些惩罚：
 
 - 时间之理产出<sup>（来自[膨胀符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs)）</sup>被禁用。
-- [无限点数](https://antimatterdimensions.wiki.gg/wiki/Infinity)与[永恒点数](https://antimatterdimensions.wiki.gg/wiki/Eternity)获取被开方：$p^{0.55}$。
+- [[ow-infinity|无限点数]]与[[ow-eternity|永恒点数]]获取被开方：$p^{0.55}$。
 
-完成特蕾莎的现实的方式，是在该现实内取得超过 $\text{e}4,000$ [永恒点数](https://antimatterdimensions.wiki.gg/wiki/Eternity)，完成会提供[符文献祭](https://antimatterdimensions.wiki.gg/wiki/Glyph_Sacrifice)加成。
+完成特蕾莎的现实的方式，是在该现实内取得超过 $\text{e}4,000$ [[ow-eternity|永恒点数]]，完成会提供[符文献祭](https://antimatterdimensions.wiki.gg/wiki/Glyph_Sacrifice)加成。
 
 特蕾莎的现实可以无限次重复进入，也就是说可以反复挑战她的现实。达到新的最高[反物质](https://antimatterdimensions.wiki.gg/wiki/Antimatter)数量可以提升该现实给予的奖励。
 
@@ -94,7 +94,7 @@ $$
 
 ## 引语
 
-**首次打开[天神](https://antimatterdimensions.wiki.gg/wiki/Celestials)页签时**（结束条件）
+**首次打开[[ow-celestials|天神]]页签时**（结束条件）
 
 > 我们一直在观察你。
 > 你在操纵现实上展现了潜力。
@@ -116,7 +116,7 @@ $$
 
 （引语结束）
 
-**向容器灌注 1e24 解锁[鹿颈长](https://antimatterdimensions.wiki.gg/wiki/Effarig)（远古遗物之神）时**（结束条件）
+**向容器灌注 1e24 解锁[[ow-effarig|鹿颈长]]（远古遗物之神）时**（结束条件）
 
 > 你依然不是我们的对手。
 > 我希望其他天神能在我失败的地方成功。
@@ -128,7 +128,7 @@ $$
 ## 琐事
 
 - 特蕾莎的名字源自「Boo」；这是超级马力欧系列中同名角色日文名的罗马字。Boo 曾是《反物质维度》官方 Discord 服务器的版主[^cel-name-easter-egg]。
-- 在正式发布之前（更准确地说，是开发稍晚的阶段），特蕾莎曾被称作[「鹿颈长」](https://antimatterdimensions.wiki.gg/wiki/Effarig)，也就是下一位天神。原因是两人的机制虽然未变，但名字最初被交换了顺序，鹿颈长本该是现实之神、特蕾莎本该是远古遗物之神[^cel-name-easter-egg]。
+- 在正式发布之前（更准确地说，是开发稍晚的阶段），特蕾莎曾被称作[[ow-effarig|「鹿颈长」]]，也就是下一位天神。原因是两人的机制虽然未变，但名字最初被交换了顺序，鹿颈长本该是现实之神、特蕾莎本该是远古遗物之神[^cel-name-easter-egg]。
 
 [^cel-name-easter-egg]: 原文参考资料：AD 开发日志第 4 篇 <https://cyip92.github.io/site/#/ADdevlog/4>（外部链接，未转载内容）。
 
@@ -142,7 +142,7 @@ $$
 
 ## 来源与许可
 
-- 原文：[Teresa](https://antimatterdimensions.wiki.gg/wiki/Teresa)（页面 ID `292`；修订 ID `3370`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-teresa|Teresa]]（页面 ID `292`；修订 ID `3370`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Teresa&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文、表格与引语，统一术语，把信息框内容改写为要点表，移除导航模板与模板结构，图片未转载；本页按相同许可共享。
 - 原文图片未转载：原页含天神动画（`Cel1-runreality-static--desktop.gif`、`Cel1-runreality-active--desktop.gif`）、导航图（`Cel1-navigation-complete--desktop.png`）与界面截图（`Cel1-interface--darktheme-desktop.png`）。其图注含义为：「身处特蕾莎的现实之中」「两个同心圆，颜色为群青色，中间由一道笔画相连，正中是特蕾莎的符号——黑色叠于另一圆之上」「特蕾莎的完整界面；最高反物质所在现实的符文组合记录在特蕾莎的现实界面中」。请到原页查看图片。

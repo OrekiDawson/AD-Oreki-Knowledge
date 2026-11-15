@@ -14,7 +14,7 @@ translation_status: "STRUCTURE CHECKED"
 review_status: "STRUCTURE CHECKED"
 ---
 
-**天神导航（Celestial Navigation）**是与[特蕾莎](https://antimatterdimensions.wiki.gg/wiki/Teresa)同时解锁的现实后功能，提供一张表示[天神](https://antimatterdimensions.wiki.gg/wiki/Celestials)机制与进度的地图。它是天神页签中的第一个子页签。地图上有许多节点，会随玩家在游戏中的推进而更新。刚解锁时地图只显示一部分，随着玩家接近新内容会逐步显露，通常还会以视觉方式提示玩家离下一步还有多远。
+**天神导航（Celestial Navigation）**是与[[ow-teresa|特蕾莎]]同时解锁的现实后功能，提供一张表示[[ow-celestials|天神]]机制与进度的地图。它是天神页签中的第一个子页签。地图上有许多节点，会随玩家在游戏中的推进而更新。刚解锁时地图只显示一部分，随着玩家接近新内容会逐步显露，通常还会以视觉方式提示玩家离下一步还有多远。
 
 在桌面版中，天神导航是性能开销最大的页签之一，在低端设备上很容易卡顿；玩家推进得越远，情况越严重。
 
@@ -47,7 +47,7 @@ review_status: "STRUCTURE CHECKED"
 
 ## 来源与许可
 
-- 原文：[Celestial Navigation](https://antimatterdimensions.wiki.gg/wiki/Celestial_Navigation)（修订 ID `3361`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-celestial-navigation|Celestial Navigation]]（修订 ID `3361`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Celestial_Navigation&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与表格、统一术语、移除页签/导航模板、图片未转载；本页按相同许可共享。
 - 原页的节点清单与画廊为子页面内容，未随主条目展开；已注明并列入后续批次。
