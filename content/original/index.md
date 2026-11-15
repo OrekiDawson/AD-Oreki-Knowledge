@@ -26,7 +26,7 @@ tags:
 | --- | --- |
 | 原版正文条目总数（主命名空间 article） | 68 |
 | 已完成并校对（REVIEWED） | 28 |
-| 已翻译未校对（TRANSLATED） | 0 |
+| 已翻译未校对（TRANSLATED） | 3 |
 | 许可阻塞（BLOCKED） | 0 |
 | 覆盖率 | 28 / 68（41.2%） |
 
@@ -120,12 +120,22 @@ tags:
 | [[ow-celestial-navigation|天神导航]] | [Celestial Navigation](https://antimatterdimensions.wiki.gg/wiki/Celestial_Navigation) | 3361 |
 | [[ow-pelle-upgrades|佩勒升级]] | [Pelle/Upgrades](https://antimatterdimensions.wiki.gg/wiki/Pelle/Upgrades) | 2707 |
 
+## 第十三批（已翻译，待校对）
+
+| 中文条目 | 原文 | 修订 ID |
+| --- | --- | --- |
+| [[ow-teresa|特蕾莎]] | [Teresa](https://antimatterdimensions.wiki.gg/wiki/Teresa) | 3370 |
+| [[ow-effarig|鹿颈长]] | [Effarig](https://antimatterdimensions.wiki.gg/wiki/Effarig) | 3371 |
+| [[ow-nameless-ones|无名氏]] | [The Nameless Ones](https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones) | 3372 |
+
+> 本批状态为 TRANSLATED（正文完整、机器与人工自检通过，尚待独立校对）。按 POLICY，校对完成后才计入覆盖率。
+
 ## 后续批次（按游戏流程排序）
 
-1. 符文、复兴、自动机、符文炼金、虚幻升级；
-3. 现实、符文、现实升级、复兴、黑洞、自动机、符文炼金、虚幻升级；
-4. 特蕾莎、鹿颈长、无名氏、薇、太阳神、莱特拉、佩勒；
-5. 普通挑战与无限挑战、成就、自动购买器、记数法、术语、攻略与秘密内容。
+1. 薇、太阳神、莱特拉、佩勒（天神后四位）与他们的引语子页；
+2. 符文、复兴、自动机、符文炼金、虚幻升级、高级符文机制；
+3. 普通挑战与无限挑战、永恒挑战明细、成就（含秘密成就）、自动购买器；
+4. 计数频率、永恒里程碑、永恒升级、保存库、快捷操作、版本历史与其余攻略/秘密内容。
 
 未完成页面仍以英文原站为准；本专区不会用摘要或空页占位。
 

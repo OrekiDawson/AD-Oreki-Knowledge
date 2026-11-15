@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T13:22:21.456Z",
+ "generated_at": "2026-11-15T13:25:11.765Z",
  "source": {
   "site": "https://antimatterdimensions.wiki.gg",
   "api": "https://antimatterdimensions.wiki.gg/api.php",
@@ -25,7 +25,7 @@
  },
  "coverage": {
   "total_pages": 68,
-  "translated": 0,
+  "translated": 3,
   "reviewed": 28,
   "blocked": 0
  },
@@ -1216,16 +1216,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
+   "zh_title": "鹿颈长",
+   "path": "content/original/ow-effarig.md",
+   "priority": 4,
+   "status": "TRANSLATED",
    "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch13：正文/表格/公式完整翻译，待校对；模板脚注改为页内脚注；图片未转载"
   },
   {
    "title": "Effarig/Quotes",
@@ -2572,16 +2572,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
+   "zh_title": "特蕾莎",
+   "path": "content/original/ow-teresa.md",
+   "priority": 4,
+   "status": "TRANSLATED",
    "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch13：正文/表格/公式/引语完整翻译，待校对；信息框改写为要点表；图片未转载"
   },
   {
    "title": "Terminology",
@@ -2647,16 +2647,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
+   "zh_title": "无名氏",
+   "path": "content/original/ow-nameless-ones.md",
+   "priority": 4,
+   "status": "TRANSLATED",
    "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch13：正文/现实效果表/超立方体数据表完整翻译，待校对；图片未转载"
   },
   {
    "title": "The Nameless Ones/Quotes",

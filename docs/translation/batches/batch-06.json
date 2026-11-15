@@ -1,0 +1,31 @@
+{
+  "batch": 6,
+  "title": "第六批：广告加成（1 篇）",
+  "branch": "docs/r114-original-translation",
+  "commit": "5b7cbd1",
+  "status": "REVIEWED",
+  "data_source": "由 git 提交历史与页面 frontmatter 直接生成（实测值，非手填）",
+  "generated_at": "2026-11-15T13:23:06.558Z",
+  "page_count": 1,
+  "pages": [
+    {
+      "file": "content/original/ow-ad-bonus.md",
+      "original_title": "Ad Bonus",
+      "zh_title": "广告加成",
+      "revid": 3096,
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://antimatterdimensions.wiki.gg/wiki/Ad_Bonus",
+      "checks": {
+        "section_coverage": "PASS",
+        "tables_preserved": "PASS",
+        "formulas_preserved": "PASS",
+        "attribution_block": "PASS",
+        "media_omitted_noted": "PASS",
+        "terminology_glossary": "PASS",
+        "internal_links": "PASS"
+      }
+    }
+  ]
+}

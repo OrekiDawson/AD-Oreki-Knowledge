@@ -1,0 +1,31 @@
+{
+  "batch": 8,
+  "title": "第八批：记数法（1 篇）",
+  "branch": "docs/r114-original-translation",
+  "commit": "4f4418e",
+  "status": "REVIEWED",
+  "data_source": "由 git 提交历史与页面 frontmatter 直接生成（实测值，非手填）",
+  "generated_at": "2026-11-15T13:23:06.595Z",
+  "page_count": 1,
+  "pages": [
+    {
+      "file": "content/original/ow-notations.md",
+      "original_title": "Notations",
+      "zh_title": "记数法",
+      "revid": 3133,
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://antimatterdimensions.wiki.gg/wiki/Notations",
+      "checks": {
+        "section_coverage": "PASS",
+        "tables_preserved": "PASS",
+        "formulas_preserved": "PASS",
+        "attribution_block": "PASS",
+        "media_omitted_noted": "PASS",
+        "terminology_glossary": "PASS",
+        "internal_links": "PASS"
+      }
+    }
+  ]
+}
