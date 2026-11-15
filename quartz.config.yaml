@@ -139,7 +139,18 @@ plugins:
   - source: "@quartz-community/tag-page"
     enabled: true
   - source: "@quartz-community/explorer"
+    enabled: false
+    layout:
+      position: left
+      priority: 50
+  # 本地最小扩展：复用官方 Explorer，仅注入固定的一级目录语义顺序与站务短名。
+  # 不移动文件、不改 URL、不做运行时 JS/DOM 排序；官方包未修改。
+  - source: "./scripts/quartz-plugins/ordered-explorer"
     enabled: true
+    options:
+      folderDefaultState: collapsed
+      folderClickBehavior: link
+      useSavedState: true
     layout:
       position: left
       priority: 50

@@ -18,23 +18,19 @@ tags:
 
 ## 按主题浏览
 
-### 原版 Wiki 中文翻译
-[原版 Wiki 中文翻译](/original/) 忠实翻译《反物质维度》社区 Wiki 的原版游戏条目：保留原文公式、表格与解锁条件，逐页标注原文修订、贡献者历史与 CC BY-SA 4.0 许可。它与下面的 MOD 专题、[历史归档](/history/) 分区并列，不混写。
+顺序与左侧目录一致（1→11）：
 
-### 玩法机制
-[玩法机制](/gameplay/) 先给出[[original-vs-mod|原版行为与 Oreki Edition 修改]]的集中对照，再逐项解释 [[progression-infinity-eternity|无限与永恒]]、[[reality-time-studies|现实与时间研究]]、[[celestials|天神系统]]、[[challenges|挑战与真实结算]]、[[automation|智能自动购买器]]、[[saves|存档兼容与自动保存]]、[[stage-gates|阶段门禁]]。
-
-### 架构与运行时
-[架构与运行时](/architecture/) 覆盖 [[android|Android 架构]]、[[kotlin-runtime|Kotlin 混合运行时 ABI]]、[[web|Web 架构]]、[[parity|双端行为一致性]] 与 [[directory-migration|目录标准化迁移]]。
-
-### 构建与交付
-[构建与交付](/build/) 覆盖 [[agp|AGP 构建管线]]、[[apk-signing|APK 签名与升级兼容]]、[[ci-cd|CI/CD 与受保护门禁]]、[[signature-backfill|Signature 回填]]、[[r8|R8 分层策略]] 与 [[build-mod-retirement|build_mod.py 退役]]。
-
-### 逆向、排查与参考
-[逆向与语义映射](/reverse-engineering/) 解释混淆 DEX 的 ABI 适配；[故障排查](/troubleshooting/) 提供 [[coroutine-abi|协程 ABI 崩溃排查]] 与 [[save-compatibility|存档兼容排查]]；[参考资料](/references/) 汇总 [[source-index|来源索引]] 与 [[terminology|术语表]]。
-
-### 历史归档
-[历史归档](/history/) 保存按日期与事件记录的当时判定（长跑结果、发布、流水线阻塞、根因定位过程），**不代表当前状态**。
+1. **游戏总览**：[[antimatter-dimensions|《反物质维度》游戏总览]]——反物质、无限、永恒、现实与天神。
+2. **入门指南**：[入门指南](/getting-started/)——如何使用知识库、编写指南与项目概览。
+3. **原版 Wiki 中文翻译**：[原版 Wiki 中文翻译](/original/)——逐篇翻译原版游戏条目，保留公式、表格与解锁条件，逐页标注修订与 CC BY-SA 4.0 许可。
+4. **MOD 玩法与机制**：[MOD 玩法与机制](/gameplay/)——[[original-vs-mod|原版与 MOD 对照]]、[[progression-infinity-eternity|无限与永恒]]、[[reality-time-studies|现实与时间研究]]、[[celestials|天神系统]]、[[challenges|挑战与真实结算]]、[[automation|智能自动购买器]]、[[saves|存档兼容]]、[[stage-gates|阶段门禁]]。
+5. **当前项目状态**：[[project-status|当前项目状态]]与[[release-status|发布状态]]——只写现行结论，标注最后核实时间。
+6. **架构与运行时**：[架构与运行时](/architecture/)——[[android|Android 架构]]、[[kotlin-runtime|Kotlin 混合运行时 ABI]]、[[web|Web 架构]]、[[parity|双端一致性]]、[[directory-migration|目录迁移]]。
+7. **逆向与语义映射**：[逆向与语义映射](/reverse-engineering/)——混淆 DEX 的 ABI 适配与证据方法。
+8. **构建与交付**：[构建与交付](/build/)——[[agp|AGP]]、[[apk-signing|签名]]、[[ci-cd|CI/CD]]、[[r8|R8]]、[[signature-backfill|Signature 回填]]、[[build-mod-retirement|build_mod.py 退役]]。
+9. **故障排查**：[故障排查](/troubleshooting/)——[[coroutine-abi|协程 ABI 崩溃]]与[[save-compatibility|存档兼容]]排查。
+10. **参考资料**：[参考资料](/references/)——[[source-index|来源索引]]与[[terminology|术语表]]。
+11. **历史归档**：[历史归档](/history/)——按日期与事件记录的当时判定，**不代表当前状态**。
 
 ## 站务
 
