@@ -14,17 +14,17 @@ tags:
 
 2026-11-15 19:58 起，分支 `r114-01/reality-autoeternity` 提交修复，目标是「第 2 次现实后 original 自动永恒复位导致 `realities` 卡在 2」。PR #92 目前为 **OPEN**（GitHub 显示 mergeable=CONFLICTING，属于合并顺序与文件冲突，不代表分支内容无效）。
 
-## 当时结论（截至 2026-11-15 20:30 UTC+8）
+## 当时结论（截至 2026-11-15 21:25 UTC+8）
 
 | 项 | 状态 |
 | --- | --- |
 | 根因 | 已用真实 AVD logcat 证据确认：Reality 之后原版自动永恒复位把现实条件重置，导致 `realities` 停在 2 |
 | 修复提交 | `70a8329a` → `aadebba7` → `53febade` → `6c7dbb87` |
 | PR | [Android PR #92](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92)（OPEN，未合并、未发布） |
-| 功能验收 | **进行中**；新真新档 180 分钟长跑自 20:07:19 开始，终局结果 **NOT RUN** |
+| 功能验收 | **进行中**；新真新档 180 分钟长跑自 20:07:19 开始，截至 21:22 `realities=6`、`creditsFinished=false`，终局 **NOT RUN** |
 | 附带修正 | `imaginaryUpgradeBits` 位号改为 Android 移植版内部 id：莱特拉 bit4、佩勒 bit14 |
 
-新长跑已确认的里程碑（截至 20:30）：首无限/首永恒 275.8 秒、首次 Reality 576.7 秒、第 2 次 Reality 1218.6 秒；20:27:22 日志记录托管层 `re-enabled after reality reset realities=2`（`isActive` 由 true→false→true），说明修复第一次在真新档的 Reality 复位后生效。**但这只是单点观察，通关结论仍未产生。**
+新长跑已确认的里程碑（截至 21:22）：首无限/首永恒 275.8 秒；首次 Reality 576.7 秒；第 2 次 1218.6 秒；第 3 次 1901.2 秒；第 4 次 2603.5 秒；第 5 次 3285.6 秒；第 6 次 3948.6 秒；最新采样 t=4510.2 秒、`realities=6`、`creditsFinished=false`。20:27:22 日志记录托管层 `re-enabled after reality reset realities=2`（`isActive` 由 true→false→true），说明修复在真新档的 Reality 复位后生效。**但这是进行中跑次的过程数据，通关结论仍未产生。**
 
 ## 后续变化与是否仍然有效
 

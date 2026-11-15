@@ -8,7 +8,7 @@ tags:
 
 本页说明 Oreki Edition 现在**能不能发布**、被什么卡住、以及每条判断的来源。发布结论只认受保护流水线与真实设备验收，不能由源码 CI 通过或本地构建成功推断。
 
-最后核实：**2026-11-15 20:30（UTC+8）**。
+最后核实：**2026-11-15 21:25（UTC+8）**。
 
 ## 当前状态
 
@@ -25,16 +25,17 @@ tags:
 
 ### 1. 真实通关目标未达成（FAIL）
 
-最近一次完整 180 分钟长跑为 **FAIL**：10,805.8 秒时 `creditsFinished=false`、`realities=2`、`fullGameCompletions=0`。证据见 [180min-RESULT.md](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md) 与 [[2026-11-15-r113-180min-fail|历史记录]]。2026-11-15 20:07 起的新长跑仍在进行，结果 NOT RUN。
+**最近一次完整** 180 分钟长跑为 **FAIL**：10,805.8 秒时 `creditsFinished=false`、`realities=2`、`fullGameCompletions=0`。证据见 [180min-RESULT.md](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md) 与 [[2026-11-15-r113-180min-fail|历史记录]]。
 
-### 2. 签名环境未批准（CONFIRMED）
+2026-11-15 20:07:19 起的新真新档长跑仍在进行：截至 21:22（UTC+8）`realities=6`、`creditsFinished=false`，**终局 NOT RUN**。阶段性推进说明 Reality 复位死锁已被打破，但**没有产生通关结论**，因此发布门禁仍未满足。
 
-受保护工作流 `Android candidate build` 的 Run [43679508810](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43679508810)：
+### 2. 评审会话未解决（按 2026-11-15 21:05 核实更正）
 
-- 验证 Job 于 2026-11-15T05:04:55Z–05:05:00Z **success**；
-- 「构建、签名并证明候选 APK」Job 自 2026-11-15T05:05:00Z 起 **waiting**，因为 `environment: android-signing` 需要仓库所有者批准（pending deployment，reviewer `OrekiDawson`）。
+**此前的记录不准确**：本页曾把阻塞写成「`android-signing` 等待仓库所有者批准」。经 Lead 在 2026-11-15 21:05（UTC+8）核实，PR #92 此前阻塞的准确原因是**未解决的评审会话**，目前正在修复中；它不是「缺少审批」，也不是代码编译失败。
 
-这是**需要人工操作的阻塞**，不是代码问题。
+历史上确实存在一个等待 `android-signing` 环境的候选 Run：[43679508810](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43679508810)（验证 Job success；「构建、签名并证明候选 APK」Job 自 2026-11-15T05:05:00Z 起 waiting）。该记录保留为历史观察，但**不是当前阻塞的准确根因**。
+
+当前状态：评审会话修复中（NOT RESOLVED）；在评审会话解决、AGP-only 门禁通过、真实通关验收完成之前，Candidate / Verify / Release 仍为 **BLOCKED**。
 
 ### 3. AGP-only 门禁 fail-closed（CONFIRMED，静态复核）
 
@@ -61,14 +62,14 @@ python3 scripts/enforce_agp_only.py candidate
 | 原包名与原签名证书 | 未变（`com.oreki.antimatterdimensions` / `95960bce…`），见 [[apk-signing]] |
 | `versionCode` 严格递增 | 尚未产生新发布；历史最大值 30210000 |
 | AGP 来源可追溯 | 本地产物可追溯；**受保护候选构建被门禁阻断** |
-| 新档 ≤180 分钟真实通关 | **FAIL** |
+| 新档 ≤180 分钟真实通关 | **FAIL**（最近完整跑次）；新长跑进行中（NOT RUN） |
 | 受保护 Candidate / Verify / Release | **BLOCKED** |
 
 ## 门禁流程
 
 ~~~text
 public main SHA
-  -> candidate-unified（需要 android-signing 环境批准 + AGP-only 门禁）
+  -> candidate-unified（评审会话修复中 + AGP-only 门禁）
   -> verify-unified（独立验签与 SHA 校验）
   -> release-validate-unified（发布前校验，不发布）
   -> release-unified（四渠道发布，同一 SHA-256）

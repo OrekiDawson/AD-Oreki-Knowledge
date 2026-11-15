@@ -8,17 +8,17 @@ tags:
 
 本页把「仍然有效的问题」和「已经被推翻的旧结论」分开列出：前者需要继续处理，后者只保留必要的解释与证据，避免后来者重复走错路。过程细节与当时判定在[历史归档](/history/)。
 
-最后核实：**2026-11-15 20:30（UTC+8）**。
+最后核实：**2026-11-15 21:25（UTC+8）**。
 
 ## 当前有效问题
 
 | 问题 | 状态 | 处理与证据 |
 | --- | --- | --- |
-| 新档 180 分钟真实通关 | **FAIL**（最近完整长跑）；新长跑进行中 | [[2026-11-15-r113-180min-fail|历史记录]]；[PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90) |
-| 第 2 次现实后 `realities` 卡在 2 | **已提交修复，验证中** | [PR #92](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92)；[[2026-11-15-r114-reality-autoeternity|历史记录]] |
+| 新档 180 分钟真实通关 | **FAIL**（最近完整跑次）；新长跑进行中，终局 **NOT RUN** | [[2026-11-15-r113-180min-fail|历史记录]]；[PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90) |
+| 第 2 次现实后 `realities` 卡在 2 | **已提交修复；真实新档已推进到 realities=6（阶段性，非终局）** | [PR #92](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92)；[[2026-11-15-r114-reality-autoeternity|历史记录]] |
 | 独立阶段门禁验收（当前 MOD 构建） | **NOT RUN** | 历史轮次有 PASS 记录，但不是本轮复验；见 [[stage-gates]] |
 | AGP↔Smali 晚期存档互读 | **NOT RUN** | 早中期跨构建写读曾 PASS；见 [[saves]] |
-| 签名环境 `android-signing` 待批准 | **BLOCKED**（需人工批准） | Run [43679508810](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43679508810) |
+| PR #92 评审会话未解决（#93 已合并） | **BLOCKED**（按 Lead 2026-11-15 21:05 核实；修复中） | 此前「等待 android-signing 批准」的记录已更正，见 [[release-status]] |
 | AGP-only 生产门禁 fail-closed | **CONFIRMED（静态）**；候选构建被阻断 | `scripts/enforce_agp_only.py` 退出码 1 |
 | R8 ON 正式化 | 未启用 | Release 默认 R8 OFF；见 [[r8]] |
 | `build_mod.py` 退役 | 长期目标，进行中 | 依赖 AGP 原生完整游戏验收；见 [[build-mod-retirement]] |
