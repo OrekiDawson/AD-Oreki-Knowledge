@@ -23,15 +23,23 @@ node scripts/verify-build.mjs
 push main -> .github/workflows/deploy-wiki.yml -> GitHub Pages（artifact: public/）。
 PR 触发 pr-check.yml（不部署）。
 
-## 每天首次 PR 的 AI 知识整理
+## AI 功能：只保留必要的自动化
 
-- 普通 PR 都执行 `pr-check.yml` 的 Quartz 构建，**不因 AI 跳过而略过正常 CI**。
-- `.github/workflows/ai-first-pr.yml` 在 PR CI 完成后运行：按 **北京时间 UTC+8**，从所有历史 PR（包括已关闭、Dependabot）选出当日**最早创建**的一个。
-- 当日首次 PR：从 GitHub API 只读取得改动，调用 **一次** DeepSeek 整理知识主题、需要核实的证据和链接建议；结果写入 GitHub Actions **Job Summary**，并保存 `kb-ai-YYYY-MM-DD` Artifact。
-- 当日其他 PR：判定 Job 显示 **SKIPPED**，`AI 整理` Job 显示跳过，**不会调用模型或消耗 AI Token**。首次 PR 后续重新触发也会根据已成功的当日 Artifact 跳过。
-- 模型任务运行在受信任的 `main` 上；**不检出、不执行 PR 代码**，仅以只读权限分析 PR diff。API Key 保留在 `DEEPSEEK_API_KEY` Secrets，模型不会提交文件、自动合并 PR 或修改正式知识。
-- 缺少密钥、GitHub API 无法判断首个 PR、AI 失败时显示 **FAIL**，不得冒称 SKIPPED。AI 建议是辅助整理，不等于真实证据或代码审查 PASS。
-- 原有 `ai-knowledge-sync.yml` 的定时同步是另一项任务，不受本 PR 触发限额影响；如需要全部 AI 调用每天只一次，应另行调整定时同步策略。
+**唯一自动调用大模型的 PR 流程**：`.github/workflows/ai-first-pr.yml`。
+
+- 按北京时间（UTC+8）PR **创建日期**判断当日首个 PR，计入历史已关闭 PR 和 Dependabot；其他 PR 的 AI job 显示 `SKIPPED`，普通 `pr-check.yml` 构建照常执行。
+- 当日首个 PR：由可信 main 脚本只读分析 GitHub API 的 PR diff、PR 描述和现有 Wiki 页面目录，向 DeepSeek 发起一次结构化知识整理（失败允许有限重试）。报告显示在 Actions Job Summary，Artifact 保存 90 天。
+- 整理内容：**实际变更、知识条目更新计划、历史事实冲突、P0/P1/P2 风险、缺失证据及最小验证、最终知识整理判定**。提示词在 `scripts/ai/pr-review-prompt.mjs`；报告结构由 `scripts/ai/pr-review-report.mjs` 校验。
+- 模型只能提出建议，不能提交文件、修改 PR 或自动合并。PR 输入只当不可信数据，绝不检出或执行 PR 代码，不将密钥提供给 PR。
+- 当日已有成功的 `kb-ai-YYYY-MM-DD` Artifact 时，重跑也跳过；无法核实、密钥缺失或模型失败必须显示 `FAIL`，不得假报 `SKIPPED`。
+- **跨日首次 PR AI 模型调用尚需真实运行证据**；仅通过单元测试或 SKIPPED 路径不代表真实 DeepSeek 调用 PASS。
+
+其他非必要 AI 自动触发已收敛：
+
+- `ai-knowledge-sync.yml`：不再每天自动跑，只在维护人员主动点击 `workflow_dispatch` 时调用 DeepSeek 生成待审草稿 PR。
+- `ai-knowledge-qa.yml`：不再在 Issue 创建/打标签时自动消耗模型，只允许维护人员主动运行问答。
+- 独立 `ai-index-build.yml` 已删除。非模型的关键词索引仍在 `pr-check.yml` 和 `deploy-wiki.yml` 中构建，无须额外执行第三份 CI；`scripts/ai/build-index.mjs` 保留。
+- 原有来源、历史证据和 AI 草稿不删除，知识库事实始终由 GitHub 原始来源和正式审核决定。
 
 ## 强制 HTTPS
 

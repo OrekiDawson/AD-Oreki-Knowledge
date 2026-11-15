@@ -1,8 +1,6 @@
 name: AI knowledge QA
 
 on:
-  issues:
-    types: [opened, labeled]
   workflow_dispatch:
     inputs:
       issue_number:
