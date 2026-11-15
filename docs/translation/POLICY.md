@@ -41,8 +41,8 @@ original_revid: 12345
 original_fetched_at: "YYYY-MM-DDTHH:MM:SS+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"   # NOT STARTED / IN PROGRESS / TRANSLATED / REVIEWED / BLOCKED
-review_status: "REVIEWED"          # NOT REVIEWED / REVIEWED
+translation_status: "TRANSLATED"   # NOT STARTED / IN PROGRESS / TRANSLATED / STRUCTURE CHECKED / REVIEWED / VERIFIED AGAINST GAME / BLOCKED
+review_status: "NOT REVIEWED"      # NOT REVIEWED / STRUCTURE CHECKED / REVIEWED / VERIFIED AGAINST GAME
 ```
 
 ## 4. 翻译标准
@@ -57,13 +57,22 @@ review_status: "REVIEWED"          # NOT REVIEWED / REVIEWED
 
 ## 5. 状态与覆盖率
 
+状态等级与 `content/wiki-rules.md`「内容验收等级」一致（冲突时以规则页为准）：
+
 - `NOT STARTED`：仅进入清单，未翻译。
 - `IN PROGRESS`：已建立页面但正文不完整，**不得合并发布**。
-- `TRANSLATED`：正文完整，尚未完成校对。
-- `REVIEWED`：正文完整且完成人工校对（章节、公式、表格、术语、链接、许可）。
+- `TRANSLATED`：正文已翻译（可含机器辅助），尚未充分核对。
+- `STRUCTURE CHECKED`：章节/表格/公式/来源字段与原站结构一致；**明确不算语义审校**。
+- `REVIEWED`：已对照原文逐段审校，确认术语、数字、公式、解锁条件与语义无明显缺陷；**必须有页面级审校记录**（`docs/translation/reviews/`）。
+- `VERIFIED AGAINST GAME`：关键机制/数值已与游戏源码或真实运行证据交叉核实。
 - `BLOCKED`：许可不明、含受限第三方材料或无法合规转载；在清单与专区首页列出原因。
 
-覆盖率 = `REVIEWED` 的合规正文页数 / 合规正文页总数。同时单独报告：版权阻塞数、媒体缺失页数、已翻译未校对页数。
+覆盖率分两项报告：
+
+1. **已审校覆盖率** = （`REVIEWED` + `VERIFIED AGAINST GAME`）合规正文页数 / 合规正文页总数；
+2. **结构核对覆盖率** = `STRUCTURE CHECKED` 合规正文页数 / 合规正文页总数。
+
+同时单独报告：版权阻塞数、媒体缺失页数、已翻译未校对（`TRANSLATED`）页数。**状态必须与证据相符**：没有逐段审校记录不得标 `REVIEWED`；机器比对、格式检查、字符串比对都不等于内容审校。
 
 ## 6. 页面路径与命名
 

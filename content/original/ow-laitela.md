@@ -10,13 +10,13 @@ original_revid: 3375
 original_fetched_at: "2026-11-15T21:24:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 > 与我之下的其他存在不同，我不需要现实。
 
-**莱特拉（Lai'tela，原名亦写作 Lai Tela）**是第六位、也是倒数第二位[天神](https://antimatterdimensions.wiki.gg/wiki/Celestials)，主题围绕[维度](https://antimatterdimensions.wiki.gg/wiki/Dimensions)。购买[虚幻升级](https://antimatterdimensions.wiki.gg/wiki/Imaginary_Upgrades)「理想之造物（Fabrication of Ideals）」即可解锁他们。作为维度之神，莱特拉引入[暗物质维度](#暗物质维度)，其第 1 层产出暗物质，通过[连续统](https://antimatterdimensions.wiki.gg/wiki/Continuum)带来更多[反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)与[计数频率](https://antimatterdimensions.wiki.gg/wiki/Tickspeed)购买次数。
+**莱特拉（Lai'tela，原名亦写作 Lai Tela）**是第六位、也是倒数第二位[[ow-celestials|天神]]，主题围绕[[ow-dimensions|维度]]。购买[虚幻升级](https://antimatterdimensions.wiki.gg/wiki/Imaginary_Upgrades)「理想之造物（Fabrication of Ideals）」即可解锁他们。作为维度之神，莱特拉引入[暗物质维度](#暗物质维度)，其第 1 层产出暗物质，通过[连续统](https://antimatterdimensions.wiki.gg/wiki/Continuum)带来更多[[ow-antimatter-dimensions|反物质维度]]与[计数频率](https://antimatterdimensions.wiki.gg/wiki/Tickspeed)购买次数。
 
 原页另有子页面「引语（Quotes）」，本轮批次未译，见文末相关条目。
 
@@ -37,7 +37,7 @@ review_status: "REVIEWED"
 
 ## 现实
 
-**莱特拉的现实**随天神一同解锁。它会膨胀[无限点数](https://antimatterdimensions.wiki.gg/wiki/Infinity)与[永恒点数](https://antimatterdimensions.wiki.gg/wiki/Eternity)的获取，把游戏速度降到 $1$ 并在 $10$ 分钟内逐渐恢复，同时禁用[黑洞](https://antimatterdimensions.wiki.gg/wiki/Black_Hole)的储存、释放、脉冲与反转等功能。在莱特拉内进行一次新的现实不会得到任何奖励。
+**莱特拉的现实**随天神一同解锁。它会膨胀[[ow-infinity|无限点数]]与[[ow-eternity|永恒点数]]的获取，把游戏速度降到 $1$ 并在 $10$ 分钟内逐渐恢复，同时禁用[[ow-black-hole|黑洞]]的储存、释放、脉冲与反转等功能。在莱特拉内进行一次新的现实不会得到任何奖励。
 
 在莱特拉的现实内，反物质会产生「熵」，以百分比计量。熵的产生速度由以下公式决定，主因是反物质：
 
@@ -178,7 +178,7 @@ $$Max\left(100^{Completions}~*~\left(\frac{360}{Seconds}\right)^2,~1\right)$$
 | 双向箭头 | glyphLevelFromSingularities | 奇点提升不稳定前的符文等级 | $3\text{e}24~(3~\text{Sp})$ | $\times \left(1+\max\left(\frac{\log_{10}\left(Singularities\right)-20}{30},0\right)\right)$ |  |
 | 压缩箭头 | darkFromDilatedTime | 膨胀时间提升暗物质产量 | $8\text{e}33$ | $\times 1.6^{\frac{\log_{10}\left(DT+1\right)}{1000}}$ | 该里程碑也会影响暗能量产量 |
 | 双向箭头 | infinitiedPow | 无限次数按奇点获得幂次效果 | $3\text{e}38$ | $\text{＾}\left(1+\frac{\log_{10}\left(Singularities+1\right)}{300}\right)$ |  |
-| 双向箭头 | tesseractMultFromSingularities | 奇点提高有效超立方体数量 | $2.5\text{e}45$ | $\times \left(1+\frac{\log_{10}\left(Singularities\right)}{80}\right)$ | 见[超立方体](https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones#Tesseracts) |
+| 双向箭头 | tesseractMultFromSingularities | 奇点提高有效超立方体数量 | $2.5\text{e}45$ | $\times \left(1+\frac{\log_{10}\left(Singularities\right)}{80}\right)$ | 见[[ow-nameless-ones|超立方体]] |
 
 ## 相关成就
 

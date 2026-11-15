@@ -10,13 +10,13 @@ original_revid: 3360
 original_fetched_at: "2026-11-15T22:10:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
-**黑洞（Black Hole）**是第一次现实之后可以解锁的功能。与[符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs)、[现实升级](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades)和[复兴](https://antimatterdimensions.wiki.gg/wiki/Perks)不同，黑洞子页签只有在执行过该威望重置后才会解锁。黑洞需要 $\text{100}$ [现实机器](https://antimatterdimensions.wiki.gg/wiki/Reality)解锁。它有一段冷却时间，冷却结束后可以启动：充能 5 秒，并在持续时间内提高游戏速度。解锁黑洞后，玩家可以选择暂停它——暂停会同时冻结冷却计时（或在激活期间冻结持续时间）。自动暂停会在启动前 5 秒自动暂停黑洞。
+**黑洞（Black Hole）**是第一次现实之后可以解锁的功能。与[符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs)、[[ow-reality-upgrades|现实升级]]和[复兴](https://antimatterdimensions.wiki.gg/wiki/Perks)不同，黑洞子页签只有在执行过该威望重置后才会解锁。黑洞需要 $\text{100}$ [[ow-reality|现实机器]]解锁。它有一段冷却时间，冷却结束后可以启动：充能 5 秒，并在持续时间内提高游戏速度。解锁黑洞后，玩家可以选择暂停它——暂停会同时冻结冷却计时（或在激活期间冻结持续时间）。自动暂停会在启动前 5 秒自动暂停黑洞。
 
-玩家可以通过购买[现实升级](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades)「Parity of Singularity」解锁第二个黑洞。这个黑洞有自己的一套升级与冷却时间，其冷却只在 BH1 激活时推进；它的效果与 BH1 的效果相乘。
+玩家可以通过购买[[ow-reality-upgrades|现实升级]]「Parity of Singularity」解锁第二个黑洞。这个黑洞有自己的一套升级与冷却时间，其冷却只在 BH1 激活时推进；它的效果与 BH1 的效果相乘。
 
 ## 黑洞升级
 
@@ -42,7 +42,7 @@ review_status: "REVIEWED"
 
 ## 来源与许可
 
-- 原文：[Black Hole](https://antimatterdimensions.wiki.gg/wiki/Black_Hole)（修订 ID `3360`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-black-hole|Black Hole]]（修订 ID `3360`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Black_Hole&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与表格、统一术语、移除导航模板与信息框、图片未转载；本页按相同许可共享。
 - 原文两张升级表的「$1.80e308$ RM 之后」列为空，译文按原样保留空列，未虚构数据。

@@ -10,13 +10,13 @@ original_revid: 3372
 original_fetched_at: "2026-11-15T21:28:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 > 我们……曾有过名字。它被……这个地方……夺走了。
 
-**无名氏（The Nameless Ones，符号为链条图标）**是第三位[天神](https://antimatterdimensions.wiki.gg/wiki/Celestials)，主题围绕时间机制。完成[鹿颈长的永恒层](https://antimatterdimensions.wiki.gg/wiki/Effarig#Reality)即可解锁他们。
+**无名氏（The Nameless Ones，符号为链条图标）**是第三位[[ow-celestials|天神]]，主题围绕时间机制。完成[[ow-effarig|鹿颈长的永恒层]]即可解锁他们。
 
 他们引入了[黑洞放电](#黑洞放电)，由此解锁[「储存的游戏时间」](#储存的游戏时间)——这种资源也可用来购买[无名氏的升级](#升级)，其中第二项升级会解锁他们的[现实](#现实)。
 
@@ -28,10 +28,10 @@ review_status: "REVIEWED"
 | --- | --- |
 | 称号 | 时间之神（Celestial of Time） |
 | 别号 | 篡位者（Usurper） |
-| 解锁条件 | 完成[鹿颈长的现实](https://antimatterdimensions.wiki.gg/wiki/Effarig#Reality) |
+| 解锁条件 | 完成[[ow-effarig|鹿颈长的现实]] |
 | 相关货币 | [储存的游戏时间](#储存的游戏时间)、[储存的现实时间](#储存的现实时间) |
 | 机制 | [现实增幅](#储存的现实时间)（Reality Amplification） |
-| 增益 | [时间维度](https://antimatterdimensions.wiki.gg/wiki/Time_Dimensions) |
+| 增益 | [[ow-time-dimensions|时间维度]] |
 | 现实解锁条件 | [无名氏的第二项升级](#升级) |
 | 现实惩罚 | 多项，其中大部分会严重限制或禁用特定机制 |
 | 现实奖励 | [超立方体](#超立方体) |
@@ -44,19 +44,19 @@ review_status: "REVIEWED"
 
 ### 储存的游戏时间
 
-储存游戏时间会禁用[黑洞](https://antimatterdimensions.wiki.gg/wiki/Black_Hole)带来的游戏速度乘数效果。该游戏速度乘数随后会被转换为储存的游戏时间；更准确地说，假设黑洞开启时一个现实秒等于五个游戏年，那么每秒储存的游戏时间也是五个游戏年。
+储存游戏时间会禁用[[ow-black-hole|黑洞]]带来的游戏速度乘数效果。该游戏速度乘数随后会被转换为储存的游戏时间；更准确地说，假设黑洞开启时一个现实秒等于五个游戏年，那么每秒储存的游戏时间也是五个游戏年。
 
 储存起来的时间随后可以释放，游戏会「跳过」所储存的那段时间，就像游戏被放置运行了那么久——这只影响游戏时间，因此[自动购买器](https://antimatterdimensions.wiki.gg/wiki/Autobuyers)这类现实时间机制不受影响。
 
-如果利用[时间符文的](https://antimatterdimensions.wiki.gg/wiki/Glyphs#Types)第二效果「游戏速度乘以 ×N」或[鹿颈长符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs#Types)的第三效果「游戏速度幂 +N」，这会很有用：可以花掉一次[现实](https://antimatterdimensions.wiki.gg/wiki/Reality)去积累尽可能多的储存游戏时间，然后用更合适的符文组合释放这些储存时间，从而获得远超没有释放的现实所能得到的资源。
+如果利用[时间符文的](https://antimatterdimensions.wiki.gg/wiki/Glyphs#Types)第二效果「游戏速度乘以 ×N」或[鹿颈长符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs#Types)的第三效果「游戏速度幂 +N」，这会很有用：可以花掉一次[[ow-reality|现实]]去积累尽可能多的储存游戏时间，然后用更合适的符文组合释放这些储存时间，从而获得远超没有释放的现实所能得到的资源。
 
 ### 储存的现实时间
 
-储存现实时间会把游戏速度设为零，实际上暂停游戏的 tick 速率[^footnote-1]，这意味着任何被动获得的东西——[维度](https://antimatterdimensions.wiki.gg/wiki/Dimensions)产出、[复制器](https://antimatterdimensions.wiki.gg/wiki/Replicanti) tick、以及像[时间研究 181](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)的被动[无限点数](https://antimatterdimensions.wiki.gg/wiki/Infinity)产出、[特蕾莎容器里程碑](https://antimatterdimensions.wiki.gg/wiki/Teresa#RM_Container_Pouring)之一的[永恒点数](https://antimatterdimensions.wiki.gg/wiki/Eternity)产出——全部停止；只有符文挑选、购买/重置时间研究这类交互操作不会被禁用。
+储存现实时间会把游戏速度设为零，实际上暂停游戏的 tick 速率[^footnote-1]，这意味着任何被动获得的东西——[[ow-dimensions|维度]]产出、[[ow-replicanti|复制器]] tick、以及像[[ow-time-studies|时间研究 181]]的被动[[ow-infinity|无限点数]]产出、[[ow-teresa|特蕾莎容器里程碑]]之一的[[ow-eternity|永恒点数]]产出——全部停止；只有符文挑选、购买/重置时间研究这类交互操作不会被禁用。
 
 与储存「游戏」时间有 $100\%$ 转换效率不同；现实时间只有 $70\%$ 的效率——因此让游戏储存现实时间 $100$ 秒，只会保留 $70$ 秒的现实时间。储存的现实时间上限为 $8$ 小时[^footnote-2]。
 
-储存的现实时间用于增幅现实：单次现实中获得的所有资源——即[现实机器](https://antimatterdimensions.wiki.gg/wiki/Reality)、符文（数量而非等级）、[复兴点数](https://antimatterdimensions.wiki.gg/wiki/Perks)与[遗迹碎片](https://antimatterdimensions.wiki.gg/wiki/Effarig#Shop)——都会被提升，就像那次现实被执行了多次一样。
+储存的现实时间用于增幅现实：单次现实中获得的所有资源——即[[ow-reality|现实机器]]、符文（数量而非等级）、[复兴点数](https://antimatterdimensions.wiki.gg/wiki/Perks)与[[ow-effarig|遗迹碎片]]——都会被提升，就像那次现实被执行了多次一样。
 
 例如，若一次现实会产出等级 $3,000$ 的符文与 $4\text{e}29~(400~\text{Oc})$ 现实机器，而增幅乘数为 $\times 200$，那么同一次现实将改为产出 200 个等级 $3,000$ 的符文与 $8\text{e}31~(80~\text{No})$ 现实机器。
 
@@ -75,7 +75,7 @@ $$\max\left ( 1,~\frac{\left\lfloor RealTime_{\text{Stored}} \right\rfloor}{\max
 
 | ID[^id-naming] | 成本（储存的游戏年数） | 描述 |
 | --- | --- | --- |
-| FREE_TICKSPEED_SOFTCAP | $1\text{e}35$ | 把[时间维度](https://antimatterdimensions.wiki.gg/wiki/Time_Dimensions)对[计数频率升级](https://antimatterdimensions.wiki.gg/wiki/Tickspeed)的软上限延后 $100,000$ |
+| FREE_TICKSPEED_SOFTCAP | $1\text{e}35$ | 把[[ow-time-dimensions|时间维度]]对[计数频率升级](https://antimatterdimensions.wiki.gg/wiki/Tickspeed)的软上限延后 $100,000$ |
 | RUN | $1\text{e}40$ | 解锁[无名氏的现实](#现实)（需要等级 $5,000$ 的符文与一个 $100\%$ 稀有度的符文） |
 
 [^id-naming]: 这里的命名方式与大多数其他 ID 不同，用的是常量的 SCREAMING_SNAKE_CASE 命名法，而不是变量常用的 camelCase。原因是无名氏的升级信息直接写在[源代码中对应的文件](https://github.com/IvarK/AntimatterDimensionsSourceCode/blob/master/src/core/celestials/enslaved.js)里，而不像通常那样放在外部委托文件（一般位于 [secret-formula](https://github.com/IvarK/AntimatterDimensionsSourceCode/blob/master/src/core/secret-formula)）中。
@@ -84,18 +84,18 @@ $$\max\left ( 1,~\frac{\left\lfloor RealTime_{\text{Stored}} \right\rfloor}{\max
 
 ## 现实
 
-无名氏的现实是[天神](https://antimatterdimensions.wiki.gg/wiki/Celestials)中限制最多、最棘手的一个。它的设计更偏向解谜，因此除了隐藏或秘密效果之外，还列出了**九**项效果。
+无名氏的现实是[[ow-celestials|天神]]中限制最多、最棘手的一个。它的设计更偏向解谜，因此除了隐藏或秘密效果之外，还列出了**九**项效果。
 
 | 描述 | 详情 |
 | --- | --- |
 | [符文等级](https://antimatterdimensions.wiki.gg/wiki/Glyphs#Glyph_Level)被提升到至少 $5,000$。 |  |
-| [无限维度](https://antimatterdimensions.wiki.gg/wiki/Infinity_Dimensions)、[时间维度](https://antimatterdimensions.wiki.gg/wiki/Time_Dimensions)与第 8 层[反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimension)的购买次数各限 $1$ 次。 |  |
-| 反物质维度乘数始终处于[膨胀](https://antimatterdimensions.wiki.gg/wiki/Dilation#Dilated_Eternity)状态（[符文效果](https://antimatterdimensions.wiki.gg/wiki/Glyphs#Effects)仍只在真正的[时间膨胀](https://antimatterdimensions.wiki.gg/wiki/Dilation)中生效）。 | 处于膨胀状态时，反物质维度乘数不会被膨胀两次。 |
-| [时间研究 192](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)（不设上限的[复制器](https://antimatterdimensions.wiki.gg/wiki/Replicanti)）被锁定。 |  |
-| [黑洞](https://antimatterdimensions.wiki.gg/wiki/Black_Hole)被禁用。 |  |
-| [速子粒子](https://antimatterdimensions.wiki.gg/wiki/Dilation#Tachyon_Particle)与[膨胀时间](https://antimatterdimensions.wiki.gg/wiki/Dilation#Dilated_Time)产出被严重削减。 | 速子粒子：降为 $\text{TP}^{0.3}$；膨胀时间：降为 $10^{\log_{10}\left(\text{DT/s}+1\right)^{0.85}-1}$ |
-| 来自膨胀符文的[时间之理](https://antimatterdimensions.wiki.gg/wiki/Time_Studies#Theorems)产出被禁用。 |  |
-| 某些[挑战](https://antimatterdimensions.wiki.gg/wiki/Challenges)目标被提高。 | 除 1、6、9 之外的所有[普通挑战](https://antimatterdimensions.wiki.gg/wiki/Normal_Challenges)都会「损坏」，其目标被设为 1e1e15 反物质；按钮外观出现裂纹、文字变为「Broken」、颜色改变。普通挑战 10 的裂纹看起来与其他不同[^fn-broken]。永恒挑战 1 可以完成 1,000 次[^fn-ec1]。 |
+| [[ow-infinity-dimensions|无限维度]]、[[ow-time-dimensions|时间维度]]与第 8 层[[ow-dimensions|反物质维度]]的购买次数各限 $1$ 次。 |  |
+| 反物质维度乘数始终处于[[ow-dilation|膨胀]]状态（[符文效果](https://antimatterdimensions.wiki.gg/wiki/Glyphs#Effects)仍只在真正的[[ow-dilation|时间膨胀]]中生效）。 | 处于膨胀状态时，反物质维度乘数不会被膨胀两次。 |
+| [[ow-time-studies|时间研究 192]]（不设上限的[[ow-replicanti|复制器]]）被锁定。 |  |
+| [[ow-black-hole|黑洞]]被禁用。 |  |
+| [[ow-dilation|速子粒子]]与[[ow-dilation|膨胀时间]]产出被严重削减。 | 速子粒子：降为 $\text{TP}^{0.3}$；膨胀时间：降为 $10^{\log_{10}\left(\text{DT/s}+1\right)^{0.85}-1}$ |
+| 来自膨胀符文的[[ow-time-studies|时间之理]]产出被禁用。 |  |
+| 某些[[ow-challenges|挑战]]目标被提高。 | 除 1、6、9 之外的所有[[ow-challenges|普通挑战]]都会「损坏」，其目标被设为 1e1e15 反物质；按钮外观出现裂纹、文字变为「Broken」、颜色改变。普通挑战 10 的裂纹看起来与其他不同[^fn-broken]。永恒挑战 1 可以完成 1,000 次[^fn-ec1]。 |
 | 储存的游戏时间以降低的效率释放（$\left(\text{exponent}^{0.55}\right)$）。 |  |
 
 [^fn-broken]: 损坏的普通挑战只在 Web/Steam 版本上显示裂纹。
@@ -114,7 +114,7 @@ $$\max\left ( 1,~\frac{\left\lfloor RealTime_{\text{Stored}} \right\rfloor}{\max
 
 ## 超立方体
 
-完成无名氏的现实后，玩家可以购买超立方体（Tesseracts），这种资源会永久提高[无限维度](https://antimatterdimensions.wiki.gg/wiki/Infinity_Dimensions) 1–7 的购买上限。超立方体的[无限点数](https://antimatterdimensions.wiki.gg/wiki/Infinity)成本按超指数增长；作为补偿，每一个后续超立方体对无限维度购买上限的提升都更强。
+完成无名氏的现实后，玩家可以购买超立方体（Tesseracts），这种资源会永久提高[[ow-infinity-dimensions|无限维度]] 1–7 的购买上限。超立方体的[[ow-infinity|无限点数]]成本按超指数增长；作为补偿，每一个后续超立方体对无限维度购买上限的提升都更强。
 
 无限维度页签上有一个按钮，显示玩家拥有多少个超立方体、下一个超立方体对无限维度购买上限的提升量，以及下一个超立方体的价格。当可以购买超立方体时，该按钮的外观会变化。
 
@@ -157,7 +157,7 @@ $$\max\left ( 1,~\frac{\left\lfloor RealTime_{\text{Stored}} \right\rfloor}{\max
 
 ## 来源与许可
 
-- 原文：[The Nameless Ones](https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones)（页面 ID 380；修订 ID 3372；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-nameless-ones|The Nameless Ones]]（页面 ID 380；修订 ID 3372；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=The_Nameless_Ones&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与表格，统一术语，把信息框内容改写为要点表，把模板内脚注改为页内脚注，移除导航模板与模板结构，图片未转载；本页按相同许可共享。
 - 原文图片未转载：原页含天神动画（Cel3-runreality-static--desktop.gif、Cel3-runreality-active--desktop.gif）、导航图（Cel3-navigation-complete--desktop.png）、界面截图（Cel3-interface--darktheme-desktop.png）与超立方体按钮图（Cel3-tesseract-button--darktheme-modern-desktop.png、Cel3-tesseract-button-buyable--darktheme-modern-desktop.png）。原图注含义：「静止状态的无名氏符号，此处大约加速 60 倍」「无限维度页签上的新按钮」「可购买超立方体时按钮会变化」。请到原页查看图片。
