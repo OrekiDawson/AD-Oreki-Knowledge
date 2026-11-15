@@ -25,10 +25,10 @@ tags:
 | 指标 | 数值 |
 | --- | --- |
 | 原版正文条目总数（主命名空间 article） | 68 |
-| 已完成并校对（REVIEWED） | 14 |
+| 已完成并校对（REVIEWED） | 16 |
 | 已翻译未校对（TRANSLATED） | 0 |
 | 许可阻塞（BLOCKED） | 0 |
-| 覆盖率 | 14 / 68（20.6%） |
+| 覆盖率 | 16 / 68（23.5%） |
 
 > 口径：覆盖率 = 已完成并校对的合规正文页数 ÷ 合规正文页总数。转写中（IN PROGRESS）与仅登记（NOT STARTED）不计入。清单中的重定向页、消歧义页与站点元页面不进入分母。
 
@@ -61,9 +61,16 @@ tags:
 | [[ow-eternity-challenges|永恒挑战]] | [Eternity Challenges](https://antimatterdimensions.wiki.gg/wiki/Eternity_Challenges) | 3347 |
 | [[ow-dilation|时间膨胀]] | [Dilation](https://antimatterdimensions.wiki.gg/wiki/Dilation) | 3323 |
 
+## 第四批（已完成并校对）
+
+| 中文条目 | 原文 | 修订 ID |
+| --- | --- | --- |
+| [[ow-reality|现实]] | [Reality](https://antimatterdimensions.wiki.gg/wiki/Reality) | 3235 |
+| [[ow-celestials|天神]] | [Celestials](https://antimatterdimensions.wiki.gg/wiki/Celestials) | 3187 |
+
 ## 后续批次（按游戏流程排序）
 
-1. 时间研究、现实、符文、现实升级、复兴、黑洞、自动机、符文炼金、虚幻升级；
+1. 时间研究、符文、现实升级、复兴、黑洞、自动机、符文炼金、虚幻升级；
 3. 现实、符文、现实升级、复兴、黑洞、自动机、符文炼金、虚幻升级；
 4. 特蕾莎、鹿颈长、无名氏、薇、太阳神、莱特拉、佩勒；
 5. 普通挑战与无限挑战、成就、自动购买器、记数法、术语、攻略与秘密内容。
