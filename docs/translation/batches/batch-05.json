@@ -1,0 +1,50 @@
+{
+  "batch": 5,
+  "title": "第五批：现实 / 黑洞（2 篇）",
+  "branch": "docs/r114-original-translation",
+  "commit": "5fd90ab",
+  "status": "REVIEWED",
+  "data_source": "由 git 提交历史与页面 frontmatter 直接生成（实测值，非手填）",
+  "generated_at": "2026-11-15T13:23:06.541Z",
+  "page_count": 2,
+  "pages": [
+    {
+      "file": "content/original/ow-black-hole.md",
+      "original_title": "Black Hole",
+      "zh_title": "黑洞",
+      "revid": 3360,
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://antimatterdimensions.wiki.gg/wiki/Black_Hole",
+      "checks": {
+        "section_coverage": "PASS",
+        "tables_preserved": "PASS",
+        "formulas_preserved": "PASS",
+        "attribution_block": "PASS",
+        "media_omitted_noted": "PASS",
+        "terminology_glossary": "PASS",
+        "internal_links": "PASS"
+      }
+    },
+    {
+      "file": "content/original/ow-dimensional-sacrifice.md",
+      "original_title": "Dimensional Sacrifice",
+      "zh_title": "维度献祭",
+      "revid": 3397,
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://antimatterdimensions.wiki.gg/wiki/Dimensional_Sacrifice",
+      "checks": {
+        "section_coverage": "PASS",
+        "tables_preserved": "PASS",
+        "formulas_preserved": "PASS",
+        "attribution_block": "PASS",
+        "media_omitted_noted": "PASS",
+        "terminology_glossary": "PASS",
+        "internal_links": "PASS"
+      }
+    }
+  ]
+}

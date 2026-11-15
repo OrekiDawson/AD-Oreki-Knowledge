@@ -1,0 +1,69 @@
+{
+  "batch": 11,
+  "title": "第十一批：无限升级 / 无限升级表 / 膨胀升级（3 篇）",
+  "branch": "docs/r114-original-translation",
+  "commit": "d25e1f1",
+  "status": "REVIEWED",
+  "data_source": "由 git 提交历史与页面 frontmatter 直接生成（实测值，非手填）",
+  "generated_at": "2026-11-15T13:23:06.670Z",
+  "page_count": 3,
+  "pages": [
+    {
+      "file": "content/original/ow-dilation-upgrades.md",
+      "original_title": "Dilation/Upgrades",
+      "zh_title": "膨胀升级",
+      "revid": 3158,
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://antimatterdimensions.wiki.gg/wiki/Dilation/Upgrades",
+      "checks": {
+        "section_coverage": "PASS",
+        "tables_preserved": "PASS",
+        "formulas_preserved": "PASS",
+        "attribution_block": "PASS",
+        "media_omitted_noted": "PASS",
+        "terminology_glossary": "PASS",
+        "internal_links": "PASS"
+      }
+    },
+    {
+      "file": "content/original/ow-infinity-upgrades-upgrades.md",
+      "original_title": "Infinity Upgrades/Upgrades",
+      "zh_title": "无限升级（升级表）",
+      "revid": 2909,
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades/Upgrades",
+      "checks": {
+        "section_coverage": "PASS",
+        "tables_preserved": "PASS",
+        "formulas_preserved": "PASS",
+        "attribution_block": "PASS",
+        "media_omitted_noted": "PASS",
+        "terminology_glossary": "PASS",
+        "internal_links": "PASS"
+      }
+    },
+    {
+      "file": "content/original/ow-infinity-upgrades.md",
+      "original_title": "Infinity Upgrades",
+      "zh_title": "无限升级",
+      "revid": 3348,
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades",
+      "checks": {
+        "section_coverage": "PASS",
+        "tables_preserved": "PASS",
+        "formulas_preserved": "PASS",
+        "attribution_block": "PASS",
+        "media_omitted_noted": "PASS",
+        "terminology_glossary": "PASS",
+        "internal_links": "PASS"
+      }
+    }
+  ]
+}

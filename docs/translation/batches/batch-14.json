@@ -1,0 +1,227 @@
+{
+  "batch": 14,
+  "title": "第十四批：天神（薇 / 太阳神 / 莱特拉 / 佩勒）（4 篇）",
+  "branch": "docs/r114-original-tr-b2",
+  "base": "caa6330（#26 第十二批 tip，堆叠分支）",
+  "owner": "wiki-translation",
+  "status": "TRANSLATED",
+  "status_note": "正文完整翻译并自检；review_status 为 NOT REVIEWED，未标 REVIEWED",
+  "created_at": "2026-11-15T22:05:00+08:00",
+  "pages": [
+    {
+      "file": "content/original/ow-v.md",
+      "original_title": "V",
+      "zh_title": "薇",
+      "pageid": 554,
+      "revid": 3373,
+      "source_url": "https://antimatterdimensions.wiki.gg/wiki/V",
+      "license": "CC BY-SA 4.0",
+      "translation_status": "TRANSLATED",
+      "review_status": "NOT REVIEWED",
+      "media_omitted": true,
+      "coverage": {
+        "sections_translated": [
+          "引言引语",
+          "概述",
+          "信息框要点",
+          "解锁薇的现实（6 项要求表）",
+          "现实",
+          "V 成就（36 项表）",
+          "空间之理（成本表）",
+          "里程碑（7 项）",
+          "困难 V 成就（3 类 15 档）",
+          "琐事",
+          "脚注/参考资料",
+          "来源与许可",
+          "相关条目"
+        ],
+        "tables_preserved": 5,
+        "formulas_preserved": 12,
+        "quotes_preserved": 1,
+        "blocks_omitted": [
+          "Celestial Infobox 模板结构（改写为要点表）",
+          "Spoiler 折叠块（改写为引用块）",
+          "File 图片与图注（未转载，文中说明）",
+          "Game Navigation 导航模板"
+        ]
+      },
+      "checks": {
+        "full_text_no_summary": "PASS（对照 revid 3373）",
+        "tables_no_missing_rows": "PASS（要求 6/6，V 成就 6 类 ×6 档，ST 5 行+合计，里程碑 7/7，困难 V 3 类 ×5 档）",
+        "formulas_verbatim": "PASS",
+        "unlock_conditions": "PASS",
+        "attribution_block": "PASS",
+        "media_omitted_noted": "PASS",
+        "terminology_glossary": "PASS",
+        "internal_links": "PASS"
+      }
+    },
+    {
+      "file": "content/original/ow-ra.md",
+      "original_title": "Ra",
+      "zh_title": "太阳神",
+      "pageid": 914,
+      "revid": 3387,
+      "source_url": "https://antimatterdimensions.wiki.gg/wiki/Ra",
+      "license": "CC BY-SA 4.0",
+      "translation_status": "TRANSLATED",
+      "review_status": "NOT REVIEWED",
+      "media_omitted": true,
+      "coverage": {
+        "sections_translated": [
+          "引言引语",
+          "概述",
+          "信息框要点",
+          "现实（4 天神记忆碎片公式）",
+          "记忆",
+          "升级（3 种升级 + 25 行等级成本表）",
+          "追忆",
+          "可解锁的机制",
+          "里程碑（4 天神 ×7 = 28 项）",
+          "continuousTTBoost 详细效果（7 资源公式 + 封顶表）",
+          "琐事",
+          "脚注/参考资料",
+          "来源与许可",
+          "相关条目"
+        ],
+        "tables_preserved": 6,
+        "formulas_preserved": 25,
+        "quotes_preserved": 1,
+        "blocks_omitted": [
+          "Celestial Infobox 模板结构（改写为要点表）",
+          "Togglable 折叠公式（展开为表格）",
+          "FontAwesome 图标（改为文字描述）",
+          "File 图片与图注（未转载）",
+          "Game Navigation 导航模板"
+        ]
+      },
+      "checks": {
+        "full_text_no_summary": "PASS（对照 revid 3387）",
+        "tables_no_missing_rows": "PASS（成本表 25/25，里程碑 28/28，记忆碎片 4/4）",
+        "formulas_verbatim": "PASS（含定理增益 7 条）",
+        "unlock_conditions": "PASS",
+        "attribution_block": "PASS",
+        "media_omitted_noted": "PASS",
+        "terminology_glossary": "PASS",
+        "internal_links": "PASS",
+        "translator_notes": "原文成本表两处把 1.91e16 / 9.54e16 的量级后缀写成 T（应为 Qa），译文保留原文并加译注 [^ra-typo]"
+      }
+    },
+    {
+      "file": "content/original/ow-laitela.md",
+      "original_title": "Laitela",
+      "zh_title": "莱特拉",
+      "pageid": 919,
+      "revid": 3375,
+      "source_url": "https://antimatterdimensions.wiki.gg/wiki/Lai%27tela",
+      "license": "CC BY-SA 4.0",
+      "translation_status": "TRANSLATED",
+      "review_status": "NOT REVIEWED",
+      "media_omitted": true,
+      "coverage": {
+        "sections_translated": [
+          "引言引语",
+          "概述",
+          "信息框要点",
+          "现实（熵公式 / 奖励公式 / 维度禁用表 / 3 条脚注）",
+          "暗物质维度（4 层表 + 3 个公式）",
+          "升格",
+          "湮灭",
+          "奇点（含凝聚表）",
+          "奇点里程碑（无限 7 项 / 有限 8 项 / 唯一 15 项）",
+          "相关成就（3 项）",
+          "琐事",
+          "脚注/参考资料",
+          "来源与许可",
+          "相关条目"
+        ],
+        "tables_preserved": 8,
+        "formulas_preserved": 20,
+        "quotes_preserved": 1,
+        "blocks_omitted": [
+          "Celestial Infobox 模板结构（改写为要点表）",
+          "FontAwesome 与莱特拉符号图标（改为文字描述）",
+          "Achievement 模板图标（改为文字说明）",
+          "File 图片与图注（未转载）",
+          "Game Navigation 导航模板"
+        ]
+      },
+      "checks": {
+        "full_text_no_summary": "PASS（对照 revid 3375）",
+        "tables_no_missing_rows": "PASS（DMD 4/4，维度禁用 9/9，无限里程碑 7/7，有限 8/8，唯一 15/15，成就 3/3）",
+        "formulas_verbatim": "PASS（熵、奖励、DMD 3 公式、湮灭、凝聚、里程碑公式）",
+        "unlock_conditions": "PASS",
+        "attribution_block": "PASS",
+        "media_omitted_noted": "PASS",
+        "terminology_glossary": "PASS",
+        "internal_links": "PASS"
+      }
+    },
+    {
+      "file": "content/original/ow-pelle.md",
+      "original_title": "Pelle",
+      "zh_title": "佩勒",
+      "pageid": 366,
+      "revid": 3376,
+      "source_url": "https://antimatterdimensions.wiki.gg/wiki/Pelle",
+      "license": "CC BY-SA 4.0",
+      "translation_status": "TRANSLATED",
+      "review_status": "NOT REVIEWED",
+      "media_omitted": true,
+      "coverage": {
+        "sections_translated": [
+          "引言引语",
+          "概述",
+          "信息框要点",
+          "被毁灭的现实",
+          "末日",
+          "佩勒的打击（5 项）",
+          "裂隙（5 个）",
+          "裂隙里程碑（5 组 15 项）",
+          "结局（原文占位内容，如实说明）",
+          "琐事",
+          "脚注/参考资料",
+          "来源与许可",
+          "相关条目"
+        ],
+        "tables_preserved": 3,
+        "formulas_preserved": 18,
+        "quotes_preserved": 1,
+        "blocks_omitted": [
+          "Celestial Infobox 模板结构（改写为要点表）",
+          "wordshift 多形态文字（译为 A/B/C 并保留英文）",
+          "Togglable 折叠公式（展开）",
+          "Spoiler warning（改为引用块）",
+          "Game Navigation 导航模板"
+        ]
+      },
+      "checks": {
+        "full_text_no_summary": "PASS（对照 revid 3376）",
+        "tables_no_missing_rows": "PASS（打击 5/5，裂隙 5/5，里程碑 15/15）",
+        "formulas_verbatim": "PASS",
+        "unlock_conditions": "PASS",
+        "attribution_block": "PASS",
+        "media_omitted_noted": "PASS",
+        "terminology_glossary": "PASS（佩勒/被毁灭的现实/末日/现实碎片 按 glossary）",
+        "internal_links": "PASS",
+        "translator_notes": "原文「结局」节为未完成的占位文本，译文如实说明且不虚构"
+      }
+    }
+  ],
+  "checks_run": {
+    "env": "Node v24.22.3；Quartz pin 7cfb0796165c848be5438117e9806802123bf676；.quartz-build；已合并 #26 后的 main(0efd04c)",
+    "node scripts/check-content.mjs": "PASS — 86 页",
+    "node scripts/check-translation.mjs": "PASS — 覆盖率 28/68 (41.2%)、TRANSLATED 7、BLOCKED 0、页面 35（唯一 WARN 为既有页 ow-terminology 未声明媒体）",
+    "node scripts/ai/build-index.mjs": "PASS — pages=85 chunks=380",
+    "npx quartz build": "PASS — Parsed 85 Markdown、Emitted 372 files、158 HTML（exit 0；仅 1 条既有 config 警告与内容无关；原先 ow-notations→β48 链接警告已由本批修复消失）",
+    "node scripts/verify-build.mjs": "PASS — 158 个 HTML 页面",
+    "node scripts/acceptance.cjs": "PASS — Chromium 412×915，bad: []"
+  },
+  "blockers": [],
+  "notes": [
+    "本批完成后七位天神正篇全部已译（TRANSLATED，共 7 篇），待独立校对。",
+    "天神子页面（Quotes）与 Pelle 惩罚页留待后续批次。",
+    "已重接到合并 #26 后的 main(0efd04c)：add/add 冲突仅由 squash 合并导致，核实三个冲突文件与 caa6330 逐字节相同后保留本分支版本。"
+  ],
+  "updated_at": "2026-11-15T22:20:00+08:00"
+}

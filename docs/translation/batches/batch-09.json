@@ -1,0 +1,31 @@
+{
+  "batch": 9,
+  "title": "第九批：时间研究（1 篇）",
+  "branch": "docs/r114-original-translation",
+  "commit": "bb09666",
+  "status": "REVIEWED",
+  "data_source": "由 git 提交历史与页面 frontmatter 直接生成（实测值，非手填）",
+  "generated_at": "2026-11-15T13:23:06.617Z",
+  "page_count": 1,
+  "pages": [
+    {
+      "file": "content/original/ow-time-studies.md",
+      "original_title": "Time Studies",
+      "zh_title": "时间研究",
+      "revid": 3343,
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://antimatterdimensions.wiki.gg/wiki/Time_Studies",
+      "checks": {
+        "section_coverage": "PASS",
+        "tables_preserved": "PASS",
+        "formulas_preserved": "PASS",
+        "attribution_block": "PASS",
+        "media_omitted_noted": "PASS",
+        "terminology_glossary": "PASS",
+        "internal_links": "PASS"
+      }
+    }
+  ]
+}
