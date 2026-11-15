@@ -7,8 +7,6 @@ on:
         description: "本次最多处理多少个来源"
         required: false
         default: "2"
-  schedule:
-    - cron: "0 20 * * *"
 
 permissions:
   contents: write
