@@ -1,0 +1,125 @@
+{
+  "batch": 15,
+  "title": "第十五批：天神引语子页面（鹿颈长 / 无名氏 / 薇 / 太阳神 / 莱特拉）（5 篇）",
+  "branch": "docs/r114-qa-review-15",
+  "base": "main @ fe93907（#29 合并后）",
+  "owner": "wiki-translation",
+  "status": "REVIEWED",
+  "status_note": "5 篇均完成逐块核对（引语块数与台词行）后标 REVIEWED；核对记录见 docs/translation/reviews/audit-2026-11-15.md 追加节",
+  "created_at": "2026-11-15T23:10:00+08:00",
+  "pages": [
+    {
+      "file": "content/original/ow-effarig-quotes.md",
+      "original_title": "Effarig/Quotes",
+      "zh_title": "鹿颈长·引语",
+      "pageid": 428,
+      "revid": 2775,
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
+      "blocks": 8,
+      "license": "CC BY-SA 4.0",
+      "media_omitted": true,
+      "checks": {
+        "quote_blocks_match": "PASS",
+        "trigger_conditions_translated": "PASS",
+        "line_structure": "PASS",
+        "media_omitted_noted": "PASS",
+        "attribution_block": "PASS",
+        "revid_consistent": "PASS"
+      }
+    },
+    {
+      "file": "content/original/ow-nameless-ones-quotes.md",
+      "original_title": "The Nameless Ones/Quotes",
+      "zh_title": "无名氏·引语",
+      "pageid": 450,
+      "revid": 2790,
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
+      "blocks": 6,
+      "license": "CC BY-SA 4.0",
+      "media_omitted": true,
+      "checks": {
+        "quote_blocks_match": "PASS",
+        "trigger_conditions_translated": "PASS",
+        "line_structure": "PASS",
+        "media_omitted_noted": "PASS",
+        "attribution_block": "PASS",
+        "revid_consistent": "PASS"
+      }
+    },
+    {
+      "file": "content/original/ow-v-quotes.md",
+      "original_title": "V/Quotes",
+      "zh_title": "薇·引语",
+      "pageid": 555,
+      "revid": 2784,
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
+      "blocks": 11,
+      "license": "CC BY-SA 4.0",
+      "media_omitted": true,
+      "checks": {
+        "quote_blocks_match": "PASS",
+        "trigger_conditions_translated": "PASS",
+        "line_structure": "PASS",
+        "media_omitted_noted": "PASS",
+        "attribution_block": "PASS",
+        "revid_consistent": "PASS"
+      }
+    },
+    {
+      "file": "content/original/ow-ra-quotes.md",
+      "original_title": "Ra/Quotes",
+      "zh_title": "太阳神·引语",
+      "pageid": 915,
+      "revid": 2782,
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
+      "blocks": 14,
+      "license": "CC BY-SA 4.0",
+      "media_omitted": true,
+      "checks": {
+        "quote_blocks_match": "PASS",
+        "trigger_conditions_translated": "PASS",
+        "line_structure": "PASS",
+        "media_omitted_noted": "PASS",
+        "attribution_block": "PASS",
+        "revid_consistent": "PASS"
+      }
+    },
+    {
+      "file": "content/original/ow-laitela-quotes.md",
+      "original_title": "Laitela/Quotes",
+      "zh_title": "莱特拉·引语",
+      "pageid": 920,
+      "revid": 2773,
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
+      "blocks": 10,
+      "license": "CC BY-SA 4.0",
+      "media_omitted": true,
+      "checks": {
+        "quote_blocks_match": "PASS",
+        "trigger_conditions_translated": "PASS",
+        "line_structure": "PASS",
+        "media_omitted_noted": "PASS",
+        "attribution_block": "PASS",
+        "revid_consistent": "PASS"
+      }
+    }
+  ],
+  "checks_run": {
+    "env": "Node v24.22.3；Quartz pin 7cfb0796165c848be5438117e9806802123bf676",
+    "node scripts/check-content.mjs": "PASS",
+    "node scripts/check-translation.mjs": "PASS（覆盖率 40/68 = 58.8%）",
+    "npx quartz build": "PASS",
+    "node scripts/verify-build.mjs": "PASS",
+    "node scripts/acceptance.cjs": "PASS"
+  },
+  "notes": [
+    "Pelle/Quotes（约 15 KB 长台词页，含 wordshift 变体）未在本批；留待下一批。",
+    "Pelle/Upgrades 已由 editorial 于第十二批完成（REVIEWED），本批未重复翻译；期间曾误覆盖该文件，已 git checkout 还原，未提交。"
+  ],
+  "blockers": []
+}
