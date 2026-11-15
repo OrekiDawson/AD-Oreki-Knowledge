@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = "content";
+const PUBLIC_TITLE_PREFIX = "反物质维度MOD Wiki:";
 const REQUIRED_TERMS = ["永恒挑战", "自动购买器", "AGP", "Kotlin", "Lai Tela", "build_mod.py"];
 const MIN_PAGES = 15;
 const SECRET_PATTERNS = [
@@ -26,6 +27,7 @@ const files = walk(ROOT).filter((f) => f.endsWith(".md"));
 let failed = 0;
 const fail = (msg) => { failed += 1; console.error("FAIL " + msg); };
 
+if (!fs.existsSync("content/wiki-rules.md")) fail("网站根目录缺少公开知识库规则页");
 if (files.length < MIN_PAGES) fail("页面数不足: " + files.length + " < " + MIN_PAGES);
 
 const slugs = new Set(files.map((f) => path.basename(f, ".md")));
@@ -35,6 +37,13 @@ for (const f of files) {
   const text = fs.readFileSync(f, "utf8");
   if (!/^---\n/.test(text)) fail("缺少 frontmatter: " + f);
   if (!/^title:/m.test(text)) fail("缺少 title: " + f);
+  if (!f.startsWith("content/ai-drafts/")) {
+    const match = text.match(/^title:\s*["']?(.+?)["']?\s*$/m);
+    const title = match?.[1]?.trim() || "";
+    if (!title.startsWith(PUBLIC_TITLE_PREFIX) || title.length === PUBLIC_TITLE_PREFIX.length) {
+      fail("正式条目标题必须为 反物质维度MOD Wiki:[条目名]: " + f);
+    }
+  }
   for (const m of text.matchAll(/\[\[([^\]|#]+)/g)) {
     const target = m[1].trim();
     if (!slugs.has(target) && !target.startsWith("http")) fail("内部链接失效: " + f + " -> " + target);

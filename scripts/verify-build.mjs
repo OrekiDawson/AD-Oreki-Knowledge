@@ -35,8 +35,9 @@ for (const file of ["static/contentIndex.json", "static/knowledge-index.json"]) 
 }
 
 const home = fs.readFileSync(path.join(PUB, "index.html"), "utf8");
-for (const term of ["AD-Oreki Knowledge Base", "反物质维度"]) {
+for (const term of ["反物质维度MOD Wiki", "知识库规则"]) {
   if (!home.includes(term)) fail("首页缺少文案: " + term);
 }
+if (!exists("wiki-rules.html") && !exists("wiki-rules/index.html")) fail("公开规则页 /wiki-rules 未生成");
 if (failed > 0) { console.error("构建产物检查未通过: " + failed); process.exit(1); }
 console.log("OK 构建产物检查通过: " + contentIndex.length + " 个 HTML 页面");
