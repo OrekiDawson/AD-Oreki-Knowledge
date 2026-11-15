@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T13:00:56.120Z",
+ "generated_at": "2026-11-15T13:03:54.510Z",
  "source": {
   "site": "https://antimatterdimensions.wiki.gg",
   "api": "https://antimatterdimensions.wiki.gg/api.php",
@@ -26,7 +26,7 @@
  "coverage": {
   "total_pages": 68,
   "translated": 0,
-  "reviewed": 7,
+  "reviewed": 11,
   "blocked": 0
  },
  "pages": [
@@ -640,16 +640,16 @@
     "Stubs"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "打破无限",
+   "path": "content/original/ow-break-infinity.md",
+   "priority": 2,
+   "status": "REVIEWED",
+   "review_status": "REVIEWED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载"
   },
   {
    "title": "Breaking Infinity",
@@ -1287,16 +1287,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "永恒",
+   "path": "content/original/ow-eternity.md",
+   "priority": 2,
+   "status": "REVIEWED",
+   "review_status": "REVIEWED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载"
   },
   {
    "title": "Eternity Challenges",
@@ -1808,16 +1808,16 @@
     "Stubs"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "无限维度",
+   "path": "content/original/ow-infinity-dimensions.md",
+   "priority": 2,
+   "status": "REVIEWED",
+   "review_status": "REVIEWED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载"
   },
   {
    "title": "Infinity Point",
@@ -2384,16 +2384,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "复制器",
+   "path": "content/original/ow-replicanti.md",
+   "priority": 2,
+   "status": "REVIEWED",
+   "review_status": "REVIEWED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载"
   },
   {
    "title": "Replicanti Galaxies",

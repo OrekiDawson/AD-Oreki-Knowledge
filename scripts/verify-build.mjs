@@ -137,6 +137,9 @@ for (const slug of [
   "original/index",
   "original/ow-infinity",
   "original/ow-dimensions",
+  "original/ow-replicanti",
+  "original/ow-eternity",
+  "original/ow-break-infinity",
 ]) {
   if (!pageExists(slug)) fail("缺少新增主题条目: /" + slug);
 }
