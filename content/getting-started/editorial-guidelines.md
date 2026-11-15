@@ -1,16 +1,16 @@
 ---
-title: "知识库编写规范"
+title: "反物质维度MOD Wiki:知识库编写指南"
 description: "面向普通读者的简体中文百科写作、来源核验与 AI 摘要约定"
 tags:
   - 知识库
   - 编写规范
 ---
 
-# 知识库编写规范
+# 知识库编写指南
 
 本知识库采用接近中文百科全书的写法：**准确、客观、通俗易懂、可以查证，并以简体中文呈现。** 网站主要供人阅读，不应让复杂的构建日志、英文缩写或模型生成的清单代替完整解释。
 
-本页是读者版说明。正式编辑规则以 GitHub 中的[《知识库内容质量标准》](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/CONTENT_QUALITY.md)为准，编辑文章可以参考[中文知识条目模板](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/ARTICLE_TEMPLATE.md)。
+**正式规则全文已公开：[[wiki-rules|反物质维度MOD Wiki:知识库规则]]。** 本页是面向新读者的简要导览，完整规则以根目录规则页为准。编辑者还可以参照[中文知识条目模板](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/ARTICLE_TEMPLATE.md)。
 
 ## 如何写一篇好懂的条目
 
