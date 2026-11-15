@@ -10,17 +10,17 @@ original_revid: 3335
 original_fetched_at: "2026-11-15T21:10:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "TRANSLATED"
+review_status: "NOT REVIEWED"
 ---
 
-**反物质星系**是游戏中的第二个威望（Prestige）机制——如果把可从游戏早期使用的[维度献祭](https://antimatterdimensions.wiki.gg/wiki/Dimensional_Sacrifice)也算作威望机制，则它是第三个。在获得 $80$ 个第 8 反物质维度之前，玩家无法与之交互。
+**反物质星系**是游戏中的第二个威望（Prestige）机制——如果把可从游戏早期使用的[[ow-dimensional-sacrifice|维度献祭]]也算作威望机制，则它是第三个。在获得 $80$ 个第 8 反物质维度之前，玩家无法与之交互。
 
-购买一个反物质星系会重置[反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)、[计数频率](https://antimatterdimensions.wiki.gg/wiki/Tickspeed)、[维度献祭](https://antimatterdimensions.wiki.gg/wiki/Dimensional_Sacrifice)与[维度提升](https://antimatterdimensions.wiki.gg/wiki/Dimension_Boosts)，但会让所有计数频率升级的效果少量提高。
+购买一个反物质星系会重置[[ow-antimatter-dimensions|反物质维度]]、[计数频率](https://antimatterdimensions.wiki.gg/wiki/Tickspeed)、[[ow-dimensional-sacrifice|维度献祭]]与[[ow-dimension-boosts|维度提升]]，但会让所有计数频率升级的效果少量提高。
 
 ## 机制
 
-第一个反物质星系需要 $80$ 个第 8 [反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)；此后每多一个反物质星系，成本再增加 $+60$。也就是说，第二个与第三个反物质星系的成本分别是 $140$ 与 $200$ 个第 8 反物质维度。
+第一个反物质星系需要 $80$ 个第 8 [[ow-antimatter-dimensions|反物质维度]]；此后每多一个反物质星系，成本再增加 $+60$。也就是说，第二个与第三个反物质星系的成本分别是 $140$ 与 $200$ 个第 8 反物质维度。
 
 星系数量少于 3 时的计数频率倍率如下：
 
@@ -45,15 +45,15 @@ review_status: "REVIEWED"
 
 反物质星系的初始价格与成长增量，可以被游戏更后期的某些升级降低：
 
-- 第一列的第 4 个[无限升级](https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades)会把[维度提升](https://antimatterdimensions.wiki.gg/wiki/Dimension_Boosts)与反物质星系的初始价格降低 $9$ 个维度，使其变为 $11$ 个而不是 $20$ 个；
-- [无限挑战 5](https://antimatterdimensions.wiki.gg/wiki/Infinity_Challenges)会把[维度提升](https://antimatterdimensions.wiki.gg/wiki/Dimension_Boosts)与反物质星系的初始价格降低 $1$；
-- [时间研究 41](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)把反物质星系的成长从 $60$ 降到 $52$。
+- 第一列的第 4 个[[ow-infinity-upgrades|无限升级]]会把[[ow-dimension-boosts|维度提升]]与反物质星系的初始价格降低 $9$ 个维度，使其变为 $11$ 个而不是 $20$ 个；
+- [[ow-challenges|无限挑战 5]]会把[[ow-dimension-boosts|维度提升]]与反物质星系的初始价格降低 $1$；
+- [[ow-time-studies|时间研究 41]]把反物质星系的成长从 $60$ 降到 $52$。
 
 远距星系成长可以被游戏更后期的某些升级缓和：
 
-- [永恒挑战 5](https://antimatterdimensions.wiki.gg/wiki/Eternity_Challenges)每完成一次把远距星系成长推迟 $5$，最多推迟 $25$；
-- [时间研究 223](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)把远距星系成长推迟 $7$；
-- [时间研究 224](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)按[维度提升](https://antimatterdimensions.wiki.gg/wiki/Dimension_Boosts)数量推迟远距星系成长，推迟量可变。
+- [[ow-eternity-challenges|永恒挑战 5]]每完成一次把远距星系成长推迟 $5$，最多推迟 $25$；
+- [[ow-time-studies|时间研究 223]]把远距星系成长推迟 $7$；
+- [[ow-time-studies|时间研究 224]]按[[ow-dimension-boosts|维度提升]]数量推迟远距星系成长，推迟量可变。
 
 ## 琐事
 
@@ -61,7 +61,7 @@ review_status: "REVIEWED"
 
 ## 来源与许可
 
-- 原文：[Antimatter Galaxies](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Galaxies)（修订 ID `3335`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-antimatter-galaxies|Antimatter Galaxies]]（修订 ID `3335`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Antimatter_Galaxies&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与表格、统一术语、移除导航模板与信息框、图片未转载；本页按相同许可共享。
 - 原文表格中的跨行标题按普通表格展开；原文首段脚注以破折号说明保留。

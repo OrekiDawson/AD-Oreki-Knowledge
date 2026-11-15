@@ -10,15 +10,15 @@ original_revid: 3345
 original_fetched_at: "2026-11-15T21:55:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "TRANSLATED"
+review_status: "NOT REVIEWED"
 ---
 
-**时间维度（Time Dimensions）**是第三种维度，在[永恒](https://antimatterdimensions.wiki.gg/wiki/Eternity)之后解锁。时间维度生产**时间碎片（Time Shards）**，时间碎片用于生成计数频率升级。
+**时间维度（Time Dimensions）**是第三种维度，在[[ow-eternity|永恒]]之后解锁。时间维度生产**时间碎片（Time Shards）**，时间碎片用于生成计数频率升级。
 
 ## 机制
 
-时间维度使用永恒点数购买。每次购买一个时间维度会施加 $\times 4$ 的倍率。与[反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)一样，每个后续时间维度生产前一级维度；第 1 时间维度生产时间碎片。每次计数频率升级需要的时間碎片比上一次多 $\times 1.33$（拥有时间研究 171 后变为 $\times 1.25$）。由时间碎片购买的计数频率升级不会提高普通计数频率升级的成本。
+时间维度使用永恒点数购买。每次购买一个时间维度会施加 $\times 4$ 的倍率。与[[ow-antimatter-dimensions|反物质维度]]一样，每个后续时间维度生产前一级维度；第 1 时间维度生产时间碎片。每次计数频率升级需要的时間碎片比上一次多 $\times 1.33$（拥有时间研究 171 后变为 $\times 1.25$）。由时间碎片购买的计数频率升级不会提高普通计数频率升级的成本。
 
 生成出来的时间维度、时间碎片与计数频率升级会在无限时保留，但在永恒时重置。
 
@@ -51,7 +51,7 @@ review_status: "REVIEWED"
 
 ## 来源与许可
 
-- 原文：[Time Dimensions](https://antimatterdimensions.wiki.gg/wiki/Time_Dimensions)（修订 ID `3345`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-time-dimensions|Time Dimensions]]（修订 ID `3345`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Time_Dimensions&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与表格、统一术语、移除导航模板与信息框、图片未转载；本页按相同许可共享。
 - 原文表格使用跨行/跨列合并；译文展开为普通列，所有数值与行完整保留。

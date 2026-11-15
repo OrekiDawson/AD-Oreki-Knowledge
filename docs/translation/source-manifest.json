@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T13:40:35.928Z",
+ "generated_at": "2026-11-15T14:31:00.943Z",
  "source": {
   "site": "https://antimatterdimensions.wiki.gg",
   "api": "https://antimatterdimensions.wiki.gg/api.php",
@@ -25,8 +25,8 @@
  },
  "coverage": {
   "total_pages": 68,
-  "translated": 0,
-  "reviewed": 35,
+  "translated": 35,
+  "reviewed": 0,
   "blocked": 0
  },
  "pages": [
@@ -106,13 +106,13 @@
    "zh_title": "广告加成",
    "path": "content/original/ow-ad-bonus.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": "batch6：正文完整翻译并校对；多页签模板展开为四表"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Advanced Glyph Mechanics",
@@ -253,13 +253,13 @@
    "zh_title": "反物质维度（游戏机制）",
    "path": "content/original/ow-antimatter-dimensions.md",
    "priority": 1,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Antimatter Dimensions Wiki",
@@ -497,13 +497,13 @@
    "zh_title": "反物质星系",
    "path": "content/original/ow-antimatter-galaxies.md",
    "priority": 1,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Antimatter Galaxy",
@@ -615,13 +615,13 @@
    "zh_title": "黑洞",
    "path": "content/original/ow-black-hole.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch5：正文完整翻译并校对；图片未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Break Infinity",
@@ -643,13 +643,13 @@
    "zh_title": "打破无限",
    "path": "content/original/ow-break-infinity.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Breaking Infinity",
@@ -868,13 +868,13 @@
    "zh_title": "天神导航",
    "path": "content/original/ow-celestial-navigation.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch12：正文与升级表完整翻译并校对；嵌入子页已在页面注明"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Celestial Navigation/Gallery",
@@ -919,13 +919,13 @@
    "zh_title": "天神",
    "path": "content/original/ow-celestials.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch4：正文完整翻译并校对；嵌入子页/图片未转载，已在页面注明"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Challenges",
@@ -945,13 +945,13 @@
    "zh_title": "挑战",
    "path": "content/original/ow-challenges.md",
    "priority": 1,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Crunching",
@@ -1042,13 +1042,13 @@
    "zh_title": "时间膨胀",
    "path": "content/original/ow-dilation.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch3：正文完整翻译并校对；嵌入子页/图片未转载，已在页面注明"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Dilation/Upgrades",
@@ -1066,13 +1066,13 @@
    "zh_title": "膨胀升级",
    "path": "content/original/ow-dilation-upgrades.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": "batch11：正文与升级表完整翻译并校对"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Dilation/Upgrades (Doomed)",
@@ -1139,13 +1139,13 @@
    "zh_title": "维度提升",
    "path": "content/original/ow-dimension-boosts.md",
    "priority": 1,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Dimensional Sacrifice",
@@ -1166,13 +1166,13 @@
    "zh_title": "维度献祭",
    "path": "content/original/ow-dimensional-sacrifice.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch5：正文完整翻译并校对；图片未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Dimensions",
@@ -1193,13 +1193,13 @@
    "zh_title": "维度",
    "path": "content/original/ow-dimensions.md",
    "priority": 1,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Effarig",
@@ -1219,13 +1219,13 @@
    "zh_title": "鹿颈长",
    "path": "content/original/ow-effarig.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch13：正文/表格/公式完整翻译，待校对；模板脚注改为页内脚注；图片未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Effarig/Quotes",
@@ -1290,13 +1290,13 @@
    "zh_title": "永恒",
    "path": "content/original/ow-eternity.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Eternity Challenges",
@@ -1319,13 +1319,13 @@
    "zh_title": "永恒挑战",
    "path": "content/original/ow-eternity-challenges.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch3：正文完整翻译并校对；嵌入子页/图片未转载，已在页面注明"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Eternity Challenges/Challenges",
@@ -1730,13 +1730,13 @@
    "zh_title": "无限",
    "path": "content/original/ow-infinity.md",
    "priority": 1,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Infinity (disambiguation)",
@@ -1811,13 +1811,13 @@
    "zh_title": "无限维度",
    "path": "content/original/ow-infinity-dimensions.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Infinity Point",
@@ -1881,13 +1881,13 @@
    "zh_title": "无限升级",
    "path": "content/original/ow-infinity-upgrades.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": "batch11：正文与升级表完整翻译并校对"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Infinity Upgrades/Upgrades",
@@ -1903,13 +1903,13 @@
    "zh_title": "无限升级（升级表）",
    "path": "content/original/ow-infinity-upgrades-upgrades.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": "batch11：正文与升级表完整翻译并校对"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Infinity Upgrades/Upgrades (Charged)",
@@ -1973,13 +1973,13 @@
    "zh_title": "莱特拉",
    "path": "content/original/ow-laitela.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch14：正文/熵与现实表/暗物质维度表/升格/湮灭/奇点/三类奇点里程碑（30 条）/相关成就完整翻译，待校对；图片未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Laitela/Quotes",
@@ -2100,13 +2100,13 @@
    "zh_title": "记数法",
    "path": "content/original/ow-notations.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": "batch8：正文完整翻译并校对；记数法名称与表情符号按原样保留"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Overview",
@@ -2151,13 +2151,13 @@
    "zh_title": "佩勒",
    "path": "content/original/ow-pelle.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch14：正文/被毁灭现实/末日/5 项打击/5 个裂隙/15 项裂隙里程碑/结局与琐事完整翻译，待校对；原文结局节为占位内容已如实说明；图片未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Pelle/Quotes",
@@ -2201,13 +2201,13 @@
    "zh_title": "佩勒升级",
    "path": "content/original/ow-pelle-upgrades.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch12：正文与升级表完整翻译并校对；嵌入子页已在页面注明"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Perks",
@@ -2254,13 +2254,13 @@
    "zh_title": "重置成长（威望）",
    "path": "content/original/ow-prestige.md",
    "priority": 1,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Ra",
@@ -2282,13 +2282,13 @@
    "zh_title": "太阳神",
    "path": "content/original/ow-ra.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch14：正文/现实表/25 行等级成本表/28 个里程碑/continuousTTBoost 公式表完整翻译，待校对；原文两处 T/Qa 记数法笔误已加译注；图片未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Ra/Quotes",
@@ -2334,13 +2334,13 @@
    "zh_title": "现实",
    "path": "content/original/ow-reality.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch4：正文完整翻译并校对；嵌入子页/图片未转载，已在页面注明"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Reality Upgrades",
@@ -2360,13 +2360,13 @@
    "zh_title": "现实升级",
    "path": "content/original/ow-reality-upgrades.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch10：可重复/不可重复升级与全部条件表完整翻译并校对"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Replicanti",
@@ -2387,13 +2387,13 @@
    "zh_title": "复制器",
    "path": "content/original/ow-replicanti.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Replicanti Galaxies",
@@ -2575,13 +2575,13 @@
    "zh_title": "特蕾莎",
    "path": "content/original/ow-teresa.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch13：正文/表格/公式/引语完整翻译，待校对；信息框改写为要点表；图片未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Terminology",
@@ -2601,13 +2601,13 @@
    "zh_title": "术语（佩勒用词）",
    "path": "content/original/ow-terminology.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": "batch7：正文完整翻译并校对；多义词占位保留原样"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Tesseracts",
@@ -2650,13 +2650,13 @@
    "zh_title": "无名氏",
    "path": "content/original/ow-nameless-ones.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch13：正文/现实效果表/超立方体数据表完整翻译，待校对；图片未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "The Nameless Ones/Quotes",
@@ -2803,13 +2803,13 @@
    "zh_title": "时间维度",
    "path": "content/original/ow-time-dimensions.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch3：正文完整翻译并校对；嵌入子页/图片未转载，已在页面注明"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Time Studies",
@@ -2831,13 +2831,13 @@
    "zh_title": "时间研究",
    "path": "content/original/ow-time-studies.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": "batch9：正文与全部研究表完整翻译并校对"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "Time Theorems",
@@ -2881,13 +2881,13 @@
    "zh_title": "薇",
    "path": "content/original/ow-v.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "TRANSLATED",
+   "review_status": "NOT REVIEWED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch14：正文/六项解锁要求/36 个 V 成就表/空间之理表/7 个里程碑/困难 V 成就表/琐事完整翻译，待校对；图片未转载"
+   "notes": "2026-11-15 诚实化：结构与术语检查通过，Pelle 与 Eternity 另做逐段对照（见 docs/translation/reviews/<page>.md）；未由独立人工复核，故记 TRANSLATED"
   },
   {
    "title": "V/Quotes",

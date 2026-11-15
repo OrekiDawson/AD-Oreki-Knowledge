@@ -10,11 +10,11 @@ original_revid: 2909
 original_fetched_at: "2026-11-15T23:00:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "TRANSLATED"
+review_status: "NOT REVIEWED"
 ---
 
-本页是[无限升级](https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades)主条目嵌入的**不可重复升级表**，也是社区 Wiki 的子页面。升级按四列排列，每列四项；从第二行起，每项升级的前置都是**该列**上一项升级，第一行的所有升级一开始就可购买。
+本页是[[ow-infinity-upgrades|无限升级]]主条目嵌入的**不可重复升级表**，也是社区 Wiki 的子页面。升级按四列排列，每列四项；从第二行起，每项升级的前置都是**该列**上一项升级，第一行的所有升级一开始就可购买。
 
 > 升级名称是游戏内标签，保留英文原名；效果与公式已翻译。
 
@@ -43,7 +43,7 @@ review_status: "REVIEWED"
 
 ## 来源与许可
 
-- 原文：[Infinity Upgrades/Upgrades](https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades/Upgrades)（修订 ID `2909`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-infinity-upgrades-upgrades|Infinity Upgrades/Upgrades]]（修订 ID `2909`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Infinity_Upgrades/Upgrades&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与表格、统一术语、移除导航与信息框、图片未转载；本页按相同许可共享。
 - 本页是主条目的嵌入子页面；标题加「（升级表）」以区别于主条目。

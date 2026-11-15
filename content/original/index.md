@@ -25,12 +25,12 @@ tags:
 | 指标 | 数值 |
 | --- | --- |
 | 原版正文条目总数（主命名空间 article） | 68 |
-| 已完成并校对（REVIEWED） | 35 |
-| 已翻译未校对（TRANSLATED） | 0 |
+| 已完成并校对（REVIEWED） | 0 |
+| 已翻译未校对（TRANSLATED） | 35 |
 | 许可阻塞（BLOCKED） | 0 |
-| 覆盖率 | 35 / 68（51.5%） |
+| 覆盖率 | 0 / 68（0.0%） |
 
-> 口径：覆盖率 = 已完成并校对的合规正文页数 ÷ 合规正文页总数。转写中（IN PROGRESS）与仅登记（NOT STARTED）不计入。清单中的重定向页、消歧义页与站点元页面不进入分母。
+> 口径：覆盖率 = 已完成并**逐段审校**的合规正文页数 ÷ 合规正文页总数。2026-11-15 起执行诚实化：只做结构/术语检查的页面一律记 TRANSLATED，不再计入覆盖率（详见 [2026-11-15 内容审校记录](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/translation/reviews/2026-11-15-content-review.md)）。
 
 ## 第一批（已完成并校对）
 
@@ -128,7 +128,7 @@ tags:
 | [[ow-effarig|鹿颈长]] | [Effarig](https://antimatterdimensions.wiki.gg/wiki/Effarig) | 3371 |
 | [[ow-nameless-ones|无名氏]] | [The Nameless Ones](https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones) | 3372 |
 
-> 第十三、十四批共 7 篇已于 2026-11-15 完成逐页核对（机器辅助翻译 + Agent 逐页核对，记录见 `docs/translation/reviews/audit-2026-11-15.md`），状态升为 REVIEWED 并计入覆盖率。
+> 第十三、十四批共 7 篇已完成结构与术语检查；2026-11-15 状态诚实化后为 TRANSLATED（未逐段审校），不计入覆盖率。
 
 ## 第十四批（已完成并校对）
 
@@ -139,7 +139,7 @@ tags:
 | [[ow-laitela|莱特拉]] | [Lai'tela](https://antimatterdimensions.wiki.gg/wiki/Lai%27tela) | 3375 |
 | [[ow-pelle|佩勒]] | [Pelle](https://antimatterdimensions.wiki.gg/wiki/Pelle) | 3376 |
 
-> 至此**七位天神的正篇全部译完并完成逐页核对**（第十三、十四批合计 7 篇，均 REVIEWED）。
+> 至此**七位天神的正篇全部译完**（第十三、十四批合计 7 篇，均为 TRANSLATED，待逐段审校）。
 
 ## 后续批次（按游戏流程排序）
 

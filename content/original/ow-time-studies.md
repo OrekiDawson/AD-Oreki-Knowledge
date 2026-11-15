@@ -10,11 +10,11 @@ original_revid: 3343
 original_fetched_at: "2026-11-15T22:45:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "TRANSLATED"
+review_status: "NOT REVIEWED"
 ---
 
-**时间研究（Time Studies）**是第一次[永恒](https://antimatterdimensions.wiki.gg/wiki/Eternity)后解锁的功能。它为此前与新增的机制提供大量加成，让后续[永恒](https://antimatterdimensions.wiki.gg/wiki/Eternity)更容易完成，并奖励更多资源。
+**时间研究（Time Studies）**是第一次[[ow-eternity|永恒]]后解锁的功能。它为此前与新增的机制提供大量加成，让后续[[ow-eternity|永恒]]更容易完成，并奖励更多资源。
 
 > 本页译自社区 Wiki 同名条目；原作标记该页仍需清理（Cleanup），译文保留原文信息与全部研究表。
 
@@ -32,10 +32,10 @@ review_status: "REVIEWED"
 时间之理（Time Theorems）是一种新货币，用于购买时间研究。玩家可以用多种货币购买：
 
 - 反物质：初始成本 $\text{e}20000$ 反物质，成长倍率 $\times \text{e}20000$；
-- [无限点数](https://antimatterdimensions.wiki.gg/wiki/Infinity_Points)：初始成本 $1$ IP，成长倍率 $\times \text{e}100$；
-- [永恒点数](https://antimatterdimensions.wiki.gg/wiki/Eternity_Points)：初始成本 $1$ EP，成长倍率 $\times 2$。
+- [[ow-infinity|无限点数]]：初始成本 $1$ IP，成长倍率 $\times \text{e}100$；
+- [[ow-eternity|永恒点数]]：初始成本 $1$ EP，成长倍率 $\times 2$。
 
-时间之理会在[永恒](https://antimatterdimensions.wiki.gg/wiki/Eternity)重置后保留。玩家可以重置研究树（respec），返还所有已花费的时间之理，并重新选择研究。此功能对推进与尝试不同配置特别有用。
+时间之理会在[[ow-eternity|永恒]]重置后保留。玩家可以重置研究树（respec），返还所有已花费的时间之理，并重新选择研究。此功能对推进与尝试不同配置特别有用。
 
 ## 时间研究一览
 
@@ -66,7 +66,7 @@ review_status: "REVIEWED"
 | 93 | 83 | 基于获得的计数频率升级为时间维度提供倍率 | $Free Tickspeed^{0.25}$ | 7 |
 | 103 | 93 | 时间维度获得等于复制器星系数量的倍率 | $ReplicantiGalaxies$ | 6 |
 | **分叉终点** |  |  |  |  |
-| 111 | 101、102 或 103 | 改进无限点数公式 | 见[《无限》](https://antimatterdimensions.wiki.gg/wiki/Infinity)条目 | 12 |
+| 111 | 101、102 或 103 | 改进无限点数公式 | 见[[ow-infinity|《无限》]]条目 | 12 |
 | **节奏分叉** |  |  |  |  |
 | 121（主动） | 111 | 基于最近十次永恒的速度获得更多 EP | $\min\left(\max\left(\frac{250}{seconds},1\right),50\right)$（上限 ×50） | 9 |
 | 131 | 121 | 自动复制器星系被禁用，但可获得 50% 更多 | $\lfloor\frac{BoughtRG}{2}\rfloor$ | 5 |
@@ -128,7 +128,7 @@ review_status: "REVIEWED"
 
 ## 来源与许可
 
-- 原文：[Time Studies](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)（修订 ID `3343`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-time-studies|Time Studies]]（修订 ID `3343`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Time_Studies&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与全部研究表、统一术语、按原文修正公式排版；图片未转载。
 - 说明：部分研究的公式原文以子模板/主条目链接给出（如 111 指向《无限》、228 指向《维度献祭》），译文保留指向并注明；研究 ID 与数值未改动。
