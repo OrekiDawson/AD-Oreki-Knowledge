@@ -1,0 +1,37 @@
+const { chromium } = require('/home/oreki/AD-Oreki-Unified/worktrees/web/r113-web-p1/node_modules/playwright');
+const BASE = 'http://localhost:8081';
+
+async function main() {
+  const browser = await chromium.launch({ headless: true });
+  const ctx = await browser.newContext({ viewport: { width: 412, height: 915 }, isMobile: true, hasTouch: true });
+  const page = await ctx.newPage();
+  const out = {};
+  await page.goto(BASE + '/build/agp', { waitUntil: 'load' });
+  await page.waitForTimeout(800);
+  out.agp = {
+    pre: await page.locator('pre').count(),
+    code: await page.locator('pre code, code').count(),
+    table: await page.locator('table').count(),
+  };
+  await page.goto(BASE + '/architecture/kotlin-runtime', { waitUntil: 'load' });
+  await page.waitForTimeout(800);
+  const html = await page.content();
+  out.kotlin = {
+    hasBacklinksHeading: /Backlinks|反向链接/.test(html),
+    graphNodes: await page.locator('canvas, svg .node, .graph-container').count(),
+    allButtons: await page.locator('button').evaluateAll((bs) => bs.map((b) => (b.getAttribute('aria-label') || b.getAttribute('title') || b.className || '').slice(0, 40))).then((a) => a.slice(0, 12)),
+    htmlClass: await page.evaluate(() => document.documentElement.className),
+  };
+  // 暗色模式：点击带 dark 的按钮
+  const darkBtns = page.locator('button');
+  const n = await darkBtns.count();
+  for (let i = 0; i < n; i += 1) {
+    const label = (await darkBtns.nth(i).getAttribute('aria-label')) || (await darkBtns.nth(i).getAttribute('title')) || '';
+    if (/dark|theme|暗色|主题/i.test(label)) { await darkBtns.nth(i).click({ force: true }); await page.waitForTimeout(700); break; }
+  }
+  out.kotlin.afterDarkClass = await page.evaluate(() => document.documentElement.className);
+  out.kotlin.afterDarkBg = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+  console.log(JSON.stringify(out, null, 1));
+  await browser.close();
+}
+main().catch((e) => { console.error('ERR', String(e).slice(0, 300)); process.exit(2); });

@@ -1,0 +1,7 @@
+node_modules
+public
+.quartz
+.quartz-build
+quartz/
+.DS_Store
+*.log

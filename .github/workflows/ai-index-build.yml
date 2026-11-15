@@ -1,0 +1,32 @@
+name: AI index build
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/**"
+      - "scripts/ai/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: bash scripts/bootstrap-quartz.sh .quartz-build
+      - run: node scripts/ai/build-index.mjs
+        working-directory: .quartz-build
+      - name: Verify index
+        working-directory: .quartz-build
+        run: node -e "const i=require('./quartz/static/knowledge-index.json'); if(i.pages.length<15) process.exit(1); console.log('pages',i.pages.length,'chunks',i.chunks.length,'terms',Object.keys(i.terms).length);"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: knowledge-index
+          path: .quartz-build/quartz/static/knowledge-index.json

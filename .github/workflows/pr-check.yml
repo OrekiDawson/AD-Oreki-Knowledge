@@ -1,0 +1,31 @@
+name: KB PR check
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: bash scripts/bootstrap-quartz.sh .quartz-build
+      - run: npm ci
+        working-directory: .quartz-build
+      - run: npx quartz plugin install --from-config
+        working-directory: .quartz-build
+      - run: node scripts/ai/build-index.mjs
+        working-directory: .quartz-build
+      - run: node scripts/check-content.mjs
+        working-directory: .quartz-build
+      - run: npx quartz build
+        working-directory: .quartz-build
+      - run: node scripts/verify-build.mjs
+        working-directory: .quartz-build
