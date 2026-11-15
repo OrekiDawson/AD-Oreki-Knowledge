@@ -43,21 +43,21 @@ review_status: "STRUCTURE CHECKED"
 
 | 加成 | 加成公式 | 条件 |
 | --- | --- | --- |
-| 现实机器获取相乘 | $\times 2.0$ | 解锁[特蕾莎](https://antimatterdimensions.wiki.gg/wiki/Teresa) |
-| 遗迹碎片获取相乘 | $\times 1.5$ | 解锁[鹿颈长](https://antimatterdimensions.wiki.gg/wiki/Effarig) |
-| 提高符文稀有度 | $+5\%$ | 解锁[无名氏](https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones) |
-| 记忆获取相乘 | $\times 1.5$ | 解锁[太阳神](https://antimatterdimensions.wiki.gg/wiki/Ra) |
-| 暗物质获取相乘 | $\times 2.0$ | 解锁[莱特拉](https://antimatterdimensions.wiki.gg/wiki/Laitela) |
+| 现实机器获取相乘 | $\times 2.0$ | 解锁[[ow-teresa|特蕾莎]] |
+| 遗迹碎片获取相乘 | $\times 1.5$ | 解锁[[ow-effarig|鹿颈长]] |
+| 提高符文稀有度 | $+5\%$ | 解锁[[ow-nameless-ones|无名氏]] |
+| 记忆获取相乘 | $\times 1.5$ | 解锁[[ow-ra|太阳神]] |
+| 暗物质获取相乘 | $\times 2.0$ | 解锁[[ow-laitela|莱特拉]] |
 
 ### 天神 7（佩勒）
 
 | 加成 | 加成公式 | 条件 |
 | --- | --- | --- |
-| 广告加成已被佩勒[毁灭/湮灭/无效化] |  | 让现实[被毁灭](https://antimatterdimensions.wiki.gg/wiki/Pelle) |
+| 广告加成已被佩勒[毁灭/湮灭/无效化] |  | 让现实[[ow-pelle|被毁灭]] |
 
 ## 来源与许可
 
-- 原文：[Ad Bonus](https://antimatterdimensions.wiki.gg/wiki/Ad_Bonus)（修订 ID `3096`；最后编辑者 The1AndOnly6030；抓取于 2026-11-15）
+- 原文：[[ow-ad-bonus|Ad Bonus]]（修订 ID `3096`；最后编辑者 The1AndOnly6030；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Ad_Bonus&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与四组表格、统一术语、移除多页签模板与导航、图片未转载；本页按相同许可共享。
 - 说明：原文以多页签模板（Regular / Reality / Celestials / Pelle）组织，译文按阶段展开为四张普通表格，内容与条件未改动。

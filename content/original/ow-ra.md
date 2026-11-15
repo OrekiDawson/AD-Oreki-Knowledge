@@ -16,24 +16,11 @@ review_status: "STRUCTURE CHECKED"
 
 > 现实是我的家，可我却造不出属于自己的现实。
 
-**太阳神（Ra，符号为太阳图标）**是推进顺序中的第五位[天神](https://antimatterdimensions.wiki.gg/wiki/Celestials)，主题是回忆并强化前四位天神。完全完成薇的全部成就即可解锁；祂引入「记忆」，可用于以更强的形式重新取回前几位天神带来的正面效果，范围从改善便利性与自动化、强化各种效果，到解锁新功能与新机制。玩家开始时只有 1 级的特蕾莎，随着时间推移会逐步解锁其他天神。
-
 原页另有子页面「引语（Quotes）」，本轮批次未译，见文末相关条目。原文此页带有「小作品（Stub）」站点维护标记，属于原站编辑提示，不是玩法内容。
 
-## 信息框要点
+## 档案
 
-| 项目 | 内容 |
-| --- | --- |
-| 称号 | 被遗忘之神（Celestial of the Forgotten） |
-| 别号 | 被遗忘者（Forgotten） |
-| 解锁条件 | 取得全部 36 个 [薇成就](https://antimatterdimensions.wiki.gg/wiki/V) |
-| 相关货币 | 天神记忆（Celestial Memories） |
-| 机制 | 记忆、追忆、充能无限升级、[符文炼金](https://antimatterdimensions.wiki.gg/wiki/Glyph_Alchemy)、[困难薇成就](https://antimatterdimensions.wiki.gg/wiki/V#Hard_V-Achievements) |
-| 增益 | 前四位天神 |
-| 现实惩罚 | 维度提升上限为 $4$；计数频率购买乘数固定为 $\times{1.125}$ |
-| 现实奖励 | 无 |
-| 现实特性 | 在现实内产出天神记忆碎片 |
-| 加入版本 | 网页版：现实更新（2022 年 12 月 17 日）；Android：现实更新（2024 年 4 月 1 日）；Steam 与 iOS：首发即包含 |
+太阳神，被遗忘之神，别号「被遗忘者」。集齐全部 36 个[[ow-v|薇成就]]后登场。祂的主题是「回忆前四位天神」：在现实里用天神记忆与记忆碎片把特蕾莎、鹿颈长、无名氏、薇逐个升到 25 级，每级都会返还一项前作机制——从充能无限升级、符文炼金，到储存时间脉冲、三体研究与困难薇成就。祂的现实惩罚简单但致命：维度提升上限只有 4 次，计数频率购买乘数锁死在 $\times1.125$，星系那点加成等于没有；完成现实不给奖励，产出的是记忆碎片。
 
 ## 现实
 
@@ -63,6 +50,8 @@ review_status: "STRUCTURE CHECKED"
 $$Cost_{Upgrade}~\geq~0.5*{requiredMemories_{LevelCap}}$$
 
 这使得这两项升级分别可购买 $22$ 次与 $11$ 次。不过，把某位天神升到 $25$ 级会导致玩家失去在该天神处升级记忆碎片与记忆获取的能力，因为它们对外部资源没有效果。
+
+下表中「名称」列的 {天神名} 是原站保留的**天神名占位符**：游戏实际显示为对应天神的名字（特蕾莎 / 鹿颈长 / 无名氏 / 薇），因为同一套升级对四位天神各有一份。译文保留占位写法以便对照原文。
 
 | 名称 | 起始成本（记忆） | 成长 | 末次成本 | 最大等级 | 描述 | 效果（$n = 购买次数$） | 起始 | 上限 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -115,10 +104,10 @@ $$\left\lfloor\left({n+\frac{n^2}{10}}\right)^{5.52}*\left({n^{Max(0,n-15)}}\rig
 
 把某位天神升到特定等级还会为其或全局解锁新机制：
 
-- **特蕾莎**：在 $2$ 级解锁[充能无限升级](https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades#Celestial_5-0)，使公式变强许多。在 $10$ 级时，一旦玩家的符文献祭值达到特定阈值，就会强化某些符文效果。
+- **特蕾莎**：在 $2$ 级解锁[[ow-infinity-upgrades|充能无限升级]]，使公式变强许多。在 $10$ 级时，一旦玩家的符文献祭值达到特定阈值，就会强化某些符文效果。
 - **鹿颈长**：在 $2$ 级解锁[符文炼金](https://antimatterdimensions.wiki.gg/wiki/Glyph_Alchemy)，之后还会让鹿颈长符文更强，并逐步移除符文生成中几乎全部的随机因素。
 - **无名氏**：在 $10$ 级解锁脉冲机制，黑洞每 $5$ 个 tick 自动释放玩家储存的游戏时间的一部分。
-- **薇**：在 $6$ 级解锁[三体研究](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)，它消耗空间之理，且要求先购买 3 个相邻研究才能购买。此外，[困难薇成就](https://antimatterdimensions.wiki.gg/wiki/V#Hard_V-Achievements)会随诅咒符文与反转黑洞一同解锁，这两者正是完成困难薇成就所需。
+- **薇**：在 $6$ 级解锁[[ow-time-studies|三体研究]]，它消耗空间之理，且要求先购买 3 个相邻研究才能购买。此外，[[ow-v|困难薇成就]]会随诅咒符文与反转黑洞一同解锁，这两者正是完成困难薇成就所需。
 
 ## 里程碑
 
@@ -131,15 +120,15 @@ $$\left\lfloor\left({n+\frac{n^2}{10}}\right)^{5.52}*\left({n^{Max(0,n-15)}}\rig
 | ID（名称） | 图标 | 等级 | 描述 | 效果 / 其它细节 | ID（编号） |
 | --- | --- | --- | --- | --- | --- |
 | **特蕾莎的记忆解锁** |  |  |  |  |  |
-| autoTP | 原子 | 1 | 时间膨胀处于激活状态时立即给予[速子粒子](https://antimatterdimensions.wiki.gg/wiki/Dilation) |  | 0 |
-| chargedInfinityUpgrades | 无限 | 2 | 解锁[充能无限升级](https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades#Celestial_5-0)；每 2 级增加 1 个可充能上限 | 玩家在 24 级时可以给全部 12 个可充能无限升级充能 | 1 |
-| teresaXP | Ϟ | 5 | 所有记忆碎片按[现实机器](https://antimatterdimensions.wiki.gg/wiki/Reality)数量产出更多记忆 | $1+\sqrt{\frac{\log_{10}({RM})}{100}}$；移动版对该里程碑使用不同图标（Δ） | 2 |
+| autoTP | 原子 | 1 | 时间膨胀处于激活状态时立即给予[[ow-dilation|速子粒子]] |  | 0 |
+| chargedInfinityUpgrades | 无限 | 2 | 解锁[[ow-infinity-upgrades|充能无限升级]]；每 2 级增加 1 个可充能上限 | 玩家在 24 级时可以给全部 12 个可充能无限升级充能 | 1 |
+| teresaXP | Ϟ | 5 | 所有记忆碎片按[[ow-reality|现实机器]]数量产出更多记忆 | $1+\sqrt{\frac{\log_{10}({RM})}{100}}$；移动版对该里程碑使用不同图标（Δ） | 2 |
 | effarigUnlock | Ϙ | 8 | 解锁鹿颈长的记忆 |  | 4 |
 | alteredGlyphs | 闪电 | 10 | 解锁[改造符文（Altered Glyphs）](https://antimatterdimensions.wiki.gg/wiki/Glyphs#Glyph_Sacrifice)，按符文献祭为符文赋予新效果 |  | 3 |
-| perkShopIncrease | 流程图 | 15 | 提高[特蕾莎复兴点数商店](https://antimatterdimensions.wiki.gg/wiki/Teresa#Perk_Point_Shop)的购买上限 |  | 5 |
+| perkShopIncrease | 流程图 | 15 | 提高[[ow-teresa|特蕾莎复兴点数商店]]的购买上限 |  | 5 |
 | unlockDilationStartingTP | 圆点圈 | 25 | 在非天神现实中，按「在膨胀中达到全部反物质平方根」的水平获得速子粒子；任何 TP 获取乘数都会追溯生效，即使在膨胀之外 |  | 6 |
 | **鹿颈长的记忆解锁** |  |  |  |  |  |
-| extraGlyphChoicesAndRelicShardRarityAlwaysMax | 横排握把 | 1 | 符文选择项 $\times2$，且[遗迹碎片](https://antimatterdimensions.wiki.gg/wiki/Effarig#Relic_Shards)提供的符文稀有度加成始终为最大值 | 该升级的 ID 名称最长，共 45 个字符 | 7 |
+| extraGlyphChoicesAndRelicShardRarityAlwaysMax | 横排握把 | 1 | 符文选择项 $\times2$，且[[ow-effarig|遗迹碎片]]提供的符文稀有度加成始终为最大值 | 该升级的 ID 名称最长，共 45 个字符 | 7 |
 | unlockGlyphAlchemy | 药瓶 | 2 | 解锁[符文炼金](https://antimatterdimensions.wiki.gg/wiki/Glyph_Alchemy)，通过精炼符文提升炼金资源；随鹿颈长等级解锁更多资源。入口位于新的现实页签 |  | 8 |
 | effarigXP | 克隆 | 5 | 所有记忆碎片按最高符文等级产出更多记忆 | $1+\frac{GlyphLevel_{Best}}{7000}$ | 9 |
 | enslavedUnlock | 链接 | 8 | 解锁无名氏的记忆 |  | 11 |
@@ -147,18 +136,18 @@ $$\left\lfloor\left({n+\frac{n^2}{10}}\right)^{5.52}*\left({n^{Max(0,n-15)}}\rig
 | relicShardGlyphLevelBoost | 火焰 | 15 | 按获得的遗迹碎片提高符文等级 | $100*\log_{10}\left(Max\left({RS_{Gained}},1\right)\right)^2$ | 12 |
 | maxGlyphRarityAndShardSacrificeBoost | 安卡 | 25 | 符文生成时始终为 $100\%$ 稀有度；符文献祭获取按遗迹碎片提升到某个幂 | $1*\frac{5*\log_{10}\left(\log_{10}\left(RS+10\right)\right)}{100}$ | 13 |
 | **无名氏的记忆解锁** |  |  |  |  |  |
-| blackHolePowerAutobuyers | 圆环 | 1 | 解锁[黑洞](https://antimatterdimensions.wiki.gg/wiki/Black_Hole)强度升级自动购买器 |  | 14 |
-| improvedStoredTime | 时钟历史 | 2 | [储存的游戏时间](https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones#Stored_Game_time)被放大，且可储存更多[现实时间](https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones#Stored_Real_time)；随无名氏等级提高 | 游戏时间放大：$20^{Level}$，25 级时为 $\times3.36\text{e}32~(335.54~\text{No})$；现实时间上限每级 +1 小时，最多 +25 小时 | 15 |
+| blackHolePowerAutobuyers | 圆环 | 1 | 解锁[[ow-black-hole|黑洞]]强度升级自动购买器 |  | 14 |
+| improvedStoredTime | 时钟历史 | 2 | [[ow-nameless-ones|储存的游戏时间]]被放大，且可储存更多[[ow-nameless-ones|现实时间]]；随无名氏等级提高 | 游戏时间放大：$20^{Level}$，25 级时为 $\times3.36\text{e}32~(335.54~\text{No})$；现实时间上限每级 +1 小时，最多 +25 小时 | 15 |
 | enslavedXP | 秒表 | 5 | 所有记忆碎片按总游玩时长产出更多记忆 | $1+\frac{\log_{10}\left(Milliseconds\right)}{200}$ | 16 |
 | vUnlock | ⌬ | 8 | 解锁薇的记忆 |  | 18 |
 | autoPulseTime | 扩张箭头 | 10 | 黑洞充能只使用 $99\%$ 的游戏速度；每 5 个 tick 自动释放 $1\%$ 的储存游戏时间 | 降低更新频率会让黑洞「脉冲」更快，提高则更慢 | 17 |
 | peakGamespeedDT | 转速表 | 15 | 按每个现实的游戏速度峰值获得更多膨胀时间 | $Max\left(\left(\log_{10}\left(GameSpeed_{Peak}\right)-90\right)^3,1\right)$ | 19 |
 | allGamespeedGlyphs | 时钟 | 25 | 所有基础符文都获得时间符文的游戏速度效果，时间符文则获得一项额外效果 |  | 20 |
 | **薇的记忆解锁** |  |  |  |  |  |
-| instantECAndRealityUpgradeAutobuyers | 同步 | 1 | 可重复购买的[现实升级](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades)自动购买，[自动永恒挑战](https://antimatterdimensions.wiki.gg/wiki/Eternity_Challenges)瞬时完成 |  | 21 |
+| instantECAndRealityUpgradeAutobuyers | 同步 | 1 | 可重复购买的[[ow-reality-upgrades|现实升级]]自动购买，[[ow-eternity-challenges|自动永恒挑战]]瞬时完成 |  | 21 |
 | autoUnlockDilation | 快进 | 2 | 在非天神现实中，达到 $12,900$ 时间之理时自动免费解锁时间膨胀 |  | 22 |
 | vXP | 书 | 5 | 所有记忆碎片按天神等级总和产出更多记忆 | $1+\frac{RaLevels_{Total}}{50}$ | 23 |
-| unlockHardV | 奖杯 | 6 | 解锁[困难薇成就](https://antimatterdimensions.wiki.gg/wiki/V#Hard_V-Achievements)，并每 6 级解锁一个[三体研究](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)；三体研究位于时间研究页底部 | 三体研究分别在薇的 6、12、18、24 级解锁。解锁时，诅咒符文与黑洞反转也会开放，它们是完成困难薇成就的关键 | 24 |
+| unlockHardV | 奖杯 | 6 | 解锁[[ow-v|困难薇成就]]，并每 6 级解锁一个[[ow-time-studies|三体研究]]；三体研究位于时间研究页底部 | 三体研究分别在薇的 6、12、18、24 级解锁。解锁时，诅咒符文与黑洞反转也会开放，它们是完成困难薇成就的关键 | 24 |
 | continuousTTBoost | 大学 | 10 | 时间之理加成所有形式的「连续非维度产出」 | 见下表（原文折叠块）；TT 效果从 $\text{e}350$ 开始，在 $\text{e}850$ 封顶 | 25 |
 | achievementTTMult | 学士帽 | 15 | [成就乘数](https://antimatterdimensions.wiki.gg/wiki/Achievements)作用于时间之理产出 |  | 26 |
 | achievementPower | 图层组 | 25 | 成就乘数取 $^{1.5}$ 次方 | 游戏内该图标使用 buffer，但本站图标插件无法渲染，故改用相近的 layer-group | 27 |
@@ -207,7 +196,7 @@ $$\left\lfloor\left({n+\frac{n^2}{10}}\right)^{5.52}*\left({n^{Max(0,n-15)}}\rig
 
 ## 来源与许可
 
-- 原文：[Ra](https://antimatterdimensions.wiki.gg/wiki/Ra)（页面 ID 914；修订 ID 3387；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-ra|Ra]]（页面 ID 914；修订 ID 3387；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Ra&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与全部表格，统一术语，把信息框内容改写为要点表，把模板内折叠块与 Tabber 内容展开为表格/列表、模板脚注改为页内脚注，用文字描述替代 FontAwesome 图标，移除导航模板与模板结构，图片未转载；本页按相同许可共享。
 - 原文图片未转载：原页含天神静态图（Cel5-runreality-static--desktop.png）、动画（Cel5-runreality-active--desktop.gif）、导航图（Cel5-navigation-complete--desktop.png）、界面图（Cel5-interface--darktheme-desktop.png）与被废弃功能的截图（Cel5-compression-scrapped--lightmode-desktop.png）。原图注含义：「身处太阳神的现实之中」「太阳神的完整界面」「开发日志中时间压缩功能的截图」。请到原页查看图片。

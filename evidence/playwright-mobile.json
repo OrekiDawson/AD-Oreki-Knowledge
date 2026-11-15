@@ -1,9 +1,96 @@
 {
- "base": "http://localhost:8103",
+ "base": "http://localhost:8100",
  "mobile": {
   "title": "反物质维度MOD 技术知识库",
   "explorerLinks": 3,
   "overflow": 0,
+  "sidebar": {
+   "items": [
+    {
+     "label": "游戏总览",
+     "href": "/antimatter-dimensions",
+     "truncated": false,
+     "inViewport": true
+    },
+    {
+     "label": "入门指南",
+     "href": "/getting-started/",
+     "truncated": false,
+     "inViewport": true
+    },
+    {
+     "label": "原版 Wiki 中文翻译",
+     "href": "/original/",
+     "truncated": false,
+     "inViewport": true
+    },
+    {
+     "label": "MOD 玩法与机制",
+     "href": "/gameplay/",
+     "truncated": false,
+     "inViewport": true
+    },
+    {
+     "label": "当前项目状态",
+     "href": "/current/",
+     "truncated": false,
+     "inViewport": true
+    },
+    {
+     "label": "架构与运行时",
+     "href": "/architecture/",
+     "truncated": false,
+     "inViewport": true
+    },
+    {
+     "label": "逆向与语义映射",
+     "href": "/reverse-engineering/",
+     "truncated": false,
+     "inViewport": true
+    },
+    {
+     "label": "构建与交付",
+     "href": "/build/",
+     "truncated": false,
+     "inViewport": true
+    },
+    {
+     "label": "故障排查",
+     "href": "/troubleshooting/",
+     "truncated": false,
+     "inViewport": true
+    },
+    {
+     "label": "参考资料",
+     "href": "/references/",
+     "truncated": false,
+     "inViewport": true
+    },
+    {
+     "label": "历史归档",
+     "href": "/history/",
+     "truncated": false,
+     "inViewport": true
+    },
+    {
+     "label": "知识库规则",
+     "href": "/wiki-rules",
+     "truncated": false,
+     "inViewport": true
+    },
+    {
+     "label": "版权与许可",
+     "href": "/copyright",
+     "truncated": false,
+     "inViewport": true
+    }
+   ],
+   "expanded": true
+  },
+  "sidebarCollapsed": true,
+  "sidebarActive": [
+   "/gameplay/challenges"
+  ],
   "aiDraftStatus": 404,
   "kotlinPage": true,
   "codeBlocks": 0,

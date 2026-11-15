@@ -20,19 +20,19 @@ review_status: "STRUCTURE CHECKED"
 
 ## 机制
 
-每个[反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)都有一项对应的倍率，以及一个表示玩家拥有数量的数值。第 1 反物质维度以每个已拥有维度每秒 $1$ 的基准速率生产反物质；此后每一级反物质维度以每个已拥有维度每秒 $0.1$ 的基准速率生产上一级维度。
+每个[[ow-antimatter-dimensions|反物质维度]]都有一项对应的倍率，以及一个表示玩家拥有数量的数值。第 1 反物质维度以每个已拥有维度每秒 $1$ 的基准速率生产反物质；此后每一级反物质维度以每个已拥有维度每秒 $0.1$ 的基准速率生产上一级维度。
 
 维度倍率初始为 $\times 1$，会乘在该维度的生产速率上。提高倍率最基本的方法之一是把对应维度购买 10 次；「购买维度」按钮会显示该维度已被购买的次数，并（间接地）显示下一次倍率提升所需的数量。在基准速率下，每购买 10 次，每个维度的生产都会获得 $\times 2$。
 
-游戏开始时玩家只有 $4$ 个[反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)处于解锁状态；其余维度必须通过[维度提升](https://antimatterdimensions.wiki.gg/wiki/Dimension_Boosts)解锁。解锁新维度对于获得更多反物质、推进游戏至关重要。
+游戏开始时玩家只有 $4$ 个[[ow-antimatter-dimensions|反物质维度]]处于解锁状态；其余维度必须通过[[ow-dimension-boosts|维度提升]]解锁。解锁新维度对于获得更多反物质、推进游戏至关重要。
 
 ## 反物质
 
-**反物质**是由[反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)生产的主要资源，也是衡量玩家进度的核心资源。它还有若干其他用途：
+**反物质**是由[[ow-antimatter-dimensions|反物质维度]]生产的主要资源，也是衡量玩家进度的核心资源。它还有若干其他用途：
 
-- 只要反物质足够，玩家就可以购买[反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimension)与[计数频率](https://antimatterdimensions.wiki.gg/wiki/Tickspeed)升级；
+- 只要反物质足够，玩家就可以购买[[ow-dimensions|反物质维度]]与[计数频率](https://antimatterdimensions.wiki.gg/wiki/Tickspeed)升级；
 - 反物质足够多（即 1.80e308）时，玩家可以执行[大坍缩](https://antimatterdimensions.wiki.gg/wiki/Big_Crunch)，这是看到更多升级、继续推进所必需的；
-- [打破无限](https://antimatterdimensions.wiki.gg/wiki/Breaking_Infinity)之后，获得更多反物质可以让玩家获得更多[无限点数](https://antimatterdimensions.wiki.gg/wiki/Infinity_Points)。
+- [打破无限](https://antimatterdimensions.wiki.gg/wiki/Breaking_Infinity)之后，获得更多反物质可以让玩家获得更多[[ow-infinity|无限点数]]。
 
 ## 价格成长
 
@@ -51,7 +51,7 @@ review_status: "STRUCTURE CHECKED"
 
 ## 无限后的价格成长
 
-当价格超过 1.80e308 反物质后，**成长倍率**本身开始增加，每项升级使其乘以 $10$。这个数值可以被对应的[打破无限](https://antimatterdimensions.wiki.gg/wiki/Break_Infinity)升级降低，之后还可被某个[永恒挑战](https://antimatterdimensions.wiki.gg/wiki/Eternity_Challenges)降低。
+当价格超过 1.80e308 反物质后，**成长倍率**本身开始增加，每项升级使其乘以 $10$。这个数值可以被对应的[[ow-break-infinity|打破无限]]升级降低，之后还可被某个[[ow-eternity-challenges|永恒挑战]]降低。
 
 ## 琐事
 
@@ -59,7 +59,7 @@ review_status: "STRUCTURE CHECKED"
 
 ## 来源与许可
 
-- 原文：[Antimatter Dimensions](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)（修订 ID `3325`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-antimatter-dimensions|Antimatter Dimensions]]（修订 ID `3325`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Antimatter_Dimensions&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与表格、统一术语、移除导航模板与信息框、图片未转载；本页按相同许可共享。
 - 原文的脚注与参考资料章节为空，译文未虚构内容。

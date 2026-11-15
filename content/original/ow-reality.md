@@ -1,6 +1,6 @@
 ---
 title: "现实"
-description: "原版 Wiki《Reality》条目的完整简体中文翻译：解锁、重置范围、现实机器公式、符文等级、自动成就与各子系统入口"
+description: "原版 Wiki《Reality》条目的简体中文翻译：现实怎么解锁、重置什么、现实机器公式与符文等级怎么算"
 tags:
   - 原版Wiki翻译
   - 现实
@@ -14,31 +14,29 @@ translation_status: "STRUCTURE CHECKED"
 review_status: "STRUCTURE CHECKED"
 ---
 
-**现实（Reality）**是游戏的第三个、也是最后一个主要威望层：购买最终[时间研究](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)后解锁，该研究需要 $\text{e}4,000$ [永恒点数](https://antimatterdimensions.wiki.gg/wiki/Eternity_Points)与前 13 行[成就](https://antimatterdimensions.wiki.gg/wiki/Achievements)。开始一次新现实会重置到此为止的整个游戏进度，换取现实机器、一枚符文与一个复兴点数。
+现实是游戏第三个、也是最后一个主要威望层。买下最后一项[[ow-time-studies|时间研究]]——需要 $\text{e}4,000$ [[ow-eternity|永恒点数]]和前 13 行[成就](https://antimatterdimensions.wiki.gg/wiki/Achievements)——之后才能开启。每执行一次新现实，此前攒下的一切都会归零，换来现实机器、一枚符文和一个复兴点数。
 
-现实在第一次执行新现实时引入[符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs)、[现实升级](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades)与[复兴](https://antimatterdimensions.wiki.gg/wiki/Perks)；同时引入[黑洞](https://antimatterdimensions.wiki.gg/wiki/Black_Hole)与[自动机](https://antimatterdimensions.wiki.gg/wiki/Automator)，后两者还有额外条件才能完全解锁。购买现实时间研究可以让玩家预览现实页签及其前 3 个子页签；执行第一次现实重置后才会显示黑洞与自动机页签。
+第一次进入现实时，游戏同时开放[符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs)、[[ow-reality-upgrades|现实升级]]与复兴；[[ow-black-hole|黑洞]]和自动机也会出现，但要另外满足条件才能完整使用。在真正重置之前买下现实时间研究，玩家只能先看到现实页签和它的前三个子页签，黑洞与自动机页签要等第一次现实结束才亮起。
 
-这个威望层随「现实更新（Reality Update）」加入游戏——这是桌面版耗时 4.5 年开发的最后一个主要内容更新。该更新于 2022 年 12 月 17 日在网页版（与 Steam 版同步）发布，并于 2024 年 4 月 1 日移植到 Android。
+这个层是「现实更新」带来的。那次更新是桌面版最后一块主要内容，前后做了四年半，2022 年 12 月 17 日与 Steam 版同步上线网页版，2024 年 4 月 1 日移植到 Android。
 
 ## 重置
 
-现实会重置永恒及以下的所有内容，包括全部货币与挑战完成记录。与前两个威望层不同，玩家在执行重置时还会失去[前 13 行成就](https://antimatterdimensions.wiki.gg/wiki/Achievements)及其奖励。统计页签「通用」标题下的全部数据与所有最佳挑战用时会在现实中保留。所有现实之前的页签仍然可以访问，即使对应功能重新被锁定。
+现实会把永恒及以下的东西全部清掉，货币、挑战完成记录都在其中。和前两个威望层不同的是，玩家还要交出[前 13 行成就](https://antimatterdimensions.wiki.gg/wiki/Achievements)及其奖励。统计页签「通用」里的数据、以及所有最佳挑战用时则不受影响；所有旧页签仍然可以点开，即使对应功能重新被锁。
 
-玩家通常会根据最高永恒点数获得现实机器、[自选的一枚符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs)与[$1$ 个复兴点数](https://antimatterdimensions.wiki.gg/wiki/Perks)。在第一次现实时，玩家会获得一枚只带反物质维度威力效果、固定稀有度为 $20\%$ 的威力符文；此外还会获得「同伴符文」，它显示玩家在第一次现实中达到的永恒点数。
+重置的收益通常按最高永恒点数换算成现实机器，再附上一枚自选符文和 $1$ 个复兴点数。第一次现实例外：只给一枚固定 $20\%$ 稀有度、只带反物质维度威力效果的威力符文，外加一枚「同伴符文」——它记录的是玩家在第一次现实里达到的永恒点数。
 
-完成第一次现实会解锁「重新开始当前现实」的选项：把玩家送回本次现实的起点。该选项位于符文页签。重新开始现实不会给予正常新现实应得的奖励，潜在的符文也不会改变。
+完成第一次现实后，符文页签会多出「重新开始当前现实」的选项，把玩家送回本次现实的起点。它不发放正常新现实的奖励，已选定的符文也不会变。
 
 ## 现实机器
 
-**现实机器**是现实威望层的主要货币，可用于购买[现实升级](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades)或[黑洞](https://antimatterdimensions.wiki.gg/wiki/Black_Hole)。它的数量基于当前现实中达到的最高永恒点数，再加上玩家在永恒时本应获得的永恒点数。现实机器的获取有 3 条不同公式，使用哪一条取决于玩家当前的情况。
+现实机器是这一层的主要货币，[[ow-reality-upgrades|现实升级]]和[[ow-black-hole|黑洞]]都要用它买。数量取决于当前现实中达到的最高永恒点数，并把你永恒时本应获得的永恒点数一并算进去。换算有三条公式，用哪条看当前处境：
 
-线性成长（$1-10$ RM）：$\left\lfloor\frac{27}{4,000}\log_{10}(EP)-26\right\rfloor$
+- 线性段（$1-10$ RM）：$\left\lfloor\frac{27}{4,000}\log_{10}(EP)-26\right\rfloor$
+- 指数段（$>10$ RM）：$\left\lfloor1,000^{\frac{\log_{10}(EP)}{4,000}-1}\right\rfloor$
+- 首次现实的缩减段（$\text{e}6,000$ EP 以上）：$\left\lfloor1,000^{\frac{\log_{10}(EP)-0.75\left(\log_{10}(EP)-6,000\right)}{4,000}-1}\right\rfloor$
 
-指数成长（$>10$ RM）：$\left\lfloor1,000^{\frac{\log_{10}(EP)}{4,000}-1}\right\rfloor$
-
-缩减成长（第一次现实中 $\text{e}6,000$ EP 以上）：$\left\lfloor1,000^{\frac{\log_{10}(EP)-0.75\left(\log_{10}(EP)-6,000\right)}{4,000}-1}\right\rfloor$
-
-前 10 个现实机器在 $1.00\text{e}4,000$ EP 到 $2.15\text{e}5,333$ EP 之间按指数线性成长。超过 $10$ RM 后公式改为上面的指数式；在 $2.15\text{e}5,333$ EP 以上，指数式给出的 RM 比线性式更多。只有在第一次现实中，现实机器会在 $\text{e}6,000$ EP 以上被缩减，并在 $\text{e}8,000$ EP 封顶。这是因为现实更新为平衡难度做了改动，例如 $\text{e}6,000$ EP 以上时间维度的成本成长提高。该公式会让玩家在 $\text{e}6,000$ EP 时得到 $31$ RM、在 $\text{e}8,000$ EP 时得到 $74$ RM。
+开局前 10 个现实机器落在 $1.00\text{e}4,000$ 到 $2.15\text{e}5,333$ EP 之间，走线性；过了 10 RM 改走指数式。指数式在 $2.15\text{e}5,333$ EP 之后反超线性式。缩减只在第一次现实生效：$\text{e}6,000$ EP 以上开始打折，$\text{e}8,000$ EP 封顶，这是现实更新为平衡难度顺手加的——同一时期时间维度的成本成长也被调高了。按这条公式，$\text{e}6,000$ EP 给 $31$ RM，$\text{e}8,000$ EP 给 $74$ RM。
 
 | 线性成长（1–10 RM）：RM | 对应 EP | 指数成长（>10 RM）：RM | 对应 EP | 缩减成长（首次现实 >e6,000 EP）：EP | RM |
 | --- | --- | --- | --- | --- | --- |
@@ -55,19 +53,15 @@ review_status: "STRUCTURE CHECKED"
 
 ## 符文等级
 
-现实中的符文有一个等级，基于多种因素；随着游戏推进，这些因素会变得更复杂（例如玩家购买现实升级「**Measure of Forever**」后，永恒次数会提升符文等级）。符文的等级默认由永恒点数、[复制器](https://antimatterdimensions.wiki.gg/wiki/Replicanti)与[膨胀时间](https://antimatterdimensions.wiki.gg/wiki/Dilated_Time)的组合决定，最低为 1 级。符文的类型、效果与稀有度是随机的。
+符文有等级，等级由几项因素决定，而且越往后越复杂——买了现实升级「Measure of Forever」之后，永恒次数也会参与计算。初始的三项因素是永恒点数、[[ow-replicanti|复制器]]与[膨胀时间](https://antimatterdimensions.wiki.gg/wiki/Dilated_Time)，取玩家在当前现实中达到的最高值，最低 1 级。至于符文的类型、效果和稀有度，那就纯看运气了。
 
-这 3 项初始因素使用玩家在当前现实中达到的最高值。
+## 自动成就
 
-## 机制
+现实把前 13 行[成就](https://antimatterdimensions.wiki.gg/wiki/Achievements)收走之后，游戏用「自动成就」来补偿：每过一段基础间隔（30 分钟），下一个未完成的成就会被被动点亮。计时器可以关；关掉后它会一直倒计时到零并停住，再打开就立刻完成一个。离线时计时照走，速度还能靠复兴节点再提。
 
-### 自动成就
+买下 ACHNR 复兴节点之后这套机制就退休了：所有现实之前的成就永久保留，成就页签里相关按钮与说明也随之消失。
 
-自动成就机制在现实中用于补偿玩家失去前 13 行[成就](https://antimatterdimensions.wiki.gg/wiki/Achievements)。虽然玩家需要重新完成每个成就的要求才能重新获得奖励，但他们会在基础间隔 $30$ 分钟下被动解锁下一个未完成的成就。自动完成可以关闭；关闭后计时器会倒数到零并暂停，取消暂停时立即完成另一个成就。计时器在离线时仍以相同速率前进。成就计时器的速度可以通过成就复兴节点提高。
-
-购买 ACHNR 复兴节点后该机制会过时：玩家可以永久保留所有现实之前的成就，成就页签中与该功能相关的信息和按钮都会消失。
-
-下表列出自动成就的不同间隔，以及完成全部前 13 行成就所需的最长时间。由于现实会保留通用统计中的数值与最佳挑战用时，成就 22、65、74、76、97 与 112 会在现实重置后立即解锁。
+下表列出各复兴节点下的间隔，以及刷完前 13 行成就的最长时间。因为现实保留通用统计与最佳挑战用时，成就 22、65、74、76、97、112 会在现实重置后直接解锁。
 
 | 复兴节点 | 无 | ACH1 | ACH2 | ACH3 | ACH4 | ACHNR |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -75,49 +69,26 @@ review_status: "STRUCTURE CHECKED"
 | 最长时间（无 Existentially Prolong） | 49:00:00 | 32:40:00 | 19:36:00 | 9:48:00 | 3:16:00 |  |
 | 最长时间（有 Existentially Prolong；成就 41、47、48、51、52、53、61 因[永恒里程碑](https://antimatterdimensions.wiki.gg/wiki/Eternity_Milestones)在现实中保留） | 45:30:00 | 30:40:00 | 18:12:00 | 9:06:00 | 3:02:00 |  |
 
-### 符文
+## 现实带出来的几个系统
 
-主条目：[符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs)
+现实本身只是一个重置层，真正撑起这一层内容的是它带出来的几套系统。符文是可装备的升级，效果五花八门，只能在两次现实之间更换——每次现实开始时，从若干随机符文中挑一枚。现实升级消耗现实机器，买之前各有前置条件。复兴面向便利与自动化，用复兴点数购买，点数每次现实结束结算。黑洞会让整个游戏周期性地跑得更快，效果等同于把游戏时间拉长，解锁价是 $100$ 现实机器。自动机则是一套脚本语言，让玩家把现实里的许多操作写成自动流程，$100$ 自动点数开启——点数来自现实升级、复兴、解锁黑洞，以及完成更多现实。
 
-符文是可装备的升级，会对游戏的不同方面产生效果，并且只能在现实之间卸下。玩家每次现实都可以从多枚随机符文中选择一枚。
-
-### 现实升级
-
-主条目：[现实升级](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades)
-
-**现实升级**是一组消耗现实机器的升级，购买前需要先满足各自的条件。
-
-### 复兴
-
-主条目：[复兴](https://antimatterdimensions.wiki.gg/wiki/Perks)
-
-**复兴**是类似永恒里程碑的可解锁功能，主要面向便利性与自动化。它们用复兴点数购买，复兴点数在每次现实后获得。
-
-### 黑洞
-
-主条目：[黑洞](https://antimatterdimensions.wiki.gg/wiki/Black_Hole)
-
-**黑洞**会以周期循环让整个游戏运行得更快，影响到此为止游戏中的一切内容，效果等同于让游戏开够相应的时间。该功能需要 $100$ 现实机器解锁。
-
-### 自动机
-
-主条目：[自动机](https://antimatterdimensions.wiki.gg/wiki/Automator)
-
-自动机是一个高级内置功能，使用脚本语言让玩家自动化现实中的许多部分。该功能需要 $100$ 自动点数解锁——自动点数通过购买现实升级与复兴、解锁黑洞或完成更多现实获得。
+各系统的详细机制分别在对应条目里，本页只交代入口。
 
 ## 琐事
 
-- 这个威望层的名字可能来自《反物质维度》官方 Discord 服务器中的一个高级身份组「Reality Dimension」。该身份组创建于 2017 年 12 月 14 日，比现实更新及其内容公布早一年多。
-- 现实是三个威望层中唯一一个主要货币名称不以「Points（点数）」结尾的层。
-- 现实也是三个威望层中唯一一个解锁条件不同于 1.80e308 [反物质](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions) / [无限点数](https://antimatterdimensions.wiki.gg/wiki/Infinity_Points)的层。
+- 「Reality」这个名字可能来自《反物质维度》官方 Discord 的一个高级身份组「Reality Dimension」。该身份组 2017 年 12 月 14 日就建好了，比现实更新及其内容公布早了整整一年多。
+- 三个威望层里，现实的唯一主要货币不以「Points」结尾。
+- 现实的解锁条件也是三层中唯一不是 $1.80\text{e}308$ [[ow-antimatter-dimensions|反物质]]或[[ow-infinity|无限点数]]的那个。
 
 ## 来源与许可
 
-- 原文：[Reality](https://antimatterdimensions.wiki.gg/wiki/Reality)（修订 ID `3235`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[Reality](https://antimatterdimensions.wiki.gg/wiki/Reality)（修订 ID 3235；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Reality&action=history)
-- 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与表格、统一术语、移除缩略图/信息框/导航模板、图片未转载；本页按相同许可共享。
-- 原文以子模板嵌入符文、现实升级、复兴、黑洞与自动机的完整子页面；本页保留主条目正文与入口，这些子页列入后续批次。
+- 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Reality&action=history)
+- 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为简体中文翻译（改编），已修改：正文按中文习惯重写、统一术语、公式与数值及表格保留原文、导航模板与信息框及缩略图未转载、图片未转载；本页按相同许可共享。
+- 译者注：原文把符文、现实升级、复兴、黑洞与自动机作为子模板整页嵌入；这里只保留主线正文与入口说明，子系统的完整内容留给各自条目。
 
 ## 相关条目
 
-[[ow-eternity|永恒]] · [[ow-celestials|天神]] · [[ow-dilation|时间膨胀]]
+[[ow-eternity|永恒]] · [[ow-celestials|天神]] · [[ow-dilation|时间膨胀]] · [[ow-reality-upgrades|现实升级]]
