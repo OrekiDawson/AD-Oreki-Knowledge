@@ -10,6 +10,11 @@ tags:
 反物质维度 MOD（Oreki Edition）技术知识库。**GitHub 是权威事实源，本站是阅读与检索层。**
 任何结论都以对应仓库的源码、PR、CI 与 AVD 证据为准；本站在冲突时明确标注待核实。
 
+## 当前重要事实（2026-11-15）
+
+- **R113-01 新档 180 分钟长跑：FAIL。** 已运行 180.1 分钟，未通关；正式 Release 继续 BLOCKED。请见 [[project-status]] 与 [Android PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90)。
+- **已完成的 P0 存档/自动化修复** 不等于 180 分钟通关验收成功。页面和结论必须分别引用相应验证证据。
+
 ## 快速入口
 
 | 主题 | 页面 |
