@@ -60,5 +60,9 @@ for (const term of ["反物质维度MOD 知识库", "知识库规则"]) {
   if (!home.includes(term)) fail("首页缺少文案: " + term);
 }
 if (!exists("wiki-rules.html") && !exists("wiki-rules/index.html")) fail("公开规则页 /wiki-rules 未生成");
+if (!exists("copyright.html") && !exists("copyright/index.html")) fail("公开版权与许可页面 /copyright 未生成");
+if (!home.includes("CC BY-SA 4.0") || !home.includes("creativecommons.org/licenses/by-sa/4.0")) {
+  fail("首页未展示 CC BY-SA 4.0 与官方许可链接");
+}
 if (failed > 0) { console.error("构建产物检查未通过: " + failed); process.exit(1); }
 console.log("OK 构建产物检查通过: " + contentIndex.length + " 个 HTML 页面");

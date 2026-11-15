@@ -46,6 +46,10 @@ tags:
 
 本知识库不以文章数量、字数或知识图谱节点数衡量质量。**宁可少一篇，也不发布无法核实的技术结论。**
 
+## 原创内容的版权与许可
+
+本站有权授权的原创百科文字采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。转载应保留原始署名、原文和许可链接，改编须依协议共享。第三方内容及软件另有版权归属，具体见[[copyright|版权与许可]]。
+
 ## 相关条目
 
 [[how-to-use]] · [[project-overview]] · [[source-index]]

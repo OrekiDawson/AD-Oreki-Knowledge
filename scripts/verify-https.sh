@@ -22,7 +22,7 @@ echo "custom_domain=${cname}; https_enforced=${enforced}; certificate_state=${ce
 }
 
 # TLS verification is intentionally enabled; no -k, no --insecure, no HTTP fallback.
-for path in "/" "/index.html" "/static/contentIndex.json" "/static/knowledge-index.json" "/architecture/kotlin-runtime" "/wiki-rules"; do
+for path in "/" "/index.html" "/static/contentIndex.json" "/static/knowledge-index.json" "/architecture/kotlin-runtime" "/wiki-rules" "/copyright"; do
   echo "Checking TLS and HTTP 200: ${BASE_URL}${path}"
   code="$(curl --fail --silent --show-error --max-time 30 --output /dev/null --write-out '%{http_code}' "${BASE_URL}${path}")" || {
     echo "::error::HTTPS endpoint failed (including certificate validation): ${BASE_URL}${path}"
@@ -35,6 +35,10 @@ home="$(mktemp)"
 headers="$(mktemp)"
 trap 'rm -f "$home" "$headers"' EXIT
 curl --fail --silent --show-error --max-time 30 --output "$home" "${BASE_URL}/"
+grep -Fq "CC BY-SA 4.0" "$home" || {
+  echo "::error::HTTPS homepage missing CC BY-SA 4.0 license notice"
+  exit 1
+}
 grep -Fq "反物质维度MOD 知识库" "$home" || {
   echo "::error::HTTPS homepage is missing the expected site title"
   exit 1
