@@ -10,6 +10,20 @@ tags:
 
 > **原创文字许可**：本站有权授权的原创百科文字采用[知识共享 署名-相同方式共享 4.0 国际（CC BY-SA 4.0）](https://creativecommons.org/licenses/by-sa/4.0/)。第三方材料按各自许可；原版 Wiki 译文逐页署名。详见[[copyright|版权与许可]]。
 
+## 按主题浏览（与左侧目录顺序一致）
+
+1. **游戏总览**：[[antimatter-dimensions|《反物质维度》游戏总览]]。
+2. **入门指南**：[入门指南](/getting-started/)。
+3. **原版 Wiki 中文翻译**：[原版 Wiki 中文翻译](/original/)——逐篇翻译原版游戏条目，保留公式、表格与解锁条件。
+4. **MOD 玩法与机制**：[玩法机制](/gameplay/)——原版与 MOD 对照、无限/永恒、现实与时间研究、天神、挑战、自动化、存档与阶段门禁。
+5. **当前项目状态**：[[project-status|当前项目状态]]与[[release-status|发布状态]]。
+6. **架构与运行时**：[架构与运行时](/architecture/)——Android、Kotlin ABI、Web 与双端一致性。
+7. **逆向与语义映射**：[逆向与语义映射](/reverse-engineering/)——混淆 DEX 的 ABI 适配与证据方法。
+8. **构建与交付**：[构建与交付](/build/)——AGP、签名、CI/CD、R8 与发布门禁。
+9. **故障排查**：[故障排查](/troubleshooting/)——协程 ABI 崩溃与存档兼容排查。
+10. **参考资料**：[参考资料](/references/)——来源索引与术语表。
+11. **历史归档**：[历史归档](/history/)——按日期记录的当时判定，不代表当前状态。
+
 ## 按游戏阶段阅读
 
 1. **反物质与维度**：[[antimatter-dimensions|《反物质维度》游戏总览]] → [[ow-dimensions|维度]]、[[ow-dimension-boosts|维度提升]]、[[ow-antimatter-galaxies|反物质星系]]
