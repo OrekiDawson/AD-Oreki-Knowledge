@@ -1,8 +1,8 @@
 {
- "base": "http://localhost:8098",
+ "base": "http://localhost:8103",
  "mobile": {
   "title": "反物质维度MOD 技术知识库",
-  "explorerLinks": 2,
+  "explorerLinks": 3,
   "overflow": 0,
   "aiDraftStatus": 404,
   "kotlinPage": true,
