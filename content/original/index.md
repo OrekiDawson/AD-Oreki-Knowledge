@@ -25,10 +25,10 @@ tags:
 | 指标 | 数值 |
 | --- | --- |
 | 原版正文条目总数（主命名空间 article） | 68 |
-| 已完成并校对（REVIEWED） | 26 |
+| 已完成并校对（REVIEWED） | 28 |
 | 已翻译未校对（TRANSLATED） | 0 |
 | 许可阻塞（BLOCKED） | 0 |
-| 覆盖率 | 26 / 68（38.2%） |
+| 覆盖率 | 28 / 68（41.2%） |
 
 > 口径：覆盖率 = 已完成并校对的合规正文页数 ÷ 合规正文页总数。转写中（IN PROGRESS）与仅登记（NOT STARTED）不计入。清单中的重定向页、消歧义页与站点元页面不进入分母。
 
@@ -112,6 +112,13 @@ tags:
 | [[ow-infinity-upgrades|无限升级]] | [Infinity Upgrades](https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades) | 3348 |
 | [[ow-infinity-upgrades-upgrades|无限升级（升级表）]] | [Infinity Upgrades/Upgrades](https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades/Upgrades) | 2909 |
 | [[ow-dilation-upgrades|膨胀升级]] | [Dilation/Upgrades](https://antimatterdimensions.wiki.gg/wiki/Dilation/Upgrades) | 3158 |
+
+## 第十二批（已完成并校对）
+
+| 中文条目 | 原文 | 修订 ID |
+| --- | --- | --- |
+| [[ow-celestial-navigation|天神导航]] | [Celestial Navigation](https://antimatterdimensions.wiki.gg/wiki/Celestial_Navigation) | 3361 |
+| [[ow-pelle-upgrades|佩勒升级]] | [Pelle/Upgrades](https://antimatterdimensions.wiki.gg/wiki/Pelle/Upgrades) | 2707 |
 
 ## 后续批次（按游戏流程排序）
 

@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T13:20:41.440Z",
+ "generated_at": "2026-11-15T13:22:21.456Z",
  "source": {
   "site": "https://antimatterdimensions.wiki.gg",
   "api": "https://antimatterdimensions.wiki.gg/api.php",
@@ -26,7 +26,7 @@
  "coverage": {
   "total_pages": 68,
   "translated": 0,
-  "reviewed": 26,
+  "reviewed": 28,
   "blocked": 0
  },
  "pages": [
@@ -865,16 +865,16 @@
     "Stubs"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "天神导航",
+   "path": "content/original/ow-celestial-navigation.md",
+   "priority": 3,
+   "status": "REVIEWED",
+   "review_status": "REVIEWED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch12：正文与升级表完整翻译并校对；嵌入子页已在页面注明"
   },
   {
    "title": "Celestial Navigation/Gallery",
@@ -2198,16 +2198,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "佩勒升级",
+   "path": "content/original/ow-pelle-upgrades.md",
+   "priority": 3,
+   "status": "REVIEWED",
+   "review_status": "REVIEWED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch12：正文与升级表完整翻译并校对；嵌入子页已在页面注明"
   },
   {
    "title": "Perks",
