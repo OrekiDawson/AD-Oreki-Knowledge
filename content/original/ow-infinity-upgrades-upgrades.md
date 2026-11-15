@@ -10,8 +10,8 @@ original_revid: 2909
 original_fetched_at: "2026-11-15T23:00:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 本页是[[ow-infinity-upgrades|无限升级]]主条目嵌入的**不可重复升级表**，也是社区 Wiki 的子页面。升级按四列排列，每列四项；从第二行起，每项升级的前置都是**该列**上一项升级，第一行的所有升级一开始就可购买。

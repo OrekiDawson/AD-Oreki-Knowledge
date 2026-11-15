@@ -11,8 +11,8 @@ original_revid: 3098
 original_fetched_at: "2026-11-15T22:30:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 本页是社区 Wiki 的**术语**条目，收录**佩勒（Pelle）的「用词变化（Wordshifts）」**：佩勒作为多维存在，其语言中的词语会随语境在多个维度间变化，因此写作 `[词A/词B/词C]` 的形式表示同一概念的不同层面对应词。

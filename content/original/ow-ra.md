@@ -10,8 +10,8 @@ original_revid: 3387
 original_fetched_at: "2026-11-15T21:22:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 > 现实是我的家，可我却造不出属于自己的现实。

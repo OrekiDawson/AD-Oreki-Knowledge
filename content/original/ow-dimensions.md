@@ -10,8 +10,8 @@ original_revid: 3102
 original_fetched_at: "2026-11-15T21:10:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **维度**是标准的产出单位：它们被动生成低一级的维度，或生成各自类型的主要资源。第一类维度生产其对应类型的主要资源，产量与该维度的*累积数量*及其各项倍率成正比。*累积数量*等于该维度被购买的次数与它被生产出来的数量之和（后者通常来自更高层级的维度）。

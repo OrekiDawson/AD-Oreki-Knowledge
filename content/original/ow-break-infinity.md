@@ -10,8 +10,8 @@ original_revid: 3349
 original_fetched_at: "2026-11-15T21:45:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **打破无限（Break Infinity）**是下一个重要的进度里程碑。要解锁打破无限的能力，需要把[大坍缩自动购买器](https://antimatterdimensions.wiki.gg/wiki/Automation#Intervals)的间隔升级到 $0.1$ 秒。打破无限后，反物质可以超过 1.80e308，并在一组新的子页签中解锁一批新的[[ow-infinity-upgrades|无限升级]]。打破无限之后，每次无限也可以获得超过 $1$ 个无限点数。

@@ -10,8 +10,8 @@ original_revid: 3348
 original_fetched_at: "2026-11-15T23:00:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **无限升级（Infinity Upgrades）**在玩家第一次[[ow-infinity|大坍缩]]后解锁。游戏共有 16 个无限升级，另有 2 个由成就「No DLC Required」解锁，合计 18 个。所有无限升级都必须按每一列从上到下的顺序购买。

@@ -10,8 +10,8 @@ original_revid: 3357
 original_fetched_at: "2026-11-15T22:55:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **现实升级（Reality Upgrades）**是一类可用[[ow-reality|现实机器]]购买的升级。与前两个威望相关升级——[[ow-infinity-upgrades|无限升级]]与[永恒升级](https://antimatterdimensions.wiki.gg/wiki/Eternity_Upgrades)——不同，现实升级是独特的：可重复升级不止一个，而且它们不会直接为主要货币（现实机器）提供倍率。此外，其他威望相关升级可以在没有高级前置的情况下购买，而不可重复的现实升级需要满足某种「条件」才能解锁购买。不过条件一旦完成，该升级就会永久可购买，即使进入下一个现实也是如此。

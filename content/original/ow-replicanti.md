@@ -10,8 +10,8 @@ original_revid: 3350
 original_fetched_at: "2026-11-15T21:45:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **复制器（Replicanti）**是[[ow-infinity|无限]]威望层内的一种机制，在玩家完成第一次[大坍缩](https://antimatterdimensions.wiki.gg/wiki/Big_Crunch)之后随时可以购买。不过，购买它需要 $1\text{e}140$ [[ow-infinity|无限点数]]，所以通常只有在完成 8 个[[ow-challenges|无限挑战]]之后才会解锁。

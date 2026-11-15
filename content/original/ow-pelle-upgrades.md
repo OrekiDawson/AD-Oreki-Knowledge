@@ -10,8 +10,8 @@ original_revid: 2707
 original_fetched_at: "2026-11-15T23:05:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 本页是[[ow-pelle|佩勒]]主条目相关的**佩勒升级表**子页面，列出在毁灭现实中使用现实碎片（Reality Shards）购买的不可重复升级。

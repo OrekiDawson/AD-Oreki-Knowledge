@@ -5,8 +5,10 @@ import path from "node:path";
 
 const MANIFEST = "docs/translation/source-manifest.json";
 const PAGES_DIR = "content/original";
-const ALLOWED_STATUS = new Set(["NOT STARTED", "IN PROGRESS", "TRANSLATED", "REVIEWED", "BLOCKED"]);
-const ALLOWED_REVIEW = new Set(["NOT REVIEWED", "REVIEWED"]);
+// 等级定义见 content/wiki-rules.md「内容验收等级」；STRUCTURE CHECKED 明确不算语义审校
+const ALLOWED_STATUS = new Set(["NOT STARTED", "IN PROGRESS", "TRANSLATED", "STRUCTURE CHECKED", "REVIEWED", "VERIFIED AGAINST GAME", "BLOCKED"]);
+const ALLOWED_REVIEW = new Set(["NOT REVIEWED", "TRANSLATED", "STRUCTURE CHECKED", "REVIEWED", "VERIFIED AGAINST GAME"]);
+const REVIEW_DIR = "docs/translation/reviews";
 const REQUIRED_FIELDS = [
   "original_title",
   "original_url",
@@ -88,19 +90,38 @@ for (const file of pages) {
   }
 }
 
-// 清单中标记 REVIEWED/TRANSLATED 的页面必须存在
+// 审校记录：REVIEWED / VERIFIED 必须有页面级记录（不能只凭结构核对就标「已审校」）
+let reviewCorpus = "";
+if (fs.existsSync(REVIEW_DIR)) {
+  for (const f of fs.readdirSync(REVIEW_DIR).filter((f) => f.endsWith(".md"))) {
+    reviewCorpus += fs.readFileSync(path.join(REVIEW_DIR, f), "utf8") + "\n";
+  }
+} else {
+  warn("缺少审校记录目录 " + REVIEW_DIR);
+}
+
+// 清单中标记已翻译/已核对的页面必须存在
 for (const p of articles) {
-  if (["REVIEWED", "TRANSLATED"].includes(p.status)) {
+  if (["TRANSLATED", "STRUCTURE CHECKED", "REVIEWED", "VERIFIED AGAINST GAME"].includes(p.status)) {
     if (!p.path || !fs.existsSync(p.path)) fail("清单标记已翻译但页面不存在: " + p.title + " -> " + p.path);
+  }
+  if (["REVIEWED", "VERIFIED AGAINST GAME"].includes(p.status)) {
+    const key = p.path || p.zh_title || p.title;
+    if (!reviewCorpus.includes(key) && !reviewCorpus.includes(p.zh_title || "\u0000")) {
+      fail("清单标记 " + p.status + " 但缺少页面级审校记录: " + p.title);
+    }
   }
   if (p.status === "BLOCKED" && !p.notes) warn("清单 BLOCKED 页缺少原因: " + p.title);
 }
 
-const reviewed = articles.filter((p) => p.status === "REVIEWED").length;
+const reviewed = articles.filter((p) => ["REVIEWED", "VERIFIED AGAINST GAME"].includes(p.status)).length;
+const verified = articles.filter((p) => p.status === "VERIFIED AGAINST GAME").length;
+const structure = articles.filter((p) => p.status === "STRUCTURE CHECKED").length;
 const translated = articles.filter((p) => p.status === "TRANSLATED").length;
 const blocked = articles.filter((p) => p.status === "BLOCKED").length;
 const coverage = articles.length ? ((reviewed / articles.length) * 100).toFixed(1) : "0.0";
-console.log("翻译覆盖率: " + reviewed + "/" + articles.length + " (" + coverage + "%)；TRANSLATED " + translated + "；BLOCKED " + blocked + "；页面 " + pages.length);
+const structureCoverage = articles.length ? ((structure / articles.length) * 100).toFixed(1) : "0.0";
+console.log("已审校覆盖率: " + reviewed + "/" + articles.length + " (" + coverage + "%)；其中 VERIFIED " + verified + "；STRUCTURE CHECKED " + structure + "/" + articles.length + " (" + structureCoverage + "%)；TRANSLATED " + translated + "；BLOCKED " + blocked + "；页面 " + pages.length);
 
 if (failed > 0) { console.error("翻译专区检查未通过: " + failed); process.exit(1); }
 console.log("OK 翻译专区检查通过: 清单/来源/许可/状态/占位符均通过");

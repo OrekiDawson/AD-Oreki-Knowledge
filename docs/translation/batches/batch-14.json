@@ -4,8 +4,8 @@
   "branch": "docs/r114-original-tr-b2",
   "base": "caa6330（#26 第十二批 tip，堆叠分支）",
   "owner": "wiki-translation",
-  "status": "TRANSLATED",
-  "status_note": "2026-11-15 状态诚实化：仅 Pelle 完成逐段审校并保留 REVIEWED，其余为 TRANSLATED（结构与术语检查通过）",
+  "status": "STRUCTURE CHECKED",
+  "status_note": "正文完整翻译并自检；已按质量门禁降为 STRUCTURE CHECKED，未做逐段语义审校",
   "created_at": "2026-11-15T22:05:00+08:00",
   "pages": [
     {
@@ -16,8 +16,8 @@
       "revid": 3373,
       "source_url": "https://antimatterdimensions.wiki.gg/wiki/V",
       "license": "CC BY-SA 4.0",
-      "translation_status": "TRANSLATED",
-      "review_status": "NOT REVIEWED",
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
       "media_omitted": true,
       "coverage": {
         "sections_translated": [
@@ -65,8 +65,8 @@
       "revid": 3387,
       "source_url": "https://antimatterdimensions.wiki.gg/wiki/Ra",
       "license": "CC BY-SA 4.0",
-      "translation_status": "TRANSLATED",
-      "review_status": "NOT REVIEWED",
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
       "media_omitted": true,
       "coverage": {
         "sections_translated": [
@@ -117,8 +117,8 @@
       "revid": 3375,
       "source_url": "https://antimatterdimensions.wiki.gg/wiki/Lai%27tela",
       "license": "CC BY-SA 4.0",
-      "translation_status": "TRANSLATED",
-      "review_status": "NOT REVIEWED",
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
       "media_omitted": true,
       "coverage": {
         "sections_translated": [
@@ -168,8 +168,8 @@
       "revid": 3376,
       "source_url": "https://antimatterdimensions.wiki.gg/wiki/Pelle",
       "license": "CC BY-SA 4.0",
-      "translation_status": "TRANSLATED",
-      "review_status": "NOT REVIEWED",
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
       "media_omitted": true,
       "coverage": {
         "sections_translated": [

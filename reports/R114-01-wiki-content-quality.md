@@ -16,9 +16,9 @@
 
 ## 2. 状态诚实化
 
-- 全部 35 篇正文由 REVIEWED 改为 **TRANSLATED**（REVIEWED 0）；不再用结构计数冒充审校。
+- 全部 35 篇正文由 REVIEWED 改为 **STRUCTURE CHECKED**（REVIEWED 0 / VERIFIED 0），与 #32 四级定义一致；不再用结构计数冒充审校。
 - Pelle、Eternity 已完成逐段对照，另留页面级记录：`docs/translation/reviews/pelle.md`、`eternity.md`，待独立复核后升格。
-- 覆盖率口径：**0/68（0.0%）**，已译 35 篇；与 wiki-editorial PR #32 的 STRUCTURE CHECKED 方向一致。
+- 覆盖率口径：已审校 **0/68（0.0%）**、结构核对 **35/68（51.5%）**；与 wiki-editorial PR #32 的四级定义一致。
 
 ## 3. 验证（本地真实执行，Node v24.22.3 / Quartz pin 7cfb0796）
 

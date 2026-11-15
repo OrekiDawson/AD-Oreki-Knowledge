@@ -68,10 +68,10 @@ tags:
 
 此前把「只做过章节/表格计数」的页面标成 REVIEWED 是不成立的。本次调整：
 
-- **REVIEWED 清零（0 篇）**：`Pelle`、`Eternity` 虽已完成逐段对照修订，但按「需独立复核才可 REVIEWED」的口径仍记 TRANSLATED，并各自留下页面级记录 `docs/translation/reviews/pelle.md`、`eternity.md`，供复核后升格。
-- **全部 35 篇正文：REVIEWED → TRANSLATED**，frontmatter 的 `review_status` 同步为 `NOT REVIEWED`。
-- **覆盖率口径随之从 35/68（51.5%）降为 0/68（0.0%）**：这是**诚实的数字**，不是内容回退。已译正文 35 篇：`Pelle`/`Eternity` 已逐段对照，其余 33 篇仅结构与术语检查。
-- 与 wiki-editorial 的 PR #32（新增 STRUCTURE CHECKED 等级、REVIEWED 需页面级记录）方向一致；本 PR 合入后由 Lead 决定是否统一改写为 STRUCTURE CHECKED 等级。
+- **REVIEWED 0 篇、VERIFIED 0 篇**：按四级验收（见 content/wiki-rules.md「内容验收等级」），只有逐段语义审校才能记 REVIEWED，本 Agent 本轮只对 `Pelle`、`Eternity` 做了针对性的逐段对照修正，不构成完整语义审校。
+- **全部 35 篇正文统一为 STRUCTURE CHECKED**（章节/表格/公式/来源字段结构与原站一致，**明确不算语义审校**），frontmatter 的 `review_status` 同步。
+- **已审校覆盖率 0/68（0.0%）、结构核对覆盖率 35/68（51.5%）**——这是诚实口径，不是内容回退。
+- `Pelle`、`Eternity` 保留页面级记录 `docs/translation/reviews/pelle.md`、`eternity.md`，供将来 REVIEWED 复核时复用。
 - 今后升 REVIEWED 的条件：**逐段对照原文 + 术语/数字/公式核对**，并在本目录留下该页的记录；不接受「结构计数通过」就升格。
 
 ## 5. 验证（本次真实执行）

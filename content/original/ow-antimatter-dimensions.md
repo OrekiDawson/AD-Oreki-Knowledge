@@ -10,8 +10,8 @@ original_revid: 3325
 original_fetched_at: "2026-11-15T21:10:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **反物质维度（Antimatter Dimensions）**是游戏中最早接触的一类维度。反物质维度生产反物质——这款游戏用来衡量玩家进度的核心资源。

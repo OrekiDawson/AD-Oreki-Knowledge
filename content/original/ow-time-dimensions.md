@@ -10,8 +10,8 @@ original_revid: 3345
 original_fetched_at: "2026-11-15T21:55:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **时间维度（Time Dimensions）**是第三种维度，在[[ow-eternity|永恒]]之后解锁。时间维度生产**时间碎片（Time Shards）**，时间碎片用于生成计数频率升级。

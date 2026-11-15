@@ -10,8 +10,8 @@ original_revid: 3397
 original_fetched_at: "2026-11-15T22:10:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **维度献祭（Dimensional Sacrifice）**是第一次获得 5 次[[ow-dimension-boosts|维度提升]]后解锁的机制。

@@ -10,8 +10,8 @@ original_revid: 3133
 original_fetched_at: "2026-11-15T22:40:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **记数法（Notations）**是游戏用来表示玩家货币数量的方式。游戏有多种记数法，从普通到勉强可读，再到完全不显示任何内容的都有。

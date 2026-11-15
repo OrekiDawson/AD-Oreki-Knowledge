@@ -10,8 +10,8 @@ original_revid: 3370
 original_fetched_at: "2026-11-15T21:25:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 > 你在操纵现实上展现了潜力。

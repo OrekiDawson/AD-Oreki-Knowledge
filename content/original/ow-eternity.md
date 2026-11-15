@@ -10,8 +10,8 @@ original_revid: 3118
 original_fetched_at: "2026-11-15T21:45:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **永恒（Eternity）**是游戏的第二个重置层，在取得**无限值**（Infinity，即 $1.80\text{e}308$ [[ow-infinity|无限点数]]，达到后显示为 ∞）之后抵达。

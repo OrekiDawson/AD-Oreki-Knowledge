@@ -10,8 +10,8 @@ original_revid: 3344
 original_fetched_at: "2026-11-15T21:45:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **无限维度（Infinity Dimensions）**是一种新的[[ow-dimensions|维度]]：玩家在[[ow-break-infinity|打破无限]]之后即可解锁第一个无限维度。玩家达到对应维度各自的反物质需求后，点击顶部的[大坍缩](https://antimatterdimensions.wiki.gg/wiki/Big_Crunch)按钮即可解锁它们；无限维度会在永恒时重置。与普通维度一样，无限维度也只有 8 个。
