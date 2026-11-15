@@ -26,7 +26,7 @@ tags:
 | --- | --- |
 | 原版正文条目总数（主命名空间 article） | 68 |
 | 已完成并校对（REVIEWED） | 28 |
-| 已翻译未校对（TRANSLATED） | 3 |
+| 已翻译未校对（TRANSLATED） | 7 |
 | 许可阻塞（BLOCKED） | 0 |
 | 覆盖率 | 28 / 68（41.2%） |
 
@@ -130,9 +130,20 @@ tags:
 
 > 本批状态为 TRANSLATED（正文完整、机器与人工自检通过，尚待独立校对）。按 POLICY，校对完成后才计入覆盖率。
 
+## 第十四批（已翻译，待校对）
+
+| 中文条目 | 原文 | 修订 ID |
+| --- | --- | --- |
+| [[ow-v|薇]] | [V](https://antimatterdimensions.wiki.gg/wiki/V) | 3373 |
+| [[ow-ra|太阳神]] | [Ra](https://antimatterdimensions.wiki.gg/wiki/Ra) | 3387 |
+| [[ow-laitela|莱特拉]] | [Lai'tela](https://antimatterdimensions.wiki.gg/wiki/Lai%27tela) | 3375 |
+| [[ow-pelle|佩勒]] | [Pelle](https://antimatterdimensions.wiki.gg/wiki/Pelle) | 3376 |
+
+> 至此**七位天神的正篇全部译完**（第十三、十四批合计 7 篇，状态 TRANSLATED）。校对完成后才升级为 REVIEWED 并计入覆盖率。
+
 ## 后续批次（按游戏流程排序）
 
-1. 薇、太阳神、莱特拉、佩勒（天神后四位）与他们的引语子页；
+1. 天神子页面：Teresa / Effarig / The Nameless Ones / V / Ra / Lai'tela / Pelle 的 Quotes，以及 Pelle/Upgrades、Pelle 惩罚页；
 2. 符文、复兴、自动机、符文炼金、虚幻升级、高级符文机制；
 3. 普通挑战与无限挑战、永恒挑战明细、成就（含秘密成就）、自动购买器；
 4. 计数频率、永恒里程碑、永恒升级、保存库、快捷操作、版本历史与其余攻略/秘密内容。
