@@ -66,10 +66,12 @@ jobs:
     steps:
       - name: Verify deployed site
         run: |
-          BASE="https://orekidawson.github.io/AD-Oreki-Knowledge"
+          BASE="http://wiki.oreki.net"
           for path in "/" "/index.html" "/static/contentIndex.json" "/static/knowledge-index.json" "/architecture/kotlin-runtime"; do
             code=$(curl -s -o /dev/null -w "%{http_code}" "$BASE$path")
             echo "$path -> $code"
             [ "$code" = "200" ] || exit 1
           done
           curl -s "$BASE/" | grep -q "AD-Oreki Knowledge Base"
+          HTTPS_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://wiki.oreki.net/ || true)
+          echo "HTTPS -> $HTTPS_CODE（证书签发前为 000，不阻断）"
