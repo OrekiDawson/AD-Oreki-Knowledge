@@ -17,4 +17,6 @@ cp quartz.config.yaml "$TARGET/quartz.config.yaml"
 mkdir -p "$TARGET/scripts"
 cp -r scripts/. "$TARGET/scripts/"
 cp README.md "$TARGET/README.md"
+# 将内容许可说明同步到临时构建目录，供内容审核脚本验证。
+cp LICENSE-CONTENT.md "$TARGET/LICENSE-CONTENT.md"
 echo "Quartz source ready at $TARGET (pin $PIN)"
