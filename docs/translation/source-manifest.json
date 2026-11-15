@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T15:38:17.722Z",
+ "generated_at": "2026-11-15T15:42:11.301Z",
  "source": {
   "site": "https://antimatterdimensions.wiki.gg",
   "api": "https://antimatterdimensions.wiki.gg/api.php",
@@ -26,11 +26,11 @@
  "coverage": {
   "total_pages": 68,
   "translated": 0,
-  "structure_checked": 39,
+  "structure_checked": 44,
   "reviewed": 0,
   "verified": 0,
   "blocked": 0,
-  "not_started": 29
+  "not_started": 24
  },
  "pages": [
   {
@@ -1537,16 +1537,16 @@
     "Stubs"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "符文炼金",
+   "path": "content/original/ow-glyph-alchemy.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch17：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Glyph Sacrifice",
@@ -1660,16 +1660,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "映像升级",
+   "path": "content/original/ow-imaginary-upgrades.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch17：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Infinite",
@@ -1782,16 +1782,16 @@
     "Pages with spoilers"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "无限挑战",
+   "path": "content/original/ow-infinity-challenges.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch17：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Infinity Dimensions",
@@ -2456,16 +2456,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "存档库",
+   "path": "content/original/ow-save-bank.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch17：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Secret achievement",
@@ -2730,16 +2730,16 @@
     "Pages using Pelle wordshift classes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "计数频率·星系数量明细（被毁灭的现实）",
+   "path": "content/original/ow-tickspeed-galaxy-breakdown-doomed.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch17：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Tickspeed/Galaxy strength breakdown (Doomed)",

@@ -1,0 +1,96 @@
+{
+  "batch": 17,
+  "title": "第十七批：映像升级 / 无限挑战 / 符文炼金 / 存档库 / 星系数明细（5 篇）",
+  "branch": "docs/r114-batch17",
+  "base": "main @ ab786f4（#37 合并后）",
+  "owner": "wiki-translation",
+  "status": "STRUCTURE CHECKED",
+  "status_note": "五篇均逐节翻译并做结构核对（章节/表格/公式/来源字段）；未做逐段语义审校，按四级口径记 STRUCTURE CHECKED",
+  "created_at": "2026-11-16T00:20:00+08:00",
+  "pages": [
+    {
+      "file": "content/original/ow-imaginary-upgrades.md",
+      "original_title": "Imaginary Upgrades",
+      "zh_title": "映像升级",
+      "revid": 3358,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 2,
+        "rows": 25,
+        "formulas": 8,
+        "notes": "10 项可重复 + 15 项一次性全表保留；映像机器公式与原文两处 Max 缺参笔误加译注"
+      }
+    },
+    {
+      "file": "content/original/ow-infinity-challenges.md",
+      "original_title": "Infinity Challenges",
+      "zh_title": "无限挑战",
+      "revid": 3359,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 2,
+        "rows": 14,
+        "formulas": 4,
+        "notes": "8 个挑战的解锁/目标/描述/奖励/快捷重置/细节全保留；相关成就 6 项含剧透 183"
+      }
+    },
+    {
+      "file": "content/original/ow-glyph-alchemy.md",
+      "original_title": "Glyph Alchemy",
+      "zh_title": "符文炼金",
+      "revid": 3388,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 1,
+        "rows": 22,
+        "formulas": 22,
+        "notes": "21 种资源 + 现实符文的反应条件/效果/公式/上限全部保留；精炼值公式与三档删除策略保留"
+      }
+    },
+    {
+      "file": "content/original/ow-save-bank.md",
+      "original_title": "Save Bank",
+      "zh_title": "存档库",
+      "revid": 3131,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 0,
+        "rows": 0,
+        "formulas": 0,
+        "notes": "短条目完整翻译（用途、投稿方式）"
+      }
+    },
+    {
+      "file": "content/original/ow-tickspeed-galaxy-breakdown-doomed.md",
+      "original_title": "Tickspeed/Galaxy count breakdown (Doomed)",
+      "zh_title": "计数频率·星系数量明细（被毁灭的现实）",
+      "revid": 3059,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 1,
+        "rows": 11,
+        "formulas": 6,
+        "notes": "11 行加成来源与公式保留；被摧毁来源的词形变换写法保留并说明"
+      }
+    }
+  ],
+  "checks_run": {
+    "env": "Node v24.22.3；Quartz pin 7cfb0796165c848be5438117e9806802123bf676",
+    "check-content": "PASS",
+    "check-translation": "PASS",
+    "build-index": "PASS",
+    "npx quartz build": "PASS",
+    "verify-build": "PASS",
+    "acceptance.cjs": "PASS"
+  },
+  "notes": [
+    "Tickspeed、Glyphs、Achievements、Perks 四个超大页（22.9KB / 62.4KB / 37.8KB / 15.5KB）体量过大，本轮未拆开硬塞，留待后续批次逐篇处理。",
+    "未改 index.md / 导航 / 分类页。"
+  ],
+  "blockers": []
+}
