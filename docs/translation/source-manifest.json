@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T13:15:00.364Z",
+ "generated_at": "2026-11-15T13:16:57.477Z",
  "source": {
   "site": "https://antimatterdimensions.wiki.gg",
   "api": "https://antimatterdimensions.wiki.gg/api.php",
@@ -26,7 +26,7 @@
  "coverage": {
   "total_pages": 68,
   "translated": 0,
-  "reviewed": 21,
+  "reviewed": 22,
   "blocked": 0
  },
  "pages": [
@@ -2828,16 +2828,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
+   "zh_title": "时间研究",
+   "path": "content/original/ow-time-studies.md",
+   "priority": 2,
+   "status": "REVIEWED",
+   "review_status": "REVIEWED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch9：正文与全部研究表完整翻译并校对"
   },
   {
    "title": "Time Theorems",
