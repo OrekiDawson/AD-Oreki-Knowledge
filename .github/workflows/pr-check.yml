@@ -16,10 +16,13 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: 24
-      - name: Validate AI workflow script syntax
-        run: node --check scripts/ai/first-pr.mjs
-      - name: Test first daily PR AI gate (no model call)
-        run: node --test scripts/ai/tests/first-pr.test.mjs
+      - name: Validate AI review scripts syntax
+        run: |
+          node --check scripts/ai/first-pr.mjs
+          node --check scripts/ai/pr-review-prompt.mjs
+          node --check scripts/ai/pr-review-report.mjs
+      - name: Test daily PR selection and AI review contract (no model call)
+        run: node --test scripts/ai/tests/*.test.mjs
       - name: Check HTTPS verification script syntax
         run: bash -n scripts/verify-https.sh
       - run: bash scripts/bootstrap-quartz.sh .quartz-build
