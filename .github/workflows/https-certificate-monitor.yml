@@ -1,0 +1,39 @@
+name: HTTPS certificate monitor
+
+on:
+  schedule:
+    # 北京时间 02:00（UTC 18:00），避开 AI 高峰停工时段；允许 GitHub 定时延迟
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: read
+  issues: write
+
+concurrency:
+  group: https-certificate-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Unit tests（模拟异常检测）
+        run: node --test scripts/tests/https-monitor.test.mjs
+      - name: Real certificate / Pages / DNS check
+        env:
+          GH_TOKEN: ${{ github.token }}
+          KB_ALERT_ISSUE: "9"
+        run: node scripts/https-monitor.mjs
+      - name: Strict HTTPS gate（复用现有脚本）
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/verify-https.sh
