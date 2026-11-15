@@ -1,5 +1,5 @@
 ---
-title: "Web 架构"
+title: "反物质维度MOD Wiki:Web 架构"
 description: "Web 端冻结上游、Playwright 验证与 oreki.net 部署边界"
 tags:
   - web

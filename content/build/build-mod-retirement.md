@@ -1,5 +1,5 @@
 ---
-title: "build_mod.py 退役"
+title: "反物质维度MOD Wiki:build_mod.py 退役"
 description: "Issue #52：彻底退役旧 Python 补丁构建链"
 tags:
   - build

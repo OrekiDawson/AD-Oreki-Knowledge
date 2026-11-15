@@ -1,5 +1,5 @@
 ---
-title: "发布状态"
+title: "反物质维度MOD Wiki:发布状态"
 description: "四渠道交付、发布门禁与当前 BLOCKED 原因"
 tags:
   - release

@@ -1,5 +1,5 @@
 ---
-title: "AGP 构建管线"
+title: "反物质维度MOD Wiki:AGP 构建管线"
 description: "从官方 DEX 到 AGP 完整游戏 APK 的可追溯管线"
 tags:
   - build

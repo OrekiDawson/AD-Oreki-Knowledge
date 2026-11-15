@@ -1,5 +1,5 @@
 ---
-title: "CI/CD 与受保护门禁"
+title: "反物质维度MOD Wiki:CI/CD 与受保护门禁"
 description: "公开源码检查、受保护候选构建、独立验证与四渠道发布"
 tags:
   - ci
