@@ -23,6 +23,16 @@ node scripts/verify-build.mjs
 push main -> .github/workflows/deploy.yml -> GitHub Pages（artifact: public/）。
 PR 触发 pr-check.yml（不部署）。
 
+## 每天首次 PR 的 AI 知识整理
+
+- 普通 PR 都执行 `pr-check.yml` 的 Quartz 构建，**不因 AI 跳过而略过正常 CI**。
+- `.github/workflows/ai-first-pr.yml` 在 PR CI 完成后运行：按 **北京时间 UTC+8**，从所有历史 PR（包括已关闭、Dependabot）选出当日**最早创建**的一个。
+- 当日首次 PR：从 GitHub API 只读取得改动，调用 **一次** DeepSeek 整理知识主题、需要核实的证据和链接建议；结果写入 GitHub Actions **Job Summary**，并保存 `kb-ai-YYYY-MM-DD` Artifact。
+- 当日其他 PR：判定 Job 显示 **SKIPPED**，`AI 整理` Job 显示跳过，**不会调用模型或消耗 AI Token**。首次 PR 后续重新触发也会根据已成功的当日 Artifact 跳过。
+- 模型任务运行在受信任的 `main` 上；**不检出、不执行 PR 代码**，仅以只读权限分析 PR diff。API Key 保留在 `DEEPSEEK_API_KEY` Secrets，模型不会提交文件、自动合并 PR 或修改正式知识。
+- 缺少密钥、GitHub API 无法判断首个 PR、AI 失败时显示 **FAIL**，不得冒称 SKIPPED。AI 建议是辅助整理，不等于真实证据或代码审查 PASS。
+- 原有 `ai-knowledge-sync.yml` 的定时同步是另一项任务，不受本 PR 触发限额影响；如需要全部 AI 调用每天只一次，应另行调整定时同步策略。
+
 ## 强制 HTTPS
 
 正式域名：**https://wiki.oreki.net**。GitHub Pages 必须启用服务器端 `Enforce HTTPS`，不能用 Quartz 链接或浏览器端 JavaScript 跳转代替。
