@@ -25,7 +25,8 @@ tags:
 
 | 内容 | 位置 |
 | --- | --- |
-| P0 修复 PR | Android PR #88，squash 到 main ae734966bf712faca3ff7bbb389d8724a8efe7e5 |
+| P0 修复 PR | [Android PR #88](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/88)，合并至 <code>ae734966bf712faca3ff7bbb389d8724a8efe7e5</code> |
+| 180 分钟长跑 FAIL（更新的当前状态） | [Android PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90)，[最终报告](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md)，合并 Commit <code>d950d1102f13e81f78dfdcdfb308359ee3eb1633</code> |
 | 目录迁移 PR | Android PR #83 |
 | A 批 ABI 守卫 PR | Android PR #87 |
 | 晚期存档夹具 PR | Android PR #85 |

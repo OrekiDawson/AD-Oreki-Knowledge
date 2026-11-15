@@ -10,6 +10,9 @@ configuration:
     - private
     - templates
     - .obsidian
+    # AI 草稿只保留在 GitHub，不作为事实发布或进入 Quartz 搜索。
+    - ai-drafts
+    - "ai-drafts/**"
   theme:
     fontOrigin: googleFonts
     cdnCaching: true

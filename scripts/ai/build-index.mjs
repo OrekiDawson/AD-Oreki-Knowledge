@@ -37,7 +37,7 @@ function parseFront(text) {
 }
 
 function main() {
-  const files = walk(CONTENT).filter((f) => f.endsWith(".md"));
+  const files = walk(CONTENT).filter((f) => f.endsWith(".md") && !f.startsWith("content/ai-drafts/"));
   const pages = [];
   const chunks = [];
   const inverted = new Map();

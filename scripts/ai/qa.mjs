@@ -30,7 +30,7 @@ function keywords(text) {
 }
 
 function searchPages(keys) {
-  const pages = walk("content").filter((p) => p.endsWith(".md") && p !== "content/index.md");
+  const pages = walk("content").filter((p) => p.endsWith(".md") && p !== "content/index.md" && !p.startsWith("content/ai-drafts/"));
   const scored = pages.map((p) => {
     const text = fs.readFileSync(p, "utf8");
     let score = 0;

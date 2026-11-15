@@ -12,10 +12,14 @@ tags:
 
 | 问题 | 状态 | 处理 |
 | --- | --- | --- |
-| 180 分钟通关验证 | 进行中 | 新档真实墙钟长跑，AUTO 驱动，完成前保持 BLOCKED |
+| 180 分钟通关验证 | **FAIL** | 2026-11-15 实测 180.1 分钟未通关（realities=2），Release 继续 BLOCKED；[Android PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90) |
 | AGP 与 Smali 晚期存档互读 | NOT RUN | 下一轮在 smali 稳定版与 AGP 候选间互导晚期存档 |
 | R8 ON 正式化 | 未启用 | 需完整游戏与发布门禁后单独评估（[[r8]]） |
 | build_mod.py 退役 | 长期目标 | 依赖 AGP 原生完整游戏（[[build-mod-retirement]]） |
+
+## 最新 180 分钟长跑结果（R113-01）
+
+[原始长跑报告](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md)：2026-11-15 12:47:19～15:47:29（UTC+8），墙钟 10,805.8 秒，<code>creditsFinished=false</code>、<code>realities=2</code>、<code>fullGameCompletions=0</code>，**FAIL**。报告记录全程无 FATAL/ABI 崩溃，因此这次失败应与已修复的 ABI P0 分开追踪，不能误写成“运行中”或“已通关”。
 
 ## 已推翻或需更正的结论
 
