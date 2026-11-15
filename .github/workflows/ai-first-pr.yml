@@ -16,6 +16,7 @@ permissions:
 # consume multiple model calls in a single UTC+8 day.
 concurrency:
   group: kb-first-pr-ai
+  queue: max
   cancel-in-progress: false
 
 jobs:
