@@ -1,0 +1,54 @@
+{
+  "batch": 19,
+  "title": "第十九批：计数频率 / 复兴（2 篇大页）",
+  "branch": "docs/r114-batch19",
+  "base": "main @ 01def3d（#39 合并后）",
+  "owner": "wiki-translation",
+  "status": "STRUCTURE CHECKED",
+  "status_note": "两篇超大页逐节翻译并结构核对；未逐段语义审校，记 STRUCTURE CHECKED",
+  "created_at": "2026-11-16T01:10:00+08:00",
+  "pages": [
+    {
+      "file": "content/original/ow-tickspeed.md",
+      "original_title": "Tickspeed",
+      "zh_title": "计数频率",
+      "revid": 3334,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 9,
+        "rows": 55,
+        "formulas": 20,
+        "notes": "乘数公式、<$3$ 星系与 $≥3$ 星系两段公式、基础乘数表、升级值表、有效星系数 G 的 6 组来源（常规/永恒/鹿颈长/薇/太阳神/佩勒）、星系强度 S 的 5 组来源、价格成长全部保留；多标签表格展开为小节"
+      }
+    },
+    {
+      "file": "content/original/ow-perks.md",
+      "original_title": "Perks",
+      "zh_title": "复兴",
+      "revid": 3354,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 1,
+        "rows": 48,
+        "formulas": 0,
+        "notes": "48 个节点全表（节点名/内部 ID/家族/前置/描述/AP/其它细节/编号）；7 种布局与 2 个主题图注保留；5 条琐事保留"
+      }
+    }
+  ],
+  "checks_run": {
+    "env": "Node v24.22.3；Quartz pin 7cfb0796165c848be5438117e9806802123bf676",
+    "check-content": "PASS",
+    "check-translation": "PASS",
+    "build-index": "PASS",
+    "npx quartz build": "PASS",
+    "verify-build": "PASS",
+    "acceptance.cjs": "PASS"
+  },
+  "notes": [
+    "Automation（17.6KB）本批未做，留待下一批单篇；本批优先保证两篇超大页质量。",
+    "未改 index.md / 导航 / 分类页。"
+  ],
+  "blockers": []
+}
