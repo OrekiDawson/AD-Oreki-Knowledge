@@ -1,0 +1,167 @@
+{
+  "batch": 13,
+  "title": "第十三批：天神（特蕾莎 / 鹿颈长 / 无名氏）（3 篇）",
+  "branch": "docs/r114-original-tr-b2",
+  "base": "caa6330（#26 第十二批 tip，堆叠分支）",
+  "owner": "wiki-translation",
+  "status": "TRANSLATED",
+  "status_note": "正文完整翻译并自检；review_status 为 NOT REVIEWED，未标 REVIEWED（按 POLICY §4 与 Lead 指令）",
+  "created_at": "2026-11-15T21:30:00+08:00",
+  "pages": [
+    {
+      "file": "content/original/ow-teresa.md",
+      "original_title": "Teresa",
+      "zh_title": "特蕾莎",
+      "pageid": 292,
+      "revid": 3370,
+      "source_url": "https://antimatterdimensions.wiki.gg/wiki/Teresa",
+      "license": "CC BY-SA 4.0",
+      "translation_status": "TRANSLATED",
+      "review_status": "NOT REVIEWED",
+      "media_omitted": true,
+      "coverage": {
+        "sections_translated": [
+          "引言引语",
+          "概述",
+          "信息框要点",
+          "机制/RM 容器灌注",
+          "六项里程碑表",
+          "复兴点数商店表（5 行 + 脚注）",
+          "现实（惩罚/完成条件/公式）",
+          "引语（4 段）",
+          "注释",
+          "琐事（2 条）",
+          "脚注",
+          "参考资料",
+          "来源与许可",
+          "相关条目"
+        ],
+        "tables_preserved": 2,
+        "formulas_preserved": 2,
+        "quotes_preserved": 4,
+        "blocks_omitted": [
+          "Celestial Infobox 模板结构（改写为要点表，内容全保留）",
+          "Celestial Quote/Quotebox 模板标记",
+          "Game Navigation 导航模板"
+        ]
+      },
+      "checks": {
+        "full_text_no_summary": "PASS（对照 revid 3370 逐节核对）",
+        "tables_no_missing_rows": "PASS（里程碑 6/6，商店 5/5）",
+        "formulas_verbatim": "PASS（RM 乘数、符文献祭乘数）",
+        "unlock_conditions": "PASS（成就 147 / 1e14 现实 / 1e24 鹿颈长）",
+        "attribution_block": "PASS（标题/URL/pageid/revid/许可/已修改/抓取日期）",
+        "media_omitted_noted": "PASS（4 个媒体文件名与图注含义已注明）",
+        "terminology_glossary": "PASS（特蕾莎/鹿颈长/现实机器/复兴点数/时间之理 等按 glossary）",
+        "internal_links": "PASS（[[ow-*]] 目标文件均存在）"
+      }
+    },
+    {
+      "file": "content/original/ow-effarig.md",
+      "original_title": "Effarig",
+      "zh_title": "鹿颈长",
+      "pageid": 378,
+      "revid": 3371,
+      "source_url": "https://antimatterdimensions.wiki.gg/wiki/Effarig",
+      "license": "CC BY-SA 4.0",
+      "translation_status": "TRANSLATED",
+      "review_status": "NOT REVIEWED",
+      "media_omitted": true,
+      "coverage": {
+        "sections_translated": [
+          "引言引语",
+          "概述",
+          "信息框要点",
+          "遗迹碎片（2 个公式）",
+          "鹿颈长的商店（4 行）",
+          "现实（三层表 + 3 个脚注公式 + 3 个 nerfFactor 公式）",
+          "琐事（2 条）",
+          "术语/脚注/参考资料",
+          "来源与许可",
+          "相关条目"
+        ],
+        "tables_preserved": 3,
+        "formulas_preserved": 7,
+        "quotes_preserved": 1,
+        "blocks_omitted": [
+          "Celestial Infobox 模板结构（改写为要点表）",
+          "Subpages 模板",
+          "Game Navigation 导航模板"
+        ]
+      },
+      "checks": {
+        "full_text_no_summary": "PASS（对照 revid 3371 逐节核对）",
+        "tables_no_missing_rows": "PASS（商店 4/4，现实三层 3/3，信息框要点 11 项）",
+        "formulas_verbatim": "PASS（RS 获取、稀有度、三层奖励、指数与 nerfFactor）",
+        "unlock_conditions": "PASS（1e24 容器解锁；run 升级与符文条件）",
+        "attribution_block": "PASS",
+        "media_omitted_noted": "PASS（3 类媒体已注明）",
+        "terminology_glossary": "PASS（鹿颈长/遗迹碎片/遗迹碎片缩写 RS/无限之力/时间碎片）",
+        "internal_links": "PASS"
+      }
+    },
+    {
+      "file": "content/original/ow-nameless-ones.md",
+      "original_title": "The Nameless Ones",
+      "zh_title": "无名氏",
+      "pageid": 380,
+      "revid": 3372,
+      "source_url": "https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones",
+      "license": "CC BY-SA 4.0",
+      "translation_status": "TRANSLATED",
+      "review_status": "NOT REVIEWED",
+      "media_omitted": true,
+      "coverage": {
+        "sections_translated": [
+          "引言引语",
+          "概述",
+          "信息框要点",
+          "黑洞放电/储存的游戏时间/储存的现实时间（含增幅公式，2 条脚注）",
+          "升级（2 行 + ID 命名脚注）",
+          "现实（9 项列出效果表 + 6 项未列出效果表）",
+          "超立方体（13 行数据表 + 编辑注释）",
+          "琐事（3 条）",
+          "脚注/参考资料",
+          "来源与许可",
+          "相关条目"
+        ],
+        "tables_preserved": 5,
+        "formulas_preserved": 8,
+        "quotes_preserved": 1,
+        "blocks_omitted": [
+          "Celestial Infobox 模板结构（改写为要点表）",
+          "Subpages 模板",
+          "Game Asset 图片模板",
+          "Game Navigation 导航模板"
+        ]
+      },
+      "checks": {
+        "full_text_no_summary": "PASS（对照 revid 3372 逐节核对）",
+        "tables_no_missing_rows": "PASS（升级 2/2，列出效果 9/9，未列出效果 6/6，超立方体 13/13）",
+        "formulas_verbatim": "PASS（增幅乘数、TP/DT 削弱、FEEL ETERNITY、13+ 公式）",
+        "unlock_conditions": "PASS（鹿颈长永恒层解锁；两项升级成本；第二升级附加条件）",
+        "attribution_block": "PASS",
+        "media_omitted_noted": "PASS（5 个媒体文件名与图注含义已注明）",
+        "terminology_glossary": "PASS（无名氏/超立方体/速子粒子/膨胀时间/计数频率）",
+        "internal_links": "PASS"
+      }
+    }
+  ],
+  "checks_run": {
+    "env": "Node v24.22.3（/home/oreki/.nvm/versions/node/v24.22.3）；Quartz pin 7cfb0796165c848be5438117e9806802123bf676；构建目录 .quartz-build（scripts/bootstrap-quartz.sh）",
+    "node scripts/check-content.mjs": "PASS — OK 内容检查通过: 82 页",
+    "node scripts/check-translation.mjs": "PASS — 翻译覆盖率 28/68 (41.2%)；TRANSLATED 3；BLOCKED 0；页面 31；仅 1 条 WARN 为既有页 ow-terminology 未声明媒体，与本批无关",
+    "node scripts/ai/build-index.mjs": "PASS — index: pages=81 chunks=321 terms=4000",
+    "npx quartz build": "PASS — Parsed 81 Markdown, Emitted 364 files, 154 HTML（exit 0；1 条既有 config 警告 @quartz-community/footer links.GitHub 源代码，与本批内容无关）",
+    "node scripts/verify-build.mjs": "PASS — OK 构建产物检查通过: 154 个 HTML 页面",
+    "node scripts/acceptance.cjs": "PASS — Chromium 412×915 手机视口，bad: []（含 /original/ 与新译文页可达、译文「来源与许可」可见、AI 草稿 404、类目中文名命中）",
+    "accessibility_evidence": "验收通过本地 clean-URL 静态服务（127.0.0.1:8091，映射 /x → x.html）执行；port 8081 被其它工作树占用，未干扰"
+  },
+  "blockers": [],
+  "notes": [
+    "本批 3 篇均为 TRANSLATED，未标 REVIEWED；校对由独立一轮执行后才会升级状态并计入覆盖率。",
+    "原页子页面（Teresa 无子页；Effarig/Quotes、The Nameless Ones/Quotes）属独立清单条目，留待后续批次。",
+    "media 全部未转载，仅保留文件名与图注含义说明。"
+  ],
+  "updated_at": "2026-11-15T21:55:00+08:00"
+}

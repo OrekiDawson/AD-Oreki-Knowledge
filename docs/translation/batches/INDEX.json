@@ -1,0 +1,93 @@
+{
+  "note": "批次账本索引。每批一个 JSON，记录页面、revid、翻译/校对状态与核对项；覆盖率口径见 docs/translation/POLICY.md §5。",
+  "batches": [
+    {
+      "batch": 1,
+      "title": "第一批：游戏机制与基础层（7 篇）",
+      "commit": "774b4cc",
+      "page_count": 7,
+      "status": "REVIEWED",
+      "file": "batch-01.json"
+    },
+    {
+      "batch": 2,
+      "title": "第二批：打破无限 / 无限维度 / 复制器 / 维度献祭（4 篇）",
+      "commit": "ff5fb38",
+      "page_count": 4,
+      "status": "REVIEWED",
+      "file": "batch-02.json"
+    },
+    {
+      "batch": 3,
+      "title": "第三批：永恒 / 永恒挑战 / 时间维度（3 篇）",
+      "commit": "a2946ec",
+      "page_count": 3,
+      "status": "REVIEWED",
+      "file": "batch-03.json"
+    },
+    {
+      "batch": 4,
+      "title": "第四批：时间膨胀 / 膨胀升级总览（2 篇）",
+      "commit": "aee3eb9",
+      "page_count": 2,
+      "status": "REVIEWED",
+      "file": "batch-04.json"
+    },
+    {
+      "batch": 5,
+      "title": "第五批：现实 / 黑洞（2 篇）",
+      "commit": "5fd90ab",
+      "page_count": 2,
+      "status": "REVIEWED",
+      "file": "batch-05.json"
+    },
+    {
+      "batch": 6,
+      "title": "第六批：广告加成（1 篇）",
+      "commit": "5b7cbd1",
+      "page_count": 1,
+      "status": "REVIEWED",
+      "file": "batch-06.json"
+    },
+    {
+      "batch": 7,
+      "title": "第七批：术语（佩勒用词）（1 篇）",
+      "commit": "c945619",
+      "page_count": 1,
+      "status": "REVIEWED",
+      "file": "batch-07.json"
+    },
+    {
+      "batch": 8,
+      "title": "第八批：记数法（1 篇）",
+      "commit": "4f4418e",
+      "page_count": 1,
+      "status": "REVIEWED",
+      "file": "batch-08.json"
+    },
+    {
+      "batch": 9,
+      "title": "第九批：时间研究（1 篇）",
+      "commit": "bb09666",
+      "page_count": 1,
+      "status": "REVIEWED",
+      "file": "batch-09.json"
+    },
+    {
+      "batch": 10,
+      "title": "第十批：现实升级（1 篇）",
+      "commit": "5dccd85",
+      "page_count": 1,
+      "status": "REVIEWED",
+      "file": "batch-10.json"
+    },
+    {
+      "batch": 11,
+      "title": "第十一批：无限升级 / 无限升级表 / 膨胀升级（3 篇）",
+      "commit": "d25e1f1",
+      "page_count": 3,
+      "status": "REVIEWED",
+      "file": "batch-11.json"
+    }
+  ]
+}

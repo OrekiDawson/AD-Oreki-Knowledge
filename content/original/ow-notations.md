@@ -53,7 +53,7 @@ review_status: "REVIEWED"
 | --- | --- |
 | True Blind |  |
 | Mixed Logarithm | 100 Oc |
-| Omega | ω[7](β48) |
+| Omega | ω\[7\]（β48） |
 | Greek（希腊字母） | 100 ι |
 | Flag（旗帜） | 100 🇦🇴 |
 | YesNo | YES |
