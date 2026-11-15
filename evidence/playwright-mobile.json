@@ -1,0 +1,61 @@
+{
+ "base": "http://localhost:8081",
+ "mobile": {
+  "title": "AD-Oreki 技术知识库 · 反物质维度 MOD 技术知识库",
+  "explorerLinks": 4,
+  "pageTitleContains": true,
+  "overflow": 0,
+  "kotlinPage": true,
+  "codeBlocks": 0,
+  "backlinks": 0,
+  "graph": 25,
+  "overflowKotlin": 0,
+  "challengePageHasZenith": true,
+  "codePre": 1,
+  "codeSpans": 44,
+  "tables": 2,
+  "backlinksHeading": true,
+  "graphWidget": true,
+  "darkmodeToggled": true,
+  "bgBefore": "rgb(250, 248, 248)",
+  "bgAfter": "rgb(22, 22, 24)"
+ },
+ "desktop": {
+  "title": "AD-Oreki 技术知识库 · 反物质维度 MOD 技术知识库",
+  "overflow": 0,
+  "hasSearch": true
+ },
+ "errors": [],
+ "searches": [
+  {
+   "term": "永恒挑战",
+   "expectSlug": "challenges",
+   "hit": true
+  },
+  {
+   "term": "自动购买器",
+   "expectSlug": "automation",
+   "hit": true
+  },
+  {
+   "term": "Kotlin",
+   "expectSlug": "kotlin-runtime",
+   "hit": true
+  },
+  {
+   "term": "AGP",
+   "expectSlug": "agp",
+   "hit": true
+  },
+  {
+   "term": "Lai",
+   "expectSlug": "saves",
+   "hit": true
+  },
+  {
+   "term": "build_mod.py",
+   "expectSlug": "build-mod-retirement",
+   "hit": true
+  }
+ ]
+}
