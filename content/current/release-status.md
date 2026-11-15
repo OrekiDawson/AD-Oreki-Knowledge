@@ -16,7 +16,7 @@ tags:
 | Google Drive | NOT RUN |
 | 本地 SSH/SFTP | NOT RUN |
 
-R113-01 轮内**未发布任何 Android 包**。最近一个仍有效的稳定版是 R103 的历史产物，
+R113-01 轮内**未发布任何 Android 包**。本轮 [180 分钟新档长跑](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md) 已明确 **FAIL**（creditsFinished=false；realities=2；fullGameCompletions=0）。P0 存档/自动化修复的局部 PASS 不代表通关目标 PASS；Release 必须继续 BLOCKED。最近一个仍有效的稳定版是 R103 的历史产物，
 不得把实验候选或历史 APK 重新命名冒充新版本。
 
 ## 发布门禁（全部门禁通过才可发布）
@@ -31,7 +31,7 @@ R113-01 轮内**未发布任何 Android 包**。最近一个仍有效的稳定�
 8. 原包名 <code>com.oreki.antimatterdimensions</code>、原签名证书。
 9. versionCode 正确递增（历史最大 30210000）。
 10. AGP 来源可追溯。
-11. R113 候选真实 ≤180 分钟通关（进行中）。
+11. R113 候选真实 ≤180 分钟通关（**FAIL**：已完成 180.1 分钟实测，但未通关；详见 [PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90)）。
 12. 受保护 Candidate / Verify / Release 门禁通过。
 
 ## 门禁流程
