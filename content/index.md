@@ -1,69 +1,50 @@
 ---
 title: "反物质维度MOD 技术知识库"
-description: "反物质维度 MOD（Oreki Edition）Android / Web 双端技术事实、构建、反混淆与发布状态"
+description: "《反物质维度》Oreki Edition MOD 的中文技术百科：玩法机制、双端架构、构建与交付、故障排查与历史归档"
 tags:
   - index
 ---
 
-# 反物质维度MOD 技术知识库
 
-反物质维度 MOD（Oreki Edition）技术知识库。**GitHub 是权威事实源，本站是阅读与检索层。**
-任何结论都以对应仓库的源码、PR、CI 与 AVD 证据为准；本站在冲突时明确标注待核实。
+本站是《反物质维度》Oreki Edition MOD 的**中文技术百科**，按主题解释游戏机制、Android/Web 双端架构、构建与发布链路，以及排查方法。**GitHub 的源码、Commit、PR、Run 与设备报告才是事实依据**；本站是阅读与检索层，冲突时以原始证据为准。
 
 > **原创文字许可**：本站有权授权的原创百科文字采用[知识共享 署名-相同方式共享 4.0 国际（CC BY-SA 4.0）](https://creativecommons.org/licenses/by-sa/4.0/)。第三方材料和软件按各自许可。详见[[copyright|版权与许可]]。
 
-## 先认识游戏
+## 先读什么
 
-**[[antimatter-dimensions|《反物质维度》游戏总览]]** 从普通读者的角度介绍这款放置增量游戏：反物质与八级维度怎样生产资源，无限、永恒、现实三个主要成长层怎样衔接，以及游戏原版与 Oreki Edition MOD 有什么区别。
+1. **[[antimatter-dimensions|《反物质维度》游戏总览]]**：不熟悉原版游戏时，先理解反物质、无限、永恒、现实这几个成长层。
+2. **[[project-overview|项目概览]]**：了解 MOD 的仓库分工、冻结基线与交付目标。
+3. **当前状态**：[[project-status|当前项目状态]] 与 [[release-status|发布状态]] 只写现行结论，并标注最后核实时间。
 
-第一次来到本站，建议先阅读游戏总览，再阅读[[project-overview|MOD 项目概览]]和下面的技术专题。
+## 按主题浏览
 
-## 知识库规则与编写指南
+### 玩法机制
+[玩法机制](/gameplay/) 先给出[[original-vs-mod|原版行为与 Oreki Edition 修改]]的集中对照，再逐项解释 [[progression-infinity-eternity|无限与永恒]]、[[reality-time-studies|现实与时间研究]]、[[celestials|天神系统]]、[[challenges|挑战与真实结算]]、[[automation|智能自动购买器]]、[[saves|存档兼容与自动保存]]、[[stage-gates|阶段门禁]]。
 
-**[[wiki-rules|反物质维度MOD Wiki:知识库规则]]** 是本站公开的正式编写规则，首页即可进入，左侧目录和每页页脚也提供常驻入口。
+### 架构与运行时
+[架构与运行时](/architecture/) 覆盖 [[android|Android 架构]]、[[kotlin-runtime|Kotlin 混合运行时 ABI]]、[[web|Web 架构]]、[[parity|双端行为一致性]] 与 [[directory-migration|目录标准化迁移]]。
 
-这里的每篇文章以**准确、通俗易懂的简体中文正文**为主，重要事实有可核查的原始来源；文章末尾可保留约五行供 AI 检索的摘要，但 AI 摘要不构成事实证据。
+### 构建与交付
+[构建与交付](/build/) 覆盖 [[agp|AGP 构建管线]]、[[apk-signing|APK 签名与升级兼容]]、[[ci-cd|CI/CD 与受保护门禁]]、[[signature-backfill|Signature 回填]]、[[r8|R8 分层策略]] 与 [[build-mod-retirement|build_mod.py 退役]]。
 
-## 当前重要事实（2026-11-15）
+### 逆向、排查与参考
+[逆向与语义映射](/reverse-engineering/) 解释混淆 DEX 的 ABI 适配；[故障排查](/troubleshooting/) 提供 [[coroutine-abi|协程 ABI 崩溃排查]] 与 [[save-compatibility|存档兼容排查]]；[参考资料](/references/) 汇总 [[source-index|来源索引]] 与 [[terminology|术语表]]。
 
-- **R113-01 新档 180 分钟长跑：FAIL。** 已运行 180.1 分钟，未通关；正式 Release 继续 BLOCKED。请见 [[project-status]] 与 [Android PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90)。
-- **已完成的 P0 存档/自动化修复** 不等于 180 分钟通关验收成功。页面和结论必须分别引用相应验证证据。
+### 历史归档
+[历史归档](/history/) 保存按日期与事件记录的当时判定（长跑结果、发布、流水线阻塞、根因定位过程），**不代表当前状态**。
 
-## 快速入口
+## 站务
 
-| 主题 | 页面 |
-| --- | --- |
-| **游戏总览：从原版玩法读起** | **[[antimatter-dimensions]]** |
-| **知识库规则（正式规则全文）** | **[[wiki-rules]]** |
-| 版权、转载及许可说明 | [[copyright]] |
-| 项目全景与仓库分工 | [[project-overview]] |
-| 知识库编写规范：准确、易懂、全中文 | [[editorial-guidelines]] |
-| 当前状态与 P0/P1 | [[project-status]] |
-| 已知问题与已推翻结论 | [[known-issues]] |
-| 发布状态与四渠道 | [[release-status]] |
-| Android 架构 | [[android]] |
-| Kotlin 混合运行时 ABI | [[kotlin-runtime]] |
-| 目录标准化迁移 | [[directory-migration]] |
-| AGP 构建管线 | [[agp]] |
-| Signature 回填 | [[signature-backfill]] |
-| build_mod.py 退役 | [[build-mod-retirement]] |
-| 挑战自动化 | [[challenges]] |
-| 智能自动购买器 | [[automation]] |
-| 存档兼容 | [[saves]] |
-| 阶段门禁 | [[stage-gates]] |
-| 协程 ABI 崩溃排查 | [[coroutine-abi]] |
-| 来源索引 | [[source-index]] |
+- 正式编写规则：**[[wiki-rules|反物质维度MOD Wiki:知识库规则]]**（首页、左侧目录与页脚常驻入口）。
+- 版权与转载：[[copyright|版权与许可]]。
+- 贡献流程：[[how-to-use|如何使用本知识库]]。
 
-## 使用方式
+## 当前重要事实（最后核实 2026-11-15 20:30 UTC+8）
 
-- 顶部搜索框做全文检索（中文分词可用）。
-- 右侧大纲定位章节；右栏显示反向链接与知识图谱。
-- 每篇技术条目底部有证据区：状态、证据等级、适用版本、来源 Commit。
+- **新档 180 分钟真实通关：FAIL。** 最近一次完整长跑运行 10,805.8 秒未通关（`creditsFinished=false`、`realities=2`）；2026-11-15 20:07 起的新长跑仍在进行，终局结果 **NOT RUN**。见 [[project-status|当前项目状态]] 与 [Android PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90)。
+- **正式发布：BLOCKED。** 签名环境 `android-signing` 等待人工批准（Run [43679508810](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43679508810)），且 AGP-only 门禁 fail-closed；源码 CI 通过不能推断可发布。
+- **修复已提交 ≠ 已验证。** R114-01 的 Reality 修复（PR #92）仍在验证中，尚未合并、尚未发布。
 
-## 证据元数据约定
+## 阅读约定
 
-状态：已验证 / 进行中 / 已推翻 / 待确认。
-证据等级：实测 / 读码 / 推断 / 未知。
-
-> 本站 2026-11-15 建立第一期，覆盖核心主题。完整历史事实仍以 Android 仓库
-> <code>docs/FACTS.md</code>（一万余行）与 <code>reports/</code> 为准，逐步迁移而非机械拆分。
+状态标记：已验证 / 进行中 / FAIL / BLOCKED / 待确认 / 已推翻。证据等级：实测 / 读码 / 推断 / 未知。引用时请连同**适用版本与最后核实时间**一起看；状态页可能过期，历史归档不代替现行技术解释。

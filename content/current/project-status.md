@@ -1,46 +1,64 @@
 ---
 title: "当前项目状态"
-description: "R113-01 轮内状态：P0 功能闭环、发布仍 BLOCKED"
+description: "Android/Web 双端项目在 2026-11-15 的真实里程碑、长跑结果、待验证修复与发布阻塞"
 tags:
-  - status
+  - 状态
 ---
 
-# 当前项目状态
 
-最后核实：2026-11-15（UTC+8）。P0 技术闭环来源 <code>ae734966bf712faca3ff7bbb389d8724a8efe7e5</code>；180 分钟长跑结果由 Android main <code>d950d1102f13e81f78dfdcdfb308359ee3eb1633</code> 的 [R113-01 实测报告](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md) 更新。
+本页回答「现在到底完成了什么」。它只写**当前有效结论**，每条都附可点击来源，并在有变化时更新；过程记录与当时判定移入[历史归档](/history/)，不混在状态页里。
 
-## 里程碑
+最后核实：**2026-11-15 20:30（UTC+8）**。此后如有新的长跑、PR 或流水线结果，本页可能过期，引用前请回到原始链接确认。
 
-| 项 | 状态 |
-| --- | --- |
-| 目录标准化 S2-6（Kotlin 源码迁入 app/src/main/kotlin） | PASS，PR #83 已合并 |
-| A 批 25 类协程 ABI 绑定 + 构建期 fail-closed 守卫 | PASS，PR #87 已合并 |
-| Kotlin 混合运行时 P0（存档 + 挑战自动化） | **功能闭环 PASS**，PR #88 已合并 |
-| 新档自动存档（≤90s 首写） | PASS：40.2s 首写 |
-| HOME 保存 / 重启读取 | PASS |
-| 挑战自动化 5 分钟 | PASS（0 FATAL / NoSuchField / NoSuchMethod / CCE / ANR） |
-| 合法晚期存档（realities=12、Lai Tela、11 glyph）读写 | PASS |
-| 完整新档 ≤180 分钟真实通关 | **FAIL：180.1 分钟未通关，creditsFinished=false、realities=2、fullGameCompletions=0**（Android PR #90） |
-| 受保护 Candidate / Verify / Release 与四渠道发布 | BLOCKED（等待通关验收与门禁） |
+## 一句话结论
 
-## 关键产物
+Android 端已修复协程 ABI 崩溃与混合运行时 livelock，功能闭环可用；但**新档 180 分钟真实通关仍未达成**（最近一次完整长跑 FAIL），**正式发布仍为 BLOCKED**（签名环境未批准 + AGP-only 门禁 fail-closed）。Web 端与知识库部署独立运行，不受 Android 发布阻塞影响。
 
-- P0 修复候选 APK：<code>f2f72a61e96ff4f2cf14defa7e35fb5a70c24cab57322478128343059a9c5982</code>
-- game jar：<code>dec24f57614967e81b37f856cb52e589e35aa8697e719fb88c84e2164b63adc8</code>（15,344 类）
-- 构建守卫：A 批 ABI、Signature（Player Laitela / Glyph）、整包 D8、hierarchy、dash rename 全 PASS
+## 里程碑与真实状态
 
-## 已知阻塞
+| 项 | 状态 | 证据 |
+| --- | --- | --- |
+| 生产 Kotlin 源码迁入 `app/src/main/kotlin/`（目录迁移 S2-6） | PASS | [PR #83](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/83)，合并 `ca619e7d` |
+| A 批协程 ABI 统一绑定 shadow + 构建期 fail-closed 守卫 | PASS | [PR #87](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/87)，合并 `7c9a1d4f` |
+| 混合运行时 P0（存档 + 自动化功能闭环） | PASS（功能） | [PR #88](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/88)，合并 `ae734966`；[[2026-11-15-r113-p0-livelock|历史记录]] |
+| 新档自动存档（≤90 秒首写） | PASS（40.2 秒首写） | [P0 闭环报告](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/ae734966bf712faca3ff7bbb389d8724a8efe7e5/reports/R113-01/P0-CLOSURE.md) |
+| HOME 保存 / force-stop 保留 / 重启读取 | PASS | 同上 |
+| 挑战自动化 5 分钟（0 FATAL / 0 ABI 崩溃 / 0 ANR） | PASS（功能性） | 同上；[[challenges|挑战与真实结算]] |
+| 合法晚期存档（realities=12、Lai'tela、11 glyph）读写 | PASS | 同上；[[saves|存档兼容与自动保存]] |
+| AGP↔Smali 晚期存档互读 | **NOT RUN** | 尚未执行；见 [[saves]] |
+| 新档 ≤180 分钟真实通关 | **FAIL** | 2026-11-15 长跑 10,805.8 秒未通关；[[2026-11-15-r113-180min-fail|历史记录]]、[PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90) |
+| 第 2 次现实后 `realities` 卡在 2 的修复 | **已提交，验证中** | [PR #92](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92)（OPEN）；[[2026-11-15-r114-reality-autoeternity|历史记录]] |
+| 新真新档 180 分钟长跑（2026-11-15 20:07 起） | **进行中，终局 NOT RUN** | 见下节 |
+| 独立阶段门禁验收（当前 MOD 构建） | **NOT RUN** | 见 [[stage-gates]] |
+| 受保护 Candidate / Verify / Release 门禁 | **BLOCKED** | 见 [[release-status]] |
+| 四渠道正式发布 | **NOT RUN** | 最近一次有效稳定版仍是 R103 |
 
-1. **R113-01 长跑已结束且 FAIL**：10,805.8 秒（180.1 分钟），未通关。属于进度推进/通关节奏问题，不是本轮已修复的协程 ABI 崩溃；Release 保持 BLOCKED。详情见 [Android PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90) 和 [实测报告](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md)。
-2. AGP 与 Smali 之间晚期存档互读尚未做（NOT RUN）。
-3. 正式 CI 候选需要与本地 APK 同 SHA 才能进入 Verify 与 Release。
+## 进行中的长跑（2026-11-15 20:07 起）
 
-## 长跑结果的独立证据
+真新档（`pm clear` 后全新存档）180 分钟长跑于 **2026-11-15 20:07:19（UTC+8）** 开始，APK SHA-256 `d75ac31da60d47c20782c6862ba23e10b60a967379ac69742769173f12414eea`（AGP 9.5.1 / R8 OFF），计划 180 分钟，预计 23:07 前后结束。
 
-- [R113-01/180min-RESULT.md](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md)：时长、creditsFinished、realities、结论。
-- [Android PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90)：报告及 AVD 最终存档/采样记录，已合并至 <code>d950d1102f13e81f78dfdcdfb308359ee3eb1633</code>。
-- **范围限制**：本页此前记录的“P0 自动存档/ABI 崩溃修复 PASS”不等于“180 分钟通关 PASS”；本次实测只能证明该长跑目标 FAIL。
+截至 **20:30**，已确认的里程碑：
 
-## 相关
+- 首无限 / 首永恒：275.8 秒；
+- 首次 Reality：576.7 秒；
+- 第 2 次 Reality：1218.6 秒；
+- 20:27:22 托管层日志 `re-enabled after reality reset realities=2`（`isActive` 由 true→false→true），说明 R114-01 的修复第一次在真新档的 Reality 复位后生效。
 
-[[known-issues]] · [[release-status]] · [[kotlin-runtime]] · [[saves]]
+**这些都是过程观察，不是通关结论。** 在长跑结束并给出 verdict 之前，本页不会写 PASS，也不会更新「可以发布」。
+
+## 已确认与未确认的边界
+
+- **已确认**：协程 ABI 崩溃已修复；存档与自动化功能闭环；180 分钟长跑的 FAIL 结论真实存在。
+- **已确认（静态）**：AGP-only 门禁对当前仓库执行 `python3 scripts/enforce_agp_only.py candidate` 退出码为 1；候选工作流仍含旧链调用。
+- **未确认 / NOT RUN**：新长跑终局、跨构建晚期存档互读、独立阶段门禁、受保护候选构建、正式发布。
+- **推断（INFERRED）**：即使人工批准 `android-signing` 环境，候选构建也很可能因 AGP-only 门禁失败——这是推断，不是在 Run 中已发生的事实。
+
+## 原始证据入口
+
+- Android 仓库：[PR #88](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/88)、[PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90)、[PR #91](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/91)、[PR #92](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92)
+- 长跑与 P0 报告：`reports/R113-01/P0-CLOSURE.md`、`reports/R113-01/180min-RESULT.md`
+- 状态类历史记录：[[2026-11-15-r113-180min-fail]]、[[2026-11-15-r114-reality-autoeternity]]
+
+## 相关条目
+
+[[release-status]] · [[known-issues]] · [[stage-gates]] · [[saves]] · [历史归档](/history/)

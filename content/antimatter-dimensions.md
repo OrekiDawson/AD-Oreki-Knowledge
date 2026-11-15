@@ -7,7 +7,6 @@ tags:
   - 玩法
 ---
 
-# 反物质维度
 
 **《反物质维度》（Antimatter Dimensions）**是一款以资源增长、升级选择和反复突破进度上限为核心的**放置增量游戏**。玩家从少量反物质起步，购买能够自动生产资源的“维度”，逐步获得越来越大的数字；当原有增长方式变慢时，可以重置部分进度，换取新的资源和更强的成长能力。
 
@@ -80,7 +79,7 @@ tags:
 
 **Oreki Edition 是以《反物质维度》为基础开发的修改版本，不是原版游戏的官方更新。** 它在 Android 与 Web 两端并行开发，重点关注更流畅的成长体验、自动购买器、界面反馈、中文教程，以及两个平台之间的可见行为一致性。具体代码和机制修改必须以相应 MOD 仓库的提交与实测记录为依据。
 
-该项目设有“**新建真实存档，在不伪造资源、进度、挑战结算或成就的前提下，于 180 分钟内通关**”这一开发验收目标。它是 **MOD 的工程目标**，**不是原版游戏推荐或承诺的通关时间**。截至 2026 年 11 月 15 日已有的 R113-01 长跑记录，180.1 分钟时未完成通关，属于 **失败（FAIL）**，不能描述为已达到目标。[来源：Android MOD 的 R113-01 实测报告](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md)。
+该项目设有“**新建真实存档，在不伪造资源、进度、挑战结算或成就的前提下，于 180 分钟内通关**”这一开发验收目标。它是 **MOD 的工程目标**，**不是原版游戏推荐或承诺的通关时间**。截至 2026 年 11 月 15 日已有的一次完整长跑记录，180.1 分钟时未完成通关，属于 **失败（FAIL）**，不能描述为已达到目标。[来源：Android MOD 长跑实测报告](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md)。
 
 若想了解 MOD 仓库、冻结的上游版本与发行门禁，可继续阅读[[project-overview|项目概览]]；最新验收结论与发布状态以[[project-status|当前项目状态]]和[[release-status|发布状态]]为准。
 
@@ -96,6 +95,8 @@ tags:
 本条目以公开的游戏资料和项目原始报告为依据，用独立中文表述介绍机制，不复制第三方 Wiki 的文章正文或图像。
 
 ## 相关条目
+
+进一步阅读具体机制：[[progression-infinity-eternity|无限与永恒]] · [[reality-time-studies|现实与时间研究]] · [[celestials|天神系统]]；原版规则与 MOD 调整的集中对照见 [[original-vs-mod|原版行为与 Oreki Edition 修改]]。
 
 [[project-overview]] · [[challenges]] · [[automation]] · [[stage-gates]] · [[saves]] · [[terminology]] · [[wiki-rules]]
 
