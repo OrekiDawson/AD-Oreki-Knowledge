@@ -22,7 +22,7 @@ echo "custom_domain=${cname}; https_enforced=${enforced}; certificate_state=${ce
 }
 
 # TLS verification is intentionally enabled; no -k, no --insecure, no HTTP fallback.
-for path in "/" "/index.html" "/static/contentIndex.json" "/static/knowledge-index.json" "/architecture/kotlin-runtime" "/wiki-rules" "/copyright"; do
+for path in "/" "/index.html" "/static/contentIndex.json" "/static/knowledge-index.json" "/architecture/kotlin-runtime" "/wiki-rules" "/copyright" "/antimatter-dimensions"; do
   echo "Checking TLS and HTTP 200: ${BASE_URL}${path}"
   code="$(curl --fail --silent --show-error --max-time 30 --output /dev/null --write-out '%{http_code}' "${BASE_URL}${path}")" || {
     echo "::error::HTTPS endpoint failed (including certificate validation): ${BASE_URL}${path}"
