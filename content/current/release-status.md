@@ -8,7 +8,7 @@ tags:
 
 本页说明 Oreki Edition 现在**能不能发布**、被什么卡住、以及每条判断的来源。发布结论只认受保护流水线与真实设备验收，不能由源码 CI 通过或本地构建成功推断。
 
-最后核实：**2026-11-15 21:25（UTC+8）**。
+最后核实：**2026-11-15 22:10（UTC+8）**。
 
 ## 当前状态
 
@@ -27,7 +27,7 @@ tags:
 
 **最近一次完整** 180 分钟长跑为 **FAIL**：10,805.8 秒时 `creditsFinished=false`、`realities=2`、`fullGameCompletions=0`。证据见 [180min-RESULT.md](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md) 与 [[2026-11-15-r113-180min-fail|历史记录]]。
 
-2026-11-15 20:07:19 起的新真新档长跑仍在进行：截至 21:22（UTC+8）`realities=6`、`creditsFinished=false`，**终局 NOT RUN**。阶段性推进说明 Reality 复位死锁已被打破，但**没有产生通关结论**，因此发布门禁仍未满足。
+前序验证跑次（2026-11-15 20:07:19 起）已观察到 `realities` 推进到 9，但于 21:52 左右被接替，**未产生 verdict**。**最终** 180 分钟真新档跑次自 **2026-11-15 22:04:55（UTC+8）** 开始（APK `f7f900ae…`，证据目录 `fresh-180min-final/`），预计 **2026-11-16 01:04:55** 结束，当前**终局 NOT RUN**。阶段性推进说明 Reality 复位死锁已被打破，但**没有产生通关结论**，因此发布门禁仍未满足。
 
 ### 2. 评审会话未解决（按 2026-11-15 21:05 核实更正）
 
@@ -62,7 +62,7 @@ python3 scripts/enforce_agp_only.py candidate
 | 原包名与原签名证书 | 未变（`com.oreki.antimatterdimensions` / `95960bce…`），见 [[apk-signing]] |
 | `versionCode` 严格递增 | 尚未产生新发布；历史最大值 30210000 |
 | AGP 来源可追溯 | 本地产物可追溯；**受保护候选构建被门禁阻断** |
-| 新档 ≤180 分钟真实通关 | **FAIL**（最近完整跑次）；新长跑进行中（NOT RUN） |
+| 新档 ≤180 分钟真实通关 | **FAIL**（最近完整跑次）；最终跑次进行中（NOT RUN） |
 | 受保护 Candidate / Verify / Release | **BLOCKED** |
 
 ## 门禁流程

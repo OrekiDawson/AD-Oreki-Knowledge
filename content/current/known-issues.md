@@ -8,14 +8,14 @@ tags:
 
 本页把「仍然有效的问题」和「已经被推翻的旧结论」分开列出：前者需要继续处理，后者只保留必要的解释与证据，避免后来者重复走错路。过程细节与当时判定在[历史归档](/history/)。
 
-最后核实：**2026-11-15 21:25（UTC+8）**。
+最后核实：**2026-11-15 22:10（UTC+8）**。
 
 ## 当前有效问题
 
 | 问题 | 状态 | 处理与证据 |
 | --- | --- | --- |
-| 新档 180 分钟真实通关 | **FAIL**（最近完整跑次）；新长跑进行中，终局 **NOT RUN** | [[2026-11-15-r113-180min-fail|历史记录]]；[PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90) |
-| 第 2 次现实后 `realities` 卡在 2 | **已提交修复；真实新档已推进到 realities=6（阶段性，非终局）** | [PR #92](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92)；[[2026-11-15-r114-reality-autoeternity|历史记录]] |
+| 新档 180 分钟真实通关 | **FAIL**（最近完整跑次）；最终跑次进行中，终局 **NOT RUN** | [[2026-11-15-r113-180min-fail|历史记录]]；[PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90) |
+| 第 2 次现实后 `realities` 卡在 2 | **已提交修复；前序真新档跑次已推进到 realities=9（阶段性，非终局）；最终跑次进行中** | [PR #92](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92)；[[2026-11-15-r114-reality-autoeternity|历史记录]] |
 | 独立阶段门禁验收（当前 MOD 构建） | **NOT RUN** | 历史轮次有 PASS 记录，但不是本轮复验；见 [[stage-gates]] |
 | AGP↔Smali 晚期存档互读 | **NOT RUN** | 早中期跨构建写读曾 PASS；见 [[saves]] |
 | PR #92 评审会话未解决（#93 已合并） | **BLOCKED**（按 Lead 2026-11-15 21:05 核实；修复中） | 此前「等待 android-signing 批准」的记录已更正，见 [[release-status]] |

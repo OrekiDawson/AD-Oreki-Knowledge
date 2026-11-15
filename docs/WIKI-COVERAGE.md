@@ -2,18 +2,24 @@
 
 > 本页是只读汇总，由 docs/translation/source-manifest.json 与 content/original/ 生成，不替代 manifest，也不修改译文。由 wiki-editorial 维护；译文与 manifest 由 wiki-translation 维护。
 
-## 覆盖总览（最后核对 2026-11-15 21:45 UTC+8）
+## 覆盖总览（最后核对 2026-11-15 22:15 UTC+8）
 
 | 指标 | 数值 |
 | --- | --- |
 | 合规原版正文页总数（article） | 68 |
-| 已完成并校对（REVIEWED） | 28 |
+| 已完成并校对（REVIEWED） | 35 |
 | 已翻译未校对（TRANSLATED） | 0 |
 | 正在翻译（IN PROGRESS） | 0 |
-| 尚未开始（NOT STARTED） | 40 |
+| 尚未开始（NOT STARTED） | 33 |
 | 许可阻塞（BLOCKED） | 0 |
-| 覆盖率（REVIEWED / article） | 28 / 68（41.2%） |
-| 已翻译页中标注「媒体未转载」 | 21 |
+| 覆盖率（REVIEWED / article） | 35 / 68（51.5%） |
+| 已翻译页中标注「媒体未转载」 | 28 |
+
+## 基线说明
+
+- 本台账基于 main 上合入 PR #26（翻译专区与清单/CI）、#27（状态页与台账初版）、#28（FACTS 拆分后引用修复）、#29（七位天神译文）、#30（35 篇逐页核对 + 术语修正 + 7 篇升格 REVIEWED）之后的状态。
+- 逐页校对记录与术语修正见 docs/translation/reviews/audit-2026-11-15.md（由 wiki-translation 维护）。
+- 本文件不修改 manifest 与译文；数字以 manifest 为准，若两者不一致以 manifest 为准并在此页重算。
 
 ## 许可与署名状态
 
@@ -34,18 +40,25 @@
 | 广告加成 | [Ad Bonus](https://antimatterdimensions.wiki.gg/wiki/Ad_Bonus) | 3096 | 否 |
 | 黑洞 | [Black Hole](https://antimatterdimensions.wiki.gg/wiki/Black_Hole) | 3360 | 是 |
 | 记数法 | [Notations](https://antimatterdimensions.wiki.gg/wiki/Notations) | 3133 | 否 |
+| 莱特拉 | [Laitela](https://antimatterdimensions.wiki.gg/wiki/Laitela) | 3375 | 是 |
+| 鹿颈长 | [Effarig](https://antimatterdimensions.wiki.gg/wiki/Effarig) | 3371 | 是 |
+| 佩勒 | [Pelle](https://antimatterdimensions.wiki.gg/wiki/Pelle) | 3376 | 是 |
 | 佩勒升级 | [Pelle/Upgrades](https://antimatterdimensions.wiki.gg/wiki/Pelle%2FUpgrades) | 2707 | 是 |
 | 膨胀升级 | [Dilation/Upgrades](https://antimatterdimensions.wiki.gg/wiki/Dilation%2FUpgrades) | 3158 | 否 |
 | 时间膨胀 | [Dilation](https://antimatterdimensions.wiki.gg/wiki/Dilation) | 3323 | 是 |
 | 时间维度 | [Time Dimensions](https://antimatterdimensions.wiki.gg/wiki/Time_Dimensions) | 3345 | 是 |
 | 时间研究 | [Time Studies](https://antimatterdimensions.wiki.gg/wiki/Time_Studies) | 3343 | 否 |
 | 术语（佩勒用词） | [Terminology](https://antimatterdimensions.wiki.gg/wiki/Terminology) | 3098 | 否 |
+| 太阳神 | [Ra](https://antimatterdimensions.wiki.gg/wiki/Ra) | 3387 | 是 |
+| 特蕾莎 | [Teresa](https://antimatterdimensions.wiki.gg/wiki/Teresa) | 3370 | 是 |
 | 天神 | [Celestials](https://antimatterdimensions.wiki.gg/wiki/Celestials) | 3187 | 是 |
 | 天神导航 | [Celestial Navigation](https://antimatterdimensions.wiki.gg/wiki/Celestial_Navigation) | 3361 | 是 |
 | 挑战 | [Challenges](https://antimatterdimensions.wiki.gg/wiki/Challenges) | 3106 | 是 |
+| 薇 | [V](https://antimatterdimensions.wiki.gg/wiki/V) | 3373 | 是 |
 | 维度 | [Dimensions](https://antimatterdimensions.wiki.gg/wiki/Dimensions) | 3102 | 是 |
 | 维度提升 | [Dimension Boosts](https://antimatterdimensions.wiki.gg/wiki/Dimension_Boosts) | 3333 | 是 |
 | 维度献祭 | [Dimensional Sacrifice](https://antimatterdimensions.wiki.gg/wiki/Dimensional_Sacrifice) | 3397 | 是 |
+| 无名氏 | [The Nameless Ones](https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones) | 3372 | 是 |
 | 无限 | [Infinity](https://antimatterdimensions.wiki.gg/wiki/Infinity) | 3113 | 是 |
 | 无限升级 | [Infinity Upgrades](https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades) | 3348 | 否 |
 | 无限升级（升级表） | [Infinity Upgrades/Upgrades](https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades%2FUpgrades) | 2909 | 否 |
