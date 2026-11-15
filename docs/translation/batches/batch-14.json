@@ -209,16 +209,19 @@
     }
   ],
   "checks_run": {
-    "env": "Node v24.22.3；Quartz pin 7cfb0796165c848be5438117e9806802123bf676；.quartz-build",
-    "node scripts/check-content.mjs": "PASS",
-    "node scripts/check-translation.mjs": "PASS",
-    "npx quartz build": "PASS",
-    "node scripts/verify-build.mjs": "PASS",
-    "node scripts/acceptance.cjs": "PASS"
+    "env": "Node v24.22.3；Quartz pin 7cfb0796165c848be5438117e9806802123bf676；.quartz-build；已合并 #26 后的 main(0efd04c)",
+    "node scripts/check-content.mjs": "PASS — 86 页",
+    "node scripts/check-translation.mjs": "PASS — 覆盖率 28/68 (41.2%)、TRANSLATED 7、BLOCKED 0、页面 35（唯一 WARN 为既有页 ow-terminology 未声明媒体）",
+    "node scripts/ai/build-index.mjs": "PASS — pages=85 chunks=380",
+    "npx quartz build": "PASS — Parsed 85 Markdown、Emitted 372 files、158 HTML（exit 0；仅 1 条既有 config 警告与内容无关；原先 ow-notations→β48 链接警告已由本批修复消失）",
+    "node scripts/verify-build.mjs": "PASS — 158 个 HTML 页面",
+    "node scripts/acceptance.cjs": "PASS — Chromium 412×915，bad: []"
   },
   "blockers": [],
   "notes": [
     "本批完成后七位天神正篇全部已译（TRANSLATED，共 7 篇），待独立校对。",
-    "天神子页面（Quotes）与 Pelle 惩罚页留待后续批次。"
-  ]
+    "天神子页面（Quotes）与 Pelle 惩罚页留待后续批次。",
+    "已重接到合并 #26 后的 main(0efd04c)：add/add 冲突仅由 squash 合并导致，核实三个冲突文件与 caa6330 逐字节相同后保留本分支版本。"
+  ],
+  "updated_at": "2026-11-15T22:20:00+08:00"
 }
