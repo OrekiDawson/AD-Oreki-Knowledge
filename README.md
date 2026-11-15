@@ -23,6 +23,20 @@ node scripts/verify-build.mjs
 push main -> .github/workflows/deploy.yml -> GitHub Pages（artifact: public/）。
 PR 触发 pr-check.yml（不部署）。
 
+## 强制 HTTPS
+
+正式域名：**https://wiki.oreki.net**。GitHub Pages 必须启用服务器端 `Enforce HTTPS`，不能用 Quartz 链接或浏览器端 JavaScript 跳转代替。
+
+仓库管理员在 [Settings → Pages](https://github.com/OrekiDawson/AD-Oreki-Knowledge/settings/pages) 中确认：
+
+1. Custom domain 为 `wiki.oreki.net`，DNS 的 `wiki` CNAME 指向 `orekidawson.github.io`。
+2. GitHub Pages 的 HTTPS 证书签发完成后，选中 **Enforce HTTPS**。
+3. 完成后重新运行 `.github/workflows/deploy-wiki.yml`，`verify-online` 必须通过。
+
+`scripts/verify-https.sh` 会从 GitHub Pages API 检查 `https_enforced=true`，并使用正常 TLS 证书校验访问 HTTPS 页面，确认 HTTP 请求收到指向相同域名 HTTPS 的 301/302/307/308 跳转。证书尚未签发、设置未开启或出现 HTTP 回退时，验收明确 FAIL，不得以 HTTP 200 代替。
+
+GitHub Actions 的普通 `GITHUB_TOKEN` 不具备修改 Pages 管理设置所需的 Administration 写权限，因此正式 Enforce HTTPS 开关由具有仓库管理权限的账户操作，不向 Actions 添加个人管理员 Token。
+
 ## 内容纪律
 
 - 不编造 Commit、行号、ABI 描述符与测试结果。
