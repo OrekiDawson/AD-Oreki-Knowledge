@@ -18,27 +18,13 @@ review_status: "STRUCTURE CHECKED"
 >
 > 我希望你永远无法完成它。
 
-**鹿颈长（Effarig，符号 ϟ）**是在[[ow-teresa|特蕾莎]]之后遇到的第二位[[ow-celestials|天神]]。把[[ow-teresa|特蕾莎的 RM 容器]]灌满即可直接解锁他们。解锁他们的同时会引入一种新资源——[遗迹碎片](#遗迹碎片)[^rs]，可在每次[[ow-reality|现实]]重置时获得。
-
 他们的称号「远古遗物之神（Celestial of Ancient Relics）」与其主题——[符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs)——相关。
 
 原页另有子页面「引语（Quotes）」，本轮批次未译，见文末相关条目。
 
-## 信息框要点
+## 档案
 
-| 项目 | 内容 |
-| --- | --- |
-| 称号 | 远古遗物之神（Celestial of Ancient Relics） |
-| 别号 | 疲惫者（Tired） |
-| 解锁条件 | 向[[ow-teresa|特蕾莎的 RM 容器]]灌注 $1\text{e}24$ [[ow-reality|现实机器]] |
-| 相关货币 | [遗迹碎片（RS）](#遗迹碎片) |
-| 机制 | [鹿颈长的商店](#鹿颈长的商店) |
-| 增益 | [符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs)便利性；[[ow-replicanti|复制器]]；[[ow-infinity|无限次数]] |
-| 现实解锁条件 | 购买「run」升级 |
-| 现实惩罚 | [[ow-dimensions|维度]]、[计数频率](https://antimatterdimensions.wiki.gg/wiki/Tickspeed)与[游戏速度](https://antimatterdimensions.wiki.gg/wiki/Gamespeed)全部被膨胀削弱 |
-| 现实奖励 | 鹿颈长符文 |
-| 现实特性 | 可完成三次，每次对应一个[[ow-prestige|威望]]层 |
-| 加入版本 | 网页版：现实更新（2022 年 12 月 17 日）；Android：现实更新（2024 年 4 月 1 日）；Steam 与 iOS：首发即包含 |
+鹿颈长，远古遗物之神，别号「疲惫者」。把特蕾莎的 RM 容器灌满（$1\text{e}24$ RM），他们就出现了；同时带来的还有新资源[遗迹碎片](#遗迹碎片)，每次现实重置都会结算。他们的主题是符文：商店卖的都是符文相关的便利功能，从调整等级因子权重到筛选、预设，最后一项「run」用来开启自己的现实。那个现实分无限、永恒、现实三层，进去后维度、游戏速度与计数频率全被膨胀削弱，层数越高削得越轻；完成三层分别解锁复制器相关增益、无名氏，以及鹿颈长符文。加入版本同特蕾莎。
 
 ## 遗迹碎片
 

@@ -18,24 +18,21 @@ review_status: "STRUCTURE CHECKED"
 
 （方括号内是原站保留的**词形变换**占位：游戏会按进度把它显示成 Infinite / Forever / Eternal 之一；含义见下节「词形变换与占位符说明」。）
 
-**佩勒（Pelle，符号为 ♅）**是第七位、也是最后一位[[ow-celestials|天神]]。他会长久地「毁灭」玩家的游戏，把玩家抛入一个极难且无法逃离的改造现实。购买[最后一个虚幻升级「无所不在的抹除（Omnipresent Obliteration）」](https://antimatterdimensions.wiki.gg/wiki/Imaginary_Upgrades)即可解锁他。进入[佩勒的现实](#被毁灭的现实)的条件还包括：取得剩余 17 行可用的[成就](https://antimatterdimensions.wiki.gg/wiki/Achievements)，并让[符文炼金](https://antimatterdimensions.wiki.gg/wiki/Glyph_Alchemy)的全部资源都达到 $25,000$。
+佩勒（Pelle，符号 ♅）是第七位、也是最后一位[[ow-celestials|天神]]。他做的不是挑战书，而是一个结局：把玩家的游戏永久「毁灭」，再把人丢进一个极难、且无法逃离的改造现实里。解锁他只是买下[最后一个虚幻升级「无所不在的抹除（Omnipresent Obliteration）」](https://antimatterdimensions.wiki.gg/wiki/Imaginary_Upgrades)；要真正踏进[他的现实](#被毁灭的现实)，还得补齐剩下 17 行[成就](https://antimatterdimensions.wiki.gg/wiki/Achievements)，并让[符文炼金](https://antimatterdimensions.wiki.gg/wiki/Glyph_Alchemy)的每种资源都堆到 $25,000$。
 
-当这些条件全部达成后，进入天神现实的要求位置会出现不祥的文字「Doom Your Reality（毁灭你的现实）」。
+条件齐备之后，原本写着天神现实要求的位置会换上一行不祥的字：「Doom Your Reality」——毁灭你的现实。
 
-佩勒是《反物质维度》的总反派。
-
-原页另有子页面「引语（Quotes）」与「升级（Upgrades）」，本轮批次未译，见文末相关条目。原文此页带有「卡顿警告（Lag Warn）」与「小作品（Stub）」站点维护标记，属于原站编辑提示，不是玩法内容。
+他是《反物质维度》的总反派。原页另有「引语」与「升级」两个子页面，引语待后续批次翻译；页面顶部还挂着「卡顿警告」与「小作品」两个站点维护标记，那不是玩法内容。
 
 ## 词形变换与占位符说明
 
-原站在佩勒相关页面使用了两类「看起来像未翻译」的写法，它们**不是漏译**，而是必须保留的原始标记：
+佩勒的页面里有两类看起来像「没翻译」的写法，它们不是漏译，而是原站必须保留的标记，先解释清楚。
 
-1. **词形变换（wordshift）**：在佩勒的「被毁灭的现实」中，界面上的关键名词会随进度被替换成不同的词形。原站用 `[A/B/C]` 表示这是**同一概念的不同词形写法**，不是三个不同事物，也不是玩家可选择的选项。本页保留 `[A/B/C]` 原样，并在下方给出各链的真实含义。
-2. **数值占位符 `{value}`**：裂隙效果里显示的实时数值（例如某裂隙填满时的 `×1.50e67,311`）。原站表格用 `{value}` 表示「此处显示当前数值」，译文保留占位符并说明。
+第一类是**词形变换（wordshift）**。进了他的「被毁灭的现实」，界面上的关键词会随进度换成不同的词形，原站便用 `[A/B/C]` 表示同一概念的不同写法——不是三件事，也不是让玩家三选一。本页保留 `[A/B/C]` 原样，实际含义见下表。
 
-### 各词形链对应关系
+第二类是**数值占位符 `{value}`**：裂痕效果里要显示的是实时数值（比如某条裂痕填满时的 `×1.50e67,311`），原站用占位符表示「这里会显示当前数字」，译文同样保留，不去猜。
 
-下表左列为原站保留写法，右列为该词形的英文原名与依据来源。
+### 词形与英文原名对照
 
 | 原站写法 | 英文词形链 | 说明 |
 | --- | --- | --- |
@@ -49,22 +46,9 @@ review_status: "STRUCTURE CHECKED"
 
 依据：游戏数据中裂隙基础名为 `Vacuum / Decay / Chaos / Recursion / Paradox`（Web 冻结源 `src/core/secret-formula/celestials/navigation.js` 的 riftNames），词形链与官方简体中文取自 Android 3.21.0 `values-zh-rCN/strings.xml` 对应字符串。
 
-## 信息框要点
+## 档案
 
-| 项目 | 内容 |
-| --- | --- |
-| 称号 | 反物质之神（Celestial of Antimatter） |
-| 别号 | 永恒（Eternal）；别名：[永恒/神明/毁灭者] |
-| 解锁条件 | 购买虚幻升级「无所不在的抹除」 |
-| 相关货币 | [遗物（Remnants）](#末日)、[现实碎片（RS）](#末日)[^pelle-rs] |
-| 机制 | 佩勒升级、[裂痕](#裂痕) |
-| 现实解锁条件 | 17 行成就；每种炼金资源达到 25,000 |
-| 现实惩罚 | [冲击](#佩勒的冲击) |
-| 现实特性 | 你无法逃离被毁灭的现实 |
-| 加入版本 | 网页版：现实更新（2022 年 12 月 17 日）；Android：现实更新（2024 年 4 月 1 日）；Steam 与 iOS：首发即包含 |
-
-[^pelle-rs]: 原文脚注：不要与[[ow-effarig|鹿颈长]]的[[ow-effarig|遗迹碎片（Relic Shards）]]混淆！
-
+佩勒，反物质之神，别号「永恒」。要见到他，先买下最后一个虚幻升级「无所不在的抹除」；要进他的现实，还得补齐剩下 17 行[成就](https://antimatterdimensions.wiki.gg/wiki/Achievements)，并让[符文炼金](https://antimatterdimensions.wiki.gg/wiki/Glyph_Alchemy)的每种资源都到 $25,000$。他的货币是[遗物](https://antimatterdimensions.wiki.gg/wiki/Pelle#Armageddon)与[现实碎片](https://antimatterdimensions.wiki.gg/wiki/Pelle#Armageddon)，机制上带来佩勒升级与[裂痕](#裂痕)，现实的惩罚则是[冲击](#佩勒的冲击)。一旦进去，就没有退路。网页版与 Android 分别在 2022 年 12 月 17 日、2024 年 4 月 1 日随现实更新加入，Steam 与 iOS 首发即有。
 ## 被毁灭的现实
 
 毁灭你的现实与进入任何挑战或天神现实类似：会强制进行一次威望重置。随即，几乎所有现实之后的功能都会被禁用，从[[ow-reality-upgrades|现实升级]]的便利性升级，到[莱特拉](https://antimatterdimensions.wiki.gg/wiki/Lai%27tela)提供的强力奖励——也就是说，在强制现实重置之后，你再次只剩下 100 反物质。

@@ -18,27 +18,13 @@ review_status: "STRUCTURE CHECKED"
 >
 > 毕竟这里是我的领域。不是每个人都像我这么伟大。
 
-**薇（V，符号 ⌬）**是第四位[[ow-celestials|天神]]，主题围绕成就。她通过[成就 151](https://antimatterdimensions.wiki.gg/wiki/Achievements)解锁，该成就要求玩家在当前[[ow-infinity|无限]]中、不购买任何第 8 层[[ow-antimatter-dimensions|反物质维度]]的情况下达到 800 个[[ow-antimatter-galaxies|反物质星系]]。
-
 她引入 薇成就（V-Achievements），完成这些成就可获得空间之理。空间之理可用于购买原本被锁定的[[ow-time-studies|时间研究]]。
 
 原页另有子页面「引语（Quotes）」，本轮批次未译，见文末相关条目。
 
-## 信息框要点
+## 档案
 
-| 项目 | 内容 |
-| --- | --- |
-| 称号 | 成就之神（Celestial of Achievements） |
-| 别号 | 傲慢（Pride） |
-| 解锁条件 | [成就 151](https://antimatterdimensions.wiki.gg/wiki/Achievements) |
-| 相关货币 | [空间之理（ST）](#空间之理)、[复兴点数（PP）](https://antimatterdimensions.wiki.gg/wiki/Perks) |
-| 机制 | [薇成就](#薇成就) |
-| 增益 | [[ow-time-studies|时间研究]] |
-| 现实解锁条件 | 在同一现实中达成全部 6 项要求 |
-| 现实惩罚 | 维度乘数、IP、EP 与 DT 获取变为 $\sqrt{x}$；复制器间隔被平方；[符文炼金](https://antimatterdimensions.wiki.gg/wiki/Glyph_Alchemy)的指数效果被禁用 |
-| 现实奖励 | 无（只给出一句 V 的台词） |
-| 现实特性 | 具有独特要求，在现实内达成要求会给予 薇成就与空间之理 |
-| 加入版本 | 网页版：现实更新（2022 年 12 月 17 日）；Android：现实更新（2024 年 4 月 1 日）；Steam 与 iOS：首发即包含 |
+薇，成就之神，别号「傲慢」。拿到[成就 151](https://antimatterdimensions.wiki.gg/wiki/Achievements)——在当前无限中、不买第 8 层反物质维度的情况下攒到 800 个反物质星系——她就出现了。她的玩法是[[#薇成就|薇成就]]：在现实里跨过资源阈值的同时满足约束，每次完成给 1 点空间之理，最多 36 个，用来买原本锁死的时间研究。她自己的[现实](#现实)没有奖励，还要先在同一场现实里同时满足六项要求（现实次数、永恒次数、无限次数、膨胀时间、复制器、现实机器）才能进；进去之后维度乘数、IP/EP/DT 获取全部开平方，复制器间隔平方，符文炼金的指数效果也被禁。
 
 ## 解锁薇的现实
 

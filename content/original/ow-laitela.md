@@ -16,24 +16,11 @@ review_status: "STRUCTURE CHECKED"
 
 > 与我之下的其他存在不同，我不需要现实。
 
-**莱特拉（Lai'tela，原名亦写作 Lai Tela）**是第六位、也是倒数第二位[[ow-celestials|天神]]，主题围绕[[ow-dimensions|维度]]。购买[虚幻升级](https://antimatterdimensions.wiki.gg/wiki/Imaginary_Upgrades)「理想之造物（Fabrication of Ideals）」即可解锁他们。作为维度之神，莱特拉引入[暗物质维度](#暗物质维度)，其第 1 层产出暗物质，通过[连续统](https://antimatterdimensions.wiki.gg/wiki/Continuum)带来更多[[ow-antimatter-dimensions|反物质维度]]与[计数频率](https://antimatterdimensions.wiki.gg/wiki/Tickspeed)购买次数。
-
 原页另有子页面「引语（Quotes）」，本轮批次未译，见文末相关条目。
 
-## 信息框要点
+## 档案
 
-| 项目 | 内容 |
-| --- | --- |
-| 称号 | 维度之神（Celestial of Dimensions） |
-| 别号 | 至尊（Paramount） |
-| 解锁条件 | 购买虚幻升级「理想之造物」 |
-| 相关货币 | 暗物质、暗能量、[奇点](#奇点) |
-| 机制 | [暗物质维度](#暗物质维度)、[暗物质湮灭](#湮灭)、[奇点里程碑](#奇点里程碑) |
-| 增益 | [连续统](https://antimatterdimensions.wiki.gg/wiki/Continuum)；以及多种其他效果 |
-| 现实惩罚 | IP 与 EP 获取被膨胀削弱；游戏速度降至 $1$，并在 $10$ 分钟内逐渐恢复；黑洞功能被禁用；之后还会按现实被失稳的次数禁用可用的最高维度 |
-| 现实奖励 | 暗物质乘数；完全失稳则给予 $\times8$ 暗能量 |
-| 现实特性 | 具有伪限时机制；可重复挑战，完成越快奖励越好。在 30 秒内完成会让该现实「硬化」 |
-| 加入版本 | 网页版：现实更新（2022 年 12 月 17 日）；Android：现实更新（2024 年 4 月 1 日）；Steam 与 iOS：首发即包含 |
+莱特拉，维度之神，别号「至尊」。买下虚幻升级「理想之造物」后出现。这一层围绕反物质产生的「熵」：熵涨到 $100\%$ 现实就失稳，等于通关，结算速度越快奖励越好；30 秒内失稳会让现实「硬化」，禁用当前可用的最高维度，换来更狠的乘数。真正的内容是四层暗物质维度、升格、湮灭，以及靠凝聚暗能量得到的奇点，和挂在奇点上的三十条里程碑。代价是 IP 与 EP 被膨胀、游戏速度掉到 1 再慢慢爬回来、黑洞整套功能失效。
 
 ## 现实
 
