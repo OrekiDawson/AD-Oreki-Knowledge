@@ -87,6 +87,21 @@ AI 摘要只是便于快速定位条目的**索引**，不是独立权威来源�
 
 不同页面不必死板套模板，但不能用空泛口号、无证据的 PASS、无目的的表格填篇幅。**不以页数、字数、AI Token 数或知识图谱节点数评定质量。**
 
+### 内容验收等级（适用于原版翻译与外部资料整理）
+
+原版 Wiki 翻译与整理类页面必须如实标注**做到哪一步**，不得把「结构与原站一致」写成「已完成内容审校」：
+
+| 等级 | 含义 | 记录要求 |
+| --- | --- | --- |
+| `TRANSLATED` | 正文已翻译（可含机器辅助），尚未充分核对 | 页面 frontmatter 与清单一致 |
+| `STRUCTURE CHECKED` | 章节、小节、表格、公式、来源/许可字段与原站结构一致；**明确不算语义审校** | 结构核对记录（可为机器比对） |
+| `REVIEWED` | 已对照原文**逐段**审校，确认术语、数字、公式、解锁条件与语义无明显缺陷 | 必须有页面级审校记录（`docs/translation/reviews/`） |
+| `VERIFIED AGAINST GAME` | 关键机制/数值已与游戏源码或真实运行证据交叉核实 | 必须能点到源码/证据与核对结论 |
+
+- 只有 `REVIEWED` 与 `VERIFIED AGAINST GAME` 计入「已审校覆盖率」；`STRUCTURE CHECKED`、`TRANSLATED` 单独统计，不计入。
+- 没有逐段审校记录时不得标 `REVIEWED`；没有源码/运行证据时不得标 `VERIFIED AGAINST GAME`。机器翻译、格式检查、字符串比对都不等于内容审校。
+- 翻译专区的具体字段与清单口径见 [docs/translation/POLICY.md](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/translation/POLICY.md)；本页等级定义与 POLICY 冲突时以本页为准。
+
 ## 普通条目与历史归档：反日志化规则
 
 本站的正文是**技术百科**，不是开发更新日志。以下规则同时适用于人工编辑与 AI 辅助整理，并作为 CI「反日志化」检查的判定依据。
@@ -136,8 +151,9 @@ AI 摘要只是便于快速定位条目的**索引**，不是独立权威来源�
 
 ### 三、版权与署名
 
-- 社区 Wiki 的文本与图像按其版权声明采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 许可；**本站原则上独立中文撰写，不批量复制或机器翻译整页内容**。
-- 如确需转载、翻译或改编其受版权保护的文字，必须核实该页面/文件的许可，保留署名与来源链接，注明修改，并按相同或兼容许可共享；图片、图标与第三方素材须单独核实授权。
+- 社区 Wiki 的文本与图像按其版权声明采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 许可。**原版 Wiki 中文翻译专区（`content/original/`）按该许可逐页翻译并署名**；其余专区原则上独立中文撰写，不整页搬运未经核实许可的内容。
+- 转载、翻译或改编其受版权保护的文字，必须核实该页面/文件的许可，保留署名与来源链接，注明修改，并按相同或兼容许可共享；图片、图标与第三方素材须单独核实授权，未核实不转载。
+- 翻译工程允许机器辅助，但**状态必须如实**：未逐段审校只能标 `TRANSLATED` 或 `STRUCTURE CHECKED`，不能标 `REVIEWED`/「已校对」。
 - 仅链接来源不等于取得转载许可；引用少量必要内容时也应说明出处。
 - 游戏本体、素材、商标与第三方代码的版权归各自权利人，本站的 CC BY-SA 4.0 授权不覆盖它们。
 - **原版 Wiki 中文翻译**统一放在 `content/original/` 专区，每页必须标注原文标题、URL、修订 ID、页面历史（贡献者入口）、抓取时间与「已修改（翻译）」；翻译规则、署名模板与状态定义见 [docs/translation/POLICY.md](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/translation/POLICY.md)，译名见 [glossary.md](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/translation/glossary.md)。图片与第三方素材不转载。

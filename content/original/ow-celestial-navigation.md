@@ -10,8 +10,8 @@ original_revid: 3361
 original_fetched_at: "2026-11-15T23:05:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **天神导航（Celestial Navigation）**是与[特蕾莎](https://antimatterdimensions.wiki.gg/wiki/Teresa)同时解锁的现实后功能，提供一张表示[天神](https://antimatterdimensions.wiki.gg/wiki/Celestials)机制与进度的地图。它是天神页签中的第一个子页签。地图上有许多节点，会随玩家在游戏中的推进而更新。刚解锁时地图只显示一部分，随着玩家接近新内容会逐步显露，通常还会以视觉方式提示玩家离下一步还有多远。

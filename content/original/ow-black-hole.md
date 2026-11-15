@@ -10,8 +10,8 @@ original_revid: 3360
 original_fetched_at: "2026-11-15T22:10:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **黑洞（Black Hole）**是第一次现实之后可以解锁的功能。与[符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs)、[现实升级](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades)和[复兴](https://antimatterdimensions.wiki.gg/wiki/Perks)不同，黑洞子页签只有在执行过该威望重置后才会解锁。黑洞需要 $\text{100}$ [现实机器](https://antimatterdimensions.wiki.gg/wiki/Reality)解锁。它有一段冷却时间，冷却结束后可以启动：充能 5 秒，并在持续时间内提高游戏速度。解锁黑洞后，玩家可以选择暂停它——暂停会同时冻结冷却计时（或在激活期间冻结持续时间）。自动暂停会在启动前 5 秒自动暂停黑洞。

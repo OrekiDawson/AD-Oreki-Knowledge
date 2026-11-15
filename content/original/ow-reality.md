@@ -10,8 +10,8 @@ original_revid: 3235
 original_fetched_at: "2026-11-15T22:00:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **现实（Reality）**是游戏的第三个、也是最后一个主要威望层：购买最终[时间研究](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)后解锁，该研究需要 $\text{e}4,000$ [永恒点数](https://antimatterdimensions.wiki.gg/wiki/Eternity_Points)与前 13 行[成就](https://antimatterdimensions.wiki.gg/wiki/Achievements)。开始一次新现实会重置到此为止的整个游戏进度，换取现实机器、一枚符文与一个复兴点数。

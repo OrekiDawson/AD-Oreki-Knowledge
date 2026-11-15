@@ -10,8 +10,8 @@ original_revid: 3335
 original_fetched_at: "2026-11-15T21:10:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **反物质星系**是游戏中的第二个威望（Prestige）机制——如果把可从游戏早期使用的[维度献祭](https://antimatterdimensions.wiki.gg/wiki/Dimensional_Sacrifice)也算作威望机制，则它是第三个。在获得 $80$ 个第 8 反物质维度之前，玩家无法与之交互。

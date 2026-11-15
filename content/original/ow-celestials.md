@@ -10,8 +10,8 @@ original_revid: 3187
 original_fetched_at: "2026-11-15T22:00:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **天神（Celestials）**是游戏最后的主要功能，也是《反物质维度》的主要对立者。每位天神都有独特的机制、升级与性格。击败他们会奖励玩家强力加成、新功能或解锁其他天神。**击败全部 7 位天神是通关游戏的必要条件。** 购买全部[现实升级](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades)会解锁[第一位天神](https://antimatterdimensions.wiki.gg/wiki/Teresa)；[成就 147「Master of Reality」](https://antimatterdimensions.wiki.gg/wiki/Achievements)的奖励就是解锁特蕾莎。在网页版源码中，拥有该成就会让游戏自动解锁特蕾莎页签，无论玩家是否真的买齐了全部现实升级。

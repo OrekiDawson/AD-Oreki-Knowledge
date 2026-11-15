@@ -10,8 +10,8 @@ original_revid: 3113
 original_fetched_at: "2026-11-15T21:10:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **无限（Infinity）**指两件事：数值 $2^{1024}$，以及「大坍缩」。大坍缩是游戏的第一个重置层。
