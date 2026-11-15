@@ -1,18 +1,16 @@
 ---
 title: "Kotlin 混合运行时 ABI"
-description: "官方混淆 Kotlin 运行时与 AGP 新编译代码的二进制边界，以及 J8 混合转换"
+description: "官方混淆 Kotlin 运行时与 AGP 新编译代码的二进制边界，以及 J8 混合转换为什么是必需的"
 tags:
-  - android
-  - kotlin
-  - abi
+  - Android
+  - Kotlin
+  - ABI
 ---
 
-# Kotlin 混合运行时 ABI
 
-在 Android 版《反物质维度》MOD 中，新增的 Kotlin 代码必须与官方游戏原有的、经过混淆处理的程序共同运行。本条目解释两者为什么会发生兼容问题，以及目前通过什么方法避免游戏卡死或崩溃。
+在 Android 版 MOD 中，新增的 Kotlin 代码必须与官方游戏原有的、经过混淆处理的程序共同运行。本条目解释两者为什么会发生兼容问题，以及目前通过什么方法避免游戏卡死或崩溃。
 
 这里的**二进制接口（ABI）**指程序运行时实际使用的类名、字段名、方法参数和返回值。两个类即使在源代码中承担相同作用，只要这些接口不同，运行时也可能找不到需要的字段或方法。
-
 
 ## 问题背景
 
@@ -23,43 +21,43 @@ AGP 完整游戏由两部分组成：
 
 两者对 Kotlin 运行时的 ABI 假设不同，直接混用会出现：
 
-- <code>NoSuchFieldError: EmptyCoroutineContext.a</code>（官方字段名是 a，stdlib 是 INSTANCE）
-- <code>NoSuchMethodError: ContinuationImpl.&lt;init&gt;(Lrj0;Lek0;)V</code>（默认包混淆参数类型）
+- `NoSuchFieldError: EmptyCoroutineContext.a`：官方字段名是 `a`，现代 stdlib 是 `INSTANCE`；
+- `NoSuchMethodError: ContinuationImpl.<init>(Lrj0;Lek0;)V`：默认包混淆的参数类型没有对上。
 
 ## 真实描述符（已核实）
 
 | 符号 | 官方 DEX 形态 | AGP stdlib 形态 |
 | --- | --- | --- |
-| EmptyCoroutineContext | 静态字段 <code>a</code> | <code>INSTANCE</code> |
-| ContinuationImpl 构造器 | <code>(Lrj0;Lek0;)V</code> | <code>(Lkotlin/coroutines/Continuation;Lkotlin/coroutines/CoroutineContext;)V</code> |
-| CoroutineSingletons | <code>a</code> | <code>COROUTINE_SUSPENDED</code> |
+| EmptyCoroutineContext | 静态字段 `a` | `INSTANCE` |
+| ContinuationImpl 构造器 | `(Lrj0;Lek0;)V` | `(Lkotlin/coroutines/Continuation;Lkotlin/coroutines/CoroutineContext;)V` |
+| CoroutineSingletons | `a` | `COROUTINE_SUSPENDED` |
 
-<code>rj0</code> = kotlin.coroutines.Continuation，<code>ek0</code> = CoroutineContext（默认包混淆名）。
+其中 `rj0` = `kotlin.coroutines.Continuation`，`ek0` = `CoroutineContext`（默认包混淆名）。
 
-## 解决路线（R113 定稿）
+## 解决路线
 
-- 72 个官方 Kotlin 类被统一改名为 <code>oreki/shadow/kotlin/**</code>，新增类全部绑定 shadow 形态。
-- 构建期守卫 <code>scripts/agp/check_a_batch_abi.py</code> 对 A 批 5 类逐条断言 ABI，违反即构建失败。
-- **官方类转换必须保持 R107 J8 混合形态**：enjarify 为基线，少量协程调度热路径类（ox0/gk0/dc2/tf2/vf2/t01）
-  用 dex2jar 版本。全量 enjarify 会让逻辑线程在 SpeedrunMilestone 协程链 livelock；
-  全量 dex2jar 会因 <code>new 子类 + invoke-direct 父类构造器</code> 被改写而 ART VerifyError。
+- **隔离命名**：72 个官方 Kotlin 类统一改名为 `oreki/shadow/kotlin/**`，新增类全部绑定 shadow 形态；
+- **构建期守卫**：`scripts/agp/check_a_batch_abi.py` 对 A 批类逐条断言 ABI，违反即构建失败；
+- **保持 J8 混合转换形态**：官方类以 enjarify 为基线，少量协程调度热路径类（`ox0/gk0/dc2/tf2/vf2/t01`）使用 dex2jar 版本。全量 enjarify 会让逻辑线程在 SpeedrunMilestone 协程链 livelock；全量 dex2jar 则会因「`new 子类 + invoke-direct 父类构造器`」被改写而触发 ART `VerifyError`。
 
-## 证据
+这三条缺一不可：只隔离命名不修转换器，仍会 livelock；只修转换器不隔离命名，仍会 `NoSuchFieldError`。
 
-状态：已验证
-证据等级：实测（AVD 线程栈 + 构建守卫）
-适用版本：Android 3.21.0 / AGP 9.5.1
-来源：[Android PR #88](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/88)，合并 Commit [ae734966bf712faca3ff7bbb389d8724a8efe7e5](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/commit/ae734966bf712faca3ff7bbb389d8724a8efe7e5)
-验证：本地 APK f2f72a61；新档首写 40.2s；5 分钟自动化 0 ABI 崩溃
+## 为什么会 livelock，而不是崩溃
 
-## 相关
+全量 enjarify 的候选能启动、能显示界面，但逻辑线程的 Runnable 一直停在协程链里空转（utm≈127 秒），tick 不推进。因为不崩溃，表面上「游戏还在」，实际存档与自动化都停摆。这类问题必须用线程栈对照才能定性，排查流程见 [[coroutine-abi|协程 ABI 崩溃排查]]，历史定位过程见 [[2026-11-15-r113-p0-livelock]]。
+
+## 已确认与未确认
+
+- **已确认**：描述符差异、J8 混合转换的必要性、构建守卫；修复后同一 APK 上新档首写 40.2 秒、5 分钟自动化 0 ABI 崩溃。
+- **未确认**：这套 ABI 约定在后续新增类上的可扩展性需要每个新类单独核对；完整 180 分钟通关仍未达成（FAIL / 进行中），见 [[project-status|当前项目状态]]。
+- **容易误判**：协程 ABI 修复 PASS 不等于 180 分钟通关 PASS，也不等于发布门禁 PASS。
+
+## 参考资料
+
+- [Android PR #88（J8 混合转换修复）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/88)，合并 Commit `ae734966bf712faca3ff7bbb389d8724a8efe7e5`
+- [docs/FACTS.md 第 8 节与第 10 节](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L155)：机制与已修复根因
+- [[2026-11-15-r113-p0-livelock|历史：R113-01 P0 闭环]]
+
+## 相关条目
 
 [[coroutine-abi]] · [[agp]] · [[android]] · [[dex-abi]]
-
-## 供 AI 检索（简要摘要）
-
-- 主题：Android 3.21.0 官方混淆 Kotlin 与 AGP 新编译 Kotlin 的二进制接口兼容。
-- 当前结论：对官方 Kotlin 类使用隔离命名，并维持经过设备验证的 J8 混合转换路径。
-- 状态及范围：局部修复已实测；适用 Android 3.21.0 / AGP 9.5.1。
-- 主要来源：[Android PR #88](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/88)，[[coroutine-abi]]。
-- 容易误判之处：协程 ABI 与自动存档测试通过，不等于已达到 180 分钟真实通关或正式发布要求。
