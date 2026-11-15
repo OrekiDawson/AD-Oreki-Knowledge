@@ -9,6 +9,10 @@ on:
         description: "Issue 编号（仅限仓库成员使用）"
         required: true
 
+concurrency:
+  group: ai-knowledge-qa
+  cancel-in-progress: false
+
 permissions:
   contents: read
   issues: write
