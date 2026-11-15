@@ -20,8 +20,18 @@ const SEARCH_TERMS = [
 ];
 
 const OLD_URLS = ['/architecture/kotlin-runtime', '/architecture/android', '/gameplay/challenges', '/build/agp', '/current/project-status'];
-const NEW_PAGES = ['/gameplay/celestials', '/gameplay/progression-infinity-eternity', '/gameplay/reality-time-studies', '/gameplay/original-vs-mod', '/architecture/parity', '/build/apk-signing'];
-const CATEGORY_LABELS = ['玩法机制', '架构与运行时', '构建与交付', '历史归档'];
+const NEW_PAGES = [
+  '/gameplay/celestials',
+  '/gameplay/progression-infinity-eternity',
+  '/gameplay/reality-time-studies',
+  '/gameplay/original-vs-mod',
+  '/architecture/parity',
+  '/build/apk-signing',
+  '/original/',
+  '/original/ow-infinity',
+  '/original/ow-dimensions',
+];
+const CATEGORY_LABELS = ['玩法机制', '架构与运行时', '构建与交付', '历史归档', '原版 Wiki 中文翻译'];
 
 async function run() {
   const browser = await chromium.launch({ headless: true });
@@ -96,6 +106,11 @@ async function run() {
 
   await page.goto(BASE + '/gameplay/challenges', { waitUntil: 'load' });
   results.mobile.challengePageHasZenith = (await page.content()).includes('永恒挑战');
+
+  // 原版翻译页：来源与许可必须可见
+  await page.goto(BASE + '/original/ow-infinity', { waitUntil: 'load' });
+  const trHtml = await page.content();
+  results.mobile.translationHasLicense = trHtml.includes('CC BY-SA 4.0') && trHtml.includes('来源与许可');
   await page.goto(BASE + '/build/agp', { waitUntil: 'load' });
   await page.waitForTimeout(800);
   results.mobile.codePre = await page.locator('pre').count();
@@ -135,6 +150,7 @@ async function run() {
   if (results.categories.some((c) => !c.hit)) bad.push('category-labels');
   if (results.urls.some((u) => !u.ok)) bad.push('urls:' + results.urls.filter((u) => !u.ok).map((u) => u.url).join(','));
   if (results.mobile.aiDraftStatus !== 404) bad.push('ai-draft-public:' + results.mobile.aiDraftStatus);
+  if (!results.mobile.translationHasLicense) bad.push('translation-license-block');
   if (!results.mobile.kotlinPage) bad.push('kotlin-nav');
   if (!results.mobile.darkmodeToggled) bad.push('darkmode');
   if (results.errors.length > 3) bad.push('console-errors');

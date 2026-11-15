@@ -18,6 +18,9 @@ tags:
 
 ## 按主题浏览
 
+### 原版 Wiki 中文翻译
+[原版 Wiki 中文翻译](/original/) 忠实翻译《反物质维度》社区 Wiki 的原版游戏条目：保留原文公式、表格与解锁条件，逐页标注原文修订、贡献者历史与 CC BY-SA 4.0 许可。它与下面的 MOD 专题、[历史归档](/history/) 分区并列，不混写。
+
 ### 玩法机制
 [玩法机制](/gameplay/) 先给出[[original-vs-mod|原版行为与 Oreki Edition 修改]]的集中对照，再逐项解释 [[progression-infinity-eternity|无限与永恒]]、[[reality-time-studies|现实与时间研究]]、[[celestials|天神系统]]、[[challenges|挑战与真实结算]]、[[automation|智能自动购买器]]、[[saves|存档兼容与自动保存]]、[[stage-gates|阶段门禁]]。
 
