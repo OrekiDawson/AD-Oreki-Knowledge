@@ -140,6 +140,9 @@ for (const slug of [
   "original/ow-replicanti",
   "original/ow-eternity",
   "original/ow-break-infinity",
+  "original/ow-time-dimensions",
+  "original/ow-eternity-challenges",
+  "original/ow-dilation",
 ]) {
   if (!pageExists(slug)) fail("缺少新增主题条目: /" + slug);
 }
