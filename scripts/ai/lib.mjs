@@ -13,7 +13,6 @@ export const SOURCES = [
   { repo: WHITELIST.android, path: "reports/R113-01/P0-CLOSURE.md", kind: "report" },
   { repo: WHITELIST.android, path: "docs/DELIVERY_RULES.md", kind: "rules" },
   { repo: WHITELIST.web, path: "AGENTS.md", kind: "rules" },
-  { repo: WHITELIST.unified, path: "AGENTS.md", kind: "rules" },
 ];
 
 export function env(name, fallback = "") {
