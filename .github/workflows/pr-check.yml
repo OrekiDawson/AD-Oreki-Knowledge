@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
+      - name: Test first daily PR AI gate (no model call)
+        run: node --test scripts/ai/tests/first-pr.test.mjs
       - name: Check HTTPS verification script syntax
         run: bash -n scripts/verify-https.sh
       - run: bash scripts/bootstrap-quartz.sh .quartz-build
