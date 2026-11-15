@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T18:06:26.431Z",
+ "generated_at": "2026-11-15T18:11:27.303Z",
  "source": {
   "site": "https://antimatterdimensions.wiki.gg",
   "api": "https://antimatterdimensions.wiki.gg/api.php",
@@ -26,11 +26,11 @@
  "coverage": {
   "total_pages": 68,
   "translated": 0,
-  "structure_checked": 53,
+  "structure_checked": 55,
   "reviewed": 0,
   "verified": 0,
   "blocked": 0,
-  "not_started": 15
+  "not_started": 13
  },
  "pages": [
   {
@@ -52,16 +52,16 @@
     "Stubs"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "成就",
+   "path": "content/original/ow-achievements.md",
+   "priority": 2,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch21：正文/全部成就行/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Achievements/Secret Achievements",
@@ -79,16 +79,16 @@
     "Pages with spoilers"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "秘密成就",
+   "path": "content/original/ow-achievements-secret-achievements.md",
+   "priority": 2,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch21：正文/全部成就行/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Ad Bonus",
