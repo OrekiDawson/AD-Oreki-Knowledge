@@ -140,6 +140,7 @@ AI 摘要只是便于快速定位条目的**索引**，不是独立权威来源�
 - 如确需转载、翻译或改编其受版权保护的文字，必须核实该页面/文件的许可，保留署名与来源链接，注明修改，并按相同或兼容许可共享；图片、图标与第三方素材须单独核实授权。
 - 仅链接来源不等于取得转载许可；引用少量必要内容时也应说明出处。
 - 游戏本体、素材、商标与第三方代码的版权归各自权利人，本站的 CC BY-SA 4.0 授权不覆盖它们。
+- **原版 Wiki 中文翻译**统一放在 `content/original/` 专区，每页必须标注原文标题、URL、修订 ID、页面历史（贡献者入口）、抓取时间与「已修改（翻译）」；翻译规则、署名模板与状态定义见 [docs/translation/POLICY.md](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/translation/POLICY.md)，译名见 [glossary.md](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/translation/glossary.md)。图片与第三方素材不转载。
 
 ## 借鉴中文维基百科的补充方针
 
