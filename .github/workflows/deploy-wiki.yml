@@ -19,10 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 24
       - name: Prepare Quartz 5 source (pinned)
@@ -45,7 +45,7 @@ jobs:
       - name: Verify build output
         working-directory: .quartz-build
         run: node scripts/verify-build.mjs
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: .quartz-build/public
 
@@ -58,7 +58,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
   verify-online:
     name: Enforce HTTPS and verify live Pages
@@ -68,7 +68,7 @@ jobs:
       contents: read
       pages: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Require Pages HTTPS enforcement, valid TLS and HTTP redirect
         env:
           GH_TOKEN: ${{ github.token }}
