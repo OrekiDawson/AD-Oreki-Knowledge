@@ -26,7 +26,7 @@ tags:
 
 ## 永恒层
 
-在无限层继续推进后解锁**永恒（Eternity）**。永恒带来永恒点数（EP）、时间定理（Time Theorems，TT）与**时间研究**树，并开放永恒挑战（EC）。
+在无限层继续推进后解锁**永恒（Eternity）**。永恒带来永恒点数（EP）、时间之理（Time Theorems，TT）与**时间研究**树，并开放永恒挑战（EC）。
 
 ### 永恒挑战的真实结算条件
 
@@ -40,7 +40,7 @@ EC 的门槛按下式增长：`1e17500 × 1e2000^min(completions,4)`，也就是
 
 时间研究用 TT 购买，是永恒层的核心成长树。**DS1（时间膨胀解锁）需要 5000 TT**，买上它才会打开膨胀（Dilation）相关路径；而天神 V 的「膨胀时间」条件依赖膨胀真正运行过。
 
-时间定理的总量还与「在膨胀状态中完成一次真实永恒」有关：`rewardTP()` 只在那个时机触发，DT 速率又由 TP 决定。因此「TP 死了」往往是采样口径问题，而不是机制真的停摆。[读码 + 实测，[FACTS §8.6](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L226)]
+时间之理的总量还与「在膨胀状态中完成一次真实永恒」有关：`rewardTP()` 只在那个时机触发，DT 速率又由 TP 决定。因此「TP 死了」往往是采样口径问题，而不是机制真的停摆。[读码 + 实测，[FACTS §8.6](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L226)]
 
 ## 原版数值与 Oreki Edition 的差异
 
