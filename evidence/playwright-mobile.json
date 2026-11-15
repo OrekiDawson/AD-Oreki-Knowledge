@@ -1,31 +1,31 @@
 {
- "base": "http://localhost:8081",
+ "base": "http://localhost:8091",
  "mobile": {
-  "title": "AD-Oreki 技术知识库 · 反物质维度 MOD 技术知识库",
-  "explorerLinks": 4,
-  "pageTitleContains": true,
+  "title": "反物质维度MOD 技术知识库",
+  "explorerLinks": 7,
   "overflow": 0,
+  "aiDraftStatus": 404,
   "kotlinPage": true,
   "codeBlocks": 0,
-  "backlinks": 0,
-  "graph": 25,
+  "backlinksHeading": true,
+  "graphWidget": true,
   "overflowKotlin": 0,
   "challengePageHasZenith": true,
   "codePre": 1,
-  "codeSpans": 44,
+  "codeSpans": 48,
   "tables": 2,
-  "backlinksHeading": true,
-  "graphWidget": true,
   "darkmodeToggled": true,
   "bgBefore": "rgb(250, 248, 248)",
   "bgAfter": "rgb(22, 22, 24)"
  },
  "desktop": {
-  "title": "AD-Oreki 技术知识库 · 反物质维度 MOD 技术知识库",
+  "title": "反物质维度MOD 技术知识库",
   "overflow": 0,
   "hasSearch": true
  },
- "errors": [],
+ "errors": [
+  "Failed to load resource: the server responded with a status of 404 (Not Found)"
+ ],
  "searches": [
   {
    "term": "永恒挑战",
@@ -55,6 +55,78 @@
   {
    "term": "build_mod.py",
    "expectSlug": "build-mod-retirement",
+   "hit": true
+  }
+ ],
+ "urls": [
+  {
+   "url": "/architecture/kotlin-runtime",
+   "ok": true
+  },
+  {
+   "url": "/architecture/android",
+   "ok": true
+  },
+  {
+   "url": "/gameplay/challenges",
+   "ok": true
+  },
+  {
+   "url": "/build/agp",
+   "ok": true
+  },
+  {
+   "url": "/current/project-status",
+   "ok": true
+  },
+  {
+   "url": "/gameplay/celestials",
+   "ok": true
+  },
+  {
+   "url": "/gameplay/progression-infinity-eternity",
+   "ok": true
+  },
+  {
+   "url": "/gameplay/reality-time-studies",
+   "ok": true
+  },
+  {
+   "url": "/gameplay/original-vs-mod",
+   "ok": true
+  },
+  {
+   "url": "/architecture/parity",
+   "ok": true
+  },
+  {
+   "url": "/build/apk-signing",
+   "ok": true
+  },
+  {
+   "url": "/history/",
+   "ok": true
+  },
+  {
+   "url": "/history/2026-11-15-r113-180min-fail",
+   "ok": true
+  }
+ ],
+ "categories": [
+  {
+   "label": "玩法机制",
+   "hit": true
+  },
+  {
+   "label": "架构与运行时",
+   "hit": true
+  },
+  {
+   "label": "构建与交付",
+   "hit": true
+  },
+  {
+   "label": "历史归档",
    "hit": true
   }
  ]
