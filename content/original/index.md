@@ -25,10 +25,10 @@ tags:
 | 指标 | 数值 |
 | --- | --- |
 | 原版正文条目总数（主命名空间 article） | 68 |
-| 已完成并校对（REVIEWED） | 20 |
+| 已完成并校对（REVIEWED） | 21 |
 | 已翻译未校对（TRANSLATED） | 0 |
 | 许可阻塞（BLOCKED） | 0 |
-| 覆盖率 | 20 / 68（29.4%） |
+| 覆盖率 | 21 / 68（30.9%） |
 
 > 口径：覆盖率 = 已完成并校对的合规正文页数 ÷ 合规正文页总数。转写中（IN PROGRESS）与仅登记（NOT STARTED）不计入。清单中的重定向页、消歧义页与站点元页面不进入分母。
 
@@ -86,6 +86,12 @@ tags:
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
 | [[ow-terminology|术语（佩勒用词）]] | [Terminology](https://antimatterdimensions.wiki.gg/wiki/Terminology) | 3098 |
+
+## 第八批（已完成并校对）
+
+| 中文条目 | 原文 | 修订 ID |
+| --- | --- | --- |
+| [[ow-notations|记数法]] | [Notations](https://antimatterdimensions.wiki.gg/wiki/Notations) | 3133 |
 
 ## 后续批次（按游戏流程排序）
 

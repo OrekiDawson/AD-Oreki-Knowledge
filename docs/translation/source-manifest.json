@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T13:13:25.845Z",
+ "generated_at": "2026-11-15T13:15:00.364Z",
  "source": {
   "site": "https://antimatterdimensions.wiki.gg",
   "api": "https://antimatterdimensions.wiki.gg/api.php",
@@ -26,7 +26,7 @@
  "coverage": {
   "total_pages": 68,
   "translated": 0,
-  "reviewed": 20,
+  "reviewed": 21,
   "blocked": 0
  },
  "pages": [
@@ -2097,16 +2097,16 @@
     "Stubs"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
+   "zh_title": "记数法",
+   "path": "content/original/ow-notations.md",
+   "priority": 3,
+   "status": "REVIEWED",
+   "review_status": "REVIEWED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch8：正文完整翻译并校对；记数法名称与表情符号按原样保留"
   },
   {
    "title": "Overview",
