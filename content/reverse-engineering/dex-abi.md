@@ -1,5 +1,5 @@
 ---
-title: "DEX 与 ABI 反混淆"
+title: "反物质维度MOD Wiki:DEX 与 ABI 反混淆"
 description: "官方混淆 DEX 的类/方法/字段映射与调用边界"
 tags:
   - reverse-engineering

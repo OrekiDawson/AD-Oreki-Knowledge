@@ -1,5 +1,5 @@
 ---
-title: "阶段门禁"
+title: "反物质维度MOD Wiki:阶段门禁"
 description: "阶段解锁点、非法直达与页面恢复约束"
 tags:
   - gameplay

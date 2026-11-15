@@ -1,5 +1,5 @@
 ---
-title: "挑战自动化与真实结算"
+title: "反物质维度MOD Wiki:挑战自动化与真实结算"
 description: "挑战入口、真实结算边界与 5 分钟验收口径"
 tags:
   - gameplay
