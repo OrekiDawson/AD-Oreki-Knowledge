@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T13:09:32.948Z",
+ "generated_at": "2026-11-15T13:11:03.910Z",
  "source": {
   "site": "https://antimatterdimensions.wiki.gg",
   "api": "https://antimatterdimensions.wiki.gg/api.php",
@@ -26,7 +26,7 @@
  "coverage": {
   "total_pages": 68,
   "translated": 0,
-  "reviewed": 18,
+  "reviewed": 19,
   "blocked": 0
  },
  "pages": [
@@ -103,16 +103,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
+   "zh_title": "广告加成",
+   "path": "content/original/ow-ad-bonus.md",
+   "priority": 3,
+   "status": "REVIEWED",
+   "review_status": "REVIEWED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch6：正文完整翻译并校对；多页签模板展开为四表"
   },
   {
    "title": "Advanced Glyph Mechanics",

@@ -25,10 +25,10 @@ tags:
 | 指标 | 数值 |
 | --- | --- |
 | 原版正文条目总数（主命名空间 article） | 68 |
-| 已完成并校对（REVIEWED） | 18 |
+| 已完成并校对（REVIEWED） | 19 |
 | 已翻译未校对（TRANSLATED） | 0 |
 | 许可阻塞（BLOCKED） | 0 |
-| 覆盖率 | 18 / 68（26.5%） |
+| 覆盖率 | 19 / 68（27.9%） |
 
 > 口径：覆盖率 = 已完成并校对的合规正文页数 ÷ 合规正文页总数。转写中（IN PROGRESS）与仅登记（NOT STARTED）不计入。清单中的重定向页、消歧义页与站点元页面不进入分母。
 
@@ -74,6 +74,12 @@ tags:
 | --- | --- | --- |
 | [[ow-black-hole|黑洞]] | [Black Hole](https://antimatterdimensions.wiki.gg/wiki/Black_Hole) | 3360 |
 | [[ow-dimensional-sacrifice|维度献祭]] | [Dimensional Sacrifice](https://antimatterdimensions.wiki.gg/wiki/Dimensional_Sacrifice) | 3397 |
+
+## 第六批（已完成并校对）
+
+| 中文条目 | 原文 | 修订 ID |
+| --- | --- | --- |
+| [[ow-ad-bonus|广告加成]] | [Ad Bonus](https://antimatterdimensions.wiki.gg/wiki/Ad_Bonus) | 3096 |
 
 ## 后续批次（按游戏流程排序）
 
