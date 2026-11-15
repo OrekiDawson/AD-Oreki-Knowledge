@@ -79,6 +79,7 @@ const CATEGORY_TITLES = {
   troubleshooting: "故障排查",
   references: "参考资料",
   history: "历史归档",
+  original: "原版 Wiki 中文翻译",
 };
 for (const [dir, title] of Object.entries(CATEGORY_TITLES)) {
   const file = path.join(PUB, dir, "index.html");
@@ -126,8 +127,38 @@ const LEGACY_URLS = [
 for (const slug of LEGACY_URLS) if (!pageExists(slug)) fail("旧页面 URL 丢失: /" + slug);
 
 // 新增主题条目
-for (const slug of ["architecture/parity", "build/apk-signing", "gameplay/progression-infinity-eternity", "gameplay/reality-time-studies", "gameplay/celestials", "gameplay/original-vs-mod"]) {
+for (const slug of [
+  "architecture/parity",
+  "build/apk-signing",
+  "gameplay/progression-infinity-eternity",
+  "gameplay/reality-time-studies",
+  "gameplay/celestials",
+  "gameplay/original-vs-mod",
+  "original/index",
+  "original/ow-infinity",
+  "original/ow-dimensions",
+  "original/ow-replicanti",
+  "original/ow-eternity",
+  "original/ow-break-infinity",
+  "original/ow-time-dimensions",
+  "original/ow-eternity-challenges",
+  "original/ow-dilation",
+]) {
   if (!pageExists(slug)) fail("缺少新增主题条目: /" + slug);
+}
+
+// 原版翻译专区：类目页与译文必须显示 CC BY-SA 4.0 与来源说明
+if (fs.existsSync(path.join(PUB, "original", "index.html"))) {
+  const originalIndex = fs.readFileSync(path.join(PUB, "original", "index.html"), "utf8");
+  if (!originalIndex.includes("CC BY-SA 4.0")) fail("原版翻译专区首页缺少 CC BY-SA 4.0 说明");
+  if (!originalIndex.includes("来源")) fail("原版翻译专区首页缺少来源说明");
+}
+for (const rel of ["original/ow-infinity.html", "original/ow-dimensions.html"]) {
+  const full = path.join(PUB, rel);
+  if (!fs.existsSync(full)) { fail("缺少翻译页: " + rel); continue; }
+  const html = fs.readFileSync(full, "utf8");
+  if (!html.includes("来源与许可")) fail("翻译页缺少来源与许可块: " + rel);
+  if (!html.includes("antimatterdimensions.wiki.gg")) fail("翻译页缺少原文链接: " + rel);
 }
 
 if (failed > 0) {

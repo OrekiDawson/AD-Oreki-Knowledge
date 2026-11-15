@@ -15,7 +15,7 @@ tags:
 | --- | --- |
 | [[original-vs-mod|原版行为与 Oreki Edition 修改]] | 原版规则、MOD 数值缩放与自动化增强的集中对照 |
 | [[progression-infinity-eternity|无限与永恒]] | 大坍缩、无限点数、永恒点数与时间研究入口 |
-| [[reality-time-studies|现实与时间研究]] | 现实重置、时间定理、DS1/DS6 与自动化节奏 |
+| [[reality-time-studies|现实与时间研究]] | 现实重置、时间之理、DS1/DS6 与自动化节奏 |
 | [[celestials|天神系统]] | V、Ra、Lai'tela、Pelle 等后期系统与进入条件 |
 | [[challenges|挑战与真实结算]] | 普通/无限/永恒挑战为什么必须走原版结算 |
 | [[automation|智能自动购买器]] | 阶段感知、目标驱动、手动优先的自动化设计 |
