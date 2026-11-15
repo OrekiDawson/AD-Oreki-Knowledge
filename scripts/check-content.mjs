@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = "content";
-const PUBLIC_TITLE_PREFIX = "反物质维度MOD Wiki:";
+const RULE_PAGE_TITLE = "反物质维度MOD Wiki:知识库规则";
 const REQUIRED_TERMS = ["永恒挑战", "自动购买器", "AGP", "Kotlin", "Lai Tela", "build_mod.py"];
 const MIN_PAGES = 15;
 const SECRET_PATTERNS = [
@@ -40,8 +40,10 @@ for (const f of files) {
   if (!f.startsWith("content/ai-drafts/")) {
     const match = text.match(/^title:\s*["']?(.+?)["']?\s*$/m);
     const title = match?.[1]?.trim() || "";
-    if (!title.startsWith(PUBLIC_TITLE_PREFIX) || title.length === PUBLIC_TITLE_PREFIX.length) {
-      fail("正式条目标题必须为 反物质维度MOD Wiki:[条目名]: " + f);
+    if (f === "content/wiki-rules.md") {
+      if (title !== RULE_PAGE_TITLE) fail("规则页标题必须为 " + RULE_PAGE_TITLE);
+    } else if (title.startsWith("反物质维度MOD Wiki:")) {
+      fail("普通条目标题不应带规则页命名空间前缀: " + f);
     }
   }
   for (const m of text.matchAll(/\[\[([^\]|#]+)/g)) {

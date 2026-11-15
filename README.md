@@ -1,10 +1,10 @@
-# 反物质维度MOD Wiki
+# 反物质维度MOD 知识库
 
 反物质维度 MOD（Oreki Edition）技术知识库。GitHub 是权威事实源，本仓库是 Quartz 5 知识展示与检索层。
 
 - 站点：https://wiki.oreki.net（自定义域名；默认地址 https://orekidawson.github.io/AD-Oreki-Knowledge/）
 - **公开的正式知识库规则**：https://wiki.oreki.net/wiki-rules（网站首页、目录与页脚均可进入）
-- **统一页面标题**：`反物质维度MOD Wiki:[条目名]`，现有网页路径保持不变。
+- **规则页专用名称**：`反物质维度MOD Wiki:知识库规则`；普通条目标题、正文保持自然简体中文，不加前缀，URL 保持不变。
 - 构建：Quartz 5 + Node 24（本地 Node 26 时 esbuild service 会 SIGBUS，请用 Node 24 构建）
 - 内容：content/ 下 Markdown，frontmatter + 证据区
 - 检查：scripts/check-content.mjs（页面/链接/敏感信息/术语）、scripts/verify-build.mjs（产物）

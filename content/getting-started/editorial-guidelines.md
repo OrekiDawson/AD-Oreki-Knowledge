@@ -1,5 +1,5 @@
 ---
-title: "反物质维度MOD Wiki:知识库编写指南"
+title: "知识库编写指南"
 description: "面向普通读者的简体中文百科写作、来源核验与 AI 摘要约定"
 tags:
   - 知识库

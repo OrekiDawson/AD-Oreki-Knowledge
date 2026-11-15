@@ -35,7 +35,7 @@ home="$(mktemp)"
 headers="$(mktemp)"
 trap 'rm -f "$home" "$headers"' EXIT
 curl --fail --silent --show-error --max-time 30 --output "$home" "${BASE_URL}/"
-grep -Fq "反物质维度MOD Wiki" "$home" || {
+grep -Fq "反物质维度MOD 知识库" "$home" || {
   echo "::error::HTTPS homepage is missing the expected site title"
   exit 1
 }

@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: "反物质维度MOD Wiki"
+  pageTitle: "反物质维度MOD 知识库"
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
