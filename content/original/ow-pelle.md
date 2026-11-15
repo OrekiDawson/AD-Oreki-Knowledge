@@ -1,6 +1,6 @@
 ---
 title: "佩勒"
-description: "原版 Wiki《Pelle》条目的完整简体中文翻译：反物质之神佩勒的末日现实、打击、裂隙、裂隙里程碑与被毁灭现实的惩罚"
+description: "原版 Wiki《Pelle》条目的完整简体中文翻译：反物质之神佩勒的末日现实、冲击、裂痕、裂痕里程碑与被毁灭现实的惩罚"
 tags:
   - 原版Wiki翻译
   - 天神
@@ -10,8 +10,8 @@ original_revid: 3376
 original_fetched_at: "2026-11-15T21:26:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "REVIEWED"
+review_status: "REVIEWED"
 ---
 
 > 你在这里。[无限/永远/永恒]。
@@ -31,10 +31,10 @@ review_status: "NOT REVIEWED"
 | 称号 | 反物质之神（Celestial of Antimatter） |
 | 别号 | 永恒（Eternal）；别名：[永恒/神明/毁灭者] |
 | 解锁条件 | 购买虚幻升级「无所不在的抹除」 |
-| 相关货币 | [残留物（Remnants）](#末日)、[现实碎片（RS）](#末日)[^pelle-rs] |
-| 机制 | 佩勒升级、[裂隙](#裂隙) |
+| 相关货币 | [遗物（Remnants）](#末日)、[现实碎片（RS）](#末日)[^pelle-rs] |
+| 机制 | 佩勒升级、[裂痕](#裂痕) |
 | 现实解锁条件 | 17 行成就；每种炼金资源达到 25,000 |
-| 现实惩罚 | [打击](#佩勒的打击) |
+| 现实惩罚 | [冲击](#佩勒的冲击) |
 | 现实特性 | 你无法逃离被毁灭的现实 |
 | 加入版本 | 网页版：现实更新（2022 年 12 月 17 日）；Android：现实更新（2024 年 4 月 1 日）；Steam 与 iOS：首发即包含 |
 
@@ -44,25 +44,25 @@ review_status: "NOT REVIEWED"
 
 毁灭你的现实与进入任何挑战或天神现实类似：会强制进行一次威望重置。随即，几乎所有现实之后的功能都会被禁用，从[现实升级](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades)的便利性升级，到[莱特拉](https://antimatterdimensions.wiki.gg/wiki/Lai%27tela)提供的强力奖励——也就是说，在强制现实重置之后，你再次只剩下 100 反物质。
 
-即使被佩勒禁用了大量在「毁灭」之前获得的加成，仍会施加额外的永久减益（以及[临时](#佩勒的打击)减益），例如反物质维度产量变慢 $*10$，以及诸如[星系](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Galaxies)效果仅有 $50\%$ 这样针对最强机制的削弱。佩勒惩罚的完整清单见子页面「被毁灭现实的惩罚（Doomed Penalties）」。
+即使被佩勒禁用了大量在「毁灭」之前获得的加成，仍会施加额外的永久减益（以及[临时](#佩勒的冲击)减益），例如反物质维度产量变慢 $*10$，以及诸如[星系](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Galaxies)效果仅有 $50\%$ 这样针对最强机制的削弱。佩勒惩罚的完整清单见子页面「被毁灭现实的惩罚（Doomed Penalties）」。
 
 ### 末日
 
 与执行[现实](https://antimatterdimensions.wiki.gg/wiki/Reality)重置的能力不同，「创造新的现实（Make a new Reality）」按钮被替换为执行「末日（Armageddon）」以获取现实碎片的能力。
 
-## 佩勒的打击
+## 佩勒的冲击
 
 | ID（编号） | 要求 | 惩罚 | 奖励 | 其它细节 | ID（名称） |
 | --- | --- | --- | --- | --- | --- |
 | 1 | 达到[无限](https://antimatterdimensions.wiki.gg/wiki/Infinity) | [反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)被提升到 $^{0.5}$ 次方 | 解锁[真空/空洞/虚空]，并获得一个永久性无限自动购买器 | 该惩罚效果等同于开平方根 | infinity |
 | 2 | 强化星系（购买 $5\text{e}11$ IP 的[打破无限](https://antimatterdimensions.wiki.gg/wiki/Break_Infinity)升级） | [无限维度](https://antimatterdimensions.wiki.gg/wiki/Infinity_Dimensions)被提升到 $^{0.5}$ 次方 | 解锁[衰变/崩解/混乱] | 该惩罚效果等同于开平方根 | powerGalaxies |
 | 3 | 达到[永恒](https://antimatterdimensions.wiki.gg/wiki/Eternity) | [复制器](https://antimatterdimensions.wiki.gg/wiki/Replicanti)速度在 $\text{e}2,000$ 以上进一步变慢 | 解锁[混沌/无序/杂质] | 每位于 $\text{e}2,000$ 之上一个数量级，复制器间隔乘以 $\times10$ | eternity |
-| 4 | 达到 $115$ 时间之理 | 在[永恒挑战](https://antimatterdimensions.wiki.gg/wiki/Eternity_Challenges)中，[真空/空洞/虚空]的 IP 乘数只有 $30\%$ 强度，且被限制在目标的 $15\%$ | 解锁[递归/弥散/毁灭] | 该打击的要求低于玩家开始第一个永恒挑战所需的最低时间之理（$123$） | ECs |
-| 5 | [膨胀时间](https://antimatterdimensions.wiki.gg/wiki/Dilation) | 时间膨胀永久激活 | 在末日之间保留时间膨胀研究、提升残留物获取，并解锁[悖论/矛盾/谬误] |  | dilation |
+| 4 | 达到 $115$ 时间之理 | 在[永恒挑战](https://antimatterdimensions.wiki.gg/wiki/Eternity_Challenges)中，[真空/空洞/虚空]的 IP 乘数只有 $30\%$ 强度，且被限制在目标的 $15\%$ | 解锁[递归/弥散/毁灭] | 该冲击的要求低于玩家开始第一个永恒挑战所需的最低时间之理（$123$） | ECs |
+| 5 | [膨胀时间](https://antimatterdimensions.wiki.gg/wiki/Dilation) | 时间膨胀永久激活 | 在末日之间保留时间膨胀研究、提升遗物获取，并解锁[悖论/矛盾/谬误] |  | dilation |
 
-## 裂隙
+## 裂痕
 
-| 裂隙名称 | 填充资源 | 资源→百分比 | 百分比→资源（$R$ = 小数形式的百分比） | $100\%$ 时的需求 | 效果描述 | 公式 | $100\%$ 时 |
+| 裂痕名称 | 填充资源 | 资源→百分比 | 百分比→资源（$R$ = 小数形式的百分比） | $100\%$ 时的需求 | 效果描述 | 公式 | $100\%$ 时 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [真空/空洞/虚空] | 无限点数 | $\frac{\log_{10}\left(\log_{10}\left(IP+1\right)*10+1\right)^{2.5}}{100}$ | $10^{10^{R^{0.4}-1}-0.1}-1$ | $1.81\text{e}203,973$ | IP 获取乘以「{value}」 | $\left(IP_{Filled}+1\right)^{0.33}$ | $\times1.50\text{e}67,311$ |
 | [衰变/崩解/混乱] | 复制器 | $\frac{\log_{10}(Replicanti+1)}{2,000}$ | $10^{20R}-1$ | $1.00\text{e}2,000$ | 复制器速度乘以「{value}」 | $\sqrt{\log_{10}\left(Rep_{Filled}+1\right)+1}$ | $\times44.73$ |
@@ -70,11 +70,11 @@ review_status: "NOT REVIEWED"
 | [递归/弥散/毁灭] | 永恒点数 | $\left(\frac{\log_{10}\left(EP+1\right)}{4,000}\right)^{0.4}$ | $10^{R^{2.5}*4,000}-1$ | $1.00\text{e}4,000$ | EP 公式：$\log(x)/308$ ➜ $\log(x)/$「{value}」 | $308-\left(58*\frac{\log_{10}\left(EP_{Filled}+1\right)}{4,000}^{0.2}\right)$ | $\log(x)/250.00$ |
 | [悖论/矛盾/谬误] | 膨胀时间 | $\frac{\log_{10}\left(DT+1\right)}{100}$ | $10^{R}-1$ | $1.00\text{e}100$ | 所有维度取「{value}」次方 | $1+\frac{\log_{10}\left(DT_{Filled}+1\right)}{250}$ | $^{1.400}$ |
 
-混沌裂隙的完整公式（原文折叠块）：设 $DecayFactor = Min(DecayFilled,650\%)+\frac{Max(DecayFilled-650\%,0)}{700\%}$，其中 $DecayFilled$ = 已填充的混沌百分比，则效果为
+混沌裂痕的完整公式（原文折叠块）：设 $DecayFactor = Min(DecayFilled,650\%)+\frac{Max(DecayFilled-650\%,0)}{700\%}$，其中 $DecayFilled$ = 已填充的混沌百分比，则效果为
 
 $$\frac{6^{6^{6^{\tfrac{DecayFactor+100}{1,000}}}}-6}{100,000}+10^{\tfrac{DecayFactor+100}{1,000}}$$
 
-## 裂隙里程碑
+## 裂痕里程碑
 
 | 要求百分比 | 要求资源 | 描述 | 效果 / 其它细节 |
 | --- | --- | --- | --- |
@@ -85,7 +85,7 @@ $$\frac{6^{6^{6^{\tfrac{DecayFactor+100}{1,000}}}}-6}{100,000}+10^{\tfrac{DecayF
 | **衰变/崩解/混乱 里程碑** |  |  |  |
 | $20\%$ | $1.00\text{e}400$ 复制器 | 第一个可重复购买的佩勒升级也影响第 1 无限维度 | $\times\left(10^{50}\right)^{Purchases-9}$，最多为 $\times\text{e}1,750$ 无限维度 1 |
 | $60\%$ | $1.00\text{e}1,200$ 复制器 | 当复制器超过 $\text{e}1,300$ 时，所有星系效果提高 $10\%$ |  |
-| $100\%$ | $1.00\text{e}2,000$ 复制器 | 按裂隙里程碑总数提高复制器星系上限 | $TotalMilestones^2-2*TotalMilestones$，最多 $+195$ 复制器星系上限 |
+| $100\%$ | $1.00\text{e}2,000$ 复制器 | 按裂痕里程碑总数提高复制器星系上限 | $TotalMilestones^2-2*TotalMilestones$，最多 $+195$ 复制器星系上限 |
 | **混沌/无序/杂质 里程碑** |  |  |  |
 | $9\%$ | $90\%$ [衰变/崩解/混乱]（$1.00\text{e}1,800$ 复制器） | [衰变/崩解/混乱]效果始终为最大值，里程碑始终激活 |  |
 | $15\%$ | $150\%$ [衰变/崩解/混乱]（$1.00\text{e}3,000$ 复制器） | 符文获得一个佩勒专属新效果 |  |
@@ -103,7 +103,7 @@ $$\frac{6^{6^{6^{\tfrac{DecayFactor+100}{1,000}}}}-6}{100,000}+10^{\tfrac{DecayF
 
 > 剧透警告：本节涉及终局内容。
 
-原文此节目前只有占位内容（原文写的是「After the Fifth Strike, bla bla bla」，即「第五次打击之后，巴拉巴拉」），并带有原作者注释，说明本应讲述星系生成器这一终局关键内容。译文忠实反映原文现状，不虚构未写出的正文；请以原页后续更新为准。
+原文此节目前只有占位内容（原文写的是「After the Fifth Strike, bla bla bla」，即「第五次冲击之后，巴拉巴拉」），并带有原作者注释，说明本应讲述星系生成器这一终局关键内容。译文忠实反映原文现状，不虚构未写出的正文；请以原页后续更新为准。
 
 ## 琐事
 

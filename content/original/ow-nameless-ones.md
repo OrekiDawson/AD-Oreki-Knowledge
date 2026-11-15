@@ -10,8 +10,8 @@ original_revid: 3372
 original_fetched_at: "2026-11-15T21:28:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "REVIEWED"
+review_status: "REVIEWED"
 ---
 
 > 我们……曾有过名字。它被……这个地方……夺走了。

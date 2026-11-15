@@ -78,6 +78,16 @@
 | News Ticker | 新闻滚动条 | Wiki | — |
 | Scaling | 成长 / 缩放 | 项目 | 价格成长用「成长」，数值削弱用「缩放」 |
 | Nerf | 削弱 | Wiki | — |
+| Cursed Glyph | 诅咒符文 | 游戏内 | `cursed_glyph`；视为 -3 个符文 |
+| Rift(s) | 裂痕 | 游戏内 | 佩勒机制；「填充裂痕」 |
+| Strike(s) | 冲击 | 游戏内 | `htp_strikes_title` = 佩勒冲击 |
+| Remnant(s) | 遗物 | 游戏内 | `existing_remnants` = 现有遗物 |
+| Triad Study | 三体研究 | 游戏内 | `triad` = 三体；薇 6 级解锁 |
+| V-Achievement | 薇成就 | 游戏内 | 「困难的薇成就计为两个薇成就」 |
+| Hard V-Achievement | 困难的薇成就 | 游戏内 | 太阳神中薇 6 级解锁 |
+| Doom / Doomed Reality | 毁灭 / 被毁灭的现实 | 游戏内 | `destroyed_by_pelle` = 已被佩勒毁灭 |
+| Galaxy Generator | 星系生成器 | Wiki | 佩勒里程碑解锁；游戏内未取到独立键名 |
+| wordshift | 词形变换 | Wiki | 佩勒页面同一概念的多形态写法（如 真空/空洞/虚空） |
 
 ## 使用说明
 

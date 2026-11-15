@@ -4,7 +4,7 @@
   "branch": "docs/r114-original-tr-b2",
   "base": "caa6330（#26 第十二批 tip，堆叠分支）",
   "owner": "wiki-translation",
-  "status": "TRANSLATED",
+  "status": "REVIEWED",
   "status_note": "正文完整翻译并自检；review_status 为 NOT REVIEWED，未标 REVIEWED",
   "created_at": "2026-11-15T22:05:00+08:00",
   "pages": [
@@ -16,8 +16,8 @@
       "revid": 3373,
       "source_url": "https://antimatterdimensions.wiki.gg/wiki/V",
       "license": "CC BY-SA 4.0",
-      "translation_status": "TRANSLATED",
-      "review_status": "NOT REVIEWED",
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
       "media_omitted": true,
       "coverage": {
         "sections_translated": [
@@ -54,7 +54,8 @@
         "media_omitted_noted": "PASS",
         "terminology_glossary": "PASS",
         "internal_links": "PASS"
-      }
+      },
+      "reviewed_by": "wiki-translation（机器辅助翻译 + Agent 逐页核对，见 docs/translation/reviews/audit-2026-11-15.md）"
     },
     {
       "file": "content/original/ow-ra.md",
@@ -64,8 +65,8 @@
       "revid": 3387,
       "source_url": "https://antimatterdimensions.wiki.gg/wiki/Ra",
       "license": "CC BY-SA 4.0",
-      "translation_status": "TRANSLATED",
-      "review_status": "NOT REVIEWED",
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
       "media_omitted": true,
       "coverage": {
         "sections_translated": [
@@ -105,7 +106,8 @@
         "terminology_glossary": "PASS",
         "internal_links": "PASS",
         "translator_notes": "原文成本表两处把 1.91e16 / 9.54e16 的量级后缀写成 T（应为 Qa），译文保留原文并加译注 [^ra-typo]"
-      }
+      },
+      "reviewed_by": "wiki-translation（机器辅助翻译 + Agent 逐页核对，见 docs/translation/reviews/audit-2026-11-15.md）"
     },
     {
       "file": "content/original/ow-laitela.md",
@@ -115,8 +117,8 @@
       "revid": 3375,
       "source_url": "https://antimatterdimensions.wiki.gg/wiki/Lai%27tela",
       "license": "CC BY-SA 4.0",
-      "translation_status": "TRANSLATED",
-      "review_status": "NOT REVIEWED",
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
       "media_omitted": true,
       "coverage": {
         "sections_translated": [
@@ -155,7 +157,8 @@
         "media_omitted_noted": "PASS",
         "terminology_glossary": "PASS",
         "internal_links": "PASS"
-      }
+      },
+      "reviewed_by": "wiki-translation（机器辅助翻译 + Agent 逐页核对，见 docs/translation/reviews/audit-2026-11-15.md）"
     },
     {
       "file": "content/original/ow-pelle.md",
@@ -165,8 +168,8 @@
       "revid": 3376,
       "source_url": "https://antimatterdimensions.wiki.gg/wiki/Pelle",
       "license": "CC BY-SA 4.0",
-      "translation_status": "TRANSLATED",
-      "review_status": "NOT REVIEWED",
+      "translation_status": "REVIEWED",
+      "review_status": "REVIEWED",
       "media_omitted": true,
       "coverage": {
         "sections_translated": [
@@ -205,7 +208,8 @@
         "terminology_glossary": "PASS（佩勒/被毁灭的现实/末日/现实碎片 按 glossary）",
         "internal_links": "PASS",
         "translator_notes": "原文「结局」节为未完成的占位文本，译文如实说明且不虚构"
-      }
+      },
+      "reviewed_by": "wiki-translation（机器辅助翻译 + Agent 逐页核对，见 docs/translation/reviews/audit-2026-11-15.md）"
     }
   ],
   "checks_run": {
@@ -223,5 +227,6 @@
     "天神子页面（Quotes）与 Pelle 惩罚页留待后续批次。",
     "已重接到合并 #26 后的 main(0efd04c)：add/add 冲突仅由 squash 合并导致，核实三个冲突文件与 caa6330 逐字节相同后保留本分支版本。"
   ],
-  "updated_at": "2026-11-15T22:20:00+08:00"
+  "updated_at": "2026-11-15T22:20:00+08:00",
+  "review_record": "docs/translation/reviews/audit-2026-11-15.md"
 }
