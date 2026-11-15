@@ -1,0 +1,110 @@
+{
+  "batch": 16,
+  "title": "第十六批：永恒升级 / 充能无限升级 / 永恒里程碑 / Mod 一览（4 篇）",
+  "branch": "docs/r114-batch16",
+  "base": "main @ 7387a07（#35 合并后）",
+  "owner": "wiki-translation",
+  "status": "STRUCTURE CHECKED",
+  "status_note": "四篇均完成逐节翻译并做结构核对（章节/表格/公式/来源字段）；未做逐段语义审校，按四级口径记 STRUCTURE CHECKED，不升 REVIEWED",
+  "created_at": "2026-11-15T23:45:00+08:00",
+  "pages": [
+    {
+      "file": "content/original/ow-eternity-upgrades.md",
+      "original_title": "Eternity Upgrades",
+      "zh_title": "永恒升级",
+      "pageid": null,
+      "revid": 3346,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "sections": [
+          "导语",
+          "一次性升级（6 项表）",
+          "EP ×5 升级（成长节点 + 表）",
+          "来源与许可",
+          "相关条目"
+        ],
+        "tables": 2,
+        "formulas": 7,
+        "notes": "6 项一次性升级 + epMult 重复购买成长节点全部保留"
+      }
+    },
+    {
+      "file": "content/original/ow-charged-infinity-upgrades.md",
+      "original_title": "Infinity Upgrades/Upgrades (Charged)",
+      "zh_title": "充能无限升级",
+      "pageid": null,
+      "revid": 3386,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "sections": [
+          "导语（解锁与上限规则）",
+          "12 项充能表（3 列 × 4）",
+          "来源与许可",
+          "相关条目"
+        ],
+        "tables": 1,
+        "formulas": 12,
+        "notes": "12 行全部保留，含特蕾莎 25 级的数值备注"
+      }
+    },
+    {
+      "file": "content/original/ow-eternity-milestones.md",
+      "original_title": "Eternity Milestones",
+      "zh_title": "永恒里程碑",
+      "pageid": null,
+      "revid": 3321,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "sections": [
+          "导语",
+          "里程碑一览（27 行）",
+          "相关成就",
+          "琐事（原文为空）",
+          "来源与许可",
+          "相关条目"
+        ],
+        "tables": 2,
+        "formulas": 0,
+        "notes": "27 项里程碑的所需次数、获得、奖励与生效条件全部保留；三种离线产出互斥规则保留"
+      }
+    },
+    {
+      "file": "content/original/ow-mods.md",
+      "original_title": "Mods",
+      "zh_title": "Mod 一览",
+      "pageid": null,
+      "revid": 3129,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "sections": [
+          "导语（含原文占位文字说明）",
+          "现实更新期 MOD 表",
+          "更早的 MOD（5 个）",
+          "来源与许可",
+          "相关条目"
+        ],
+        "tables": 1,
+        "formulas": 0,
+        "notes": "原文导语为占位文字（bla ble ble），译文如实说明不虚构；第三方链接与作者信息保留"
+      }
+    }
+  ],
+  "checks_run": {
+    "env": "Node v24.22.3；Quartz pin 7cfb0796165c848be5438117e9806802123bf676",
+    "node scripts/check-content.mjs": "PASS",
+    "node scripts/check-translation.mjs": "PASS（STRUCTURE CHECKED 39/68）",
+    "node scripts/ai/build-index.mjs": "PASS",
+    "npx quartz build": "PASS",
+    "node scripts/verify-build.mjs": "PASS",
+    "node scripts/acceptance.cjs": "PASS（Chromium 412×915）"
+  },
+  "notes": [
+    "本批未改 index.md（按任务边界归 wiki-editorial），清单与批次账本已记录。",
+    "天神 Quotes 子页在 PR #31 处理，本批未重复。"
+  ],
+  "blockers": []
+}
