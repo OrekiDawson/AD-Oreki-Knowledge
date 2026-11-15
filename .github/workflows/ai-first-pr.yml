@@ -1,0 +1,76 @@
+name: AI knowledge organize (first PR daily)
+
+# Trigger only after the ordinary unprivileged PR build. The trusted script
+# from default branch reads PR metadata/diffs as data, never runs PR code.
+on:
+  workflow_run:
+    workflows: ["KB PR check"]
+    types: [completed]
+
+permissions:
+  contents: read
+  actions: read
+  pull-requests: read
+
+# Serialize decisions and artifact creation so simultaneous PRs never
+# consume multiple model calls in a single UTC+8 day.
+concurrency:
+  group: kb-first-pr-ai
+  queue: max
+  cancel-in-progress: false
+
+jobs:
+  decision:
+    name: 每日首次 PR 判定（UTC+8）
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      should_run: ${{ steps.pick.outputs.should_run }}
+      day: ${{ steps.pick.outputs.day }}
+      pr: ${{ steps.pick.outputs.pr }}
+    steps:
+      - name: Checkout trusted main (NOT the PR head)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Test UTC+8 daily PR eligibility
+        run: node --test scripts/ai/tests/first-pr.test.mjs
+      - name: Select first created PR of day or report SKIPPED
+        id: pick
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/ai/first-pr.mjs decide
+
+  ai-organize:
+    name: AI 整理（其余 PR 跳过）
+    needs: decision
+    if: needs.decision.outputs.should_run == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout trusted main (never checkout PR code)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Read PR changes and organize knowledge with DeepSeek (read-only)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          KB_PR_NUMBER: ${{ needs.decision.outputs.pr }}
+          KB_PR_DAY: ${{ needs.decision.outputs.day }}
+        run: node scripts/ai/first-pr.mjs organize
+      - name: Save daily AI evidence to Actions artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: kb-ai-${{ needs.decision.outputs.day }}
+          path: evidence/ai-first-pr/${{ needs.decision.outputs.day }}.json
+          if-no-files-found: error
+          retention-days: 90
