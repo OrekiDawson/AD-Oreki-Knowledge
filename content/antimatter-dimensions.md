@@ -12,7 +12,7 @@ tags:
 
 游戏最初由使用 **Hevipelle** 名称的开发者于 **2016 年**作为网页游戏推出，后来由更多开发者参与制作。其 Steam 版本于 **2022 年 12 月 17 日**发行。[来源：Steam 商店的开发者信息与游戏介绍](https://store.steampowered.com/app/1399720/Antimatter_Dimensions/)。
 
-本站主要记录基于该游戏制作的 **Oreki Edition MOD**，但理解原版机制是阅读技术条目和项目记录的前提。本条目首先介绍原版游戏；MOD 的目标、实现和测试结论会单独标明，避免把修改版与官方游戏混为一谈。
+本站主要记录基于这款游戏制作的 **Oreki Edition MOD**。理解原版机制是读懂 MOD 改动的前提，所以这篇先讲原版；MOD 的目标、实现和验证结论会单独说明，不和官方行为混在一起。
 
 ## 基本资料
 
@@ -26,7 +26,7 @@ tags:
 | 可游玩平台 | 网页、Steam，以及 Android 和 iOS 移动版本 |
 | 主要玩法 | 维度生产、升级、重置成长、挑战、成就与自动化 |
 
-以上资料主要依据[Steam 官方商店页面](https://store.steampowered.com/app/1399720/Antimatter_Dimensions/)；平台信息另可参见[《反物质维度》社区 Wiki](https://antimatterdimensions.wiki.gg/)。不同平台的版本、界面和功能开放顺序可能存在差异，本表不代表各版本始终完全相同。
+资料来源是 [Steam 官方商店页面](https://store.steampowered.com/app/1399720/Antimatter_Dimensions/)与[《反物质维度》社区 Wiki](https://antimatterdimensions.wiki.gg/)。各平台的版本、界面和功能开放顺序并不一致，上表只是常见情况的汇总。
 
 ## 游戏怎样进行
 
@@ -46,7 +46,7 @@ tags:
 
 ## 主要成长阶段
 
-游戏会随着推进逐步展开新的系统。以下表格说明的是**原版主要机制的关系**，并非每一项功能出现的精确时间表。
+随着推进，游戏会一层层展开新的重置体系。下表概括原版主要机制之间的关系，不是精确到分钟的解锁时间表。
 
 | 阶段 | 主要变化 | 可帮助理解的概念 |
 | --- | --- | --- |
@@ -59,7 +59,7 @@ tags:
 
 永恒会引入永恒点数和时间研究体系；现实则在此基础上进一步引入现实机器、符文等机制。玩家在这些阶段需要决定何时重置、怎样分配升级，以及如何让重复操作自动完成。[来源：社区 Wiki《Eternity》](https://antimatterdimensions.wiki.gg/wiki/Eternities)；[《Reality》](https://antimatterdimensions.wiki.gg/wiki/Reality)。
 
-游戏后期还有天神（Celestials）相关内容。各阶段的精确条件、资源公式与重置后保留的项目较为复杂，宜参阅对应机制资料，而不是把上表当作完整攻略。
+游戏后期还有天神（Celestials）。各阶段的具体条件、资源公式和重置后保留什么，细节多且互相牵连，需要看对应的机制条目；上表只用来建立整体印象。
 
 ## 挑战、成就和自动化
 
