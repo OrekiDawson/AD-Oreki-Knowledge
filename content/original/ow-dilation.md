@@ -46,7 +46,7 @@ $$Tachyons = TP_{Mult}\times\left(\frac{\log_{10}\left(AM_{\text{膨胀中最高
 
 ## 升级
 
-> 原页通过子模板嵌入《Dilation/Upgrades》与《Dilation/Upgrades (Doomed)》的完整升级表；这两个子页尚未翻译（已列入后续批次），本页保留主条目正文与机制说明。
+> 原页通过子模板嵌入膨胀升级表。普通模式升级已翻译：[膨胀升级](/original/ow-dilation-upgrades)；《Dilation/Upgrades (Doomed)》尚未翻译（已列入后续批次）。
 
 ## 相关成就
 
