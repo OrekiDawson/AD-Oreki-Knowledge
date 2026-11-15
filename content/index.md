@@ -42,7 +42,7 @@ tags:
 ## 当前重要事实（最后核实 2026-11-15 21:25 UTC+8）
 
 - **新档 180 分钟真实通关：最近完整跑次 FAIL；新长跑进行中。** 最近一次完整长跑运行 10,805.8 秒未通关（`creditsFinished=false`、`realities=2`）；2026-11-15 20:07:19 起的新真新档长跑截至 21:22 已推进到 `realities=6`、`creditsFinished=false`，**终局 NOT RUN**。见 [[project-status|当前项目状态]] 与 [Android PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90)。
-- **正式发布：BLOCKED。** PR #92 / #93 的评审会话未解决（按 Lead 2026-11-15 21:05 核实，此前「等待 android-signing 批准」的记录不准确），且 AGP-only 门禁 fail-closed；源码 CI 通过不能推断可发布。
+- **正式发布：BLOCKED。** PR #92 的评审会话未解决（#93 已于 2026-11-15 13:21Z 合并）（按 Lead 2026-11-15 21:05 核实，此前「等待 android-signing 批准」的记录不准确），且 AGP-only 门禁 fail-closed；源码 CI 通过不能推断可发布。
 - **修复已提交 ≠ 已验证。** R114-01 的 Reality 修复（PR #92）仍在验证中，尚未合并、尚未发布。
 
 ## 阅读约定
