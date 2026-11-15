@@ -1,5 +1,5 @@
 ---
-title: "反物质维度MOD Wiki:如何使用本知识库"
+title: "如何使用本知识库"
 description: "Agent 与人类读者的检索、验证与更新流程"
 tags:
   - guide

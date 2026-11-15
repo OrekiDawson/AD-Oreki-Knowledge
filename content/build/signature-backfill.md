@@ -1,5 +1,5 @@
 ---
-title: "反物质维度MOD Wiki:Signature 回填与 Gson 存档"
+title: "Signature 回填与 Gson 存档"
 description: "恢复泛型 Signature 以避免存档字段类型漂移"
 tags:
   - build

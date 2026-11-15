@@ -1,5 +1,5 @@
 ---
-title: "反物质维度MOD Wiki:智能自动购买器"
+title: "智能自动购买器"
 description: "阶段感知、目标驱动、手动优先的自动购买策略"
 tags:
   - gameplay

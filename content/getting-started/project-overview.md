@@ -1,5 +1,5 @@
 ---
-title: "反物质维度MOD Wiki:项目概览"
+title: "项目概览"
 description: "反物质维度 MOD 的双端仓库、冻结基线与交付目标"
 tags:
   - overview

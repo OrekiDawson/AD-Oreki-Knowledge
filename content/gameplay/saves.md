@@ -1,5 +1,5 @@
 ---
-title: "反物质维度MOD Wiki:存档兼容与自动保存"
+title: "存档兼容与自动保存"
 description: "自动保存周期、跨构建读写与合法晚期存档"
 tags:
   - gameplay

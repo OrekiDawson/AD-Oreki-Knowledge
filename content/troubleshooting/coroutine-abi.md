@@ -1,5 +1,5 @@
 ---
-title: "反物质维度MOD Wiki:协程 ABI 崩溃排查"
+title: "协程 ABI 崩溃排查"
 description: "NoSuchFieldError / NoSuchMethodError 与逻辑线程 livelock 的定位流程"
 tags:
   - troubleshooting

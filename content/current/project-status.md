@@ -1,5 +1,5 @@
 ---
-title: "反物质维度MOD Wiki:当前项目状态"
+title: "当前项目状态"
 description: "R113-01 轮内状态：P0 功能闭环、发布仍 BLOCKED"
 tags:
   - status

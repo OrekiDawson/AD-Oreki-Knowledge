@@ -1,5 +1,5 @@
 ---
-title: "反物质维度MOD Wiki:术语表"
+title: "术语表"
 description: "MOD、AGP、ABI、shadow、J8 等术语"
 tags:
   - reference

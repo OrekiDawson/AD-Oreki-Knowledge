@@ -1,5 +1,5 @@
 ---
-title: "反物质维度MOD Wiki:目录标准化迁移"
+title: "目录标准化迁移"
 description: "Issue #61：从双 Gradle/脚本布局到标准 AGP 工程的分阶段迁移"
 tags:
   - android

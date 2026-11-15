@@ -1,5 +1,5 @@
 ---
-title: "反物质维度MOD Wiki:已知问题与已推翻结论"
+title: "已知问题与已推翻结论"
 description: "当前有效问题清单，以及被新证据推翻的历史判断"
 tags:
   - issues

@@ -1,5 +1,5 @@
 ---
-title: "反物质维度MOD Wiki:来源索引"
+title: "来源索引"
 description: "权威事实来源：仓库、规则文件、PR 与 Commit"
 tags:
   - reference

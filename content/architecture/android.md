@@ -1,5 +1,5 @@
 ---
-title: "反物质维度MOD Wiki:Android 架构"
+title: "Android 架构"
 description: "AGP 9.5.1 工程、Gradle Kotlin DSL 与游戏类输入"
 tags:
   - android
