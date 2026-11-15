@@ -20,7 +20,7 @@ node scripts/verify-build.mjs
 
 ## 部署
 
-push main -> .github/workflows/deploy.yml -> GitHub Pages（artifact: public/）。
+push main -> .github/workflows/deploy-wiki.yml -> GitHub Pages（artifact: public/）。
 PR 触发 pr-check.yml（不部署）。
 
 ## 每天首次 PR 的 AI 知识整理
