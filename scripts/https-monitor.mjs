@@ -133,8 +133,13 @@ export function evaluate(input) {
   else {
     const cnameOk = (dns.cname || []).some((c) => /orekidawson\.github\.io\.?$/i.test(c));
     add("dns-cname", cnameOk ? "PASS" : "FAIL", "CNAME=" + JSON.stringify(dns.cname || []));
-    if ((dns.a || []).length) add("dns-a-conflict", "WARNING", "存在 A 记录: " + JSON.stringify(dns.a));
-    if ((dns.aaaa || []).length) add("dns-aaaa-conflict", "WARNING", "存在 AAAA 记录: " + JSON.stringify(dns.aaaa));
+    // CNAME 到 GitHub Pages 时，A/AAAA 记录是 GitHub 自带托管记录（正常），不能当冲突。
+    if ((dns.a || []).length) {
+      add("dns-a-records", cnameOk ? "PASS" : "WARNING", "A 记录（CNAME " + (cnameOk ? "已正确，属 GitHub Pages 托管）" : "未指向 github.io，需检查）") + ": " + JSON.stringify(dns.a));
+    }
+    if ((dns.aaaa || []).length) {
+      add("dns-aaaa-records", cnameOk ? "PASS" : "WARNING", "AAAA 记录: " + JSON.stringify(dns.aaaa));
+    }
     if ((dns.caa || []).length) {
       const ok = dns.caa.some((r) => /letsencrypt/i.test(r)) || dns.caa.every((r) => !/0 issue/i.test(r));
       add("dns-caa", ok ? "PASS" : "FAIL", "CAA=" + JSON.stringify(dns.caa));
@@ -213,7 +218,8 @@ async function main() {
     console.error("告警更新失败: " + String(err).slice(0, 300));
     process.exitCode = 2;
   }
-  process.exitCode = result.overall === "PASS" ? 0 : 1;
+  // WARNING 是可运行状态（如证书剩余天数 15-30 天），不作为失败；FAIL/UNKNOWN 才返回非零。
+  process.exitCode = (result.overall === "FAIL" || result.overall === "UNKNOWN") ? 1 : 0;
 }
 
 if (import.meta.url === "file://" + process.argv[1]) main();
