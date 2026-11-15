@@ -9,6 +9,11 @@ tags:
 
 # Kotlin 混合运行时 ABI
 
+在 Android 版《反物质维度》MOD 中，新增的 Kotlin 代码必须与官方游戏原有的、经过混淆处理的程序共同运行。本条目解释两者为什么会发生兼容问题，以及目前通过什么方法避免游戏卡死或崩溃。
+
+这里的**二进制接口（ABI）**指程序运行时实际使用的类名、字段名、方法参数和返回值。两个类即使在源代码中承担相同作用，只要这些接口不同，运行时也可能找不到需要的字段或方法。
+
+
 ## 问题背景
 
 AGP 完整游戏由两部分组成：
@@ -44,9 +49,17 @@ AGP 完整游戏由两部分组成：
 状态：已验证
 证据等级：实测（AVD 线程栈 + 构建守卫）
 适用版本：Android 3.21.0 / AGP 9.5.1
-来源 Commit：<code>ae734966bf712faca3ff7bbb389d8724a8efe7e5</code>（PR #88）
+来源：[Android PR #88](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/88)，合并 Commit [ae734966bf712faca3ff7bbb389d8724a8efe7e5](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/commit/ae734966bf712faca3ff7bbb389d8724a8efe7e5)
 验证：本地 APK f2f72a61；新档首写 40.2s；5 分钟自动化 0 ABI 崩溃
 
 ## 相关
 
 [[coroutine-abi]] · [[agp]] · [[android]] · [[dex-abi]]
+
+## 供 AI 检索（简要摘要）
+
+- 主题：Android 3.21.0 官方混淆 Kotlin 与 AGP 新编译 Kotlin 的二进制接口兼容。
+- 当前结论：对官方 Kotlin 类使用隔离命名，并维持经过设备验证的 J8 混合转换路径。
+- 状态及范围：局部修复已实测；适用 Android 3.21.0 / AGP 9.5.1。
+- 主要来源：[Android PR #88](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/88)，[[coroutine-abi]]。
+- 容易误判之处：协程 ABI 与自动存档测试通过，不等于已达到 180 分钟真实通关或正式发布要求。
