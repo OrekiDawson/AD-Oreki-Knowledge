@@ -10,8 +10,8 @@ original_revid: 3387
 original_fetched_at: "2026-11-15T21:22:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "TRANSLATED"
-review_status: "NOT REVIEWED"
+translation_status: "REVIEWED"
+review_status: "REVIEWED"
 ---
 
 > 现实是我的家，可我却造不出属于自己的现实。
@@ -26,9 +26,9 @@ review_status: "NOT REVIEWED"
 | --- | --- |
 | 称号 | 被遗忘之神（Celestial of the Forgotten） |
 | 别号 | 被遗忘者（Forgotten） |
-| 解锁条件 | 取得全部 36 个 [V 成就](https://antimatterdimensions.wiki.gg/wiki/V) |
+| 解锁条件 | 取得全部 36 个 [薇成就](https://antimatterdimensions.wiki.gg/wiki/V) |
 | 相关货币 | 天神记忆（Celestial Memories） |
-| 机制 | 记忆、追忆、充能无限升级、[符文炼金](https://antimatterdimensions.wiki.gg/wiki/Glyph_Alchemy)、[困难 V 成就](https://antimatterdimensions.wiki.gg/wiki/V#Hard_V-Achievements) |
+| 机制 | 记忆、追忆、充能无限升级、[符文炼金](https://antimatterdimensions.wiki.gg/wiki/Glyph_Alchemy)、[困难薇成就](https://antimatterdimensions.wiki.gg/wiki/V#Hard_V-Achievements) |
 | 增益 | 前四位天神 |
 | 现实惩罚 | 维度提升上限为 $4$；计数频率购买乘数固定为 $\times{1.125}$ |
 | 现实奖励 | 无 |
@@ -118,7 +118,7 @@ $$\left\lfloor\left({n+\frac{n^2}{10}}\right)^{5.52}*\left({n^{Max(0,n-15)}}\rig
 - **特蕾莎**：在 $2$ 级解锁[充能无限升级](https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades#Celestial_5-0)，使公式变强许多。在 $10$ 级时，一旦玩家的符文献祭值达到特定阈值，就会强化某些符文效果。
 - **鹿颈长**：在 $2$ 级解锁[符文炼金](https://antimatterdimensions.wiki.gg/wiki/Glyph_Alchemy)，之后还会让鹿颈长符文更强，并逐步移除符文生成中几乎全部的随机因素。
 - **无名氏**：在 $10$ 级解锁脉冲机制，黑洞每 $5$ 个 tick 自动释放玩家储存的游戏时间的一部分。
-- **薇**：在 $6$ 级解锁[三元研究](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)，它消耗空间之理，且要求先购买 3 个相邻研究才能购买。此外，[困难 V 成就](https://antimatterdimensions.wiki.gg/wiki/V#Hard_V-Achievements)会随诅咒符文与反转黑洞一同解锁，这两者正是完成困难 V 成就所需。
+- **薇**：在 $6$ 级解锁[三体研究](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)，它消耗空间之理，且要求先购买 3 个相邻研究才能购买。此外，[困难薇成就](https://antimatterdimensions.wiki.gg/wiki/V#Hard_V-Achievements)会随诅咒符文与反转黑洞一同解锁，这两者正是完成困难薇成就所需。
 
 ## 里程碑
 
@@ -158,7 +158,7 @@ $$\left\lfloor\left({n+\frac{n^2}{10}}\right)^{5.52}*\left({n^{Max(0,n-15)}}\rig
 | instantECAndRealityUpgradeAutobuyers | 同步 | 1 | 可重复购买的[现实升级](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades)自动购买，[自动永恒挑战](https://antimatterdimensions.wiki.gg/wiki/Eternity_Challenges)瞬时完成 |  | 21 |
 | autoUnlockDilation | 快进 | 2 | 在非天神现实中，达到 $12,900$ 时间之理时自动免费解锁时间膨胀 |  | 22 |
 | vXP | 书 | 5 | 所有记忆碎片按天神等级总和产出更多记忆 | $1+\frac{RaLevels_{Total}}{50}$ | 23 |
-| unlockHardV | 奖杯 | 6 | 解锁[困难 V 成就](https://antimatterdimensions.wiki.gg/wiki/V#Hard_V-Achievements)，并每 6 级解锁一个[三元研究](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)；三元研究位于时间研究页底部 | 三元研究分别在薇的 6、12、18、24 级解锁。解锁时，诅咒符文与黑洞反转也会开放，它们是完成困难 V 成就的关键 | 24 |
+| unlockHardV | 奖杯 | 6 | 解锁[困难薇成就](https://antimatterdimensions.wiki.gg/wiki/V#Hard_V-Achievements)，并每 6 级解锁一个[三体研究](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)；三体研究位于时间研究页底部 | 三体研究分别在薇的 6、12、18、24 级解锁。解锁时，诅咒符文与黑洞反转也会开放，它们是完成困难薇成就的关键 | 24 |
 | continuousTTBoost | 大学 | 10 | 时间之理加成所有形式的「连续非维度产出」 | 见下表（原文折叠块）；TT 效果从 $\text{e}350$ 开始，在 $\text{e}850$ 封顶 | 25 |
 | achievementTTMult | 学士帽 | 15 | [成就乘数](https://antimatterdimensions.wiki.gg/wiki/Achievements)作用于时间之理产出 |  | 26 |
 | achievementPower | 图层组 | 25 | 成就乘数取 $^{1.5}$ 次方 | 游戏内该图标使用 buffer，但本站图标插件无法渲染，故改用相近的 layer-group | 27 |
