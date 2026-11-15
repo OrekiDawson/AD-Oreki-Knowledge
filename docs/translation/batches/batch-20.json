@@ -1,0 +1,68 @@
+{
+  "batch": 20,
+  "title": "第二十批：自动化 / 快捷键 / 永恒挑战明细（被毁灭的现实）（3 篇）",
+  "branch": "docs/r114-batch20",
+  "base": "main @ e89bc0e（#40 合并后）",
+  "owner": "wiki-translation",
+  "status": "STRUCTURE CHECKED",
+  "status_note": "三篇逐节翻译并结构核对；未逐段语义审校，按四级口径记 STRUCTURE CHECKED",
+  "created_at": "2026-11-16T02:20:00+08:00",
+  "pages": [
+    {
+      "file": "content/original/ow-automation.md",
+      "original_title": "Automation",
+      "zh_title": "自动化",
+      "revid": 3396,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 1,
+        "rows": 12,
+        "formulas": 0,
+        "notes": "间隔/批量/输入框三条通用规则；无限前解锁门槛与重置自动化；间隔/批量升级规则与 12 行价格表；打破无限后强化与两项升级；维度献祭自动购买器；永恒里程碑解锁全列"
+      }
+    },
+    {
+      "file": "content/original/ow-shortcuts.md",
+      "original_title": "Shortcuts",
+      "zh_title": "快捷键",
+      "revid": 3108,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 5,
+        "rows": 62,
+        "formulas": 0,
+        "notes": "主热键表、Shift 修饰、Alt 自动购买器表、页签切换表、4 个隐藏热键、移动版 6 个底部按钮与吸附规则"
+      }
+    },
+    {
+      "file": "content/original/ow-eternity-challenges-challenges-pelle.md",
+      "original_title": "Eternity Challenges/Challenges (Pelle)",
+      "zh_title": "永恒挑战·挑战明细（被毁灭的现实）",
+      "revid": 3156,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 2,
+        "rows": 24,
+        "formulas": 14,
+        "notes": "12 个挑战在佩勒中的目标上调与专属改动（原站配色高亮改为「佩勒中改动」列）+ 各档 IP 门槛表"
+      }
+    }
+  ],
+  "checks_run": {
+    "env": "Node v24.22.3；Quartz pin 7cfb0796165c848be5438117e9806802123bf676",
+    "check-content": "PASS",
+    "check-translation": "PASS",
+    "build-index": "PASS",
+    "npx quartz build": "PASS",
+    "verify-build": "PASS",
+    "acceptance.cjs": "PASS"
+  },
+  "notes": [
+    "未改 index.md / 导航 / 分类页。",
+    "剩余超大页 Glyphs（62.4KB）与 Achievements（37.8KB）仍留待单篇处理。"
+  ],
+  "blockers": []
+}
