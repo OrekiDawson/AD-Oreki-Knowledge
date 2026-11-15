@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: AD-Oreki Knowledge Base
-  pageTitleSuffix: " · 反物质维度 MOD 技术知识库"
+  pageTitle: "反物质维度MOD 知识库"
+  pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   locale: zh-CN
@@ -211,8 +211,9 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        知识库规则: https://wiki.oreki.net/wiki-rules
+        编写指南: https://wiki.oreki.net/getting-started/editorial-guidelines
+        GitHub 源代码: https://github.com/OrekiDawson/AD-Oreki-Knowledge
     layout:
       position: footer
       priority: 50

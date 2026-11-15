@@ -1,14 +1,20 @@
 ---
-title: "AD-Oreki 技术知识库"
+title: "反物质维度MOD 技术知识库"
 description: "反物质维度 MOD（Oreki Edition）Android / Web 双端技术事实、构建、反混淆与发布状态"
 tags:
   - index
 ---
 
-# AD-Oreki Knowledge Base
+# 反物质维度MOD 技术知识库
 
 反物质维度 MOD（Oreki Edition）技术知识库。**GitHub 是权威事实源，本站是阅读与检索层。**
 任何结论都以对应仓库的源码、PR、CI 与 AVD 证据为准；本站在冲突时明确标注待核实。
+
+## 知识库规则与编写指南
+
+**[[wiki-rules|反物质维度MOD Wiki:知识库规则]]** 是本站公开的正式编写规则，首页即可进入，左侧目录和每页页脚也提供常驻入口。
+
+这里的每篇文章以**准确、通俗易懂的简体中文正文**为主，重要事实有可核查的原始来源；文章末尾可保留约五行供 AI 检索的摘要，但 AI 摘要不构成事实证据。
 
 ## 当前重要事实（2026-11-15）
 
@@ -19,6 +25,7 @@ tags:
 
 | 主题 | 页面 |
 | --- | --- |
+| **知识库规则（正式规则全文）** | **[[wiki-rules]]** |
 | 项目全景与仓库分工 | [[project-overview]] |
 | 知识库编写规范：准确、易懂、全中文 | [[editorial-guidelines]] |
 | 当前状态与 P0/P1 | [[project-status]] |

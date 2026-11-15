@@ -25,7 +25,7 @@ async function run() {
   await page.goto(BASE + '/', { waitUntil: 'load' });
   results.mobile.title = await page.title();
   results.mobile.explorerLinks = await page.locator('a[href*="architecture/android"], a[href*="./architecture"]').count();
-  results.mobile.pageTitleContains = await page.locator('text=AD-Oreki Knowledge Base').count() > 0;
+  results.mobile.pageTitleContains = await page.locator('text=反物质维度MOD 知识库').count() > 0;
   results.mobile.overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
   // 搜索
   const searchInput = page.locator('input.search-bar, input[name="search"], input[type="search"], input[placeholder]').first();
