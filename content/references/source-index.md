@@ -20,7 +20,7 @@ tags:
 
 ## 规则与事实文件
 
-- Android：`AGENTS.md`、`docs/DELIVERY_RULES.md`、`docs/FACTS.md`（一万余行，按节查阅）
+- Android：`AGENTS.md`、`docs/DELIVERY_RULES.md`、`docs/FACTS.md`（导航索引，≤400 行）与 `docs/facts/`（主题事实库，按主题文件查阅）
 - Web：`AGENTS.md`、`docs/FACTS.md`、`docs/SHARED_GAMEPLAY_STANDARD.md`
 - 本站权威规则：[[wiki-rules|反物质维度MOD Wiki:知识库规则]]
 

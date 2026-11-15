@@ -54,7 +54,7 @@ S3/S4 的启动条件是完整原生游戏构建与独立发布门禁都满足�
 ## 参考资料
 
 - [Issue #61（目录标准化）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/issues/61)
-- [docs/FACTS.md 目录迁移记录](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L10343)
+- [docs/FACTS.md 目录迁移记录](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/build.md#f-r113-01)
 - [Android PR #83（S2-6 迁移）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/83)、[PR #84（目录门禁进 CI）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/84)
 
 ## 相关条目

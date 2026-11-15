@@ -22,7 +22,7 @@ tags:
 
 进入无限后获得**无限点数（Infinity Points，IP）**，可以购买无限升级、解锁无限维度与无限挑战。无限维度同样逐级生产：第一无限维度产出无限点数，更高层维度支撑下一层。
 
-一个容易忽略的细节是 **`maxID1`**：它记录「第一无限维度的购买量」，而不是某种临时统计。这个字段会在后面的天神系统中成为**硬性失败条件**（见 [[celestials|天神系统]] 的 IU15），因此自动化「无脑买满无限维度」并不总是安全。[读码：`antimatter-dimension.js`、`infinity-dimension.js`；见 [FACTS §8.9](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L322)]
+一个容易忽略的细节是 **`maxID1`**：它记录「第一无限维度的购买量」，而不是某种临时统计。这个字段会在后面的天神系统中成为**硬性失败条件**（见 [[celestials|天神系统]] 的 IU15），因此自动化「无脑买满无限维度」并不总是安全。[读码：`antimatter-dimension.js`、`infinity-dimension.js`；见 [FACTS §8.9](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/endgame.md#f-8-9)]
 
 ## 永恒层
 
@@ -32,7 +32,7 @@ tags:
 
 EC 不是「点一下就打」的独立副本，它由原版状态机判定。以 `ec-time-study.js` 的 `canBeBought` 为例，一关要同时满足：资源足够、当前没有别的 EC 在进行、**前置普通时间研究已经买上**、二级条件满足。
 
-EC9 的前置研究是普通研究 **151**，EC10～EC12 是 **181**。如果自动化只调用 `purchase()` 而不补前置研究，`canBeBought` 会恒为 false，EC9～EC12 就永远买不上——这一条曾让自动化在 `ecUnlocked=8` 上停住。[读码 + 实测，[FACTS §8.8](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L241)]
+EC9 的前置研究是普通研究 **151**，EC10～EC12 是 **181**。如果自动化只调用 `purchase()` 而不补前置研究，`canBeBought` 会恒为 false，EC9～EC12 就永远买不上——这一条曾让自动化在 `ecUnlocked=8` 上停住。[读码 + 实测，[FACTS §8.8](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/challenges.md#f-8-8)]
 
 EC 的门槛按下式增长：`1e17500 × 1e2000^min(completions,4)`，也就是 0 次完成时约 `1e17500`。某些升级的 `/100` 只把第 0 档变成约 `1e17498`，对后续档位几乎没有影响，所以「多跑一会儿资源就够了」对 EC 并不成立。
 
@@ -40,7 +40,7 @@ EC 的门槛按下式增长：`1e17500 × 1e2000^min(completions,4)`，也就是
 
 时间研究用 TT 购买，是永恒层的核心成长树。**DS1（时间膨胀解锁）需要 5000 TT**，买上它才会打开膨胀（Dilation）相关路径；而天神 V 的「膨胀时间」条件依赖膨胀真正运行过。
 
-时间之理的总量还与「在膨胀状态中完成一次真实永恒」有关：`rewardTP()` 只在那个时机触发，DT 速率又由 TP 决定。因此「TP 死了」往往是采样口径问题，而不是机制真的停摆。[读码 + 实测，[FACTS §8.6](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L226)]
+时间之理的总量还与「在膨胀状态中完成一次真实永恒」有关：`rewardTP()` 只在那个时机触发，DT 速率又由 TP 决定。因此「TP 死了」往往是采样口径问题，而不是机制真的停摆。[读码 + 实测，[FACTS §8.6](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/mechanics.md#f-8-6)]
 
 ## 原版数值与 Oreki Edition 的差异
 
@@ -79,7 +79,7 @@ Oreki Edition 的目标是**在不伪造资源、进度与结算的前提下**�
 
 ## 参考资料
 
-- [Android 仓库 docs/FACTS.md §8.4–8.10](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L192)：时间研究、EC 与终局链的读码记录。
+- [Android 仓库 docs/FACTS.md §8.4–8.10](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/eternity.md#f-8-4)：时间研究、EC 与终局链的读码记录。
 - [社区 Wiki《Infinity Point》](https://antimatterdimensions.wiki.gg/wiki/Infinity_Point)：大坍缩与无限点数的公开说明。
 - [社区 Wiki《Eternity》](https://antimatterdimensions.wiki.gg/wiki/Eternities)：永恒层公开说明。
 

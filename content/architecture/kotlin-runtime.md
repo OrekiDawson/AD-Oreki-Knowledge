@@ -55,7 +55,7 @@ AGP 完整游戏由两部分组成：
 ## 参考资料
 
 - [Android PR #88（J8 混合转换修复）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/88)，合并 Commit `ae734966bf712faca3ff7bbb389d8724a8efe7e5`
-- [docs/FACTS.md 第 8 节与第 10 节](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L155)：机制与已修复根因
+- [docs/FACTS.md 第 8 节与第 10 节](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/mechanics.md)：机制与已修复根因
 - [[2026-11-15-r113-p0-livelock|历史：R113-01 P0 闭环]]
 
 ## 相关条目

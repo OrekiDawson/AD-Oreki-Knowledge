@@ -59,7 +59,7 @@ Android 基线固定为官方 3.21.0，长期不自动升级：
 ## 参考资料
 
 - [冻结基线 manifest](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/baseline/versions/3.21/manifest.json)
-- [docs/FACTS.md 第 6 节（基线与基线管理）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L121)
+- [docs/FACTS.md 第 6 节（基线与基线管理）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/build.md#f-6)
 - [Android 仓库 AGENTS.md](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/AGENTS.md)
 
 ## 相关条目

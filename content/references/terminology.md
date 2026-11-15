@@ -30,7 +30,7 @@ tags:
 
 ## 参考资料
 
-- [docs/FACTS.md（Android 事实台账）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md)
+- [docs/FACTS.md（Android 事实导航索引）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md) 与 [docs/facts/（主题事实库）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/tree/main/docs/facts)
 - [知识库仓库](https://github.com/OrekiDawson/AD-Oreki-Knowledge)
 
 ## 相关条目

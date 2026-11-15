@@ -48,7 +48,7 @@ DEX 里没有源代码，只有字节码与混淆名。一个类可能叫 `bm4`�
 
 ## 参考资料
 
-- [docs/FACTS.md 第 9 节（Android 逆向事实）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L404)
+- [docs/FACTS.md 第 9 节（Android 逆向事实）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/android-internals.md#f-9)
 - [docs/deobfuscation/data/first-party-3.21-index.csv](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/deobfuscation/data/first-party-3.21-index.csv)
 - [Android 仓库 docs/deobfuscation](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/tree/main/docs/deobfuscation)
 

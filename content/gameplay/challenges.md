@@ -44,7 +44,7 @@ Oreki Edition 保留这套分类与奖励语义，但把「补发奖励」做成
 
 直接写完成标志、直接发资源或跳过奖励函数，会让进度「看起来推进了」但实际上与原版规则不一致，后续阶段会出现无法解释的卡死。因此 MOD 的纪律是：**自动化只加速真实流程，不改变结算语义**。
 
-对于需要「补发历史奖励」的场合，MOD 采用的做法是：临时抬高与原版收益函数相关的记录值 → 调用**原版收益函数** → **立刻还原**。还原本身是幂等性的一部分，而不是「先改数据再假装完成」。[读码 + 实测，[FACTS §8.7](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L236)]
+对于需要「补发历史奖励」的场合，MOD 采用的做法是：临时抬高与原版收益函数相关的记录值 → 调用**原版收益函数** → **立刻还原**。还原本身是幂等性的一部分，而不是「先改数据再假装完成」。[读码 + 实测，[FACTS §8.7](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/challenges.md#f-8-7)]
 
 ## Android 端自动化的分工
 
@@ -69,7 +69,7 @@ Android 3.21 的自动化已按 Kotlin 模块拆分：
 
 ## 已知限制与常见问题
 
-- **EC9～EC12 买不上**：常见原因是前置普通时间研究没被买上，而不是资源墙；自动化必须按 `requirement` 主动补前置链。([FACTS §8.8](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L241))
+- **EC9～EC12 买不上**：常见原因是前置普通时间研究没被买上，而不是资源墙；自动化必须按 `requirement` 主动补前置链。([FACTS §8.8](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/challenges.md#f-8-8))
 - **研究树被反复清空**：多套自动化对目标 EC 的定义不一致会导致 respec 抖动，见 [[reality-time-studies|现实与时间研究]]。
 - **静默失败**：旧实现把异常吞掉时，界面看起来「在跑」但没有任何推进；排查时要看日志标记与存档字段，而不是只看按钮。
 - **不得伪造**：不能手工生成完成记录、不能直接置成就位、不能把界面显示当作结算证据。
@@ -82,8 +82,8 @@ Android 3.21 的自动化已按 Kotlin 模块拆分：
 
 ## 参考资料
 
-- [docs/FACTS.md §8.7（挑战必须真实结算）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L236)
-- [docs/FACTS.md §8.8（EC9～EC12 前置研究）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L241)
+- [docs/FACTS.md §8.7（挑战必须真实结算）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/challenges.md#f-8-7)
+- [docs/FACTS.md §8.8（EC9～EC12 前置研究）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/challenges.md#f-8-8)
 - [P0 闭环报告（5 分钟功能性验收）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/ae734966bf712faca3ff7bbb389d8724a8efe7e5/reports/R113-01/P0-CLOSURE.md)
 
 - [社区 Wiki：Challenges](https://antimatterdimensions.wiki.gg/wiki/Challenges)

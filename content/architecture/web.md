@@ -35,7 +35,7 @@ Web 的 CI 与部署独立于 Android：Android 的 P0 或发布阻塞不应无�
 - 相同机制在两端的源码行号、字段编码可能不同；
 - 跨端等价必须用可观察行为逐项验收，见 [[parity|双端行为一致性]]。
 
-例如，Android 原版自带无限维度自动购买器，而 Web 原版没有，Web 端的相关能力是 MOD 自己补的；这类差异会让「同一功能在两端由不同代码实现」成为常态。[读码，[FACTS §8.11](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L388)]
+例如，Android 原版自带无限维度自动购买器，而 Web 原版没有，Web 端的相关能力是 MOD 自己补的；这类差异会让「同一功能在两端由不同代码实现」成为常态。[读码，[FACTS §8.11](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/mechanics.md#f-8-11)]
 
 ## 部署边界
 
