@@ -7,7 +7,7 @@ tags:
 
 # 项目概览
 
-反物质维度（Antimatter Dimensions）MOD，产品名 **Oreki Edition**，Android 与 Web 双端并行。
+《反物质维度》（Antimatter Dimensions）原版游戏的独立修改项目，产品名 **Oreki Edition**，Android 与 Web 双端并行。首次了解游戏的读者可先阅读[[antimatter-dimensions|《反物质维度》游戏总览]]，本页重点解释修改版自身的工程结构和验收目标。
 
 ## 仓库分工
 
@@ -34,4 +34,4 @@ tags:
 
 ## 相关
 
-[[project-status]] · [[android]] · [[saves]] · [[terminology]]
+[[antimatter-dimensions]] · [[project-status]] · [[android]] · [[saves]] · [[terminology]]
