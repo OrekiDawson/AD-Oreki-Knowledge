@@ -18,25 +18,11 @@ review_status: "STRUCTURE CHECKED"
 >
 > 证明你的价值。
 
-**特蕾莎（Teresa，符号 Ϟ）**是第一位[[ow-celestials|天神]]，主题围绕[[ow-reality|现实]]层机制。她通过[成就 147](https://antimatterdimensions.wiki.gg/wiki/Achievements)解锁，该成就要求买齐全部[[ow-reality-upgrades|现实升级]]。
-
 特蕾莎引入的核心机制是[RM 容器灌注](#rm-容器灌注)。
 
-## 信息框要点
+## 档案
 
-| 项目 | 内容 |
-| --- | --- |
-| 称号 | 现实之神（Celestial of Reality） |
-| 别号 | 谄媚者（Sycophant） |
-| 解锁条件 | [成就 147](https://antimatterdimensions.wiki.gg/wiki/Achievements) |
-| 相关货币 | [[ow-reality|现实机器（RM）]]、[复兴点数（PP）](https://antimatterdimensions.wiki.gg/wiki/Perks) |
-| 机制 | [RM 容器](#rm-容器灌注)、[复兴点数商店](#复兴点数商店)、音乐符文 |
-| 增益 | 提升 RM 获取；被动 [[ow-eternity|EP]] 产出 |
-| 现实解锁条件 | 向容器灌注 $1\text{e}14$ RM |
-| 现实惩罚 | [[ow-infinity|IP]] 与 EP 获取变为 $x^{0.55}$；来自[符文](https://antimatterdimensions.wiki.gg/wiki/Glyphs#Types)的[[ow-time-studies|时间之理]]产出被禁用 |
-| 现实奖励 | 强化[符文献祭](https://antimatterdimensions.wiki.gg/wiki/Glyphs#Glyph_Sacrifice) |
-| 现实特性 | 可重复挑战，完成得越好奖励越高 |
-| 加入版本 | 网页版：现实更新（2022 年 12 月 17 日）；Android：现实更新（2024 年 4 月 1 日）；Steam 与 iOS：首发即包含 |
+特蕾莎，现实之神，别号「谄媚者」。买齐全部[[ow-reality-upgrades|现实升级]]、拿到[成就 147](https://antimatterdimensions.wiki.gg/wiki/Achievements)之后，玩家才会见到她。她管两样东西：一是 RM 容器（把现实机器抽走灌注，换取 RM 乘数），二是复兴点数商店——两者都围绕现实机器与符文展开。她的[现实](#现实)要把容器灌到 $1\text{e}14$ RM 才开，进去之后 IP 与 EP 获取变成 $x^{0.55}$、来自符文的时间之理产出被禁用，完成条件是现实内 EP 超过 $\text{e}4,000$，奖励则是强化符文献祭。这个现实可以反复打，打得越好奖励越高。网页版与 Android 分别随 2022 年 12 月 17 日、2024 年 4 月 1 日的现实更新加入，Steam 与 iOS 首发即有。
 
 ## 机制
 
