@@ -88,7 +88,7 @@ Android 端的自动化已经从历史 Smali 实现迁移到 Kotlin 业务代码
 ## 参考资料
 
 - [Android 仓库 Kotlin 业务目录](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/tree/main/app/src/main/kotlin/kajfosz/antimatterdimensions/oreki)
-- [docs/FACTS.md 自动化与已修复根因](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L424)
+- [docs/FACTS.md 自动化与已修复根因](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/methodology.md#f-10)
 
 - [社区 Wiki：Automation](https://antimatterdimensions.wiki.gg/wiki/Automation)
 - [官方网页源码（固定 Commit）](https://github.com/IvarK/AntimatterDimensionsSourceCode/blob/5409e320cecef96a917cca1dfb68f1f183e499ca)

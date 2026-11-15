@@ -17,7 +17,7 @@ Oreki Edition 在 Android 与 Web 两端并行开发。所谓「双端行为一�
 - Android 固定官方 **3.21.0** 的混淆 APK，代码是反编译 DEX 加 Kotlin 业务层；
 - Web 固定 **2026-07-17** 的上游源码快照 `5409e320`。
 
-版本号相同、或「看起来界面一样」，都不能证明行为等价。两端连同一机制的实现方式都可能不同：例如 Android 原版自带无限维度自动购买器，而 Web 原版没有，Web 端的相关能力由 MOD 自己补上。[读码，[FACTS §8.11](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L388)] 这类差异意味着「同一功能在两端由不同代码实现」是常态。
+版本号相同、或「看起来界面一样」，都不能证明行为等价。两端连同一机制的实现方式都可能不同：例如 Android 原版自带无限维度自动购买器，而 Web 原版没有，Web 端的相关能力由 MOD 自己补上。[读码，[FACTS §8.11](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/mechanics.md#f-8-11)] 这类差异意味着「同一功能在两端由不同代码实现」是常态。
 
 ## 需要验收的维度
 

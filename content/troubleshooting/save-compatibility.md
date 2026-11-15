@@ -43,7 +43,7 @@ tags:
 
 ## 参考资料
 
-- [docs/FACTS.md 存档与已修复根因](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L424)
+- [docs/FACTS.md 存档与已修复根因](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/methodology.md#f-10)
 - [Android PR #74（跨构建写读）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/74)
 
 ## 相关条目

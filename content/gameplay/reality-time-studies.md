@@ -12,7 +12,7 @@ tags:
 
 ## 现实何时可以执行
 
-原生判据是 `isRealityAvailable()`：`maxEP.exponent >= 4000` **且** `TimeStudy.reality`（DS6）已经买上。换句话说，DS6 一被买上就代表「现实可打」，而现实重置会`Currency.timeTheorems.reset()`，把整棵时间研究树清空——DS6 也随之消失。[读码，[FACTS §22](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L873)]
+原生判据是 `isRealityAvailable()`：`maxEP.exponent >= 4000` **且** `TimeStudy.reality`（DS6）已经买上。换句话说，DS6 一被买上就代表「现实可打」，而现实重置会`Currency.timeTheorems.reset()`，把整棵时间研究树清空——DS6 也随之消失。[读码，[FACTS §22](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/eternity.md#f-22)]
 
 这个「只存在一帧」的状态很重要：如果自动化用低频轮询去等「DS6 在位 + 某条件同时成立」，很可能永远采不到那一帧。正确做法是提前压住现实、让 DS6 买上后留得住，再在同一现实内完成后续目标；不是反复等它出现。
 
@@ -35,7 +35,7 @@ tags:
 - 膨胀研究列表与 `active` 状态；`maxDT` 清零；
 - `requirementChecks.reality` 整个对象被替换，其中包含 `maxID1`。
 
-最后一条对 MOD 尤其关键：**`maxID1` 每个现实重置**，所以「莱特拉入口被 maxID1 锁死」不是不可逆的，而是需要按现实分阶段处理。[读码，[FACTS §8.10](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L352)]
+最后一条对 MOD 尤其关键：**`maxID1` 每个现实重置**，所以「莱特拉入口被 maxID1 锁死」不是不可逆的，而是需要按现实分阶段处理。[读码，[FACTS §8.10](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/endgame.md#f-8-10)]
 
 ## 时间研究树与常见故障
 
@@ -45,7 +45,7 @@ DS1 需要 5000 TT，是时间膨胀的入口；`PlayerProgress.dilationUnlocked
 
 ### 研究树抖动（respec jitter）
 
-当两套自动化对「当前该打哪一关 EC」定义不同时，会出现「A 认为该保留 71，B 认为 71 妨碍 EC12」的冲突：一边清空 38 个研究，另一边 1 秒内再买回来，形成每 6 秒左右一次的循环。实测中 7 次 respec、间隔 6.17～6.32 秒、EC 完成数一次未变。[读码 + 实测，[FACTS §23](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L901)]
+当两套自动化对「当前该打哪一关 EC」定义不同时，会出现「A 认为该保留 71，B 认为 71 妨碍 EC12」的冲突：一边清空 38 个研究，另一边 1 秒内再买回来，形成每 6 秒左右一次的循环。实测中 7 次 respec、间隔 6.17～6.32 秒、EC 完成数一次未变。[读码 + 实测，[FACTS §23](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/automation/strategy.md#f-23)]
 
 这类问题靠「多等一会儿」不会自愈，需要把目标 EC 的定义统一、并对清空行为加会话内节流。
 
@@ -69,9 +69,9 @@ DS1 需要 5000 TT，是时间膨胀的入口；`PlayerProgress.dilationUnlocked
 
 ## 参考资料
 
-- [docs/FACTS.md §22（DS6 只活一帧）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L873)
-- [docs/FACTS.md §23（EC 分叉抖动）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L901)
-- [docs/FACTS.md §8.10（IU15 与 `maxID1`）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L352)
+- [docs/FACTS.md §22（DS6 只活一帧）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/eternity.md#f-22)
+- [docs/FACTS.md §23（EC 分叉抖动）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/automation/strategy.md#f-23)
+- [docs/FACTS.md §8.10（IU15 与 `maxID1`）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/endgame.md#f-8-10)
 - [Android PR #92（现实自动永恒复位修复，进行中）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92)
 
 - [社区 Wiki：Reality](https://antimatterdimensions.wiki.gg/wiki/Reality)

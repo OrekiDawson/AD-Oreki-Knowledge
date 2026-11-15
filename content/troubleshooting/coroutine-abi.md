@@ -48,7 +48,7 @@ tags:
 
 ## 参考资料
 
-- [docs/FACTS.md §8 与 §10（机制与已修复根因）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L155)
+- [docs/FACTS.md §8 与 §10（机制与已修复根因）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/mechanics.md)
 - [Android PR #88](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/88)
 - [[2026-11-15-r113-p0-livelock|历史：R113-01 P0 闭环]]
 

@@ -69,7 +69,7 @@ bash scripts/agp/build_fullgame_sig.sh \
 
 ## 参考资料
 
-- [docs/FACTS.md 构建与产物记录](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/FACTS.md#L87)
+- [docs/FACTS.md 构建与产物记录](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/build.md#f-3)
 - [Android PR #88（构建链修复）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/88)
 - [scripts/enforce_agp_only.py](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/scripts/enforce_agp_only.py)
 
