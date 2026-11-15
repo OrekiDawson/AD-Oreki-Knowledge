@@ -28,6 +28,8 @@ let failed = 0;
 const fail = (msg) => { failed += 1; console.error("FAIL " + msg); };
 
 if (!fs.existsSync("content/wiki-rules.md")) fail("网站根目录缺少公开知识库规则页");
+if (!fs.existsSync("content/copyright.md")) fail("网站根目录缺少版权与许可页面");
+if (!fs.existsSync("LICENSE-CONTENT.md")) fail("缺少 CC BY-SA 4.0 原创内容许可说明");
 if (files.length < MIN_PAGES) fail("页面数不足: " + files.length + " < " + MIN_PAGES);
 
 const slugs = new Set(files.map((f) => path.basename(f, ".md")));

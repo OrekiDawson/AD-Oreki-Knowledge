@@ -10,6 +10,8 @@ tags:
 反物质维度 MOD（Oreki Edition）技术知识库。**GitHub 是权威事实源，本站是阅读与检索层。**
 任何结论都以对应仓库的源码、PR、CI 与 AVD 证据为准；本站在冲突时明确标注待核实。
 
+> **原创文字许可**：本站有权授权的原创百科文字采用[知识共享 署名-相同方式共享 4.0 国际（CC BY-SA 4.0）](https://creativecommons.org/licenses/by-sa/4.0/)。第三方材料和软件按各自许可。详见[[copyright|版权与许可]]。
+
 ## 知识库规则与编写指南
 
 **[[wiki-rules|反物质维度MOD Wiki:知识库规则]]** 是本站公开的正式编写规则，首页即可进入，左侧目录和每页页脚也提供常驻入口。
@@ -26,6 +28,7 @@ tags:
 | 主题 | 页面 |
 | --- | --- |
 | **知识库规则（正式规则全文）** | **[[wiki-rules]]** |
+| 版权、转载及许可说明 | [[copyright]] |
 | 项目全景与仓库分工 | [[project-overview]] |
 | 知识库编写规范：准确、易懂、全中文 | [[editorial-guidelines]] |
 | 当前状态与 P0/P1 | [[project-status]] |
