@@ -20,6 +20,7 @@ tags:
 | 主题 | 页面 |
 | --- | --- |
 | 项目全景与仓库分工 | [[project-overview]] |
+| 知识库编写规范：准确、易懂、全中文 | [[editorial-guidelines]] |
 | 当前状态与 P0/P1 | [[project-status]] |
 | 已知问题与已推翻结论 | [[known-issues]] |
 | 发布状态与四渠道 | [[release-status]] |
