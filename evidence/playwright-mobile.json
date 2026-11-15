@@ -1,5 +1,5 @@
 {
- "base": "http://localhost:8091",
+ "base": "http://localhost:8092",
  "mobile": {
   "title": "反物质维度MOD 技术知识库",
   "explorerLinks": 7,
@@ -11,6 +11,7 @@
   "graphWidget": true,
   "overflowKotlin": 0,
   "challengePageHasZenith": true,
+  "translationHasLicense": true,
   "codePre": 1,
   "codeSpans": 48,
   "tables": 2,
@@ -104,6 +105,18 @@
    "ok": true
   },
   {
+   "url": "/original/",
+   "ok": true
+  },
+  {
+   "url": "/original/ow-infinity",
+   "ok": true
+  },
+  {
+   "url": "/original/ow-dimensions",
+   "ok": true
+  },
+  {
    "url": "/history/",
    "ok": true
   },
@@ -127,6 +140,10 @@
   },
   {
    "label": "历史归档",
+   "hit": true
+  },
+  {
+   "label": "原版 Wiki 中文翻译",
    "hit": true
   }
  ]
