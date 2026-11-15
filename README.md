@@ -55,6 +55,12 @@ PR 触发 pr-check.yml（不部署）。
 
 GitHub Actions 的普通 `GITHUB_TOKEN` 不具备修改 Pages 管理设置所需的 Administration 写权限，因此正式 Enforce HTTPS 开关由具有仓库管理权限的账户操作，不向 Actions 添加个人管理员 Token。
 
+## 中文百科式写作
+
+本站正文以简体中文、通俗解释、客观核查为主。统一依据 [docs/CONTENT_QUALITY.md](docs/CONTENT_QUALITY.md)，新条目参考 [中文知识条目模板](docs/ARTICLE_TEMPLATE.md)。Quartz 网站的 [[知识库编写规范]](https://wiki.oreki.net/getting-started/editorial-guidelines) 向读者介绍这些原则。
+
+**人类读者优先**：技术名称、API、哈希保持原文并附中文解释；每条重大结论可点到原始证据；AI 仅在文章尾部使用很小的五行摘要帮助检索，不主导正文。
+
 ## 内容质量门禁
 
 正式知识条目的验收标准见 [docs/CONTENT_QUALITY.md](docs/CONTENT_QUALITY.md)。核心标准是：**可点击的固定来源、具体机制和验证步骤、事实等级、适用范围、最新状态**，不能以页面数量或构建 PASS 代替事实正确性。
