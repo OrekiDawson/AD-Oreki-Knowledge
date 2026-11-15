@@ -25,10 +25,10 @@ tags:
 | 指标 | 数值 |
 | --- | --- |
 | 原版正文条目总数（主命名空间 article） | 68 |
-| 已完成并校对（REVIEWED） | 35 |
+| 已完成并校对（REVIEWED） | 40 |
 | 已翻译未校对（TRANSLATED） | 0 |
 | 许可阻塞（BLOCKED） | 0 |
-| 覆盖率 | 35 / 68（51.5%） |
+| 覆盖率 | 40 / 68（58.8%） |
 
 > 口径：覆盖率 = 已完成并校对的合规正文页数 ÷ 合规正文页总数。转写中（IN PROGRESS）与仅登记（NOT STARTED）不计入。清单中的重定向页、消歧义页与站点元页面不进入分母。
 
@@ -141,9 +141,19 @@ tags:
 
 > 至此**七位天神的正篇全部译完并完成逐页核对**（第十三、十四批合计 7 篇，均 REVIEWED）。
 
+## 第十五批（已完成并校对）
+
+| 中文条目 | 原文 | 修订 ID |
+| --- | --- | --- |
+| [[ow-effarig-quotes|鹿颈长·引语]] | [Effarig/Quotes](https://antimatterdimensions.wiki.gg/wiki/Effarig/Quotes) | 2775 |
+| [[ow-nameless-ones-quotes|无名氏·引语]] | [The Nameless Ones/Quotes](https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones/Quotes) | 2790 |
+| [[ow-v-quotes|薇·引语]] | [V/Quotes](https://antimatterdimensions.wiki.gg/wiki/V/Quotes) | 2784 |
+| [[ow-ra-quotes|太阳神·引语]] | [Ra/Quotes](https://antimatterdimensions.wiki.gg/wiki/Ra/Quotes) | 2782 |
+| [[ow-laitela-quotes|莱特拉·引语]] | [Lai'tela/Quotes](https://antimatterdimensions.wiki.gg/wiki/Lai%27tela/Quotes) | 2773 |
+
 ## 后续批次（按游戏流程排序）
 
-1. 天神子页面：Teresa / Effarig / The Nameless Ones / V / Ra / Lai'tela / Pelle 的 Quotes，以及 Pelle/Upgrades、Pelle 惩罚页；
+1. 剩余子页面：Pelle/Quotes（长台词页）、Pelle 惩罚页、Celestial Navigation/Gallery；
 2. 符文、复兴、自动机、符文炼金、虚幻升级、高级符文机制；
 3. 普通挑战与无限挑战、永恒挑战明细、成就（含秘密成就）、自动购买器；
 4. 计数频率、永恒里程碑、永恒升级、保存库、快捷操作、版本历史与其余攻略/秘密内容。
