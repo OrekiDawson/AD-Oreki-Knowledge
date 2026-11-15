@@ -25,6 +25,8 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: 24
+      - name: Translation zone checks (manifest / license / attribution / status)
+        run: node scripts/check-translation.mjs
       - name: Prepare Quartz 5 source (pinned)
         run: bash scripts/bootstrap-quartz.sh .quartz-build
       - name: Install dependencies

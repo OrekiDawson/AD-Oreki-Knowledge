@@ -1,6 +1,6 @@
 ---
 title: "现实与时间研究"
-description: "解释现实重置、时间定理、DS1/DS6 与自动化节奏如何互相影响，以及为什么现实次数会卡住"
+description: "解释现实重置、时间之理、DS1/DS6 与自动化节奏如何互相影响，以及为什么现实次数会卡住"
 tags:
   - 玩法
   - 现实
@@ -27,11 +27,11 @@ tags:
 
 也就是说，原版现实解锁同时是「资源条件 + 成就条件」。Oreki Edition 发现自动化与其中一部分成就**在逻辑上互斥**（例如「无限次数 < 10 时永恒」「只买过第一维度」），于是加入一条 MOD 放宽：**当 EC11 与 EC12 都已完成 5/5 时，豁免「全部 preReality 成就」这一项**，其余条件不变。该放宽实现在 Kotlin 业务代码 `OrekiRealityUnlock.kt` 中，只包装这一个布尔项，不修改 `isRealityAvailable`、不改现实重置、不写成就字段。[MOD 源码注释](https://github.com/IvarK/AntimatterDimensionsSourceCode/blob/5409e320cecef96a917cca1dfb68f1f183e499ca/src/core/secret-formula/eternity/time-studies/dilation-time-studies.js) · 对照见 [[original-vs-mod|原版行为与 Oreki Edition 修改]]
 
-原版现实完成后会获得现实机器（RM）、一枚符文（Glyph）与一个 Perk 点，并逐步开放符文、现实升级、Perk、黑洞与 Automator 等系统。这些系统的具体规则不属于本条目范围，但会影响自动化设计：例如符文装备与卸下本身会触发一次完整现实，不能当作「无代价操作」。
+原版现实完成后会获得现实机器（RM）、一枚符文（Glyph）与一个复兴点数（Perk Point），并逐步开放符文、现实升级、Perk、黑洞与 Automator 等系统。这些系统的具体规则不属于本条目范围，但会影响自动化设计：例如符文装备与卸下本身会触发一次完整现实，不能当作「无代价操作」。
 
 ## 现实重置会清掉什么
 
-- 时间定理与时间研究树（`reality.js` 的 `Currency.timeTheorems.reset()`）；
+- 时间之理与时间研究树（`reality.js` 的 `Currency.timeTheorems.reset()`）；
 - 膨胀研究列表与 `active` 状态；`maxDT` 清零；
 - `requirementChecks.reality` 整个对象被替换，其中包含 `maxID1`。
 

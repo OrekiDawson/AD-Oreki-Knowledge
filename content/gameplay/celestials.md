@@ -20,7 +20,7 @@ tags:
 | Teresa（特蕾莎） | 第一位天神；现实难度更高，完成后大幅强化符文献祭，并开放「撤销符文装备」「现实开始即拥有全部永恒升级」等便利升级 |
 | Effarig（艾法瑞格） | 第二位；其现实限制符文并提供逐步增强的削弱效果，完成后开放符文自动筛选与过滤，货币为遗迹碎片（Relic Shards） |
 | The Nameless Ones（无名者，常称 Enslaved） | 第三位；现实惩罚极重、含大量谜题，完成后可购买 Tesseracts 扩展无限维度购买上限，并改造黑洞以储存时间 |
-| V（薇） | 第四位；其现实按里程碑给奖励，产出「空间定理（Space Theorems）」，可突破时间研究的路径限制 |
+| V（薇） | 第四位；其现实按里程碑给奖励，产出「空间之理（Space Theorems）」，可突破时间研究的路径限制 |
 | Ra（拉） | 第五位；其现实按资源总量产出「记忆碎片（Memory Chunks）」，重点强化前四位天神的升级与自动化 |
 | Lai'tela（常写作 Lai Tela，莱特拉） | 第六位；现实完成条件不同，按完成速度给缩放奖励，开放暗物质维度、连续统（Continuum）与奇点（Singularities） |
 | Pelle（佩勒） | 第七位、最终天神；永久「毁灭（Doom）」现实，玩家几乎失去全部后期能力，需要在极强惩罚下推进到游戏结局 |
@@ -41,9 +41,9 @@ V 的解锁是六项 `mainUnlock` 同时达到 `progress() >= 1`：现实次数�
 
 Oreki Edition 缩放了三项：现实次数 **60**、膨胀时间 **`1e30`**、复制体 **`1e20000`**；其余三项保持原版。缩放原因与取舍记录在 MOD 源码注释里，集中对照见 [[original-vs-mod|原版行为与 Oreki Edition 修改]]。
 
-### Ra：36 空间定理的来源
+### Ra：36 空间之理的来源
 
-Ra 的空间定理只可能来自 RU0～RU5：`v.js` 中 `if (!V.isFlipped && isHard) continue;` 使 RU6/7/8 在 `unlockHardV` 之前永远无法完成。36 条正好由 RU0～RU5 各 6 层给出，所以不要指望用后面的 slot 补数。[读码，[FACTS §8.5](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/reality.md#f-8-5)]
+Ra 的空间之理只可能来自 RU0～RU5：`v.js` 中 `if (!V.isFlipped && isHard) continue;` 使 RU6/7/8 在 `unlockHardV` 之前永远无法完成。36 条正好由 RU0～RU5 各 6 层给出，所以不要指望用后面的 slot 补数。[读码，[FACTS §8.5](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/reality.md#f-8-5)]
 
 ### Lai'tela：唯一入口是 IU15
 
