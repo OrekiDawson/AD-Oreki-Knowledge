@@ -10,8 +10,8 @@ original_revid: 3118
 original_fetched_at: "2026-11-15T21:45:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **永恒（Eternity）**是游戏的第二个重置层：在获得 1.80e308 [无限点数](https://antimatterdimensions.wiki.gg/wiki/Infinity_Points)后抵达。

@@ -10,8 +10,8 @@ original_revid: 3398
 original_fetched_at: "2026-11-15T21:10:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **威望（Prestige）**是游戏中的一种机制：它通常会重置玩家拥有的部分资源，以换取生产加成。

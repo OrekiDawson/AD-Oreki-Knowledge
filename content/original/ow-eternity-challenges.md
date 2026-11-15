@@ -10,8 +10,8 @@ original_revid: 3347
 original_fetched_at: "2026-11-15T21:55:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **永恒挑战（Eternity Challenges，缩写 EC）**是第三组[挑战](https://antimatterdimensions.wiki.gg/wiki/Challenges)，由时间研究树中对应的[时间研究](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)解锁。它们是修改过的[永恒](https://antimatterdimensions.wiki.gg/wiki/Eternity)：要完成挑战，需要达到更高的[无限点数](https://antimatterdimensions.wiki.gg/wiki/Infinity)目标。EC 时间研究需要一定数量的[时间之理](https://antimatterdimensions.wiki.gg/wiki/Time_Studies#Theorems)，并且有必须在研究真正解锁前满足的次要条件。游戏中共有 $12$ 个永恒挑战，合计 $60$ 个不同的完成项。

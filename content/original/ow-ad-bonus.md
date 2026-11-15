@@ -10,8 +10,8 @@ original_revid: 3096
 original_fetched_at: "2026-11-15T22:20:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **广告加成（Ad Bonus）**是移动端专属功能，位于商店页签。它允许玩家观看一段广告，在 5 小时内获得特定加成。多次观看广告可以延长加成时间，上限为 24 小时。内购项目「永久广告加成（Permanent Ad Bonus）」会让广告加成永久生效。即使购买并启用了永久广告加成的内购，玩家仍然可以继续观看广告。

@@ -10,8 +10,8 @@ original_revid: 3333
 original_fetched_at: "2026-11-15T21:10:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **维度提升**（Dimension Boosts，有时简称 **Dimboosts**）是游戏中的第一个威望（Prestige）机制，为[反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)提供加成并解锁新的维度。它们会被[无限](https://antimatterdimensions.wiki.gg/wiki/Infinity)与[反物质星系](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Galaxies)重置。

@@ -10,8 +10,8 @@ original_revid: 3343
 original_fetched_at: "2026-11-15T22:45:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **时间研究（Time Studies）**是第一次[永恒](https://antimatterdimensions.wiki.gg/wiki/Eternity)后解锁的功能。它为此前与新增的机制提供大量加成，让后续[永恒](https://antimatterdimensions.wiki.gg/wiki/Eternity)更容易完成，并奖励更多资源。

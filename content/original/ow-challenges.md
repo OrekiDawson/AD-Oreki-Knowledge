@@ -10,8 +10,8 @@ original_revid: 3106
 original_fetched_at: "2026-11-15T21:10:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **挑战**是重置层运行的修改版本，玩家可以自行进入。完成挑战通常会给予玩家某种奖励。

@@ -10,8 +10,8 @@ original_revid: 3158
 original_fetched_at: "2026-11-15T23:00:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 本页是[时间膨胀](https://antimatterdimensions.wiki.gg/wiki/Dilation)主条目嵌入的**膨胀升级表**，也是社区 Wiki 的子页面。

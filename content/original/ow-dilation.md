@@ -10,8 +10,8 @@ original_revid: 3323
 original_fetched_at: "2026-11-15T21:55:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 **时间膨胀（Time Dilation）**是[永恒威望层](https://antimatterdimensions.wiki.gg/wiki/Eternity)引入的最后一个主要机制。它包含一个被修改、被削弱的永恒；首次完成它会解锁两种新货币——超光速粒子（Tachyon Particles）与膨胀时间（Dilated Time），可用于购买膨胀升级。
