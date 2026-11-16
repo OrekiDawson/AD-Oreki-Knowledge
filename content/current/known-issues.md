@@ -22,7 +22,7 @@ tags:
 
 ## 历史问题不能直接冒充当前结论
 
-### R113 的 180 分钟 FAIL
+### 旧构建曾发生的 180 分钟失败
 
 [R113-01 的实测记录](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md) 显示**该跑次** `creditsFinished=false`。这是可信的历史失败，**不是最新 a12b5cd6 APK 的失败证据**。历史页：[[2026-11-15-r113-180min-fail]]。
 
