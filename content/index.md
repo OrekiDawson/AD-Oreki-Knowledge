@@ -1,46 +1,32 @@
 ---
-title: "反物质维度MOD 技术知识库"
-description: "《反物质维度》Oreki Edition MOD 的中文百科：原版机制、MOD 玩法与技术实现"
+title: "反物质维度 MOD 中文知识库"
+description: "从原版玩法到 Oreki Edition 双端 MOD：中文百科、入门路径、技术资料与有证据的发布状态"
 tags:
   - index
 ---
 
+这里是《反物质维度》（Antimatter Dimensions）与 **Oreki Edition MOD** 的中文知识库。你可以从游戏玩法开始读，也可以直接查找 Android / Web 的实现、差异和验证资料。**原版规则与 MOD 修改分别说明**，避免把两者混为一谈。
 
-这里是《反物质维度》Oreki Edition MOD 的中文百科。它介绍这款放置游戏的原版机制、MOD 改动了什么，以及 Android 与 Web 两端的实现和验证方式。
+## 从你的问题开始
 
-## 按主题浏览（与左侧目录顺序一致）
+### 我刚接触《反物质维度》
+先读 [[antimatter-dimensions|游戏总览]]，再顺着 [[ow-dimensions|维度]] → [[ow-infinity|无限]] → [[ow-eternity|永恒]] → [[ow-reality|现实]] 了解玩法。看不懂术语时，可查 [[terminology|术语表]]。
 
-1. **游戏总览**：[[antimatter-dimensions|《反物质维度》游戏总览]]。
-2. **入门指南**：[入门指南](/getting-started/)。
-3. **原版 Wiki 中文翻译**：[原版 Wiki 中文翻译](/original/)——逐篇翻译原版游戏条目，保留公式、表格与解锁条件。
-4. **MOD 玩法与机制**：[玩法机制](/gameplay/)——原版与 MOD 对照、无限/永恒、现实与时间研究、天神、挑战、自动化、存档与阶段门禁。
-5. **当前项目状态**：[[project-status|当前项目状态]]与[[release-status|发布状态]]。
-6. **架构与运行时**：[架构与运行时](/architecture/)——Android、Kotlin ABI、Web 与双端一致性。
-7. **逆向与语义映射**：[逆向与语义映射](/reverse-engineering/)——混淆 DEX 的 ABI 适配与证据方法。
-8. **构建与交付**：[构建与交付](/build/)——AGP、签名、CI/CD、R8 与发布门禁。
-9. **故障排查**：[故障排查](/troubleshooting/)——协程 ABI 崩溃与存档兼容排查。
-10. **参考资料**：[参考资料](/references/)——来源索引与术语表。
-11. **历史归档**：[历史归档](/history/)——按日期记录的当时判定，不代表当前状态。
+### 我想知道 Oreki Edition 改了什么
+从 [[project-overview|项目概览]] 和 [[original-vs-mod|原版与 MOD 的区别]] 开始，再看 [[automation|自动化]]、[[challenges|挑战]]、[[saves|存档]] 和 [[parity|双端一致性]]。项目长期优先改善 **Android/Web 玩法一致性和用户体验**，真实墙钟 180 分钟内合法通关是持续回归门槛。
 
-## 能读到什么
+### 我想阅读原版 Wiki 中文翻译
+进入 [原版 Wiki 中文翻译专区](/original/)，按游戏进程找条目。译文会区分「已翻译」「结构已核对」和「已逐段审校」，不能把机器检查算作人工审校；许可和原文修订信息保留在每篇文章中。
 
-- **游戏机制**：反物质、维度、无限、永恒、现实、天神，以及挑战、自动购买器、存档与阶段门禁。
-- **MOD 内容**：Oreki Edition 对数值、自动化和界面的调整，以及原版与 MOD 行为的集中对照。
-- **技术实现**：Android 的 Kotlin/ABI 与构建链、Web 端结构、双端一致性、故障排查方法。
-- **历史记录**：按日期归档的长跑结果、发布与阻塞记录。这些是当时的判定，不代表当前状态。
+### 我想查现在能不能下载、发布到了哪一步
+请看 [[project-status|当前项目状态]] 与 [[release-status|发布状态]]。这些页面标明**最后核实时间**，旧失败记录放入 [历史归档](/history/)，不拿历史结论冒充今天的状态。
 
-## 原版中文百科
+## 按分类浏览
 
-[原版 Wiki 中文翻译](/original/) 逐篇翻译社区 Wiki 的原版游戏条目，保留原文的公式、表格和解锁条件，并在每页标注原文修订号、贡献者历史与 CC BY-SA 4.0 许可。译文与 MOD 专题分开存放，不混写。
+[入门指南](/getting-started/) · [原版 Wiki 中文翻译](/original/) · [玩法机制](/gameplay/) · [当前状态](/current/) · [架构与双端一致性](/architecture/) · [逆向与语义映射](/reverse-engineering/) · [构建与交付](/build/) · [故障排查](/troubleshooting/) · [参考资料](/references/) · [历史归档](/history/)
 
-## 找 MOD 内容
+## 如何查找和核实
 
-从 [玩法机制](/gameplay/) 开始：先看 [[original-vs-mod|原版行为与 Oreki Edition 修改]]，再按主题进入[[automation|智能自动购买器]]、[[saves|存档兼容]]、[[stage-gates|阶段门禁]] 或[[parity|双端一致性]]。技术侧从 [架构与运行时](/architecture/)、[构建与交付](/build/)、[故障排查](/troubleshooting/) 进入。
+使用网站顶部或侧栏的**搜索**查找中文名称、英文游戏术语或 Kotlin / DEX / AGP 等技术词。重要结论旁会尽量附上可打开的源码、PR、运行报告或 Actions 链接。**代码合并、构建成功、实际通关与四渠道发布是四种不同证据**。
 
-## 从哪开始读
-
-第一次接触这款游戏，可以按阶段依次阅读：[[antimatter-dimensions|游戏总览]] → [[ow-dimensions|维度]] → [[ow-infinity|无限]] → [[ow-eternity|永恒]] → [[ow-reality|现实]]。遇到不熟的词先查[[terminology|术语表]]；想知道某个机制在 MOD 里是否被改动，看对应专题条目里的说明。
-
-## 站务
-
-本站原创文字按[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)授权，第三方材料与原版 Wiki 译文按各自许可；详见[[copyright|版权与许可]]。编写规则见[[wiki-rules|反物质维度MOD Wiki:知识库规则]]，使用与贡献说明见[[how-to-use|如何使用本知识库]]。当前开发与发布状态在 [[project-status|当前项目状态]]。
+关于本站：[[how-to-use|使用说明]] · [[wiki-rules|知识库规则]] · [[copyright|版权与许可]]。本站可授权的原创文字按 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 共享，第三方材料按各自许可处理。

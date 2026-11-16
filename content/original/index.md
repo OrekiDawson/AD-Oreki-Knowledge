@@ -12,6 +12,12 @@ tags:
 
 这里的文章讲的是**原版游戏**：数值、公式、解锁条件都按原文保留；MOD 的改动不写入译文，而是在 MOD 专题中单独说明。若想了解 MOD 与原版的差异，请阅读 [原版行为与 Oreki Edition 修改](/gameplay/original-vs-mod)。
 
+## 依照游戏阶段阅读
+
+第一次阅读建议从 [[ow-dimensions|维度]]、[[ow-infinity|无限]]、[[ow-eternity|永恒]]、[[ow-reality|现实]] 依次开始。要找具体系统，可直接进入 [[ow-challenges|挑战]]、[[ow-time-studies|时间研究]]、[[ow-dilation|时间膨胀]] 与 [[ow-celestials|天神]]。
+
+**翻译覆盖与内容质量是两个指标**：目前 35/68 篇完成结构核对，但逐段语义审校与游戏内复核覆盖率仍为 0%。阅读具体数字或条件时，最好同时核对译文页底的英文原文链接和修订 ID。
+
 ## 来源、许可与署名
 
 - 原文站点：`https://antimatterdimensions.wiki.gg`
@@ -138,7 +144,7 @@ tags:
 | [[ow-effarig|鹿颈长]] | [Effarig](https://antimatterdimensions.wiki.gg/wiki/Effarig) | 3371 |
 | [[ow-nameless-ones|无名氏]] | [The Nameless Ones](https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones) | 3372 |
 
-> 第十三、十四批共 7 篇已于 2026-11-15 完成逐页核对（机器辅助翻译 + Agent 逐页核对，记录见 `docs/translation/reviews/audit-2026-11-15.md`），状态升为 REVIEWED 并计入覆盖率。
+> 第十三、十四批共 7 篇有结构核对记录，但**仍属 STRUCTURE CHECKED**，未完成满足逐段语义审校标准的页面级审阅，因而不计入 REVIEWED 覆盖率。核对口径见 [翻译覆盖率台账](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/WIKI-COVERAGE.md)。
 
 ## 第十四批（已完成翻译与结构核对）
 
