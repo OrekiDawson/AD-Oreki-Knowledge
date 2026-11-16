@@ -6,7 +6,6 @@ bash scripts/bootstrap-quartz.sh "$TARGET"
 cd "$TARGET"
 npm ci
 npx quartz plugin install --from-config
-node scripts/ai/build-index.mjs
 node scripts/check-content.mjs
 npx quartz build
 node scripts/verify-build.mjs

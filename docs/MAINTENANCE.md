@@ -35,17 +35,11 @@
 
 流畅性、解释深度与事实真实性仍依靠人工复核，CI 不做逐字审计。
 
-## AI 工作流（与 README 保持一致）
+## 每日一次 AI 知识整理
 
-| 工作流 | 触发 | 作用 |
-| --- | --- | --- |
-| ai-first-pr.yml | PR 创建（当日首个 PR 才实际调用模型） | 只读分析 PR diff、描述与页面目录，生成结构化知识整理报告；不提交文件、不合并 |
-| ai-knowledge-sync.yml | 仅 `workflow_dispatch` 手动 | 对比来源 Commit，调用 DeepSeek 生成待审草稿 PR |
-| ai-knowledge-qa.yml | 仅 `workflow_dispatch` 手动 | 检索 Wiki + 拉取原始证据，DeepSeek 生成带引用回答 |
-| deploy-wiki.yml | main push / 手动 | 构建并部署 Pages，线上验收 |
+唯一 AI Workflow：`.github/workflows/ai-knowledge-sync.yml`，每天 18:30（UTC+8）由 `schedule` 触发。调用前确认余额不低于 ¥10、处于允许时段；余额未知/不足或模型凭据不可用则跳过。若有来源变化且无未审草稿 PR，只生成 GitHub 待审草稿 PR，不直接发布正文。
 
-AI 关键词索引在 `pr-check.yml` 与 `deploy-wiki.yml` 中随构建生成，不再有独立的 `ai-index-build.yml`。
-密钥：仅 `DEEPSEEK_API_KEY`（Repository Secret），只注入 AI 工作流；PR 工作流不接触密钥。
+**不存在**首个 PR AI 审查、Issue AI 问答、Wiki Kody/Kodus 审查和独立 AI 关键词索引。PR 与 Pages 使用 Quartz 原生搜索及确定性质量检查。人工审阅与版权核验要求不变。
 
 ## 历史归档工作流
 

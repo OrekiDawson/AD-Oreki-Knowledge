@@ -7,7 +7,7 @@ import { SOURCES, deepseek, env, extractJson, ghApi, log, readJson, sleep, token
 const STATE_PATH = ".ai/state.json";
 const RUN = env("GITHUB_RUN_ID", String(Date.now()));
 const BRANCH = "ai/knowledge-sync-" + RUN;
-const MAX_SOURCES = Number(env("KB_MAX_SOURCES", "4"));
+const MAX_SOURCES = Math.min(2, Math.max(1, Number(env("KB_MAX_SOURCES", "2")) || 2));
 const MAX_CHUNK = 5000;
 
 function sh(cmd) {
@@ -97,6 +97,13 @@ function renderDraft(facts, source, sha, date) {
 }
 
 async function main() {
+  if (env("KB_DAILY_MODE") !== "1") throw new Error("禁止非每日批次运行 AI 知识同步");
+  // Avoid duplicating an unreviewed draft PR across different days.
+  const pending = await ghApi("GET", "/repos/" + env("GITHUB_REPOSITORY") + "/pulls?state=open&per_page=100");
+  if (pending.some(p => String(p.title || "").startsWith("AI 知识同步草稿"))) {
+    log("已有待审核 AI 知识草稿 PR，本日不重复生成");
+    return;
+  }
   fs.mkdirSync(".ai", { recursive: true });
   fs.mkdirSync("evidence/ai-sync", { recursive: true });
   const state = readJson(STATE_PATH, { sources: {} });
@@ -126,7 +133,7 @@ async function main() {
   const drafts = [];
   for (const item of changed.slice(0, MAX_SOURCES)) {
     const facts = [];
-    for (const chunk of chunks(item.text)) {
+    for (const chunk of chunks(item.text).slice(0, 2)) { // cap paid calls per day
       const { content } = await deepseek([
         { role: "system", content: SYSTEM },
         { role: "user", content: "来源仓库: " + item.source.repo + "\n来源文件: " + item.source.path + "\nCommit: " + item.sha + "\n\n原文片段:\n" + chunk },

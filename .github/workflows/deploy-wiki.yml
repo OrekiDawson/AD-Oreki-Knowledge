@@ -35,9 +35,6 @@ jobs:
       - name: Install Quartz plugins
         working-directory: .quartz-build
         run: npx quartz plugin install --from-config
-      - name: AI keyword index
-        working-directory: .quartz-build
-        run: node scripts/ai/build-index.mjs
       - name: Content checks
         working-directory: .quartz-build
         run: node scripts/check-content.mjs
