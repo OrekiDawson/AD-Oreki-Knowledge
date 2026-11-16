@@ -1,23 +1,21 @@
-name: AI knowledge sync
+name: Daily AI knowledge organization (once per day)
 
+# 18:30 UTC+8 (10:30 UTC), outside the project's weekday peak hours.
+# No pull_request or workflow_dispatch trigger: a single scheduled AI workflow.
 on:
-  workflow_dispatch:
-    inputs:
-      max_sources:
-        description: "本次最多处理多少个来源"
-        required: false
-        default: "2"
+  schedule:
+    - cron: "30 10 * * *"
 
 permissions:
   contents: write
   pull-requests: write
 
 concurrency:
-  group: ai-knowledge-sync
+  group: kb-daily-ai-organization
   cancel-in-progress: false
 
 jobs:
-  sync:
+  organize:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 25
@@ -28,16 +26,29 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: 24
-      - name: Run AI sync
+      - name: Check permitted time and DeepSeek balance (fail closed)
+        id: guard
         env:
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_API_URL: ${{ vars.DEEPSEEK_API_URL }}
+          DEEPSEEK_BALANCE_URL: ${{ vars.DEEPSEEK_BALANCE_URL }}
+        run: node scripts/ai/daily-guard.mjs
+      - name: Organize changed sources into review-only draft PR
+        if: steps.guard.outputs.run_ai == 'true'
+        env:
           GITHUB_TOKEN: ${{ github.token }}
-          KB_MAX_SOURCES: ${{ inputs.max_sources }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_API_URL: ${{ vars.DEEPSEEK_API_URL }}
+          DEEPSEEK_BALANCE_URL: ${{ vars.DEEPSEEK_BALANCE_URL }}
+          KB_DAILY_MODE: "1"
+          KB_MAX_SOURCES: "2"
         run: node scripts/ai/sync.mjs
-      - name: Upload AI evidence
-        if: always()
+      - name: Save daily report when generated
+        if: steps.guard.outputs.run_ai == 'true'
         uses: actions/upload-artifact@v7
         with:
-          name: ai-sync-${{ github.run_id }}
+          name: kb-daily-${{ github.run_id }}
           path: evidence/ai-sync/
-          if-no-files-found: ignore
+          if-no-files-found: warn
+          retention-days: 30

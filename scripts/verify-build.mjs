@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 构建产物检查：首页 / 搜索索引 / 页面数量 / 中文类目 / 历史归档 / 旧 URL 兼容 / AI 草稿隔离
+// 构建产物检查：首页 / Quartz 原生搜索 / 页面数量 / 中文类目 / 历史归档 / 旧 URL / 草稿隔离
 import fs from "node:fs";
 import path from "node:path";
 
@@ -16,7 +16,6 @@ const pageExists = (slug) =>
 if (!exists("index.html")) fail("缺少 public/index.html");
 if (!fs.existsSync(path.join(PUB, "static"))) fail("缺少 public/static");
 if (!fs.existsSync(path.join(PUB, "static", "contentIndex.json"))) fail("缺少搜索索引 static/contentIndex.json");
-if (!fs.existsSync(path.join(PUB, "static", "knowledge-index.json"))) fail("缺少 AI 关键词索引 static/knowledge-index.json");
 
 function walk(dir) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
@@ -27,37 +26,19 @@ function walk(dir) {
 const htmlFiles = fs.existsSync(PUB) ? walk(PUB).filter((f) => f.endsWith(".html")) : [];
 if (htmlFiles.length < 15) fail("HTML 页面数不足: " + htmlFiles.length);
 
-// 未审核 AI 草稿不得进入公开 HTML / 搜索 / 关键词索引。
-if (htmlFiles.some((file) => file.includes(path.sep + "ai-drafts" + path.sep))) {
+// 未审核 AI 草稿不得进入公开 HTML 或 Quartz 内建搜索。
+if (htmlFiles.some(file => file.includes(path.sep + "ai-drafts" + path.sep))) {
   fail("未审核 AI 草稿被输出成公开 HTML 页面");
 }
-for (const file of ["static/contentIndex.json", "static/knowledge-index.json"]) {
-  const full = path.join(PUB, file);
-  if (!fs.existsSync(full)) continue;
-  try {
-    const index = JSON.parse(fs.readFileSync(full, "utf8"));
-    if (file.endsWith("contentIndex.json")) {
-      if (!index || typeof index !== "object" || Array.isArray(index)) throw new Error("索引结构无效");
-      for (const [slug, entry] of Object.entries(index)) {
-        if (slug.includes("ai-drafts") || String(entry?.title ?? "").startsWith("AI 草稿：")) {
-          fail("未审草稿出现在 Quartz 搜索索引中: " + slug);
-        }
-      }
-    } else {
-      if (!Array.isArray(index.pages) || !Array.isArray(index.chunks)) throw new Error("关键词索引结构无效");
-      for (const page of index.pages) {
-        if (String(page?.path ?? "").startsWith("ai-drafts/") || String(page?.title ?? "").startsWith("AI 草稿：")) {
-          fail("未审草稿出现在关键词页面索引中: " + String(page?.path));
-        }
-      }
-      for (const chunk of index.chunks) {
-        if (String(chunk?.page ?? "").startsWith("ai-drafts")) fail("未审草稿出现在关键词分块索引中");
-      }
+try {
+  const index = JSON.parse(fs.readFileSync(path.join(PUB, "static/contentIndex.json"), "utf8"));
+  if (!index || typeof index !== "object" || Array.isArray(index)) throw new Error("搜索索引结构无效");
+  for (const [slug, entry] of Object.entries(index)) {
+    if (slug.includes("ai-drafts") || String(entry?.title ?? "").startsWith("AI 草稿：")) {
+      fail("未审草稿出现在 Quartz 搜索索引中: " + slug);
     }
-  } catch (error) {
-    fail("无法可靠校验搜索索引 " + file + "：" + error.message);
   }
-}
+} catch (error) { fail("无法可靠校验 Quartz 搜索索引: " + error.message); }
 
 const home = fs.readFileSync(path.join(PUB, "index.html"), "utf8");
 for (const term of ["反物质维度MOD 知识库", "知识库规则", "玩法机制"]) {

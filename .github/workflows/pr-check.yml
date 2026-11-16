@@ -16,13 +16,11 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: 24
-      - name: Validate AI review scripts syntax
+      - name: Validate retained daily AI scripts (syntax only; no model calls)
         run: |
-          node --check scripts/ai/first-pr.mjs
-          node --check scripts/ai/pr-review-prompt.mjs
-          node --check scripts/ai/pr-review-report.mjs
-      - name: Test daily PR selection and AI review contract (no model call)
-        run: node --test scripts/ai/tests/*.test.mjs
+          node --check scripts/ai/daily-guard.mjs
+          node --check scripts/ai/lib.mjs
+          node --check scripts/ai/sync.mjs
       - name: Check HTTPS verification script syntax
         run: bash -n scripts/verify-https.sh
       - name: Translation zone checks (manifest / license / attribution / status)
@@ -32,7 +30,6 @@ jobs:
         working-directory: .quartz-build
       - run: npx quartz plugin install --from-config
         working-directory: .quartz-build
-      - run: node scripts/ai/build-index.mjs
         working-directory: .quartz-build
       - run: node scripts/check-content.mjs
         working-directory: .quartz-build

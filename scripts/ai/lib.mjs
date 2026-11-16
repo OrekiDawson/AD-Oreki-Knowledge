@@ -10,7 +10,6 @@ export const WHITELIST = {
 export const SOURCES = [
   { repo: WHITELIST.android, path: "AGENTS.md", kind: "rules" },
   { repo: WHITELIST.android, path: "docs/FACTS.md", kind: "facts", tailLines: 400 },
-  { repo: WHITELIST.android, path: "reports/R113-01/P0-CLOSURE.md", kind: "report" },
   { repo: WHITELIST.android, path: "docs/DELIVERY_RULES.md", kind: "rules" },
   { repo: WHITELIST.web, path: "AGENTS.md", kind: "rules" },
 ];
@@ -44,9 +43,36 @@ export function sleep(ms) { return new Promise((r) => setTimeout(r, ms)); }
 
 let totalTokens = { prompt: 0, completion: 0, calls: 0 };
 
-export async function deepseek(messages, { maxTokens = 1200, json = false, retries = 2, temperature = 0.1 } = {}) {
+// 余额核验与每日付费调用保护：不缓存，任一检查失败均停止模型请求。
+export async function assertDeepseekBalance() {
   const key = env("DEEPSEEK_API_KEY");
-  if (!key) throw new Error("DEEPSEEK_API_KEY 未设置");
+  if (!key) throw new Error("DEEPSEEK_API_KEY 未配置");
+  const chatUrl = env("DEEPSEEK_API_URL", "https://api.deepseek.com/chat/completions");
+  const rawBalanceUrl = env("DEEPSEEK_BALANCE_URL");
+  if (!rawBalanceUrl && new URL(chatUrl).hostname !== "api.deepseek.com") {
+    throw new Error("非官方模型服务未配置可信余额接口，BALANCE_UNKNOWN");
+  }
+  const url = new URL(rawBalanceUrl || "https://api.deepseek.com/user/balance");
+  if (url.protocol !== "https:") throw new Error("余额接口必须使用 HTTPS");
+  const response = await fetch(url, {
+    headers: { Authorization: "Bearer " + key, Accept: "application/json" },
+    signal: AbortSignal.timeout(15000),
+  });
+  if (!response.ok) throw new Error("余额查询 HTTP " + response.status + "，BALANCE_UNKNOWN");
+  const body = await response.json();
+  const cny = body.balance_infos?.find(item => item.currency === "CNY");
+  const str = cny?.total_balance;
+  const match = typeof str === "string" ? /^(\\d+)(?:\\.(\\d{1,2}))?$/.exec(str) : null;
+  if (!match) throw new Error("人民币可用余额缺失/格式无效，BALANCE_UNKNOWN");
+  const fen = BigInt(match[1]) * 100n + BigInt((match[2] || "").padEnd(2, "0"));
+  if (body.is_available !== true || fen < 1000n) throw new Error("DeepSeek 实际可用余额低于 ¥10 或账户不可用");
+  return true;
+}
+
+export async function deepseek(messages, { maxTokens = 1200, json = false, retries = 2, temperature = 0.1 } = {}) {
+  if (env("KB_DAILY_MODE") !== "1") throw new Error("仅每日定时知识整理允许调用模型");
+  await assertDeepseekBalance(); // Repeat before EVERY paid call; no stale daily-start cache.
+  const key = env("DEEPSEEK_API_KEY");
   const payload = {
     model: env("DEEPSEEK_MODEL", "deepseek-chat"),
     messages,

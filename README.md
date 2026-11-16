@@ -25,23 +25,14 @@ node scripts/verify-build.mjs
 push main -> .github/workflows/deploy-wiki.yml -> GitHub Pages（artifact: public/）。
 PR 触发 pr-check.yml（不部署）。
 
-## AI 功能：只保留必要的自动化
+## AI 功能：仅每日整理一次
 
-**唯一自动调用大模型的 PR 流程**：`.github/workflows/ai-first-pr.yml`。
+**唯一 AI 任务**为 `.github/workflows/ai-knowledge-sync.yml`，每天北京时间 **18:30** 触发一次。该工作流只读扫描白名单来源的变化，最多处理两个来源、每个来源最多两个片段，在可信余额达到 ¥10 且不处于高峰停工时段时调用 DeepSeek；没有变化或已有待审草稿 PR 时不重复消费 Token。
 
-- 按北京时间（UTC+8）PR **创建日期**判断当日首个 PR，计入历史已关闭 PR 和 Dependabot；其他 PR 的 AI job 显示 `SKIPPED`，普通 `pr-check.yml` 构建照常执行。
-- 当日首个 PR：由可信 main 脚本只读分析 GitHub API 的 PR diff、PR 描述和现有 Wiki 页面目录，向 DeepSeek 发起一次结构化知识整理（失败允许有限重试）。报告显示在 Actions Job Summary，Artifact 保存 90 天。
-- 整理内容：**实际变更、知识条目更新计划、历史事实冲突、P0/P1/P2 风险、缺失证据及最小验证、最终知识整理判定**。提示词在 `scripts/ai/pr-review-prompt.mjs`；报告结构由 `scripts/ai/pr-review-report.mjs` 校验。
-- 模型只能提出建议，不能提交文件、修改 PR 或自动合并。PR 输入只当不可信数据，绝不检出或执行 PR 代码，不将密钥提供给 PR。
-- 当日已有成功的 `kb-ai-YYYY-MM-DD` Artifact 时，重跑也跳过；无法核实、密钥缺失或模型失败必须显示 `FAIL`，不得假报 `SKIPPED`。
-- **跨日首次 PR AI 模型调用尚需真实运行证据**；仅通过单元测试或 SKIPPED 路径不代表真实 DeepSeek 调用 PASS。
-
-其他非必要 AI 自动触发已收敛：
-
-- `ai-knowledge-sync.yml`：不再每天自动跑，只在维护人员主动点击 `workflow_dispatch` 时调用 DeepSeek 生成待审草稿 PR。
-- `ai-knowledge-qa.yml`：不再在 Issue 创建/打标签时自动消耗模型，只允许维护人员主动运行问答。
-- 独立 `ai-index-build.yml` 已删除。非模型的关键词索引仍在 `pr-check.yml` 和 `deploy-wiki.yml` 中构建，无须额外执行第三份 CI；`scripts/ai/build-index.mjs` 保留。
-- 原有来源、历史证据和 AI 草稿不删除，知识库事实始终由 GitHub 原始来源和正式审核决定。
+- 只生成 `content/ai-drafts/` 下的待审核草稿和 GitHub PR，**不自动合并、不直接修改公开正文**。
+- 删除 PR 首次 AI 审查、AI 问答、独立 AI 检索索引及 Wiki 仓库 Kody/Kodus AI 审查配置。普通 PR 检查、Quartz 内建搜索和 Pages 部署不依赖模型，照常运行。
+- DeepSeek 余额低于 ¥10、查询失败或无法验证同一账户余额时默认停止模型调用；不在用户规定的高峰/收尾时段调用模型。仅允许 schedule 触发，不开放额外手动 AI 入口。
+- 当日没有可处理来源时记录跳过，不为追求“每日必须消耗”而制造草稿。过去的 AI 证据保留用于追溯，不在网站发布未审核内容。
 
 ## 强制 HTTPS
 
@@ -69,7 +60,7 @@ GitHub Actions 的普通 `GITHUB_TOKEN` 不具备修改 Pages 管理设置所需
 
 本站正文以简体中文、通俗解释、客观核查为主。统一依据 [知识库规则全文](content/wiki-rules.md)（旧路径 [docs/CONTENT_QUALITY.md](docs/CONTENT_QUALITY.md) 为兼容入口），新条目参考 [中文知识条目模板](docs/ARTICLE_TEMPLATE.md)。Quartz 网站的 [知识库编写规范](https://wiki.oreki.net/getting-started/editorial-guidelines) 向读者介绍这些原则。
 
-**人类读者优先**：技术名称、API、哈希保持原文并附中文解释；每条重大结论可点到原始证据；AI 仅在文章尾部使用很小的五行摘要帮助检索，不主导正文。
+**人类读者优先**：技术名称、API、哈希保持原文并附中文解释；每条重大结论可点到原始证据；不设置单独的 AI 检索摘要，站内检索依赖 Quartz 原生搜索；正文以读者体验为先。
 
 知识库已从中文维基百科的官方方针中选择适合技术文档的原则：中立表述、可供查证、来源质量、禁止无证据推断、文明协作与版权署名。具体改写和原始方针链接统一放在公开的 [知识库规则页](content/wiki-rules.md)，不复制方针原文，也不直接套用百科条目收录门槛。
 
