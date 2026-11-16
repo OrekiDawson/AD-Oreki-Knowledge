@@ -30,7 +30,6 @@ jobs:
         working-directory: .quartz-build
       - run: npx quartz plugin install --from-config
         working-directory: .quartz-build
-        working-directory: .quartz-build
       - run: node scripts/check-content.mjs
         working-directory: .quartz-build
       - run: npx quartz build
