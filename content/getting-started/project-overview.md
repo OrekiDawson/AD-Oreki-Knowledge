@@ -1,48 +1,40 @@
 ---
 title: "项目概览"
-description: "反物质维度 MOD 的双端仓库分工、冻结基线、交付目标与当前整体状态"
+description: "Oreki Edition Android/Web 的目标、平台基线、仓库分工，以及当前发布与通关证据边界"
 tags:
   - 概览
 ---
 
+**Oreki Edition** 是《反物质维度》的 Android 与 Web 双端修改版本。它希望让重复操作更省心，同时保留阶段推进、挑战和手动决策的游戏乐趣。
 
-**Oreki Edition** 是《反物质维度》的修改版本，Android 与 Web 双端并行开发。本条目说明项目由哪些仓库组成、两端各自冻结在什么版本、要达成什么目标，以及当前整体状态。
+## 我们正在追求什么
 
-## 仓库分工
+首要目标是 **双端行为一致、操作顺畅、自动化可控**：同样的游戏条件下，Android 和 Web 应产生等价的解锁、资源扣费、挑战结算、自动购买与存档结果。界面布局不必像素级相同，但操作反馈应及时、功能应可发现。
 
-| 仓库 | 职责 |
+**真实墙钟 ≤180 分钟合法通关**已经成为长期回归门槛，而不是唯一的速度竞赛。任何平台都不得靠直接赠送资源、伪造挑战完成或提前标记结局来满足指标。
+
+## 阅读项目与源码
+
+| 仓库 | 负责什么 |
 | --- | --- |
-| [AD-Oreki-Edition-Android](https://github.com/OrekiDawson/AD-Oreki-Edition-Android) | Android 源码、构建链、基线、AVD 验收与发布 |
-| [AD-Oreki-Edition-Web](https://github.com/OrekiDawson/AD-Oreki-Edition-Web) | Web 源码、Playwright 验证、oreki.net 部署 |
-| [AD-Oreki-Knowledge](https://github.com/OrekiDawson/AD-Oreki-Knowledge) | 本知识库（Quartz 5 + GitHub Pages） |
+| [Android](https://github.com/OrekiDawson/AD-Oreki-Edition-Android) | Kotlin 游戏业务、AGP 生产构建、AVD 验收、正式 APK 发布 |
+| [Web](https://github.com/OrekiDawson/AD-Oreki-Edition-Web) | 浏览器游戏、Playwright 及移动 Chrome 验收、oreki.net |
+| [知识库](https://github.com/OrekiDawson/AD-Oreki-Knowledge) | 原版中文资料、MOD 机制说明、证据与发布状态 |
 
-项目另有一个统一管理仓库，保存规则、事实索引、报告与交接，不包含子仓库源码，也不改变各仓库的 CI 与发布门禁。
+项目也有统一管理工作区，用于协调任务、事实、报告与跨平台改动，不替代三个仓库各自的 CI/CD。
 
-## 冻结基线
+## 版本与基线
 
-| 端 | 基线 |
-| --- | --- |
-| Android | 官方 3.21.0；base APK SHA-256 `4e9970a8…`，`versionCode 30210000`，minSdk 32 / targetSdk 37 |
-| Web | 上游 `IvarK/AntimatterDimensionsSourceCode` @ `5409e320cecef96a917cca1dfb68f1f183e499ca`（2026-07-17 快照） |
+Android 基于官方 **3.21.0** 冻结基线；Web 依据 **2026-07-17** 的上游源码快照 `5409e320cecef96a917cca1dfb68f1f183e499ca`。两端的内部实现、版本号可以不同，但玩家可见的业务规则须按专项验证对齐。未经授权不自动升级冻结基线。
 
-未经用户明确授权，不得自动升级、合并上游或修改冻结基线；允许只读监测上游安全与重大缺陷，用于评估选择性移植。
+## 当前应看哪些证据
 
-## 交付目标
+- **Android 已有新的公开 GitHub Release**： [3.21.0（a12b5cd6）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/releases/tag/android-update-3.21.0-a12b5cd6)。四渠道交付状态的精确边界见 [[release-status]]。
+- **Web 已记录线上真新档通关**：默认 10000× 游戏速度起跑、末段动态升档，`isGameEnd` 于墙钟 742.1 s 首次为真，见 [线上实测台账](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/web.md#f-55)。
+- **Android 的新档通关反馈与正式发布验证应分别看待**：旧 R113 FAIL 是历史结果，新的单跑数据还需相应公开报告才能独立复核。详见 [[project-status]]。
 
-1. **全新建档真实墙钟 ≤180 分钟合法通关**：禁止伪造资源、进度、挑战结算或成就。
-2. **双端行为等价**：阶段解锁、挑战结算、自动购买器、资源扣费、成就链、教程。
-3. **存档安全**：原版/MOD、Android/Web、AGP 与 Smali 跨构建兼容。
-4. **正式发布走受保护门禁**：Candidate / Verify / Release，四渠道同一 APK SHA-256。
+## 接下来读什么
 
-## 当前整体状态
+玩家可从 [[antimatter-dimensions|游戏总览]] 和 [[original-vs-mod|原版与 MOD 的区别]] 开始；开发者可读 [[parity|双端一致性]]、[[automation|自动化]]、[[agp|AGP 构建]] 和 [[saves|存档兼容]]。
 
-- Android 端已修复协程 ABI 崩溃与混合运行时 livelock，功能闭环可用；
-- **180 分钟真实通关仍未达成**：最近一次完整长跑 FAIL，新的真新档长跑进行中；
-- **正式发布仍 BLOCKED**：签名环境待批准 + AGP-only 门禁 fail-closed；
-- Web 端与知识库部署独立运行。
-
-详细状态以 [[project-status|当前项目状态]] 与 [[release-status|发布状态]] 为准，历史过程见 [历史归档](/history/)。
-
-## 相关条目
-
-[[antimatter-dimensions]] · [[android]] · [[web]] · [[parity]] · [[source-index]]
+[[project-status|最新进展]] · [原版 Wiki 中文翻译](/original/) · [[source-index|原始资料索引]]

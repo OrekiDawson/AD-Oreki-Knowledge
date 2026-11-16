@@ -1,60 +1,43 @@
 ---
-title: "已知问题与已推翻结论"
-description: "当前仍有效的工程问题清单，以及被新证据推翻的历史判断与现行处理方式"
+title: "待核实事项与历史误判"
+description: "区分 2026-11-16 新版本的待验证范围与历史 R113/R114 跑次留下的已知问题"
 tags:
   - 问题
 ---
 
+项目进展很快，**历史 BUG 不一定仍存在于最新 APK**。本页只列有明确来源的现行待核实项，以及值得保留的反例，不把“尚未测试”误写成“确认存在 BUG”。
 
-本页把「仍然有效的问题」和「已经被推翻的旧结论」分开列出：前者需要继续处理，后者只保留必要的解释与证据，避免后来者重复走错路。过程细节与当时判定在[历史归档](/history/)。
+**最后核实：2026 年 11 月 16 日（UTC+8）。**
 
-最后核实：**2026-11-15 21:25（UTC+8）**。
+## 当前最有价值的验证工作
 
-## 当前有效问题
-
-| 问题 | 状态 | 处理与证据 |
+| 主题 | 本次可证实的边界 | 下一步应找的证据 |
 | --- | --- | --- |
-| 新档 180 分钟真实通关 | **FAIL**（最近完整跑次）；新长跑进行中，终局 **NOT RUN** | [[2026-11-15-r113-180min-fail|历史记录]]；[PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90) |
-| 第 2 次现实后 `realities` 卡在 2 | **已提交修复；真实新档已推进到 realities=6（阶段性，非终局）** | [PR #92](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92)；[[2026-11-15-r114-reality-autoeternity|历史记录]] |
-| 独立阶段门禁验收（当前 MOD 构建） | **NOT RUN** | 历史轮次有 PASS 记录，但不是本轮复验；见 [[stage-gates]] |
-| AGP↔Smali 晚期存档互读 | **NOT RUN** | 早中期跨构建写读曾 PASS；见 [[saves]] |
-| PR #92 评审会话未解决（#93 已合并） | **BLOCKED**（按 Lead 2026-11-15 21:05 核实；修复中） | 此前「等待 android-signing 批准」的记录已更正，见 [[release-status]] |
-| AGP-only 生产门禁 fail-closed | **CONFIRMED（静态）**；候选构建被阻断 | `scripts/enforce_agp_only.py` 退出码 1 |
-| R8 ON 正式化 | 未启用 | Release 默认 R8 OFF；见 [[r8]] |
-| `build_mod.py` 退役 | 长期目标，进行中 | 依赖 AGP 原生完整游戏验收；见 [[build-mod-retirement]] |
+| Android 3.21.0 新 Release | [a12b5cd6](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/releases/tag/android-update-3.21.0-a12b5cd6) 已发布 | 对应八项 AVD、完整新档计时与发布级结果的固定报告 |
+| 本地 SFTP 第四渠道 | GitHub、OneDrive、Google Drive 发布作业 SUCCESS | 本地从可信来源拉取、SHA-256 校验及原子更新回执 |
+| Android / Web 行为等价 | 各自运行成功不能证明逐项机制一致 | 相同条件下比对挑战结算、阶段门禁、购买、存档、自动化及 GUI |
+| AGP 原生完整游戏 | 混合构建曾运行不等于彻底原生化 | Issue [#25](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/issues/25)、[#61](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/issues/61) 的分闭包验收 |
+| R8 ON | 有过构建通过、运行期 ClassCastException 的历史记录 | 以正确输入闭包完成隔离运行验收；详见 [[r8]] |
+| `build_mod.py` 退役 | 脚本仍是长期迁移目标，不等于已经删除 | Issue [#52](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/issues/52) 的生产依赖归零与 CI 防回流 |
 
-## 已推翻或需更正的结论
+## 历史问题不能直接冒充当前结论
 
-### 1. 「全量 shadow 破坏存档是保存链断裂或异常被吞」
+### R113 的 180 分钟 FAIL
 
-- 旧结论（R112）：全量 shadow 重映射后不写档，怀疑保存链断裂或异常被吞。
-- 新证据（R113 AVD 线程栈）：逻辑线程 Runnable 卡在 SpeedrunMilestone 协程链，tick 停止——不是保存链断裂。
-- 当前判断：混合运行时调度类字节码差异导致 livelock，已由 J8 混合转换修复；机制见 [[kotlin-runtime]]，历史见 [[2026-11-15-r113-p0-livelock]]。
+[R113-01 的实测记录](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md) 显示**该跑次** `creditsFinished=false`。这是可信的历史失败，**不是最新 a12b5cd6 APK 的失败证据**。历史页：[[2026-11-15-r113-180min-fail]]。
 
-### 2. 「旧 AGP 候选存档正常」
+### 第二次 Reality 后自动永恒停用
 
-- 旧结论（R112）：早期 AGP 候选能正常写档，可用于对照。
-- 新证据：`bf1c413b` 新档约 6 秒崩溃；注入真实存档后同样冻结、0 写档。
-- 当前判断：存档对照必须使用 smali 稳定版（`f388dc50`）或已验证的 R110 构建（`18716d87`）。
+旧构建在 `realities=2` 发生自动永恒复位后的停用问题，后续修复在新档中观察到恢复运行。应查看 [[2026-11-15-r114-reality-autoeternity|当时的修复记录]]及其对应 PR，不沿用旧页面中“PR #92 仍在等待评审”的过期陈述。
 
-### 3. 「shadow 集合覆盖不足（H2 假设）」
+### 混合运行时 livelock
 
-- 旧结论：25 个新增类可能引用 shadow 集合之外的 Kotlin 类。
-- 新证据：静态清点 25 类的 plain Kotlin 引用 100% 落在 72 类 shadow 集合内，kotlinx 引用为 0。
-- 当前判断：H2 被反驳；真正问题是新类需统一绑定 shadow 形态（PR #87 已修复）。
+此前“不能写档可能是异常吞掉”的假设，被 AVD 线程证据修正为混合 Kotlin 协程链路的 livelock。详细机制见 [[kotlin-runtime]]；这是历史定位成果，不意味着最新 APK 正在发生相同问题。
 
-### 4. 「阶段门禁已验证」
+### 阶段门禁的证据范围
 
-- 旧结论：状态页曾把「阶段门禁」写成整体已验证。
-- 新证据：现有 PASS 记录来自 R101 的**非法永恒页签直达/恢复**等历史轮次，且当前 MOD 构建没有做过独立阶段门禁验收；R114-01 长跑仍在进行。
-- 当前判断：**历史轮次有 PASS 记录，当前构建的独立阶段门禁验收为 NOT RUN**。见 [[stage-gates]]。
+“图标不可见”不等于页面真正不可达。需要同时检查合法解锁、非法直达、返回合法页面和真实存档状态，且必须绑定具体 APK，而不是复用其他轮次的 PASS。
 
-### 5. 「天神策略叶子缺失已解决，因此通关只差时间」
+## 相关页面
 
-- 旧结论（PR #91 后）：叶子补齐、`unknownLeaf=0`，阶段机恢复推进。
-- 新证据：60 分钟新档 `realities` 仍为 2、`canReality=false` 持续、RM 顶到原版硬上限。
-- 当前判断：叶子问题已解决，但通关仍受「现实后自动永恒复位」影响，转入 R114-01 处理。见 [[2026-11-15-celestial-leaves-fix]]。
-
-## 相关条目
-
-[[project-status]] · [[release-status]] · [历史归档](/history/) · [[stage-gates]]
+[[project-status]] · [[release-status]] · [[parity]] · [[stage-gates]] · [历史归档](/history/)
