@@ -62,7 +62,7 @@ export async function assertDeepseekBalance() {
   const body = await response.json();
   const cny = body.balance_infos?.find(item => item.currency === "CNY");
   const str = cny?.total_balance;
-  const match = typeof str === "string" ? /^(\\d+)(?:\\.(\\d{1,2}))?$/.exec(str) : null;
+  const match = typeof str === "string" ? /^(\d+)(?:\.(\d{1,2}))?$/.exec(str) : null;
   if (!match) throw new Error("人民币可用余额缺失/格式无效，BALANCE_UNKNOWN");
   const fen = BigInt(match[1]) * 100n + BigInt((match[2] || "").padEnd(2, "0"));
   if (body.is_available !== true || fen < 1000n) throw new Error("DeepSeek 实际可用余额低于 ¥10 或账户不可用");
@@ -71,7 +71,6 @@ export async function assertDeepseekBalance() {
 
 export async function deepseek(messages, { maxTokens = 1200, json = false, retries = 2, temperature = 0.1 } = {}) {
   if (env("KB_DAILY_MODE") !== "1") throw new Error("仅每日定时知识整理允许调用模型");
-  await assertDeepseekBalance(); // Repeat before EVERY paid call; no stale daily-start cache.
   const key = env("DEEPSEEK_API_KEY");
   const payload = {
     model: env("DEEPSEEK_MODEL", "deepseek-chat"),
@@ -84,6 +83,7 @@ export async function deepseek(messages, { maxTokens = 1200, json = false, retri
   let lastErr;
   for (let attempt = 0; attempt <= retries; attempt += 1) {
     try {
+      await assertDeepseekBalance(); // Repeat before each attempt, including retries.
       const res = await fetch(env("DEEPSEEK_API_URL", "https://api.deepseek.com/chat/completions"), {
         method: "POST",
         headers: { Authorization: "Bearer " + key, "Content-Type": "application/json" },
