@@ -10,8 +10,8 @@ original_revid: 2784
 original_fetched_at: "2026-11-15T22:56:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 本页收录[薇](https://antimatterdimensions.wiki.gg/wiki/V)（符号 ⌬）在游戏中的全部引语，按触发条件排列。薇的台词随玩家完成更多[薇成就](https://antimatterdimensions.wiki.gg/wiki/V#V-Achievements)而逐渐从傲慢转为崩溃，译文保留这一语气变化。

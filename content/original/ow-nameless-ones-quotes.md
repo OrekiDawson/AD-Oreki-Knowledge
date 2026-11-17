@@ -10,8 +10,8 @@ original_revid: 2790
 original_fetched_at: "2026-11-15T22:56:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 本页收录[无名氏](https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones)（符号为链条图标）在游戏中的全部引语，按触发条件排列。原文用省略号与断句表现其断断续续的说话方式，译文保留这一特征。

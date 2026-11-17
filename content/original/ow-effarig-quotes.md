@@ -10,8 +10,8 @@ original_revid: 2775
 original_fetched_at: "2026-11-15T22:55:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 本页收录[鹿颈长](https://antimatterdimensions.wiki.gg/wiki/Effarig)（符号 Ϙ）在游戏中的全部引语，按触发条件排列。原文用模板的「结束条件 / 换行」标记控制逐行显示与停顿，译文以台词块保留顺序，并在每段前注明触发条件。

@@ -10,8 +10,8 @@ original_revid: 2782
 original_fetched_at: "2026-11-15T23:00:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 本页收录[太阳神](https://antimatterdimensions.wiki.gg/wiki/Ra)（符号为太阳图标）在游戏中的全部引语，按触发条件排列。随玩家提升各天神等级，祂的记忆逐渐恢复，语气也从困惑转向恐惧。
