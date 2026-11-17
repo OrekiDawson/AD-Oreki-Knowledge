@@ -31,7 +31,7 @@ Android 应用的「升级」不是替换文件，而是系统按**包名 + 签�
 
 正式 APK 必须在受保护的 CI/CD 环境中构建、签名、验签，不允许手动上传或本地签名冒充。Android 仓库的候选构建工作流在 `candidate-unified.yml` 中使用 `environment: android-signing`，需要仓库所有者批准后才会执行签名步骤。
 
-截至 2026-11-15，该环境仍处于等待批准状态（[Run 43679508810](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43679508810) 的构建 Job 自 05:05Z 起 waiting），因此正式候选构建为 **BLOCKED**。这是需要人工操作的阻塞，不是代码缺陷。见 [[2026-11-15-signing-blocked|签名阻塞历史记录]]。
+**历史阻塞（2026-11-15）**：[Run 43679508810](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43679508810) 的候选构建 Job 当时等待签名环境审批，因此**该 Run** 为 BLOCKED；这是当时的发布门禁状态，不能外推到后续版本。随后 [2026-11-16 的候选构建与正式发布](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/releases/tag/android-update-3.21.0-a12b5cd6)已有成功记录。详见 [[2026-11-15-signing-blocked|签名阻塞历史记录]]和 [[release-status|当前发布状态]]。
 
 ## 升级兼容还依赖什么
 
@@ -45,7 +45,7 @@ Android 应用的「升级」不是替换文件，而是系统按**包名 + 签�
 ## 已确认与未确认
 
 - **已确认（按各自证据时间）**：包名、证书与官方 3.21.0 基线 `versionCode=30210000`；截至 2026-11-17 的发布策略记录已发布上限 `30210001`；2026-11-15 签名环境等待批准的历史 Run 状态；2026-11-12 曾完成四渠道同一 APK 发布（见 [历史归档](/history/)）。
-- **未确认**：本轮任何新 APK 的签名、验签与覆盖升级（NOT RUN）；AGP-only 门禁仍 fail-closed。
+- **未独立核实**：2026-11-16 已发布 APK 的完整八项 AVD 场景、180 分钟发布级长跑、覆盖升级细节与本地 SSH/SFTP 实物回执；专项验证状态须依据对应 Run/报告判断，不能因早期 AGP-only 门禁 BLOCKED 就否定后来已完成的正式发布。
 - **禁止**：不得手动上传 APK、不得关闭签名环境审批、不得绕过 Ruleset 或 Required Checks。
 
 ## 如何核查
