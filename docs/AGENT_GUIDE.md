@@ -4,7 +4,7 @@
 
 1. 本知识库的**唯一权威编写规则**是 `content/wiki-rules.md`（网站 `/wiki-rules`）。旧入口 `docs/CONTENT_QUALITY.md` 已改为兼容页，只做摘要与指向。
 2. 工程规则与交付门禁不在本仓库：Android 端见 [AD-Oreki-Edition-Android](https://github.com/OrekiDawson/AD-Oreki-Edition-Android) 的 `AGENTS.md` 与 `docs/DELIVERY_RULES.md`，Web 端见 [AD-Oreki-Edition-Web](https://github.com/OrekiDawson/AD-Oreki-Edition-Web) 对应文件。本仓库不复制这些规则，避免漂移。
-3. 按关键词检索本站：顶部搜索框，或静态接口 `/static/contentIndex.json`、`/static/knowledge-index.json`（pages / chunks / terms 倒排，支持中文二元词）。
+3. 按关键词检索本站：使用顶部搜索框或 Quartz 正式搜索索引 `/static/contentIndex.json`。旧的 `/static/knowledge-index.json` 不属于当前构建产物契约，线上返回 404，**不得将其当作可用接口**。
 4. 找到专题页后，查看正文中就近的「参考资料」与页底证据区，**回到 GitHub 原始 Commit、PR、Run 与 AVD 报告核对**。
 
 ## 内容地图
