@@ -1,6 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { evaluate, HTTPS_SMOKE_PATHS, collectHttps } from "../https-monitor.mjs";
+import fs from "node:fs";
+import { evaluate, HTTPS_SMOKE_PATHS, SITE_TITLE, collectHttps } from "../https-monitor.mjs";
 
 const base = () => ({
   pages: { ok: true, cname: "wiki.oreki.net", https_enforced: true, cert_state: "approved", cert_expires: new Date(Date.now() + 90 * 86400000).toISOString() },
@@ -92,7 +93,7 @@ test("HTTPS 冒烟确实请求生产清单，且不访问已废弃的知识索�
   const response = await collectHttps({
     request: async (url) => {
       requested.push(new URL(url).pathname);
-      return { ok: true, status: 200, body: "AD-Oreki Knowledge Base" };
+      return { ok: true, status: 200, body: `<title>${SITE_TITLE}</title>` };
     },
   });
   for (const path of ["/", "/index.html", "/static/contentIndex.json", "/architecture/kotlin-runtime"]) {
@@ -100,12 +101,17 @@ test("HTTPS 冒烟确实请求生产清单，且不访问已废弃的知识索�
   }
   assert.ok(!requested.includes("/static/knowledge-index.json"), "不可请求已废弃的知识索引");
   assert.deepEqual(response.map((item) => item.path), requested);
-  assert.ok(response.every((item) => item.ok && item.status === 200 && item.hasTitle));
+  assert.ok(response.every((item) => item.ok && item.status === 200));
+  for (const item of response.filter((i) => !i.path.endsWith(".json"))) {
+    assert.equal(item.hasTitle, true, `${item.path} 缺少真实站点标题`);
+  }
 });
 
 test("HTTPS 冒烟可以扩展合法页面，且不会将路径常量锁死", async () => {
   const urls = [];
   await collectHttps({
+    // 显式固定域名：避免运行环境设置 KB_DOMAIN 时产生与被测行为无关的误报。
+    domain: "wiki.oreki.net",
     paths: ["/", "/wiki-rules"],
     request: async (url) => {
       urls.push(url);
@@ -113,4 +119,25 @@ test("HTTPS 冒烟可以扩展合法页面，且不会将路径常量锁死", as
     },
   });
   assert.deepEqual(urls, ["https://wiki.oreki.net/", "https://wiki.oreki.net/wiki-rules"]);
+});
+
+test("HTML 页面核对真实站点标题，JSON 资源跳过标题判定", async () => {
+  const responses = await collectHttps({
+    paths: ["/", "/static/contentIndex.json"],
+    domain: "wiki.oreki.net",
+    request: async (url) => ({
+      ok: true,
+      status: 200,
+      body: url.endsWith(".json") ? "{}" : `<title>${SITE_TITLE}</title>`,
+    }),
+  });
+  assert.equal(responses[0].hasTitle, true, "真实标题应被识别");
+  assert.equal(responses[1].hasTitle, false, "JSON 资源不应参与标题判定");
+});
+
+test("SITE_TITLE 与 quartz.config.yaml 的 pageTitle 保持一致", () => {
+  const cfg = fs.readFileSync(new URL("../../quartz.config.yaml", import.meta.url), "utf8");
+  const matched = cfg.match(/^\s*pageTitle:\s*"([^"]+)"/m);
+  assert.ok(matched, "quartz.config.yaml 缺少 pageTitle");
+  assert.equal(SITE_TITLE, matched[1], "监控标题常量与站点配置漂移");
 });
