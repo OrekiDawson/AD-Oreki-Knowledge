@@ -1,8 +1,8 @@
 {
   "batch": 15,
   "title": "第十五批：天神引语子页面（鹿颈长 / 无名氏 / 薇 / 太阳神 / 莱特拉）（5 篇）",
-  "branch": "docs/r114-qa-review-15",
-  "base": "main @ fe93907（#29 合并后）",
+  "branch": "docs/r114-quotes-b15",
+  "base": "main @ aef7e15（#30 合并后）",
   "owner": "wiki-translation",
   "status": "STRUCTURE CHECKED",
   "status_note": "5 篇完成结构与引语块核对后记为 STRUCTURE CHECKED；逐段语义审校仍待复核，不计入已审校覆盖率。核对记录见 docs/translation/reviews/audit-2026-11-15.md 追加节",

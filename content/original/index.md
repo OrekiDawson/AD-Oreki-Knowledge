@@ -40,6 +40,8 @@ tags:
 | **已审校覆盖率** | **0 / 68（0.0%）** |
 | 结构核对覆盖率 | 60 / 68（88.2%） |
 
+> 说明：本表按 [source-manifest.json](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/translation/source-manifest.json) 统计；批次十六至二十一的篇目清单由 wiki-editorial 维护，尚未列入下方批次表。
+
 > 口径（详见 [[wiki-rules|知识库规则]]「内容验收等级」）：
 > - **STRUCTURE CHECKED**：章节、表格、公式、来源/许可字段与原站结构一致——**不算语义审校**，不计入已审校覆盖率；
 > - **REVIEWED**：对照原文逐段审校，必须有页面级审校记录；
