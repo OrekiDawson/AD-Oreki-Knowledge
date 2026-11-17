@@ -42,7 +42,7 @@
 - 不为同一事实不断开重复条目。优先修改已有专题并给出来源；必要时通过“相关条目”链接。
 - 历史条目放在 `content/history/`，`tags` 包含“历史”；写清**当时结论、是否仍有效、适用版本和现行专题链接**。
 - 目录显示名称以中文 `index.md` 的 `title` 为准，**不为改展示名称而随意改路径或 URL**。确需迁移须配置 alias、检查旧链接与导航。
-- 公开条目至少有准确的 YAML frontmatter `title`，视内容增加中文 `description` 和 `tags`，使用有效 `[[内部链接]]`。
+- 公开条目必须在 YAML frontmatter 中设置准确的中文 `title`、非空的中文 `description` 和至少一个 `tags` 标签，并使用有效的 `[[内部链接]]`；三项缺失均会触发 `scripts/check-content.mjs` 检查失败。
 
 ## 4. 原版翻译、版权与审校等级
 
