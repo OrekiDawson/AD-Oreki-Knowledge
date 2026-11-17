@@ -16,7 +16,8 @@ const SHA = process.env.GITHUB_SHA || "";
 const FIXTURE = process.env.KB_FIXTURE || "";
 const NOW = process.env.KB_NOW ? new Date(process.env.KB_NOW) : new Date();
 
-const PAGES = [ "/", "/index.html", "/static/contentIndex.json", "/static/knowledge-index.json", "/architecture/kotlin-runtime" ];
+// 与 scripts/verify-build.mjs 的 Quartz 发布产物契约保持一致，避免检查不存在的旧 AI 索引。
+export const HTTPS_SMOKE_PATHS = [ "/", "/index.html", "/static/contentIndex.json", "/architecture/kotlin-runtime" ];
 
 function sh(cmd, args) {
   return execFileSync(cmd, args, { encoding: "utf8", timeout: 30000, stdio: ["ignore", "pipe", "ignore"] }).trim();
@@ -65,7 +66,7 @@ function httpGet(url, { method = "GET" } = {}) {
 
 async function collectHttps() {
   const results = [];
-  for (const path of PAGES) {
+  for (const path of HTTPS_SMOKE_PATHS) {
     const r = await httpGet("https://" + DOMAIN + path);
     results.push({ path, ok: r.ok, status: r.status || null, error: r.error || null, hasTitle: r.body ? r.body.includes("AD-Oreki Knowledge Base") : false });
   }
