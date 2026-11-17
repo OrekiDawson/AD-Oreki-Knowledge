@@ -16,7 +16,7 @@ Android 应用的「升级」不是替换文件，而是系统按**包名 + 签�
 | --- | --- | --- |
 | 包名 | `com.oreki.antimatterdimensions` | 不得改变；改变等于变成另一个应用，无法覆盖升级 |
 | 签名证书 SHA-256 | `95960bce0d8806124d72755d827fcd9216919cac29147635767a967360ed3197` | 必须与原版一致，否则系统拒绝覆盖安装 |
-| `versionCode` | 历史已发布最大值 `30210000`（R103） | 新发布必须**严格大于**该值 |
+| `versionCode` | MOD 已发布最大值 `30210001`（截至 2026-11-17，按发布策略及公开 Release 核对） | 下一次正式发布须**严格大于**已发布最大值；策略候选 `30210002` 不代表已发布 |
 
 注意区分两个 `versionCode`：
 
@@ -24,6 +24,8 @@ Android 应用的「升级」不是替换文件，而是系统按**包名 + 签�
 - **MOD 独立发布**的 `versionCode` 是项目自己的发布序号，要求严格递增，且必须与原版基线分开记录。
 
 两者混用会导致「看起来升级了、实际系统认为没有更新」或无法回退到已验证稳定版。
+
+**版本证据（2026-11-17 核对）**：[最新核对的公开 Release（2026-11-16）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/releases/tag/android-update-3.21.0-a12b5cd6) 与 [当前发布门禁策略](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/scripts/release-gate-policy.json) 共同作为核对依据。策略中的 `lastPublishedVersionCode=30210001` 是已发布上限记录，`versionCode=30210002` 是准备发布的候选身份。后续正式发布需重新核实，不能把此时间点的最大值永久当作当前值。
 
 ## 为什么签名环境是门禁
 
@@ -42,7 +44,7 @@ Android 应用的「升级」不是替换文件，而是系统按**包名 + 签�
 
 ## 已确认与未确认
 
-- **已确认**：包名、证书与历史 `versionCode` 基线；签名环境等待批准的 Run 状态；2026-11-12 曾完成四渠道同一 APK 发布（见 [历史归档](/history/)）。
+- **已确认（按各自证据时间）**：包名、证书与官方 3.21.0 基线 `versionCode=30210000`；截至 2026-11-17 的发布策略记录已发布上限 `30210001`；2026-11-15 签名环境等待批准的历史 Run 状态；2026-11-12 曾完成四渠道同一 APK 发布（见 [历史归档](/history/)）。
 - **未确认**：本轮任何新 APK 的签名、验签与覆盖升级（NOT RUN）；AGP-only 门禁仍 fail-closed。
 - **禁止**：不得手动上传 APK、不得关闭签名环境审批、不得绕过 Ruleset 或 Required Checks。
 
