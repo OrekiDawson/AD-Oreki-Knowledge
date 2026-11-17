@@ -128,7 +128,8 @@ test("HTML 页面核对真实站点标题，JSON 资源跳过标题判定", asyn
     request: async (url) => ({
       ok: true,
       status: 200,
-      body: url.endsWith(".json") ? "{}" : `<title>${SITE_TITLE}</title>`,
+      // JSON 桩正文也包含标题，确保用例只在 isHtml 豁免逻辑存在时才通过。
+      body: url.endsWith(".json") ? JSON.stringify({ title: SITE_TITLE }) : `<title>${SITE_TITLE}</title>`,
     }),
   });
   assert.equal(responses[0].hasTitle, true, "真实标题应被识别");
@@ -137,7 +138,9 @@ test("HTML 页面核对真实站点标题，JSON 资源跳过标题判定", asyn
 
 test("SITE_TITLE 与 quartz.config.yaml 的 pageTitle 保持一致", () => {
   const cfg = fs.readFileSync(new URL("../../quartz.config.yaml", import.meta.url), "utf8");
-  const matched = cfg.match(/^\s*pageTitle:\s*"([^"]+)"/m);
+  // 兼容 YAML 双引号、单引号与裸标量写法，并忽略行内注释。
+  const matched = cfg.match(/^\s*pageTitle:\s*(?:"([^"]*)"|'([^']*)'|([^#\s][^#]*?))\s*(?:#.*)?$/m);
   assert.ok(matched, "quartz.config.yaml 缺少 pageTitle");
-  assert.equal(SITE_TITLE, matched[1], "监控标题常量与站点配置漂移");
+  const pageTitle = [matched[1], matched[2], matched[3]].find((value) => value !== undefined).trim();
+  assert.equal(SITE_TITLE, pageTitle, "监控标题常量与站点配置漂移");
 });
