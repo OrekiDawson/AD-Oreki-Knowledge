@@ -46,7 +46,7 @@ Android 基线固定为官方 3.21.0，长期不自动升级：
 ## 关键约束
 
 - 包名固定 `com.oreki.antimatterdimensions`，签名证书固定 `95960bce…3197`，见 [[apk-signing|APK 签名与升级兼容]]。
-- `versionCode` 必须严格大于历史发布最大值（当前 30210000）。
+- MOD 每次正式发布的 `versionCode` 必须严格大于历史已发布最大值。截至 **2026-11-17**，发布策略记录的已发布最大值为 `30210001`；下一候选策略值为 `30210002`，**不能据此认定已正式发布**。官方 3.21.0 基线的 `30210000` 不变。
 - 不得新增 Java/Smali 游戏业务实现；新业务必须用 Kotlin。
 - 官方 3.21.0 DEX 是只读基线，修改通过已核实 ABI 的适配层完成，方法见 [[dex-abi|DEX 与 ABI 反混淆]]。
 
@@ -61,6 +61,8 @@ Android 基线固定为官方 3.21.0，长期不自动升级：
 - [冻结基线 manifest](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/baseline/versions/3.21/manifest.json)
 - [docs/FACTS.md 第 6 节（基线与基线管理）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/build.md#f-6)
 - [Android 仓库 AGENTS.md](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/AGENTS.md)
+- [Android 已公开 Release：android-update-3.21.0-a12b5cd6（2026-11-16）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/releases/tag/android-update-3.21.0-a12b5cd6)
+- [发布门禁策略（核实日期：2026-11-17）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/scripts/release-gate-policy.json)
 
 ## 相关条目
 
