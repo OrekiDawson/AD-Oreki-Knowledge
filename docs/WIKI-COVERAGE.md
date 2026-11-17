@@ -103,5 +103,6 @@
 
 ## 维护说明
 
+- 2026-11-17：本表按 `docs/translation/source-manifest.json` 重新生成，补齐批次 16–21 的已结构核对页面与第十五批 5 篇引语页；不改变任何页面的验收等级。
 - 覆盖率口径与等级见 content/wiki-rules.md；只有 REVIEWED / VERIFIED AGAINST GAME 计入已审校覆盖率。
 - 原文更新后由 scripts/translation/sync-original.mjs --check 比对修订，标记「待复核」；不得无条件覆盖人工校对结果。
