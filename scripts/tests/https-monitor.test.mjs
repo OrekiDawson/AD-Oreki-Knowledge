@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { evaluate, HTTPS_SMOKE_PATHS, collectHttps } from "../https-monitor.mjs";
 
 const base = () => ({
-  pages: { ok: true, cname: "wiki.oreki.net", https_enforced: true, cert_state: "approved", cert_expires: "2027-01-01T00:00:00Z" },
+  pages: { ok: true, cname: "wiki.oreki.net", https_enforced: true, cert_state: "approved", cert_expires: new Date(Date.now() + 90 * 86400000).toISOString() },
   tls: { ok: true, authorized: true, subjectaltname: "DNS:wiki.oreki.net", days: 45 },
   https: [ { path: "/", ok: true, status: 200, hasTitle: true }, { path: "/index.html", ok: true, status: 200, hasTitle: true } ],
   redirect: { ok: true, status: 301, location: "https://wiki.oreki.net/" },
