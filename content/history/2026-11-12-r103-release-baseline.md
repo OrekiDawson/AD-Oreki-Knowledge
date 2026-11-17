@@ -24,12 +24,12 @@ tags:
 | 证书 SHA-256 | `95960bce0d8806124d72755d827fcd9216919cac29147635767a967360ed3197` |
 | 交付渠道 | GitHub Releases、OneDrive、Google Drive、本地 SSH/SFTP，同一 APK |
 
-当时判定为 Android 四渠道真实发布 PASS，且这是最近一次仍在生效的正式稳定版依据。
+当时判定为 Android 四渠道真实发布 PASS；“最近一次正式稳定版”仅是 **2026-11-12 当时**的判断，不代表后续版本状态。
 
 ## 后续变化与是否仍然有效
 
-- **仍然有效**：原包名、原签名证书与 `versionCode = 30210000` 仍是「历史已发布最大值」基线；此后每次正式发布都要求 `versionCode` 严格大于它。
-- **不再代表当前状态**：R113-01 之后没有新的正式发布，180 分钟通关仍 FAIL，签名环境仍 BLOCKED。不能把 R103 的历史 APK 改名当作新版本。
+- **仍然有效**：R103 当时使用的包名、签名证书及发布身份 `versionCode = 30210000` 是真实历史记录；但 `30210000` **不再是当前已发布最大值**。截至 2026-11-17，[正式发布策略](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/scripts/release-gate-policy.json)记录已发布上限 `30210001`、下个候选 `30210002`，新正式发布必须严格大于届时已发布最大值。
+- **不再代表当前状态**：R113-01 阶段记录的 180 分钟长跑 FAIL 和签名环境 BLOCKED 均为历史时点结论；[2026-11-16 的新 GitHub Release](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/releases/tag/android-update-3.21.0-a12b5cd6)已存在，不能再宣称此后从未发布。新版本的完整四渠道实物验证和通关证据需按各自 Run 单独核实，详见 [[release-status|发布状态]]。
 - 原版基线自身的 `versionCode`（30210000）与 MOD 独立发布 `versionCode` 需分开记录，见 [[apk-signing|APK 签名与升级兼容]]。
 
 ## 原始证据

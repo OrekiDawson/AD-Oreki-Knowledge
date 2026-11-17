@@ -15,7 +15,7 @@ tags:
 
 | 日期 | 条目 | 当时结论 |
 | --- | --- | --- |
-| 2026-11-12 | [[2026-11-12-r103-release-baseline|R103 四渠道正式发布与 versionCode 基线]] | 四渠道发布 PASS；versionCode 30210000 成为历史最大值 |
+| 2026-11-12 | [[2026-11-12-r103-release-baseline|R103 四渠道正式发布与 versionCode 基线]] | 当时四渠道发布 PASS、versionCode 为 30210000；后续已发布上限更新（参见条目） |
 | 2026-11-15 | [[2026-11-15-r113-p0-livelock|R113-01 逻辑线程 livelock 的 P0 闭环]] | 功能闭环 PASS；跨构建晚期存档与 180 分钟通关 NOT RUN |
 | 2026-11-15 | [[2026-11-15-r113-180min-fail|R113-01 新档 180 分钟长跑 FAIL]] | 180.1 分钟未通关，creditsFinished=false、realities=2 |
 | 2026-11-15 | [[2026-11-15-celestial-leaves-fix|天神策略叶子缺失与补实现]] | 叶子补齐 PASS；realities 仍卡在 2 |

@@ -1,13 +1,13 @@
 ---
 title: "发布状态"
-description: "截至 2026-11-16：Android a12b5cd6 正式 GitHub Release、云端发布作业及第四渠道核实边界"
+description: "发布事实截至 2026-11-16、发布策略核对截至 2026-11-17：Android 正式 GitHub Release 与四渠道核实边界"
 tags:
   - 发布
 ---
 
 本页回答「哪个 Android APK 已经发布、证据是什么、四渠道是否全部完成」。**GitHub Release 页面存在、CI 工作流成功与本地四渠道实物核验须分开判断。**
 
-**最后核实：2026 年 11 月 16 日（UTC+8）。**
+**证据时点：正式发布事实核实于 2026 年 11 月 16 日（UTC+8）；发布策略核对于 2026 年 11 月 17 日。**
 
 ## 当前可下载的版本
 
@@ -33,7 +33,7 @@ tags:
 - [候选构建 #43735315296](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43735315296)：PASS。
 - [候选独立验证 #43735739171](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43735739171)：PASS。
 - [正式发布 #43761268754](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43761268754)：SUCCESS。
-- 版本身份由 [release-gate-policy.json](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/scripts/release-gate-policy.json) 提供：MOD `versionCode 30210001`，原版 3.21.0 基线的 `30210000` 不是新发布号。
+- 版本身份：本页所述已发布 MOD 的 `versionCode` 为 `30210001`；[2026-11-17 核对的当前发布策略](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/scripts/release-gate-policy.json)记录 `lastPublishedVersionCode=30210001`、下一候选 `versionCode=30210002`（**未证明发布**）。官方 3.21.0 基线 `30210000` 不作为此次 MOD 新发布号。
 
 **验证边界：** 当前 Wiki 尚未逐项读取这版 APK 对应的八项 AVD 场景、完整 180 分钟发布级运行记录和本地 SSH/SFTP 拉取回执，因此本页不额外声明它们全部独立 PASS。需要进一步核查时应直接读取上述 Run 的 Artifact 与项目报告，不以发布标题代替证据。
 
