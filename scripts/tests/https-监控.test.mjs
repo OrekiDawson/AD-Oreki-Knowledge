@@ -121,19 +121,18 @@ test("HTTPS 冒烟可以扩展合法页面，且不会将路径常量锁死", as
   assert.deepEqual(urls, ["https://wiki.oreki.net/", "https://wiki.oreki.net/wiki-rules"]);
 });
 
-test("HTML 页面核对真实站点标题，JSON 资源跳过标题判定", async () => {
+test("仅 HTML 路由与 .html 参与标题判定，静态资源一律跳过", async () => {
   const responses = await collectHttps({
-    paths: ["/", "/static/contentIndex.json"],
+    paths: ["/", "/index.html", "/static/contentIndex.json", "/robots.txt"],
     domain: "wiki.oreki.net",
-    request: async (url) => ({
+    request: async () => ({
       ok: true,
       status: 200,
-      // JSON 桩正文也包含标题，确保用例只在 isHtml 豁免逻辑存在时才通过。
-      body: url.endsWith(".json") ? JSON.stringify({ title: SITE_TITLE }) : `<title>${SITE_TITLE}</title>`,
+      // 所有桩正文都包含标题，确保用例只依赖 isHtml 白名单而非正文内容。
+      body: `<title>${SITE_TITLE}</title>`,
     }),
   });
-  assert.equal(responses[0].hasTitle, true, "真实标题应被识别");
-  assert.equal(responses[1].hasTitle, false, "JSON 资源不应参与标题判定");
+  assert.deepEqual(responses.map((item) => item.hasTitle), [true, true, false, false]);
 });
 
 test("SITE_TITLE 与 quartz.config.yaml 的 pageTitle 保持一致", () => {
