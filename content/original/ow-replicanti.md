@@ -10,11 +10,11 @@ original_revid: 3350
 original_fetched_at: "2026-11-15T21:45:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
-**复制器（Replicanti）**是[无限](https://antimatterdimensions.wiki.gg/wiki/Infinity)威望层内的一种机制，在玩家完成第一次[大坍缩](https://antimatterdimensions.wiki.gg/wiki/Big_Crunch)之后随时可以购买。不过，购买它需要 $1\text{e}140$ [无限点数](https://antimatterdimensions.wiki.gg/wiki/Infinity_Points)，所以通常只有在完成 8 个[无限挑战](https://antimatterdimensions.wiki.gg/wiki/Infinity_Challenges)之后才会解锁。
+**复制器（Replicanti）**是[[ow-infinity|无限]]威望层内的一种机制，在玩家完成第一次[大坍缩](https://antimatterdimensions.wiki.gg/wiki/Big_Crunch)之后随时可以购买。不过，购买它需要 $1\text{e}140$ [[ow-infinity|无限点数]]，所以通常只有在完成 8 个[[ow-challenges|无限挑战]]之后才会解锁。
 
 和反物质一样，它们会在[大坍缩](https://antimatterdimensions.wiki.gg/wiki/Big_Crunch)时重置（除非玩家拥有[成就 95](https://antimatterdimensions.wiki.gg/wiki/Achievements)——在一小时内达到 1.80e308 复制器获得）；除非购买了时间研究 192，否则它们不能超过无限值。
 
@@ -54,7 +54,7 @@ $$e^{\left(\ln(r)+\left[\left(1+t\right)\times r\times\ln(c+1)\times interval\di
 
 ### 最大复制器星系数
 
-玩家可购买的复制器星系数量上限初始为 0，可通过购买该升级提高。该升级的数值可以被[时间研究 131](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)显著提高。
+玩家可购买的复制器星系数量上限初始为 0，可通过购买该升级提高。该升级的数值可以被[[ow-time-studies|时间研究 131]]显著提高。
 
 ### 升级成本成长
 
@@ -64,7 +64,7 @@ $$e^{\left(\ln(r)+\left[\left(1+t\right)\times r\times\ln(c+1)\times interval\di
 | 间隔 | $1000$ 毫秒 | $1\text{e}140$ IP | ×e10 | ×0.9 | $50$ 毫秒（拥有时间研究 22 时可提高到 $1$ 毫秒） |
 | 最大复制器星系数 | 0 | $1\text{e}170$ IP | $\times \text{e}25\times \text{e}5^{UpgradesBought}$（后期会显著更严厉，见「星系成本成长」） | $+1$ | 无限 |
 
-## [无限维度](https://antimatterdimensions.wiki.gg/wiki/Infinity_Dimensions)加成
+## [[ow-infinity-dimensions|无限维度]]加成
 
 复制器在游戏早期的主要用途是为无限维度提供加成，公式为 $\log_2(replicanti)^2$。玩家到达永恒后可以购买时间研究 21，为加成再增加 $replicanti^{0.032}$；时间研究 102 会再次以 $\left(boost\times 5^{RG}\right)$ 提高加成（$RG$ 为复制器星系数）。
 
@@ -72,9 +72,9 @@ $$e^{\left(\ln(r)+\left[\left(1+t\right)\times r\times\ln(c+1)\times interval\di
 
 当玩家达到 1.80e308 复制器后，就可以选择制造一个**复制器星系**，所有成长会立刻暂停（除非拥有时间研究 192）。
 
-复制器星系的作用与[反物质星系](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Galaxies)完全相同（会重置星系重置的所有普通内容），但它们不会改变第 8 反物质维度为获得下一个反物质星系所需的价格增长。
+复制器星系的作用与[[ow-antimatter-galaxies|反物质星系]]完全相同（会重置星系重置的所有普通内容），但它们不会改变第 8 反物质维度为获得下一个反物质星系所需的价格增长。
 
-它们的数量受第 3 个复制器升级限制，并会在无限时重置。若拥有[时间研究 33](https://antimatterdimensions.wiki.gg/wiki/Time_Studies)，会保留其中一半。若已解锁[成就 95](https://antimatterdimensions.wiki.gg/wiki/Achievements)，它提供的星系会在时间研究之后单独计算。
+它们的数量受第 3 个复制器升级限制，并会在无限时重置。若拥有[[ow-time-studies|时间研究 33]]，会保留其中一半。若已解锁[成就 95](https://antimatterdimensions.wiki.gg/wiki/Achievements)，它提供的星系会在时间研究之后单独计算。
 
 购买一个复制器星系时，复制器数量会被设为 1（除非玩家拥有成就 r126，此时复制器星系会把复制器数量除以 1.80e308）。
 
@@ -101,7 +101,7 @@ $$e^{\left(\ln(r)+\left[\left(1+t\right)\times r\times\ln(c+1)\times interval\di
 
 ## 来源与许可
 
-- 原文：[Replicanti](https://antimatterdimensions.wiki.gg/wiki/Replicanti)（修订 ID `3350`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-replicanti|Replicanti]]（修订 ID `3350`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Replicanti&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与表格、统一术语、移除导航模板与信息框、图片未转载；本页按相同许可共享。
 - 原文中的公式排版不统一（如 0,032 与 1e5 等写法）按 LaTeX 规范化；数值与逻辑未改动。

@@ -1,0 +1,82 @@
+{
+  "batch": 18,
+  "title": "第十八批：普通挑战 / 天神导航图库 / 永恒挑战明细 / 膨胀升级（被毁灭的现实）（4 篇）",
+  "branch": "docs/r114-batch18",
+  "base": "main @ e9bf88a（#38 合并后）",
+  "owner": "wiki-translation",
+  "status": "STRUCTURE CHECKED",
+  "status_note": "四篇逐节翻译并结构核对；未做逐段语义审校，按四级口径记 STRUCTURE CHECKED",
+  "created_at": "2026-11-16T00:50:00+08:00",
+  "pages": [
+    {
+      "file": "content/original/ow-normal-challenges.md",
+      "original_title": "Normal Challenges",
+      "zh_title": "普通挑战",
+      "revid": 3341,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 3,
+        "rows": 35,
+        "formulas": 2,
+        "notes": "12 个挑战全字段 + 11 项相关成就 + 新旧 ID 对照表"
+      }
+    },
+    {
+      "file": "content/original/ow-celestial-navigation-gallery.md",
+      "original_title": "Celestial Navigation/Gallery",
+      "zh_title": "天神导航·图库",
+      "revid": 2816,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 0,
+        "rows": 48,
+        "formulas": 0,
+        "notes": "48 条图注按原站顺序完整翻译；47+ 张截图未转载"
+      }
+    },
+    {
+      "file": "content/original/ow-eternity-challenges-challenges.md",
+      "original_title": "Eternity Challenges/Challenges",
+      "zh_title": "永恒挑战·挑战明细",
+      "revid": 3157,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 2,
+        "rows": 24,
+        "formulas": 13,
+        "notes": "12 个永恒挑战目标/限制/奖励/可失败/效果 + 各档 IP 门槛 12 行"
+      }
+    },
+    {
+      "file": "content/original/ow-dilation-upgrades-doomed.md",
+      "original_title": "Dilation/Upgrades (Doomed)",
+      "zh_title": "膨胀升级（被毁灭的现实）",
+      "revid": 3159,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 2,
+        "rows": 17,
+        "formulas": 10,
+        "notes": "可重复 7 行 + 一次性 10 行；词形变换占位保留；tachyonGain 已锁定说明保留"
+      }
+    }
+  ],
+  "checks_run": {
+    "env": "Node v24.22.3；Quartz pin 7cfb0796165c848be5438117e9806802123bf676",
+    "check-content": "PASS",
+    "check-translation": "PASS",
+    "build-index": "PASS",
+    "npx quartz build": "PASS",
+    "verify-build": "PASS",
+    "acceptance.cjs": "PASS"
+  },
+  "notes": [
+    "本批未取 Tickspeed/Perks/Automation（22.9/15.5/17.6KB）——优先完成「挑战明细」这条线；超大页留待后续单篇处理。",
+    "未改 index.md / 导航 / 分类页。"
+  ],
+  "blockers": []
+}

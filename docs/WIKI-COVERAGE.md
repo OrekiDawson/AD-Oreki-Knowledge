@@ -1,29 +1,37 @@
 # 原版 Wiki 中文翻译：覆盖率与许可台账
 
-> 本页是只读汇总，由 docs/translation/source-manifest.json 与 content/original/ 生成，不替代 manifest，也不修改译文。由 wiki-editorial 维护；译文与 manifest 由 wiki-translation 维护。
+> 本页是只读汇总，由 docs/translation/source-manifest.json 与 content/original/ 生成；等级定义见 content/wiki-rules.md「内容验收等级」。由 wiki-editorial 维护，译文与 manifest 由 wiki-translation 维护。
 
-## 覆盖总览（最后核对 2026-11-15 21:45 UTC+8）
+## 覆盖总览（最后核对 2026-11-15 22:40 UTC+8）
 
 | 指标 | 数值 |
 | --- | --- |
 | 合规原版正文页总数（article） | 68 |
-| 已完成并校对（REVIEWED） | 28 |
-| 已翻译未校对（TRANSLATED） | 0 |
-| 正在翻译（IN PROGRESS） | 0 |
-| 尚未开始（NOT STARTED） | 40 |
+| 已与游戏源码/运行证据核实（VERIFIED AGAINST GAME） | 0 |
+| 已完成逐段语义审校（REVIEWED） | 0 |
+| **已审校覆盖率（REVIEWED + VERIFIED）** | **0 / 68（0.0%）** |
+| 已完成翻译与结构核对（STRUCTURE CHECKED） | 35 |
+| 结构核对覆盖率 | 35 / 68（51.5%） |
+| 已翻译未核对（TRANSLATED） | 0 |
+| 尚未开始（NOT STARTED） | 33 |
 | 许可阻塞（BLOCKED） | 0 |
-| 覆盖率（REVIEWED / article） | 28 / 68（41.2%） |
-| 已翻译页中标注「媒体未转载」 | 21 |
+| 已译页面中媒体未转载 | 28 |
+
+## 等级口径
+
+- **STRUCTURE CHECKED**：章节/小节/表格/公式/来源字段与原站结构一致；**不算语义审校**，不计入已审校覆盖率。
+- **REVIEWED**：已对照原文逐段审校（术语、数字、公式、解锁条件、语义），必须有页面级审校记录；当前 0 篇。
+- **VERIFIED AGAINST GAME**：关键机制/数值已与源码或真实运行证据交叉核实；当前 0 篇。
+- 因此本台账如实显示：翻译已覆盖 35/68，但**审校覆盖率为 0%**；不得把 STRUCTURE CHECKED 宣传为「已校对」。
 
 ## 许可与署名状态
 
 - 站点级许可：社区 Wiki 的 Meta:Copyrights 声明其可合法授权的文本与图像内容按 CC BY-SA 4.0 提供（https://antimatterdimensions.wiki.gg/wiki/Meta:Copyrights）。
-- 逐页记录：原文标题、URL、页面 ID、修订 ID、最后编辑者、页面历史入口、抓取时间、翻译/校对状态与目标路径（见 manifest）。
+- 逐页记录：原文标题、URL、页面 ID、修订 ID、最后编辑者、页面历史入口、抓取时间、翻译/结构状态与目标路径（见 manifest）。
 - 每篇译文页底均有「来源与许可」块：原文链接、修订 ID、贡献者历史、CC BY-SA 4.0、已修改（翻译）与相同方式共享说明。
-- 图片、图标、信息框与导航模板一律未转载；媒体缺失逐页标注，不虚称完整。
-- 许可状态：REVIEWED 页面均为 CC-BY-SA-4.0-CONFIRMED；当前 BLOCKED 为 0。
+- 图片、图标、信息框与导航模板一律未转载；媒体缺失逐页标注；许可状态均为 CC-BY-SA-4.0-CONFIRMED，BLOCKED 为 0。
 
-## 已 REVIEWED 页面（按中文标题）
+## 已 STRUCTURE CHECKED 页面（按中文标题）
 
 | 中文条目 | 原文 | 修订 ID | 媒体未转载 |
 | --- | --- | --- | --- |
@@ -34,18 +42,25 @@
 | 广告加成 | [Ad Bonus](https://antimatterdimensions.wiki.gg/wiki/Ad_Bonus) | 3096 | 否 |
 | 黑洞 | [Black Hole](https://antimatterdimensions.wiki.gg/wiki/Black_Hole) | 3360 | 是 |
 | 记数法 | [Notations](https://antimatterdimensions.wiki.gg/wiki/Notations) | 3133 | 否 |
+| 莱特拉 | [Laitela](https://antimatterdimensions.wiki.gg/wiki/Laitela) | 3375 | 是 |
+| 鹿颈长 | [Effarig](https://antimatterdimensions.wiki.gg/wiki/Effarig) | 3371 | 是 |
+| 佩勒 | [Pelle](https://antimatterdimensions.wiki.gg/wiki/Pelle) | 3376 | 是 |
 | 佩勒升级 | [Pelle/Upgrades](https://antimatterdimensions.wiki.gg/wiki/Pelle%2FUpgrades) | 2707 | 是 |
 | 膨胀升级 | [Dilation/Upgrades](https://antimatterdimensions.wiki.gg/wiki/Dilation%2FUpgrades) | 3158 | 否 |
 | 时间膨胀 | [Dilation](https://antimatterdimensions.wiki.gg/wiki/Dilation) | 3323 | 是 |
 | 时间维度 | [Time Dimensions](https://antimatterdimensions.wiki.gg/wiki/Time_Dimensions) | 3345 | 是 |
 | 时间研究 | [Time Studies](https://antimatterdimensions.wiki.gg/wiki/Time_Studies) | 3343 | 否 |
 | 术语（佩勒用词） | [Terminology](https://antimatterdimensions.wiki.gg/wiki/Terminology) | 3098 | 否 |
+| 太阳神 | [Ra](https://antimatterdimensions.wiki.gg/wiki/Ra) | 3387 | 是 |
+| 特蕾莎 | [Teresa](https://antimatterdimensions.wiki.gg/wiki/Teresa) | 3370 | 是 |
 | 天神 | [Celestials](https://antimatterdimensions.wiki.gg/wiki/Celestials) | 3187 | 是 |
 | 天神导航 | [Celestial Navigation](https://antimatterdimensions.wiki.gg/wiki/Celestial_Navigation) | 3361 | 是 |
 | 挑战 | [Challenges](https://antimatterdimensions.wiki.gg/wiki/Challenges) | 3106 | 是 |
+| 薇 | [V](https://antimatterdimensions.wiki.gg/wiki/V) | 3373 | 是 |
 | 维度 | [Dimensions](https://antimatterdimensions.wiki.gg/wiki/Dimensions) | 3102 | 是 |
 | 维度提升 | [Dimension Boosts](https://antimatterdimensions.wiki.gg/wiki/Dimension_Boosts) | 3333 | 是 |
 | 维度献祭 | [Dimensional Sacrifice](https://antimatterdimensions.wiki.gg/wiki/Dimensional_Sacrifice) | 3397 | 是 |
+| 无名氏 | [The Nameless Ones](https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones) | 3372 | 是 |
 | 无限 | [Infinity](https://antimatterdimensions.wiki.gg/wiki/Infinity) | 3113 | 是 |
 | 无限升级 | [Infinity Upgrades](https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades) | 3348 | 否 |
 | 无限升级（升级表） | [Infinity Upgrades/Upgrades](https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades%2FUpgrades) | 2909 | 否 |
@@ -56,8 +71,12 @@
 | 永恒挑战 | [Eternity Challenges](https://antimatterdimensions.wiki.gg/wiki/Eternity_Challenges) | 3347 | 是 |
 | 重置成长（威望） | [Prestige](https://antimatterdimensions.wiki.gg/wiki/Prestige) | 3398 | 是 |
 
+## 审校记录
+
+- 结构核对记录：docs/translation/reviews/audit-2026-11-15.md（已更正为 STRUCTURE CHECKED，未做逐句语义审校）。
+- 逐页语义审校记录：**尚不存在**（REVIEWED 需逐页记录后方可标注）。
+
 ## 维护说明
 
-- 覆盖率口径：已完成并校对（REVIEWED）的合规正文页数 ÷ 合规正文页总数；不把只有标题/摘要或未校对页面计入。
-- 重定向、消歧义与站点 meta 页不进入分母；版本历史、引语子页按正文条目单独评估。
+- 覆盖率口径与等级见 content/wiki-rules.md；只有 REVIEWED / VERIFIED AGAINST GAME 计入已审校覆盖率。
 - 原文更新后由 scripts/translation/sync-original.mjs --check 比对修订，标记「待复核」；不得无条件覆盖人工校对结果。

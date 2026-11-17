@@ -12,7 +12,7 @@ tags:
 
 游戏最初由使用 **Hevipelle** 名称的开发者于 **2016 年**作为网页游戏推出，后来由更多开发者参与制作。其 Steam 版本于 **2022 年 12 月 17 日**发行。[来源：Steam 商店的开发者信息与游戏介绍](https://store.steampowered.com/app/1399720/Antimatter_Dimensions/)。
 
-本站主要记录基于该游戏制作的 **Oreki Edition MOD**，但理解原版机制是阅读技术条目和项目记录的前提。本条目首先介绍原版游戏；MOD 的目标、实现和测试结论会单独标明，避免把修改版与官方游戏混为一谈。
+本站主要记录基于这款游戏制作的 **Oreki Edition MOD**。理解原版机制是读懂 MOD 改动的前提，所以这篇先讲原版；MOD 的目标、实现和验证结论会单独说明，不和官方行为混在一起。
 
 ## 基本资料
 
@@ -26,7 +26,7 @@ tags:
 | 可游玩平台 | 网页、Steam，以及 Android 和 iOS 移动版本 |
 | 主要玩法 | 维度生产、升级、重置成长、挑战、成就与自动化 |
 
-以上资料主要依据[Steam 官方商店页面](https://store.steampowered.com/app/1399720/Antimatter_Dimensions/)；平台信息另可参见[《反物质维度》社区 Wiki](https://antimatterdimensions.wiki.gg/)。不同平台的版本、界面和功能开放顺序可能存在差异，本表不代表各版本始终完全相同。
+资料来源是 [Steam 官方商店页面](https://store.steampowered.com/app/1399720/Antimatter_Dimensions/)与[《反物质维度》社区 Wiki](https://antimatterdimensions.wiki.gg/)。各平台的版本、界面和功能开放顺序并不一致，上表只是常见情况的汇总。
 
 ## 游戏怎样进行
 
@@ -46,7 +46,7 @@ tags:
 
 ## 主要成长阶段
 
-游戏会随着推进逐步展开新的系统。以下表格说明的是**原版主要机制的关系**，并非每一项功能出现的精确时间表。
+随着推进，游戏会一层层展开新的重置体系。下表概括原版主要机制之间的关系，不是精确到分钟的解锁时间表。
 
 | 阶段 | 主要变化 | 可帮助理解的概念 |
 | --- | --- | --- |
@@ -59,7 +59,7 @@ tags:
 
 永恒会引入永恒点数和时间研究体系；现实则在此基础上进一步引入现实机器、符文等机制。玩家在这些阶段需要决定何时重置、怎样分配升级，以及如何让重复操作自动完成。[来源：社区 Wiki《Eternity》](https://antimatterdimensions.wiki.gg/wiki/Eternities)；[《Reality》](https://antimatterdimensions.wiki.gg/wiki/Reality)。
 
-游戏后期还有天神（Celestials）相关内容。各阶段的精确条件、资源公式与重置后保留的项目较为复杂，宜参阅对应机制资料，而不是把上表当作完整攻略。
+游戏后期还有天神（Celestials）。各阶段的具体条件、资源公式和重置后保留什么，细节多且互相牵连，需要看对应的机制条目；上表只用来建立整体印象。
 
 ## 挑战、成就和自动化
 
@@ -79,7 +79,7 @@ tags:
 
 **Oreki Edition 是以《反物质维度》为基础开发的修改版本，不是原版游戏的官方更新。** 它在 Android 与 Web 两端并行开发，重点关注更流畅的成长体验、自动购买器、界面反馈、中文教程，以及两个平台之间的可见行为一致性。具体代码和机制修改必须以相应 MOD 仓库的提交与实测记录为依据。
 
-该项目设有“**新建真实存档，在不伪造资源、进度、挑战结算或成就的前提下，于 180 分钟内通关**”这一开发验收目标。它是 **MOD 的工程目标**，**不是原版游戏推荐或承诺的通关时间**。截至 2026 年 11 月 15 日已有的一次完整长跑记录，180.1 分钟时未完成通关，属于 **失败（FAIL）**，不能描述为已达到目标。[来源：Android MOD 长跑实测报告](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md)。
+Oreki Edition 现在以 **Android/Web 玩法一致性和用户体验**为首要产品目标，并将**从真实新档开始、墙钟 ≤180 分钟合法通关**作为持续回归门槛。它不是原版游戏承诺的通关时间。早期 R113-01 的完整长跑曾在 180.1 分钟时 FAIL，但那是**旧构建的历史结果**，不能用来判断新发布 APK。[历史证据](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md)。Web 已有明确加速条件下的线上通关实测；Android 也已有 [新版 GitHub Release](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/releases/tag/android-update-3.21.0-a12b5cd6)。各类证据与验收边界见 [[project-status|当前状态]]。
 
 若想了解 MOD 仓库、冻结的上游版本与发行门禁，可继续阅读[[project-overview|项目概览]]；最新验收结论与发布状态以[[project-status|当前项目状态]]和[[release-status|发布状态]]为准。
 
@@ -99,11 +99,3 @@ tags:
 进一步阅读具体机制：[[progression-infinity-eternity|无限与永恒]] · [[reality-time-studies|现实与时间研究]] · [[celestials|天神系统]]；原版规则与 MOD 调整的集中对照见 [[original-vs-mod|原版行为与 Oreki Edition 修改]]。
 
 [[project-overview]] · [[challenges]] · [[automation]] · [[stage-gates]] · [[saves]] · [[terminology]] · [[wiki-rules]]
-
-## 供 AI 检索（简要摘要）
-
-- 主题：《反物质维度》（Antimatter Dimensions）原版游戏及 Oreki Edition MOD 的关系。
-- 当前结论：原版为 2016 年起发展的放置增量游戏，含反物质维度、无限、永恒、现实等成长系统。
-- 状态及范围：原版玩法概述以公开游戏资料为据；MOD 的 180 分钟目标不能当作原版规则。
-- 主要来源：[Steam](https://store.steampowered.com/app/1399720/Antimatter_Dimensions/)、[原版源码](https://github.com/IvarK/AntimatterDimensionsSourceCode)、[[project-overview]]。
-- 容易误判之处：MOD 在 2026-11-15 的长跑为 FAIL；不能据此推断原版通关时长或以后版本的结果。

@@ -33,6 +33,13 @@ const NEW_PAGES = [
 ];
 const CATEGORY_LABELS = ['玩法机制', '架构与运行时', '构建与交付', '历史归档', '原版 Wiki 中文翻译'];
 
+function weakMustSee(items) {
+  return ['入门指南', '原版 Wiki 中文翻译'].some((label) => {
+    const item = items.find((i) => i.label === label);
+    return !item || item.inViewport !== true;
+  });
+}
+
 async function run() {
   const browser = await chromium.launch({ headless: true });
   const results = { base: BASE, mobile: {}, desktop: {}, errors: [], searches: [], urls: [], categories: [] };
@@ -62,6 +69,84 @@ async function run() {
     results.categories.push({ label, hit });
     if (!hit) results.errors.push('missing-category-label:' + label);
   }
+
+  // 移动端侧栏：真实 DOM 渲染顺序断言（不读配置文本）
+  const EXPECTED_SIDEBAR = [
+    '游戏总览',
+    '入门指南',
+    '原版 Wiki 中文翻译',
+    'MOD 玩法与机制',
+    '当前项目状态',
+    '架构与运行时',
+    '逆向与语义映射',
+    '构建与交付',
+    '故障排查',
+    '参考资料',
+    '历史归档',
+    '知识库规则',
+    '版权与许可',
+  ];
+  const sidebarToggle = page.locator('.explorer .explorer-toggle').first();
+  if (await sidebarToggle.count()) {
+    await sidebarToggle.click({ force: true }).catch(() => {});
+    await page.waitForTimeout(700);
+  }
+  const sidebar = await page.evaluate(() => {
+    const ul = document.querySelector('.explorer-content ul.explorer-ul');
+    if (!ul) return null;
+    const items = [...ul.children]
+      .filter((li) => !li.classList.contains('overflow-end'))
+      .map((li) => {
+        const a = li.querySelector(':scope > a, :scope > .folder-container a');
+        const labelEl = li.querySelector(':scope > .folder-container .folder-title') || a;
+        const label = (labelEl && labelEl.textContent || '').trim();
+        const box = a ? a.getBoundingClientRect() : null;
+        return {
+          label,
+          href: a ? a.getAttribute('href') : null,
+          truncated: labelEl ? labelEl.scrollWidth > labelEl.clientWidth + 1 : false,
+          inViewport: box ? box.top >= 0 && box.top < window.innerHeight : false,
+        };
+      });
+    return { items, expanded: !document.querySelector('.explorer').classList.contains('collapsed') };
+  });
+  results.mobile.sidebar = sidebar;
+  if (!sidebar) results.errors.push('sidebar-missing');
+  else {
+    const labels = sidebar.items.map((i) => i.label);
+    if (labels.join('|') !== EXPECTED_SIDEBAR.join('|')) {
+      results.errors.push('sidebar-order:' + labels.join('>'));
+    }
+    if (!sidebar.expanded) results.errors.push('sidebar-not-expanded');
+    if (sidebar.items.some((i) => i.truncated)) results.errors.push('sidebar-truncated');
+    const mustSee = ['入门指南', '原版 Wiki 中文翻译'];
+    for (const label of mustSee) {
+      const item = sidebar.items.find((i) => i.label === label);
+      if (!item || item.inViewport !== true) results.errors.push('sidebar-not-visible:' + label);
+    }
+  }
+
+  // 折叠可用：再点一次折叠按钮
+  if (await sidebarToggle.count()) {
+    await sidebarToggle.click({ force: true }).catch(() => {});
+    await page.waitForTimeout(500);
+    results.mobile.sidebarCollapsed = await page.evaluate(() =>
+      document.querySelector('.explorer').classList.contains('collapsed')
+    );
+    if (!results.mobile.sidebarCollapsed) results.errors.push('sidebar-collapse-failed');
+  }
+
+  // 当前页高亮：进入具体文章页（/gameplay/challenges）后侧栏应有 active 链接指向它
+  await page.goto(BASE + '/gameplay/challenges', { waitUntil: 'load' });
+  await page.waitForTimeout(900);
+  const toggle2 = page.locator('.explorer .explorer-toggle').first();
+  if (await toggle2.count()) { await toggle2.click({ force: true }).catch(() => {}); await page.waitForTimeout(600); }
+  results.mobile.sidebarActive = await page.evaluate(() => {
+    const links = [...document.querySelectorAll('.explorer-content a.active, .explorer-content a.is-active')];
+    return links.map((a) => a.getAttribute('href'));
+  });
+  if (!results.mobile.sidebarActive.includes('/gameplay/challenges')) results.errors.push('sidebar-active-highlight');
+  if (await toggle2.count()) { await toggle2.click({ force: true }).catch(() => {}); await page.waitForTimeout(400); }
 
   // 搜索
   const searchInput = page.locator('input.search-bar, input[name="search"], input[type="search"], input[placeholder]').first();
@@ -152,6 +237,15 @@ async function run() {
   if (results.mobile.aiDraftStatus !== 404) bad.push('ai-draft-public:' + results.mobile.aiDraftStatus);
   if (!results.mobile.translationHasLicense) bad.push('translation-license-block');
   if (!results.mobile.kotlinPage) bad.push('kotlin-nav');
+  if (!results.mobile.sidebar) bad.push('sidebar-missing');
+  else {
+    if (results.mobile.sidebar.items.map((i) => i.label).join('|') !== EXPECTED_SIDEBAR.join('|')) bad.push('sidebar-order');
+    if (!results.mobile.sidebar.expanded) bad.push('sidebar-expanded');
+    if (results.mobile.sidebar.items.some((i) => i.truncated)) bad.push('sidebar-truncated');
+    if (weakMustSee(results.mobile.sidebar.items)) bad.push('sidebar-visibility');
+  }
+  if (!results.mobile.sidebarCollapsed) bad.push('sidebar-collapse');
+  if (!results.mobile.sidebarActive || !results.mobile.sidebarActive.includes('/gameplay/challenges')) bad.push('sidebar-active');
   if (!results.mobile.darkmodeToggled) bad.push('darkmode');
   if (results.errors.length > 3) bad.push('console-errors');
   console.log(JSON.stringify({ bad, results }, null, 1).slice(0, 6000));

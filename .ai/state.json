@@ -1,9 +1,14 @@
 {
  "sources": {
   "OrekiDawson/AD-Oreki-Edition-Android|AGENTS.md": {
-   "sha": "59f1fc50046d91d0e9ede49fe2a538b1c90134c1",
-   "hash": "13f368b2c62e5fe4fa98a11dd07ac53e3ef367dabc9e5d513a4bf6f43c6dd574",
-   "updated": "2026-11-15T06:03:05.884Z"
+   "sha": "10ab95780d2ede742b04eae30702f735f4250344",
+   "hash": "96001e632180a24fc505c5f91ac024085f0f2f67eea734593f9848a43f5f6110",
+   "updated": "2026-11-16T20:36:56.777Z"
+  },
+  "OrekiDawson/AD-Oreki-Edition-Android|docs/FACTS.md": {
+   "sha": "05434664dfb79ecdaa0ddf1c5485d441e488b2e7",
+   "hash": "6a647eb68759b52ac935848d9d53d2b72664fd1d177cb75513b1ef7f322973c0",
+   "updated": "2026-11-16T20:37:05.683Z"
   }
  }
 }

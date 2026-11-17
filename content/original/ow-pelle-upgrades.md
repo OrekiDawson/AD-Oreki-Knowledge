@@ -10,11 +10,11 @@ original_revid: 2707
 original_fetched_at: "2026-11-15T23:05:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
-本页是[佩勒](https://antimatterdimensions.wiki.gg/wiki/Pelle)主条目相关的**佩勒升级表**子页面，列出在毁灭现实中使用现实碎片（Reality Shards）购买的不可重复升级。
+本页是[[ow-pelle|佩勒]]主条目相关的**佩勒升级表**子页面，列出在毁灭现实中使用现实碎片（Reality Shards）购买的不可重复升级。
 
 > 升级名称与 key 是游戏内部标识，保留英文原名；描述与成本已翻译。
 
@@ -48,7 +48,7 @@ review_status: "REVIEWED"
 
 ## 来源与许可
 
-- 原文：[Pelle/Upgrades](https://antimatterdimensions.wiki.gg/wiki/Pelle/Upgrades)（修订 ID `2707`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-pelle-upgrades|Pelle/Upgrades]]（修订 ID `2707`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Pelle/Upgrades&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与表格、统一术语、移除页签/导航模板、图片未转载；本页按相同许可共享。
 - 原文 ID 顺序为 0–19、22、20、21；译文按原表顺序保留，未重排。

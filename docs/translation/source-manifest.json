@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T13:44:24.122Z",
+ "generated_at": "2026-11-17T10:54:18.017Z",
  "source": {
   "site": "https://antimatterdimensions.wiki.gg",
   "api": "https://antimatterdimensions.wiki.gg/api.php",
@@ -26,8 +26,11 @@
  "coverage": {
   "total_pages": 68,
   "translated": 0,
-  "reviewed": 40,
-  "blocked": 0
+  "structure_checked": 60,
+  "reviewed": 0,
+  "verified": 0,
+  "blocked": 0,
+  "not_started": 8
  },
  "pages": [
   {
@@ -49,16 +52,16 @@
     "Stubs"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "成就",
+   "path": "content/original/ow-achievements.md",
+   "priority": 2,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch21：正文/全部成就行/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Achievements/Secret Achievements",
@@ -76,16 +79,16 @@
     "Pages with spoilers"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "秘密成就",
+   "path": "content/original/ow-achievements-secret-achievements.md",
+   "priority": 2,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch21：正文/全部成就行/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Ad Bonus",
@@ -106,13 +109,13 @@
    "zh_title": "广告加成",
    "path": "content/original/ow-ad-bonus.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": "batch6：正文完整翻译并校对；多页签模板展开为四表"
+   "notes": "batch6：正文完整翻译并校对；多页签模板展开为四表；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Advanced Glyph Mechanics",
@@ -253,13 +256,13 @@
    "zh_title": "反物质维度（游戏机制）",
    "path": "content/original/ow-antimatter-dimensions.md",
    "priority": 1,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Antimatter Dimensions Wiki",
@@ -497,13 +500,13 @@
    "zh_title": "反物质星系",
    "path": "content/original/ow-antimatter-galaxies.md",
    "priority": 1,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Antimatter Galaxy",
@@ -563,16 +566,16 @@
     "Stubs"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "自动化",
+   "path": "content/original/ow-automation.md",
+   "priority": 2,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch20：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Big Crunch",
@@ -615,13 +618,13 @@
    "zh_title": "黑洞",
    "path": "content/original/ow-black-hole.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch5：正文完整翻译并校对；图片未转载"
+   "notes": "batch5：正文完整翻译并校对；图片未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Break Infinity",
@@ -643,13 +646,13 @@
    "zh_title": "打破无限",
    "path": "content/original/ow-break-infinity.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Breaking Infinity",
@@ -868,13 +871,13 @@
    "zh_title": "天神导航",
    "path": "content/original/ow-celestial-navigation.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch12：正文与升级表完整翻译并校对；嵌入子页已在页面注明"
+   "notes": "batch12：正文与升级表完整翻译并校对；嵌入子页已在页面注明；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Celestial Navigation/Gallery",
@@ -889,16 +892,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "天神导航·图库",
+   "path": "content/original/ow-celestial-navigation-gallery.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch18：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Celestials",
@@ -919,13 +922,13 @@
    "zh_title": "天神",
    "path": "content/original/ow-celestials.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch4：正文完整翻译并校对；嵌入子页/图片未转载，已在页面注明"
+   "notes": "batch4：正文完整翻译并校对；嵌入子页/图片未转载，已在页面注明；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Challenges",
@@ -945,13 +948,13 @@
    "zh_title": "挑战",
    "path": "content/original/ow-challenges.md",
    "priority": 1,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Crunching",
@@ -1042,13 +1045,13 @@
    "zh_title": "时间膨胀",
    "path": "content/original/ow-dilation.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch3：正文完整翻译并校对；嵌入子页/图片未转载，已在页面注明"
+   "notes": "batch3：正文完整翻译并校对；嵌入子页/图片未转载，已在页面注明；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Dilation/Upgrades",
@@ -1066,13 +1069,13 @@
    "zh_title": "膨胀升级",
    "path": "content/original/ow-dilation-upgrades.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": "batch11：正文与升级表完整翻译并校对"
+   "notes": "batch11：正文与升级表完整翻译并校对；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Dilation/Upgrades (Doomed)",
@@ -1087,16 +1090,16 @@
     "Pages using Pelle wordshift classes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "膨胀升级（被毁灭的现实）",
+   "path": "content/original/ow-dilation-upgrades-doomed.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch18：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Dimension Boost",
@@ -1139,13 +1142,13 @@
    "zh_title": "维度提升",
    "path": "content/original/ow-dimension-boosts.md",
    "priority": 1,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Dimensional Sacrifice",
@@ -1166,13 +1169,13 @@
    "zh_title": "维度献祭",
    "path": "content/original/ow-dimensional-sacrifice.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch5：正文完整翻译并校对；图片未转载"
+   "notes": "batch5：正文完整翻译并校对；图片未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Dimensions",
@@ -1193,13 +1196,13 @@
    "zh_title": "维度",
    "path": "content/original/ow-dimensions.md",
    "priority": 1,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Effarig",
@@ -1219,13 +1222,13 @@
    "zh_title": "鹿颈长",
    "path": "content/original/ow-effarig.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch13：正文/表格/公式完整翻译，待校对；模板脚注改为页内脚注；图片未转载"
+   "notes": "batch13：正文/表格/公式完整翻译，待校对；模板脚注改为页内脚注；图片未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Effarig/Quotes",
@@ -1244,13 +1247,13 @@
    "zh_title": "鹿颈长·引语",
    "path": "content/original/ow-effarig-quotes.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch15：引语全文与触发条件完整翻译（8 个引语块逐块对应）；逐页核对通过"
+   "notes": "batch15：引语全文与触发条件完整翻译（引语块逐块对应原站）；结构与许可字段核对通过，逐段语义审校待复核"
   },
   {
    "title": "Eternities",
@@ -1290,13 +1293,13 @@
    "zh_title": "永恒",
    "path": "content/original/ow-eternity.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Eternity Challenges",
@@ -1319,13 +1322,13 @@
    "zh_title": "永恒挑战",
    "path": "content/original/ow-eternity-challenges.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch3：正文完整翻译并校对；嵌入子页/图片未转载，已在页面注明"
+   "notes": "batch3：正文完整翻译并校对；嵌入子页/图片未转载，已在页面注明；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Eternity Challenges/Challenges",
@@ -1340,16 +1343,16 @@
     "Pages with reference errors"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "永恒挑战·挑战明细",
+   "path": "content/original/ow-eternity-challenges-challenges.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch18：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Eternity Challenges/Challenges (Pelle)",
@@ -1364,16 +1367,16 @@
     "Pages with reference errors"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "永恒挑战·挑战明细（被毁灭的现实）",
+   "path": "content/original/ow-eternity-challenges-challenges-pelle.md",
+   "priority": 2,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch20：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Eternity Milestone",
@@ -1413,16 +1416,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "永恒里程碑",
+   "path": "content/original/ow-eternity-milestones.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch16：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Eternity Point",
@@ -1484,16 +1487,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "永恒升级",
+   "path": "content/original/ow-eternity-upgrades.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch16：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Glyph",
@@ -1534,16 +1537,16 @@
     "Stubs"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "符文炼金",
+   "path": "content/original/ow-glyph-alchemy.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch17：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Glyph Sacrifice",
@@ -1657,16 +1660,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "映像升级",
+   "path": "content/original/ow-imaginary-upgrades.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch17：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Infinite",
@@ -1730,13 +1733,13 @@
    "zh_title": "无限",
    "path": "content/original/ow-infinity.md",
    "priority": 1,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Infinity (disambiguation)",
@@ -1779,16 +1782,16 @@
     "Pages with spoilers"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "无限挑战",
+   "path": "content/original/ow-infinity-challenges.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch17：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Infinity Dimensions",
@@ -1811,13 +1814,13 @@
    "zh_title": "无限维度",
    "path": "content/original/ow-infinity-dimensions.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Infinity Point",
@@ -1881,13 +1884,13 @@
    "zh_title": "无限升级",
    "path": "content/original/ow-infinity-upgrades.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": "batch11：正文与升级表完整翻译并校对"
+   "notes": "batch11：正文与升级表完整翻译并校对；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Infinity Upgrades/Upgrades",
@@ -1903,13 +1906,13 @@
    "zh_title": "无限升级（升级表）",
    "path": "content/original/ow-infinity-upgrades-upgrades.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": "batch11：正文与升级表完整翻译并校对"
+   "notes": "batch11：正文与升级表完整翻译并校对；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Infinity Upgrades/Upgrades (Charged)",
@@ -1922,16 +1925,16 @@
    "size": 4027,
    "categories": [],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "充能无限升级",
+   "path": "content/original/ow-charged-infinity-upgrades.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch16：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Lai'tela",
@@ -1973,13 +1976,13 @@
    "zh_title": "莱特拉",
    "path": "content/original/ow-laitela.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch14：正文/熵与现实表/暗物质维度表/升格/湮灭/奇点/三类奇点里程碑（30 条）/相关成就完整翻译，待校对；图片未转载"
+   "notes": "batch14：正文/熵与现实表/暗物质维度表/升格/湮灭/奇点/三类奇点里程碑（30 条）/相关成就完整翻译，待校对；图片未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Laitela/Quotes",
@@ -1998,13 +2001,13 @@
    "zh_title": "莱特拉·引语",
    "path": "content/original/ow-laitela-quotes.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch15：引语全文与触发条件完整翻译（10 个引语块逐块对应）；逐页核对通过"
+   "notes": "batch15：引语全文与触发条件完整翻译（引语块逐块对应原站）；结构与许可字段核对通过，逐段语义审校待复核"
   },
   {
    "title": "Main Page",
@@ -2044,16 +2047,16 @@
     "Stubs"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "Mod 一览",
+   "path": "content/original/ow-mods.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch16：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Normal Challenges",
@@ -2071,16 +2074,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "普通挑战",
+   "path": "content/original/ow-normal-challenges.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch18：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Notations",
@@ -2100,13 +2103,13 @@
    "zh_title": "记数法",
    "path": "content/original/ow-notations.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": "batch8：正文完整翻译并校对；记数法名称与表情符号按原样保留"
+   "notes": "batch8：正文完整翻译并校对；记数法名称与表情符号按原样保留；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Overview",
@@ -2151,13 +2154,13 @@
    "zh_title": "佩勒",
    "path": "content/original/ow-pelle.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch14：正文/被毁灭现实/末日/5 项打击/5 个裂隙/15 项裂隙里程碑/结局与琐事完整翻译，待校对；原文结局节为占位内容已如实说明；图片未转载"
+   "notes": "batch14：正文/被毁灭现实/末日/5 项打击/5 个裂隙/15 项裂隙里程碑/结局与琐事完整翻译，待校对；原文结局节为占位内容已如实说明；图片未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Pelle/Quotes",
@@ -2201,13 +2204,13 @@
    "zh_title": "佩勒升级",
    "path": "content/original/ow-pelle-upgrades.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch12：正文与升级表完整翻译并校对；嵌入子页已在页面注明"
+   "notes": "batch12：正文与升级表完整翻译并校对；嵌入子页已在页面注明；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Perks",
@@ -2225,16 +2228,16 @@
     "Pages with spoilers"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "复兴",
+   "path": "content/original/ow-perks.md",
+   "priority": 2,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch19：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Prestige",
@@ -2254,13 +2257,13 @@
    "zh_title": "重置成长（威望）",
    "path": "content/original/ow-prestige.md",
    "priority": 1,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "batch1：正文完整翻译并校对；图片/信息框未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Ra",
@@ -2282,13 +2285,13 @@
    "zh_title": "太阳神",
    "path": "content/original/ow-ra.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch14：正文/现实表/25 行等级成本表/28 个里程碑/continuousTTBoost 公式表完整翻译，待校对；原文两处 T/Qa 记数法笔误已加译注；图片未转载"
+   "notes": "batch14：正文/现实表/25 行等级成本表/28 个里程碑/continuousTTBoost 公式表完整翻译，待校对；原文两处 T/Qa 记数法笔误已加译注；图片未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Ra/Quotes",
@@ -2307,13 +2310,13 @@
    "zh_title": "太阳神·引语",
    "path": "content/original/ow-ra-quotes.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch15：引语全文与触发条件完整翻译（14 个引语块逐块对应）；逐页核对通过"
+   "notes": "batch15：引语全文与触发条件完整翻译（引语块逐块对应原站）；结构与许可字段核对通过，逐段语义审校待复核"
   },
   {
    "title": "Reality",
@@ -2334,13 +2337,13 @@
    "zh_title": "现实",
    "path": "content/original/ow-reality.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch4：正文完整翻译并校对；嵌入子页/图片未转载，已在页面注明"
+   "notes": "batch4：正文完整翻译并校对；嵌入子页/图片未转载，已在页面注明；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Reality Upgrades",
@@ -2360,13 +2363,13 @@
    "zh_title": "现实升级",
    "path": "content/original/ow-reality-upgrades.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch10：可重复/不可重复升级与全部条件表完整翻译并校对"
+   "notes": "batch10：可重复/不可重复升级与全部条件表完整翻译并校对；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Replicanti",
@@ -2387,13 +2390,13 @@
    "zh_title": "复制器",
    "path": "content/original/ow-replicanti.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载"
+   "notes": "batch2：正文完整翻译并校对；图片/信息框未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Replicanti Galaxies",
@@ -2453,16 +2456,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "存档库",
+   "path": "content/original/ow-save-bank.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch17：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Secret achievement",
@@ -2524,16 +2527,16 @@
     "Stubs"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "快捷键",
+   "path": "content/original/ow-shortcuts.md",
+   "priority": 2,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch20：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Tachyon Particles",
@@ -2575,13 +2578,13 @@
    "zh_title": "特蕾莎",
    "path": "content/original/ow-teresa.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch13：正文/表格/公式/引语完整翻译，待校对；信息框改写为要点表；图片未转载"
+   "notes": "batch13：正文/表格/公式/引语完整翻译，待校对；信息框改写为要点表；图片未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Terminology",
@@ -2601,13 +2604,13 @@
    "zh_title": "术语（佩勒用词）",
    "path": "content/original/ow-terminology.md",
    "priority": 3,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": "batch7：正文完整翻译并校对；多义词占位保留原样"
+   "notes": "batch7：正文完整翻译并校对；多义词占位保留原样；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Tesseracts",
@@ -2650,13 +2653,13 @@
    "zh_title": "无名氏",
    "path": "content/original/ow-nameless-ones.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch13：正文/现实效果表/超立方体数据表完整翻译，待校对；图片未转载"
+   "notes": "batch13：正文/现实效果表/超立方体数据表完整翻译，待校对；图片未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "The Nameless Ones/Quotes",
@@ -2675,13 +2678,13 @@
    "zh_title": "无名氏·引语",
    "path": "content/original/ow-nameless-ones-quotes.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch15：引语全文与触发条件完整翻译（6 个引语块逐块对应）；逐页核对通过"
+   "notes": "batch15：引语全文与触发条件完整翻译（引语块逐块对应原站）；结构与许可字段核对通过，逐段语义审校待复核"
   },
   {
    "title": "Tickspeed",
@@ -2703,16 +2706,16 @@
     "Stubs"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "计数频率",
+   "path": "content/original/ow-tickspeed.md",
+   "priority": 2,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch19：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Tickspeed/Galaxy count breakdown (Doomed)",
@@ -2727,16 +2730,16 @@
     "Pages using Pelle wordshift classes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
+   "zh_title": "计数频率·星系数量明细（被毁灭的现实）",
+   "path": "content/original/ow-tickspeed-galaxy-breakdown-doomed.md",
+   "priority": 3,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": ""
+   "notes": "batch17：正文/表格/公式/来源字段完整翻译并结构核对；未做逐段语义审校，记 STRUCTURE CHECKED"
   },
   {
    "title": "Tickspeed/Galaxy strength breakdown (Doomed)",
@@ -2803,13 +2806,13 @@
    "zh_title": "时间维度",
    "path": "content/original/ow-time-dimensions.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch3：正文完整翻译并校对；嵌入子页/图片未转载，已在页面注明"
+   "notes": "batch3：正文完整翻译并校对；嵌入子页/图片未转载，已在页面注明；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Time Studies",
@@ -2831,13 +2834,13 @@
    "zh_title": "时间研究",
    "path": "content/original/ow-time-studies.md",
    "priority": 2,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": false,
    "last_source_check": "2026-11-15",
-   "notes": "batch9：正文与全部研究表完整翻译并校对"
+   "notes": "batch9：正文与全部研究表完整翻译并校对；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "Time Theorems",
@@ -2881,13 +2884,13 @@
    "zh_title": "薇",
    "path": "content/original/ow-v.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch14：正文/六项解锁要求/36 个 V 成就表/空间之理表/7 个里程碑/困难 V 成就表/琐事完整翻译，待校对；图片未转载"
+   "notes": "batch14：正文/六项解锁要求/36 个 V 成就表/空间之理表/7 个里程碑/困难 V 成就表/琐事完整翻译，待校对；图片未转载；2026-11-15 质量门禁：仅有结构核对（章节/表格/公式/来源字段），未做逐段语义审校，按 wiki-rules 等级降为 STRUCTURE CHECKED"
   },
   {
    "title": "V/Quotes",
@@ -2906,13 +2909,13 @@
    "zh_title": "薇·引语",
    "path": "content/original/ow-v-quotes.md",
    "priority": 4,
-   "status": "REVIEWED",
-   "review_status": "REVIEWED",
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
    "license_status": "CC-BY-SA-4.0-CONFIRMED",
    "third_party": "NONE-DETECTED-TEXT-ONLY",
    "media_omitted": true,
    "last_source_check": "2026-11-15",
-   "notes": "batch15：引语全文与触发条件完整翻译（11 个引语块逐块对应）；逐页核对通过"
+   "notes": "batch15：引语全文与触发条件完整翻译（引语块逐块对应原站）；结构与许可字段核对通过，逐段语义审校待复核"
   }
  ]
 }

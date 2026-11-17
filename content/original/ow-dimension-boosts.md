@@ -10,19 +10,19 @@ original_revid: 3333
 original_fetched_at: "2026-11-15T21:10:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
-**维度提升**（Dimension Boosts，有时简称 **Dimboosts**）是游戏中的第一个威望（Prestige）机制，为[反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)提供加成并解锁新的维度。它们会被[无限](https://antimatterdimensions.wiki.gg/wiki/Infinity)与[反物质星系](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Galaxies)重置。
+**维度提升**（Dimension Boosts，有时简称 **Dimboosts**）是游戏中的第一个威望（Prestige）机制，为[[ow-antimatter-dimensions|反物质维度]]提供加成并解锁新的维度。它们会被[[ow-infinity|无限]]与[[ow-antimatter-galaxies|反物质星系]]重置。
 
 ## 机制
 
-执行一次维度提升会重置反物质与[反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)，换来若干收益：
+执行一次维度提升会重置反物质与[[ow-antimatter-dimensions|反物质维度]]，换来若干收益：
 
 - 前四次维度提升分别解锁第 5、6、7、8 反物质维度；
-- 第五次维度提升解锁[维度献祭](https://antimatterdimensions.wiki.gg/wiki/Dimensional_Sacrifice)；
-- 每次维度提升都会给部分[反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)一个 $\times 2$ 倍率。被加成的维度数量随维度提升次数增加，直到第 8 次及以后，会加成所有[反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)。
+- 第五次维度提升解锁[[ow-dimensional-sacrifice|维度献祭]]；
+- 每次维度提升都会给部分[[ow-antimatter-dimensions|反物质维度]]一个 $\times 2$ 倍率。被加成的维度数量随维度提升次数增加，直到第 8 次及以后，会加成所有[[ow-antimatter-dimensions|反物质维度]]。
 
 前 5 次维度提升需要当前最高已解锁维度达到 $20$ 个才能执行，其中第 5 次需要 $20$ 个第 8 维度。第 5 次之后的所有维度提升，都需要比上一次多 $15$ 个第 8 维度。
 
@@ -41,10 +41,10 @@ review_status: "REVIEWED"
 
 维度提升的初始价格以及成长增量，可以被游戏更后期的某些升级降低：
 
-- 第一列的第 4 个[无限升级](https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades)会把维度提升与[反物质星系](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Galaxies)的初始价格降低 $9$ 个维度，使其变为 $11$ 个而不是 $20$ 个；
-- [无限挑战 5](https://antimatterdimensions.wiki.gg/wiki/Infinity_Challenges)会把维度提升与[反物质星系](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Galaxies)的初始价格降低 $1$；
-- [时间研究](https://antimatterdimensions.wiki.gg/wiki/Time_Studies) 211 与 222 分别把维度提升的增量降低 $5$ 与 $2$；
-- 充能[无限升级](https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades)（第一列第 4 行）会进一步降低维度提升的需求。
+- 第一列的第 4 个[[ow-infinity-upgrades|无限升级]]会把维度提升与[[ow-antimatter-galaxies|反物质星系]]的初始价格降低 $9$ 个维度，使其变为 $11$ 个而不是 $20$ 个；
+- [[ow-challenges|无限挑战 5]]会把维度提升与[[ow-antimatter-galaxies|反物质星系]]的初始价格降低 $1$；
+- [[ow-time-studies|时间研究]] 211 与 222 分别把维度提升的增量降低 $5$ 与 $2$；
+- 充能[[ow-infinity-upgrades|无限升级]]（第一列第 4 行）会进一步降低维度提升的需求。
 
 ## 琐事
 
@@ -52,7 +52,7 @@ review_status: "REVIEWED"
 
 ## 来源与许可
 
-- 原文：[Dimension Boosts](https://antimatterdimensions.wiki.gg/wiki/Dimension_Boosts)（修订 ID `3333`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-dimension-boosts|Dimension Boosts]]（修订 ID `3333`；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Dimension_Boosts&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与表格、统一术语、移除导航模板与信息框、图片未转载；本页按相同许可共享。
 - 原文表格中的合并单元格按普通表格展开；数值与文字未改动。

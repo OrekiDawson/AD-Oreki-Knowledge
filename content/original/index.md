@@ -12,6 +12,12 @@ tags:
 
 这里的文章讲的是**原版游戏**：数值、公式、解锁条件都按原文保留；MOD 的改动不写入译文，而是在 MOD 专题中单独说明。若想了解 MOD 与原版的差异，请阅读 [原版行为与 Oreki Edition 修改](/gameplay/original-vs-mod)。
 
+## 依照游戏阶段阅读
+
+第一次阅读建议从 [[ow-dimensions|维度]]、[[ow-infinity|无限]]、[[ow-eternity|永恒]]、[[ow-reality|现实]] 依次开始。要找具体系统，可直接进入 [[ow-challenges|挑战]]、[[ow-time-studies|时间研究]]、[[ow-dilation|时间膨胀]] 与 [[ow-celestials|天神]]。
+
+**翻译覆盖与内容质量是两个指标**：目前 60/68 篇完成结构核对，但逐段语义审校与游戏内复核覆盖率仍为 0%。阅读具体数字或条件时，最好同时核对译文页底的英文原文链接和修订 ID。
+
 ## 来源、许可与署名
 
 - 原文站点：`https://antimatterdimensions.wiki.gg`
@@ -25,14 +31,25 @@ tags:
 | 指标 | 数值 |
 | --- | --- |
 | 原版正文条目总数（主命名空间 article） | 68 |
-| 已完成并校对（REVIEWED） | 40 |
-| 已翻译未校对（TRANSLATED） | 0 |
+| 已完成翻译与**结构核对**（STRUCTURE CHECKED） | 60 |
+| 已完成逐段语义审校（REVIEWED） | 0 |
+| 已与游戏源码/运行证据核实（VERIFIED AGAINST GAME） | 0 |
+| 已翻译未核对（TRANSLATED） | 0 |
 | 许可阻塞（BLOCKED） | 0 |
-| 覆盖率 | 40 / 68（58.8%） |
+| 尚未开始（NOT STARTED） | 8 |
+| **已审校覆盖率** | **0 / 68（0.0%）** |
+| 结构核对覆盖率 | 60 / 68（88.2%） |
 
-> 口径：覆盖率 = 已完成并校对的合规正文页数 ÷ 合规正文页总数。转写中（IN PROGRESS）与仅登记（NOT STARTED）不计入。清单中的重定向页、消歧义页与站点元页面不进入分母。
+> 口径（详见 [[wiki-rules|知识库规则]]「内容验收等级」）：
+> - **STRUCTURE CHECKED**：章节、表格、公式、来源/许可字段与原站结构一致——**不算语义审校**，不计入已审校覆盖率；
+> - **REVIEWED**：对照原文逐段审校，必须有页面级审校记录；
+> - **VERIFIED AGAINST GAME**：关键机制/数值已与源码或运行证据交叉核实。
+>
+> 已审校覆盖率 = （REVIEWED + VERIFIED）÷ 合规正文页总数；结构核对覆盖率 = STRUCTURE CHECKED ÷ 总数。重定向页、消歧义页与站点元页面不进入分母。
+>
+> 2026-11-15 的内容修正（动态模板文本、繁体、外链内链化、占位符解释）与逐页问题清单见 [2026-11-15 内容审校记录](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/translation/reviews/2026-11-15-content-review.md)。
 
-## 第一批（已完成并校对）
+## 第一批（已完成翻译与结构核对）
 
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
@@ -44,7 +61,7 @@ tags:
 | [[ow-challenges|挑战]] | [Challenges](https://antimatterdimensions.wiki.gg/wiki/Challenges) | 3106 |
 | [[ow-infinity|无限]] | [Infinity](https://antimatterdimensions.wiki.gg/wiki/Infinity) | 3113 |
 
-## 第二批（已完成并校对）
+## 第二批（已完成翻译与结构核对）
 
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
@@ -53,7 +70,7 @@ tags:
 | [[ow-eternity|永恒]] | [Eternity](https://antimatterdimensions.wiki.gg/wiki/Eternity) | 3118 |
 | [[ow-replicanti|复制器]] | [Replicanti](https://antimatterdimensions.wiki.gg/wiki/Replicanti) | 3350 |
 
-## 第三批（已完成并校对）
+## 第三批（已完成翻译与结构核对）
 
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
@@ -61,51 +78,51 @@ tags:
 | [[ow-eternity-challenges|永恒挑战]] | [Eternity Challenges](https://antimatterdimensions.wiki.gg/wiki/Eternity_Challenges) | 3347 |
 | [[ow-dilation|时间膨胀]] | [Dilation](https://antimatterdimensions.wiki.gg/wiki/Dilation) | 3323 |
 
-## 第四批（已完成并校对）
+## 第四批（已完成翻译与结构核对）
 
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
 | [[ow-reality|现实]] | [Reality](https://antimatterdimensions.wiki.gg/wiki/Reality) | 3235 |
 | [[ow-celestials|天神]] | [Celestials](https://antimatterdimensions.wiki.gg/wiki/Celestials) | 3187 |
 
-## 第五批（已完成并校对）
+## 第五批（已完成翻译与结构核对）
 
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
 | [[ow-black-hole|黑洞]] | [Black Hole](https://antimatterdimensions.wiki.gg/wiki/Black_Hole) | 3360 |
 | [[ow-dimensional-sacrifice|维度献祭]] | [Dimensional Sacrifice](https://antimatterdimensions.wiki.gg/wiki/Dimensional_Sacrifice) | 3397 |
 
-## 第六批（已完成并校对）
+## 第六批（已完成翻译与结构核对）
 
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
 | [[ow-ad-bonus|广告加成]] | [Ad Bonus](https://antimatterdimensions.wiki.gg/wiki/Ad_Bonus) | 3096 |
 
-## 第七批（已完成并校对）
+## 第七批（已完成翻译与结构核对）
 
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
 | [[ow-terminology|术语（佩勒用词）]] | [Terminology](https://antimatterdimensions.wiki.gg/wiki/Terminology) | 3098 |
 
-## 第八批（已完成并校对）
+## 第八批（已完成翻译与结构核对）
 
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
 | [[ow-notations|记数法]] | [Notations](https://antimatterdimensions.wiki.gg/wiki/Notations) | 3133 |
 
-## 第九批（已完成并校对）
+## 第九批（已完成翻译与结构核对）
 
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
 | [[ow-time-studies|时间研究]] | [Time Studies](https://antimatterdimensions.wiki.gg/wiki/Time_Studies) | 3343 |
 
-## 第十批（已完成并校对）
+## 第十批（已完成翻译与结构核对）
 
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
 | [[ow-reality-upgrades|现实升级]] | [Reality Upgrades](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades) | 3357 |
 
-## 第十一批（已完成并校对）
+## 第十一批（已完成翻译与结构核对）
 
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
@@ -113,14 +130,14 @@ tags:
 | [[ow-infinity-upgrades-upgrades|无限升级（升级表）]] | [Infinity Upgrades/Upgrades](https://antimatterdimensions.wiki.gg/wiki/Infinity_Upgrades/Upgrades) | 2909 |
 | [[ow-dilation-upgrades|膨胀升级]] | [Dilation/Upgrades](https://antimatterdimensions.wiki.gg/wiki/Dilation/Upgrades) | 3158 |
 
-## 第十二批（已完成并校对）
+## 第十二批（已完成翻译与结构核对）
 
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
 | [[ow-celestial-navigation|天神导航]] | [Celestial Navigation](https://antimatterdimensions.wiki.gg/wiki/Celestial_Navigation) | 3361 |
 | [[ow-pelle-upgrades|佩勒升级]] | [Pelle/Upgrades](https://antimatterdimensions.wiki.gg/wiki/Pelle/Upgrades) | 2707 |
 
-## 第十三批（已完成并校对）
+## 第十三批（已完成翻译与结构核对）
 
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
@@ -128,9 +145,9 @@ tags:
 | [[ow-effarig|鹿颈长]] | [Effarig](https://antimatterdimensions.wiki.gg/wiki/Effarig) | 3371 |
 | [[ow-nameless-ones|无名氏]] | [The Nameless Ones](https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones) | 3372 |
 
-> 第十三、十四批共 7 篇已于 2026-11-15 完成逐页核对（机器辅助翻译 + Agent 逐页核对，记录见 `docs/translation/reviews/audit-2026-11-15.md`），状态升为 REVIEWED 并计入覆盖率。
+> 第十三、十四批共 7 篇有结构核对记录，但**仍属 STRUCTURE CHECKED**，未完成满足逐段语义审校标准的页面级审阅，因而不计入 REVIEWED 覆盖率。核对口径见 [翻译覆盖率台账](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/WIKI-COVERAGE.md)。
 
-## 第十四批（已完成并校对）
+## 第十四批（已完成翻译与结构核对）
 
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
@@ -139,9 +156,9 @@ tags:
 | [[ow-laitela|莱特拉]] | [Lai'tela](https://antimatterdimensions.wiki.gg/wiki/Lai%27tela) | 3375 |
 | [[ow-pelle|佩勒]] | [Pelle](https://antimatterdimensions.wiki.gg/wiki/Pelle) | 3376 |
 
-> 至此**七位天神的正篇全部译完并完成逐页核对**（第十三、十四批合计 7 篇，均 REVIEWED）。
+> 至此**七位天神的正篇全部译完并完成逐页核对**（第十三、十四批合计 7 篇，均为 STRUCTURE CHECKED（未做逐段语义审校））。
 
-## 第十五批（已完成并校对）
+## 第十五批（已完成翻译与结构核对）
 
 | 中文条目 | 原文 | 修订 ID |
 | --- | --- | --- |
@@ -149,7 +166,9 @@ tags:
 | [[ow-nameless-ones-quotes|无名氏·引语]] | [The Nameless Ones/Quotes](https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones/Quotes) | 2790 |
 | [[ow-v-quotes|薇·引语]] | [V/Quotes](https://antimatterdimensions.wiki.gg/wiki/V/Quotes) | 2784 |
 | [[ow-ra-quotes|太阳神·引语]] | [Ra/Quotes](https://antimatterdimensions.wiki.gg/wiki/Ra/Quotes) | 2782 |
-| [[ow-laitela-quotes|莱特拉·引语]] | [Lai'tela/Quotes](https://antimatterdimensions.wiki.gg/wiki/Lai%27tela/Quotes) | 2773 |
+| [[ow-laitela-quotes|莱特拉·引语]] | [Laitela/Quotes](https://antimatterdimensions.wiki.gg/wiki/Laitela/Quotes) | 2773 |
+
+> 第十五批 5 篇已完成引语块、触发条件、台词行与许可字段的结构核对；逐段语义审校仍待复核，因此记为 **STRUCTURE CHECKED**，不计入已审校覆盖率。核对记录见 [audit-2026-11-15.md](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/translation/reviews/audit-2026-11-15.md) 追加节。
 
 ## 后续批次（按游戏流程排序）
 

@@ -7,7 +7,7 @@ tags:
 ---
 
 
-Oreki Edition 的 Android 端以官方 3.21.0 APK 为冻结基线，在它的混淆 DEX 之上运行 MOD 新增的 Kotlin 业务代码。本条目解释工程的整体形态、各类输入从哪里来，以及为什么构建必须经过一组 fail-closed 守卫。
+Oreki Edition 的 Android 端以官方 3.21.0 APK 为冻结基线：官方混淆 DEX 保持只读，MOD 新增的 Kotlin 业务代码运行在它之上。这样的组合决定了工程形态和构建方式——游戏类要从官方 DEX 转换而来，新增代码必须对齐官方 ABI，构建时还要有一组 fail-closed 守卫把运行期才暴露的问题提前到编译期。
 
 ## 冻结基线
 
@@ -31,7 +31,7 @@ Android 基线固定为官方 3.21.0，长期不自动升级：
 - 生产 Kotlin 业务源码已迁入 `app/src/main/kotlin/`（S2-6 完成），见 [[directory-migration|目录标准化迁移]]；
 - 游戏类输入由构建脚本从官方 DEX 转换并生成 game jar，见 [[agp|AGP 构建管线]]。
 
-「目录迁移完成」不等于「AGP 原生完整游戏可发布」：正式生产入口仍是受保护门禁下的 AGP 完整游戏构建，而该门禁当前是 BLOCKED（见 [[release-status|发布状态]]）。
+「目录迁移完成」不等于「所有 AGP-only 构建路径均已验收」。截至 2026-11-16，受保护候选构建、独立验签与正式发布已有成功记录；此前 2026-11-15 的 AGP-only 门禁阻塞属于历史状态，不能据此断言当前发布仍 BLOCKED（见 [[release-status|发布状态]]）。
 
 ## 构建分层
 
@@ -46,21 +46,23 @@ Android 基线固定为官方 3.21.0，长期不自动升级：
 ## 关键约束
 
 - 包名固定 `com.oreki.antimatterdimensions`，签名证书固定 `95960bce…3197`，见 [[apk-signing|APK 签名与升级兼容]]。
-- `versionCode` 必须严格大于历史发布最大值（当前 30210000）。
+- MOD 每次正式发布的 `versionCode` 必须严格大于历史已发布最大值。截至 **2026-11-17**，发布策略记录的已发布最大值为 `30210001`；下一候选策略值为 `30210002`，**不能据此认定已正式发布**。官方 3.21.0 基线的 `30210000` 不变。
 - 不得新增 Java/Smali 游戏业务实现；新业务必须用 Kotlin。
 - 官方 3.21.0 DEX 是只读基线，修改通过已核实 ABI 的适配层完成，方法见 [[dex-abi|DEX 与 ABI 反混淆]]。
 
-## 已确认与未确认
+## 现状与边界
 
-- **已确认**：基线身份、工程双入口现状、构建分层与守卫内容；本地完整游戏 APK 可产出并有 AVD 记录。
-- **未确认**：受保护 Candidate 构建未通过（签名环境未批准 + AGP-only 门禁 fail-closed），正式发布 NOT RUN。
-- **版本边界**：以上描述对应 Android 3.21.0 与 AGP 9.5.1；其他版本不保证一致。
+基线身份、工程双入口、构建分层与守卫内容已有源码证据。**2026-11-16** 的 Android `30210001` 已公开 [GitHub Release](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/releases/tag/android-update-3.21.0-a12b5cd6)，对应受保护[候选构建](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43735315296)、[独立验证](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43735739171)和[正式发布作业](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43761268754)均记录成功；不能再称“正式发布 NOT RUN”。**核验边界**：本地 SSH/SFTP 第四渠道的实物拉取、该版本全部 AVD 场景及 AGP-only 路径的独立覆盖验收仍须查证，不能由 GitHub Release 存在推定全部 PASS。
+
+以上描述对应 Android 3.21.0 与 AGP 9.5.1；换到其他基线或工具链版本时，需要重新核实，不能直接套用。
 
 ## 参考资料
 
 - [冻结基线 manifest](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/baseline/versions/3.21/manifest.json)
 - [docs/FACTS.md 第 6 节（基线与基线管理）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/build.md#f-6)
 - [Android 仓库 AGENTS.md](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/AGENTS.md)
+- [Android 已公开 Release：android-update-3.21.0-a12b5cd6（2026-11-16）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/releases/tag/android-update-3.21.0-a12b5cd6)
+- [发布门禁策略（核实日期：2026-11-17）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/scripts/release-gate-policy.json)
 
 ## 相关条目
 

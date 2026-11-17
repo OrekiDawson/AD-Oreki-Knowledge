@@ -1,0 +1,42 @@
+{
+ "run": "43951532150",
+ "date": "2026-11-16",
+ "changed": [
+  {
+   "repo": "OrekiDawson/AD-Oreki-Edition-Android",
+   "path": "AGENTS.md",
+   "sha": "10ab95780d2ede742b04eae30702f735f4250344"
+  },
+  {
+   "repo": "OrekiDawson/AD-Oreki-Edition-Android",
+   "path": "docs/FACTS.md",
+   "sha": "05434664dfb79ecdaa0ddf1c5485d441e488b2e7"
+  },
+  {
+   "repo": "OrekiDawson/AD-Oreki-Edition-Android",
+   "path": "docs/DELIVERY_RULES.md",
+   "sha": "8e288779ab69d12fb2dcc943b33156f91cb72adb"
+  },
+  {
+   "repo": "OrekiDawson/AD-Oreki-Edition-Web",
+   "path": "AGENTS.md",
+   "sha": "c032ca320e38f4569aede75b9afee68c5067a0d3"
+  }
+ ],
+ "drafts": [
+  {
+   "path": "content/ai-drafts/2026-11-16-agents-md-10ab9578.md",
+   "facts": 11
+  },
+  {
+   "path": "content/ai-drafts/2026-11-16-docs-facts-md-05434664.md",
+   "facts": 12
+  }
+ ],
+ "dropped": 1,
+ "usage": {
+  "prompt": 9938,
+  "completion": 3133,
+  "calls": 4
+ }
+}

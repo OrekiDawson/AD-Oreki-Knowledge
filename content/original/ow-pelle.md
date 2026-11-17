@@ -10,55 +10,64 @@ original_revid: 3376
 original_fetched_at: "2026-11-15T21:26:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
-translation_status: "REVIEWED"
-review_status: "REVIEWED"
+translation_status: "STRUCTURE CHECKED"
+review_status: "STRUCTURE CHECKED"
 ---
 
 > 你在这里。[无限/永远/永恒]。
 
-**佩勒（Pelle，符号为 ♅）**是第七位、也是最后一位[天神](https://antimatterdimensions.wiki.gg/wiki/Celestials)。他会长久地「毁灭」玩家的游戏，把玩家抛入一个极难且无法逃离的改造现实。购买[最后一个虚幻升级「无所不在的抹除（Omnipresent Obliteration）」](https://antimatterdimensions.wiki.gg/wiki/Imaginary_Upgrades)即可解锁他。进入[佩勒的现实](#被毁灭的现实)的条件还包括：取得剩余 17 行可用的[成就](https://antimatterdimensions.wiki.gg/wiki/Achievements)，并让[符文炼金](https://antimatterdimensions.wiki.gg/wiki/Glyph_Alchemy)的全部资源都达到 $25,000$。
+（方括号内是原站保留的**词形变换**占位：游戏会按进度把它显示成 Infinite / Forever / Eternal 之一；含义见下节「词形变换与占位符说明」。）
 
-当这些条件全部达成后，进入天神现实的要求位置会出现不祥的文字「Doom Your Reality（毁灭你的现实）」。
+佩勒（Pelle，符号 ♅）是第七位、也是最后一位[[ow-celestials|天神]]。他做的不是挑战书，而是一个结局：把玩家的游戏永久「毁灭」，再把人丢进一个极难、且无法逃离的改造现实里。解锁他只是买下[最后一个虚幻升级「无所不在的抹除（Omnipresent Obliteration）」](https://antimatterdimensions.wiki.gg/wiki/Imaginary_Upgrades)；要真正踏进[他的现实](#被毁灭的现实)，还得补齐剩下 17 行[成就](https://antimatterdimensions.wiki.gg/wiki/Achievements)，并让[符文炼金](https://antimatterdimensions.wiki.gg/wiki/Glyph_Alchemy)的每种资源都堆到 $25,000$。
 
-佩勒是《反物质维度》的总反派。
+条件齐备之后，原本写着天神现实要求的位置会换上一行不祥的字：「Doom Your Reality」——毁灭你的现实。
 
-原页另有子页面「引语（Quotes）」与「升级（Upgrades）」，本轮批次未译，见文末相关条目。原文此页带有「卡顿警告（Lag Warn）」与「小作品（Stub）」站点维护标记，属于原站编辑提示，不是玩法内容。
+他是《反物质维度》的总反派。原页另有「引语」与「升级」两个子页面，引语待后续批次翻译；页面顶部还挂着「卡顿警告」与「小作品」两个站点维护标记，那不是玩法内容。
 
-## 信息框要点
+## 词形变换与占位符说明
 
-| 项目 | 内容 |
-| --- | --- |
-| 称号 | 反物质之神（Celestial of Antimatter） |
-| 别号 | 永恒（Eternal）；别名：[永恒/神明/毁灭者] |
-| 解锁条件 | 购买虚幻升级「无所不在的抹除」 |
-| 相关货币 | [遗物（Remnants）](#末日)、[现实碎片（RS）](#末日)[^pelle-rs] |
-| 机制 | 佩勒升级、[裂痕](#裂痕) |
-| 现实解锁条件 | 17 行成就；每种炼金资源达到 25,000 |
-| 现实惩罚 | [冲击](#佩勒的冲击) |
-| 现实特性 | 你无法逃离被毁灭的现实 |
-| 加入版本 | 网页版：现实更新（2022 年 12 月 17 日）；Android：现实更新（2024 年 4 月 1 日）；Steam 与 iOS：首发即包含 |
+佩勒的页面里有两类看起来像「没翻译」的写法，它们不是漏译，而是原站必须保留的标记，先解释清楚。
 
-[^pelle-rs]: 原文脚注：不要与[鹿颈长](https://antimatterdimensions.wiki.gg/wiki/Effarig)的[遗迹碎片（Relic Shards）](https://antimatterdimensions.wiki.gg/wiki/Effarig#Relic_Shards)混淆！
+第一类是**词形变换（wordshift）**。进了他的「被毁灭的现实」，界面上的关键词会随进度换成不同的词形，原站便用 `[A/B/C]` 表示同一概念的不同写法——不是三件事，也不是让玩家三选一。本页保留 `[A/B/C]` 原样，实际含义见下表。
 
+第二类是**数值占位符 `{value}`**：裂痕效果里要显示的是实时数值（比如某条裂痕填满时的 `×1.50e67,311`），原站用占位符表示「这里会显示当前数字」，译文同样保留，不去猜。
+
+### 词形与英文原名对照
+
+| 原站写法 | 英文词形链 | 说明 |
+| --- | --- | --- |
+| [无限/永远/永恒] | Infinite / Forever / Eternal | 佩勒引语中的三阶段词形；游戏内对应 `forever` 字符串 `Infinite\|Forever\|Eternal`，官方简体中文为「无尽之地｜永恒流转｜不息轮回」 |
+| [永恒/神明/毁灭者] | Eternal / Deity / Destroyer | 佩勒的别号词形链（info 框 celestialAliases） |
+| [真空/空洞/虚空] | Vacuum / Hollow / Void | 第 1 条裂隙的词形链（基础名以游戏数据 `Vacuum` 为准） |
+| [衰变/崩解/混乱] | Decay / Collapse / Disarray | 第 2 条裂隙的词形链（基础名 `Decay`） |
+| [混沌/无序/杂质] | Chaos / Disorder / Impurity | 第 3 条裂隙的词形链（基础名 `Chaos`） |
+| [递归/弥散/毁灭] | Recursion / Dispersion / Destruction | 第 4 条裂隙的词形链（基础名 `Recursion`） |
+| [悖论/矛盾/谬误] | Paradox / Contradiction / Fallacy | 第 5 条裂隙的词形链（基础名 `Paradox`） |
+
+依据：游戏数据中裂隙基础名为 `Vacuum / Decay / Chaos / Recursion / Paradox`（Web 冻结源 `src/core/secret-formula/celestials/navigation.js` 的 riftNames），词形链与官方简体中文取自 Android 3.21.0 `values-zh-rCN/strings.xml` 对应字符串。
+
+## 档案
+
+佩勒，反物质之神，别号「永恒」。要见到他，先买下最后一个虚幻升级「无所不在的抹除」；要进他的现实，还得补齐剩下 17 行[成就](https://antimatterdimensions.wiki.gg/wiki/Achievements)，并让[符文炼金](https://antimatterdimensions.wiki.gg/wiki/Glyph_Alchemy)的每种资源都到 $25,000$。他的货币是[遗物](https://antimatterdimensions.wiki.gg/wiki/Pelle#Armageddon)与[现实碎片](https://antimatterdimensions.wiki.gg/wiki/Pelle#Armageddon)，机制上带来佩勒升级与[裂痕](#裂痕)，现实的惩罚则是[冲击](#佩勒的冲击)。一旦进去，就没有退路。网页版与 Android 分别在 2022 年 12 月 17 日、2024 年 4 月 1 日随现实更新加入，Steam 与 iOS 首发即有。
 ## 被毁灭的现实
 
-毁灭你的现实与进入任何挑战或天神现实类似：会强制进行一次威望重置。随即，几乎所有现实之后的功能都会被禁用，从[现实升级](https://antimatterdimensions.wiki.gg/wiki/Reality_Upgrades)的便利性升级，到[莱特拉](https://antimatterdimensions.wiki.gg/wiki/Lai%27tela)提供的强力奖励——也就是说，在强制现实重置之后，你再次只剩下 100 反物质。
+毁灭你的现实与进入任何挑战或天神现实类似：会强制进行一次威望重置。随即，几乎所有现实之后的功能都会被禁用，从[[ow-reality-upgrades|现实升级]]的便利性升级，到[莱特拉](https://antimatterdimensions.wiki.gg/wiki/Lai%27tela)提供的强力奖励——也就是说，在强制现实重置之后，你再次只剩下 100 反物质。
 
-即使被佩勒禁用了大量在「毁灭」之前获得的加成，仍会施加额外的永久减益（以及[临时](#佩勒的冲击)减益），例如反物质维度产量变慢 $*10$，以及诸如[星系](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Galaxies)效果仅有 $50\%$ 这样针对最强机制的削弱。佩勒惩罚的完整清单见子页面「被毁灭现实的惩罚（Doomed Penalties）」。
+即使被佩勒禁用了大量在「毁灭」之前获得的加成，仍会施加额外的永久减益（以及[临时](#佩勒的冲击)减益），例如反物质维度产量变慢 $*10$，以及诸如[[ow-antimatter-galaxies|星系]]效果仅有 $50\%$ 这样针对最强机制的削弱。佩勒惩罚的完整清单见子页面「被毁灭现实的惩罚（Doomed Penalties）」。
 
 ### 末日
 
-与执行[现实](https://antimatterdimensions.wiki.gg/wiki/Reality)重置的能力不同，「创造新的现实（Make a new Reality）」按钮被替换为执行「末日（Armageddon）」以获取现实碎片的能力。
+与执行[[ow-reality|现实]]重置的能力不同，「创造新的现实（Make a new Reality）」按钮被替换为执行「末日（Armageddon）」以获取现实碎片的能力。
 
 ## 佩勒的冲击
 
 | ID（编号） | 要求 | 惩罚 | 奖励 | 其它细节 | ID（名称） |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 达到[无限](https://antimatterdimensions.wiki.gg/wiki/Infinity) | [反物质维度](https://antimatterdimensions.wiki.gg/wiki/Antimatter_Dimensions)被提升到 $^{0.5}$ 次方 | 解锁[真空/空洞/虚空]，并获得一个永久性无限自动购买器 | 该惩罚效果等同于开平方根 | infinity |
-| 2 | 强化星系（购买 $5\text{e}11$ IP 的[打破无限](https://antimatterdimensions.wiki.gg/wiki/Break_Infinity)升级） | [无限维度](https://antimatterdimensions.wiki.gg/wiki/Infinity_Dimensions)被提升到 $^{0.5}$ 次方 | 解锁[衰变/崩解/混乱] | 该惩罚效果等同于开平方根 | powerGalaxies |
-| 3 | 达到[永恒](https://antimatterdimensions.wiki.gg/wiki/Eternity) | [复制器](https://antimatterdimensions.wiki.gg/wiki/Replicanti)速度在 $\text{e}2,000$ 以上进一步变慢 | 解锁[混沌/无序/杂质] | 每位于 $\text{e}2,000$ 之上一个数量级，复制器间隔乘以 $\times10$ | eternity |
-| 4 | 达到 $115$ 时间之理 | 在[永恒挑战](https://antimatterdimensions.wiki.gg/wiki/Eternity_Challenges)中，[真空/空洞/虚空]的 IP 乘数只有 $30\%$ 强度，且被限制在目标的 $15\%$ | 解锁[递归/弥散/毁灭] | 该冲击的要求低于玩家开始第一个永恒挑战所需的最低时间之理（$123$） | ECs |
-| 5 | [膨胀时间](https://antimatterdimensions.wiki.gg/wiki/Dilation) | 时间膨胀永久激活 | 在末日之间保留时间膨胀研究、提升遗物获取，并解锁[悖论/矛盾/谬误] |  | dilation |
+| 1 | 达到[[ow-infinity|无限]] | [[ow-antimatter-dimensions|反物质维度]]被提升到 $^{0.5}$ 次方 | 解锁[真空/空洞/虚空]，并获得一个永久性无限自动购买器 | 该惩罚效果等同于开平方根 | infinity |
+| 2 | 强化星系（购买 $5\text{e}11$ IP 的[[ow-break-infinity|打破无限]]升级） | [[ow-infinity-dimensions|无限维度]]被提升到 $^{0.5}$ 次方 | 解锁[衰变/崩解/混乱] | 该惩罚效果等同于开平方根 | powerGalaxies |
+| 3 | 达到[[ow-eternity|永恒]] | [[ow-replicanti|复制器]]速度在 $\text{e}2,000$ 以上进一步变慢 | 解锁[混沌/无序/杂质] | 每位于 $\text{e}2,000$ 之上一个数量级，复制器间隔乘以 $\times10$ | eternity |
+| 4 | 达到 $115$ 时间之理 | 在[[ow-eternity-challenges|永恒挑战]]中，[真空/空洞/虚空]的 IP 乘数只有 $30\%$ 强度，且被限制在目标的 $15\%$ | 解锁[递归/弥散/毁灭] | 该冲击的要求低于玩家开始第一个永恒挑战所需的最低时间之理（$123$） | ECs |
+| 5 | [[ow-dilation|膨胀时间]] | 时间膨胀永久激活 | 在末日之间保留时间膨胀研究、提升遗物获取，并解锁[悖论/矛盾/谬误] |  | dilation |
 
 ## 裂痕
 
@@ -69,6 +78,8 @@ review_status: "REVIEWED"
 | [混沌/无序/杂质] | [衰变/崩解/混乱] | $\frac{DecayRift\%}{10}$ | $10R$ | $1,000\%$ | 时间维度乘以「{value}」 | 见下方展开公式 | $\times2.28\text{e}1,415$ |
 | [递归/弥散/毁灭] | 永恒点数 | $\left(\frac{\log_{10}\left(EP+1\right)}{4,000}\right)^{0.4}$ | $10^{R^{2.5}*4,000}-1$ | $1.00\text{e}4,000$ | EP 公式：$\log(x)/308$ ➜ $\log(x)/$「{value}」 | $308-\left(58*\frac{\log_{10}\left(EP_{Filled}+1\right)}{4,000}^{0.2}\right)$ | $\log(x)/250.00$ |
 | [悖论/矛盾/谬误] | 膨胀时间 | $\frac{\log_{10}\left(DT+1\right)}{100}$ | $10^{R}-1$ | $1.00\text{e}100$ | 所有维度取「{value}」次方 | $1+\frac{\log_{10}\left(DT_{Filled}+1\right)}{250}$ | $^{1.400}$ |
+
+表中「效果描述」列的「{value}」是**数值占位符**：实际界面会替换成该裂痕当前效果的实时倍数或结果（例如真空裂痕填满时 IP 获取 ×1.50e67,311）。译文保留占位符，未猜测具体数值。
 
 混沌裂痕的完整公式（原文折叠块）：设 $DecayFactor = Min(DecayFilled,650\%)+\frac{Max(DecayFilled-650\%,0)}{700\%}$，其中 $DecayFilled$ = 已填充的混沌百分比，则效果为
 
@@ -121,7 +132,7 @@ $$\frac{6^{6^{6^{\tfrac{DecayFactor+100}{1,000}}}}-6}{100,000}+10^{\tfrac{DecayF
 
 ## 来源与许可
 
-- 原文：[Pelle](https://antimatterdimensions.wiki.gg/wiki/Pelle)（页面 ID 366；修订 ID 3376；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
+- 原文：[[ow-pelle|Pelle]]（页面 ID 366；修订 ID 3376；最后编辑者 KrutarMarsons；抓取于 2026-11-15）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Pelle&action=history)
 - 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译正文与全部表格，统一术语，把信息框内容改写为要点表，把佩勒的「词形变换（wordshift）」多重写法译为「A/B/C」形式并保留英文原名，把模板脚注改为页内脚注，移除导航模板与模板结构，图片未转载；本页按相同许可共享。
 - 原文图片未转载：原页含天神静态图（Cel7-runreality-static--desktop.gif）与导航图（Cel7-navigation-complete--desktop.png）；原文界面图为空。请到原页查看图片。

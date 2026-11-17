@@ -1,0 +1,54 @@
+{
+  "batch": 21,
+  "title": "第二十一批：成就 / 秘密成就（2 篇超大页）",
+  "branch": "docs/r114-batch21",
+  "base": "main @ 905b41b（#41 合并后）",
+  "owner": "wiki-translation",
+  "status": "STRUCTURE CHECKED",
+  "status_note": "两篇逐节翻译并结构核对；未逐段语义审校，按四级口径记 STRUCTURE CHECKED",
+  "created_at": "2026-11-16T02:55:00+08:00",
+  "pages": [
+    {
+      "file": "content/original/ow-achievements.md",
+      "original_title": "Achievements",
+      "zh_title": "成就",
+      "revid": 3363,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 1,
+        "rows": 144,
+        "formulas": 30,
+        "notes": "144 项成就（136 可见 + 8 隐藏）逐行翻译名称/条件/奖励；成就乘数机制与 6 项强化来源；第 18 行隐藏说明；原文截断处标「原文截断」"
+      }
+    },
+    {
+      "file": "content/original/ow-achievements-secret-achievements.md",
+      "original_title": "Achievements/Secret Achievements",
+      "zh_title": "秘密成就",
+      "revid": 3364,
+      "translation_status": "STRUCTURE CHECKED",
+      "review_status": "STRUCTURE CHECKED",
+      "coverage": {
+        "tables": 1,
+        "rows": 32,
+        "formulas": 3,
+        "notes": "32 项秘密成就名称/条件/攻略；桌面与移动端差异按原页 Desktop/Mobile 行整理；剧透标注保留"
+      }
+    }
+  ],
+  "checks_run": {
+    "env": "Node v24.22.3；Quartz pin 7cfb0796165c848be5438117e9806802123bf676",
+    "check-content": "PASS",
+    "check-translation": "PASS",
+    "build-index": "PASS",
+    "npx quartz build": "PASS",
+    "verify-build": "PASS",
+    "acceptance.cjs": "PASS"
+  },
+  "notes": [
+    "成就页名称列采用「中文意译 / 英文原名」，便于游戏内对照。",
+    "未改 index.md / 导航 / 分类页。"
+  ],
+  "blockers": []
+}
