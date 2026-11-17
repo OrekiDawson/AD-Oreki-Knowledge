@@ -64,10 +64,11 @@ function httpGet(url, { method = "GET" } = {}) {
   });
 }
 
-async function collectHttps() {
+// 允许在单元测试中注入只读请求函数，避免访问生产站点或写入 Issue。
+export async function collectHttps({ request = httpGet, paths = HTTPS_SMOKE_PATHS, domain = DOMAIN } = {}) {
   const results = [];
-  for (const path of HTTPS_SMOKE_PATHS) {
-    const r = await httpGet("https://" + DOMAIN + path);
+  for (const path of paths) {
+    const r = await request("https://" + domain + path);
     results.push({ path, ok: r.ok, status: r.status || null, error: r.error || null, hasTitle: r.body ? r.body.includes("AD-Oreki Knowledge Base") : false });
   }
   return results;
