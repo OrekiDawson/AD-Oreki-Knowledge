@@ -59,12 +59,12 @@ bash scripts/agp/build_fullgame_sig.sh \
 - 不允许 `buildKotlinDex`、`installToRelease`、`apktool b` 等旧链入口；
 - 候选 APK 必须带 AGP provenance 与候选元数据。
 
-当前仓库执行 `python3 scripts/enforce_agp_only.py candidate` 的退出码为 1（`AGP_ONLY_BLOCKED: AGP still builds a bridge or a different package`），说明生产链尚未满足 AGP-only 要求。详见 [[release-status|发布状态]] 与 [[ci-cd|CI/CD 门禁]]。
+2026-11-15 的静态复核执行 `python3 scripts/enforce_agp_only.py candidate` 退出码为 1（`AGP_ONLY_BLOCKED: AGP still builds a bridge or a different package`）。这是历史静态结果，**不能外推为 2026-11-16 发布链失败**：受保护候选构建 [#43735315296](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43735315296)、独立验证 [#43735739171](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43735739171) 与[正式发布 #43761268754](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43761268754) 均 SUCCESS。AGP-only 是否完全满足仍以当前脚本重跑与 Issue [#25](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/issues/25)/[#61](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/issues/61) 的分闭包验收为准（本轮未重跑脚本，**NOT RUN**）。详见 [[release-status|发布状态]] 与 [[ci-cd|CI/CD 门禁]]。
 
 ## 已确认与未确认
 
-- **已确认**：本地管线步骤、J8 混合必要性、签名回填与构建守卫；产出的 APK/jar 有 SHA-256 与类数记录。
-- **未确认**：受保护 Candidate 构建（BLOCKED）；AGP-only 门禁通过（FAIL）；正式发布（NOT RUN）。
+- **已确认**：本地管线步骤、J8 混合必要性、签名回填与构建守卫；产出的 APK/jar 有 SHA-256 与类数记录；2026-11-16 受保护 Candidate 构建、独立验证与正式发布均 SUCCESS，公开 Release 存在。
+- **未确认**：AGP-only 门禁在当前脚本下是否 PASS（NOT RUN）；最新发布 APK 的八项 AVD、180 分钟发布级运行与本地 SSH/SFTP 实物回执。
 - **版本边界**：管线参数与默认类列表对应 Android 3.21.0 / AGP 9.5.1，改动需同步 [[apk-signing|签名与升级约束]]。
 
 ## 参考资料
