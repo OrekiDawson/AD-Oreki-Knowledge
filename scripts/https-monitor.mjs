@@ -74,7 +74,8 @@ export async function collectHttps({ request = httpGet, paths = HTTPS_SMOKE_PATH
   const results = [];
   for (const path of paths) {
     const r = await request("https://" + domain + path);
-    const isHtml = !/\.json(?:[?#]|$)/.test(path);
+    const hasFileExtension = /\.[a-z0-9]+(?:[?#]|$)/i.test(path);
+    const isHtml = !hasFileExtension || /\.html?(?:[?#]|$)/i.test(path);
     results.push({ path, ok: r.ok, status: r.status || null, error: r.error || null, hasTitle: Boolean(isHtml && r.body && r.body.includes(SITE_TITLE)) });
   }
   return results;
