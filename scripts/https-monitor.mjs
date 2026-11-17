@@ -16,7 +16,11 @@ const SHA = process.env.GITHUB_SHA || "";
 const FIXTURE = process.env.KB_FIXTURE || "";
 const NOW = process.env.KB_NOW ? new Date(process.env.KB_NOW) : new Date();
 
-const PAGES = [ "/", "/index.html", "/static/contentIndex.json", "/static/knowledge-index.json", "/architecture/kotlin-runtime" ];
+// 与 scripts/verify-build.mjs 的 Quartz 发布产物契约保持一致，避免检查不存在的旧 AI 索引。
+export const HTTPS_SMOKE_PATHS = [ "/", "/index.html", "/static/contentIndex.json", "/architecture/kotlin-runtime" ];
+// 站点标题单一来源：与 quartz.config.yaml 的 configuration.pageTitle 保持一致，
+// 供监控判定与回归测试共用，避免测试用虚构字符串掩盖生产判据漂移。
+export const SITE_TITLE = "反物质维度MOD 知识库";
 
 function sh(cmd, args) {
   return execFileSync(cmd, args, { encoding: "utf8", timeout: 30000, stdio: ["ignore", "pipe", "ignore"] }).trim();
@@ -63,11 +67,16 @@ function httpGet(url, { method = "GET" } = {}) {
   });
 }
 
-async function collectHttps() {
+// 允许在单元测试中注入只读请求函数，避免访问生产站点或写入 Issue。
+// hasTitle 仅作诊断信号（不计入 PASS/FAIL）：HTML 页面核对真实站点标题，
+// JSON 等静态资源本身不含标题，跳过判定，避免永久为假值的无效检查。
+export async function collectHttps({ request = httpGet, paths = HTTPS_SMOKE_PATHS, domain = DOMAIN } = {}) {
   const results = [];
-  for (const path of PAGES) {
-    const r = await httpGet("https://" + DOMAIN + path);
-    results.push({ path, ok: r.ok, status: r.status || null, error: r.error || null, hasTitle: r.body ? r.body.includes("AD-Oreki Knowledge Base") : false });
+  for (const path of paths) {
+    const r = await request("https://" + domain + path);
+    const hasFileExtension = /\.[a-z0-9]+(?:[?#]|$)/i.test(path);
+    const isHtml = !hasFileExtension || /\.html?(?:[?#]|$)/i.test(path);
+    results.push({ path, ok: r.ok, status: r.status || null, error: r.error || null, hasTitle: Boolean(isHtml && r.body && r.body.includes(SITE_TITLE)) });
   }
   return results;
 }

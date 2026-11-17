@@ -26,7 +26,7 @@ jobs:
         with:
           node-version: 24
       - name: Unit tests（模拟异常检测）
-        run: node --test scripts/tests/https-monitor.test.mjs
+        run: node --test scripts/tests/https-监控.test.mjs
       - name: Real certificate / Pages / DNS check
         env:
           GH_TOKEN: ${{ github.token }}
