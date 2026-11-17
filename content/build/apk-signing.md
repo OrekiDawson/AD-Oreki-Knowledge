@@ -27,6 +27,8 @@ Android 应用的「升级」不是替换文件，而是系统按**包名 + 签�
 
 **版本证据（2026-11-17 核对）**：[最新核对的公开 Release（2026-11-16）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/releases/tag/android-update-3.21.0-a12b5cd6) 与 [当前发布门禁策略](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/scripts/release-gate-policy.json) 共同作为核对依据。策略中的 `lastPublishedVersionCode=30210001` 是已发布上限记录，`versionCode=30210002` 是准备发布的候选身份。后续正式发布需重新核实，不能把此时间点的最大值永久当作当前值。
 
+固定提交证据：[`b0d44c93`](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/commit/b0d44c93eaf06a9d3df88a5b2cfec239c7329bcb)（2026-11-16 将发布身份递增到 `30210002`）、[`e3f881e7`](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/commit/e3f881e703e51b0e41cd30e9060a64ad17159e5a)（2026-11-15 发布准备 `30210001`）。
+
 ## 为什么签名环境是门禁
 
 正式 APK 必须在受保护的 CI/CD 环境中构建、签名、验签，不允许手动上传或本地签名冒充。Android 仓库的候选构建工作流在 `candidate-unified.yml` 中使用 `environment: android-signing`，需要仓库所有者批准后才会执行签名步骤。
