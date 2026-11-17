@@ -121,5 +121,6 @@
     "Pelle/Quotes（约 15 KB 长台词页，含 wordshift 变体）未在本批；留待下一批。",
     "Pelle/Upgrades 已由 editorial 于第十二批完成（REVIEWED），本批未重复翻译；期间曾误覆盖该文件，已 git checkout 还原，未提交。"
   ],
-  "blockers": []
+  "blockers": [],
+  "recheck_note": "2026-11-17 复核：5 篇 revid 未变；按原站 <q> 台词行重计为 24/18/30/46/71，与本地逐块行数完全一致。"
 }

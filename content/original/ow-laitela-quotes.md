@@ -7,14 +7,14 @@ tags:
 original_title: "Laitela/Quotes"
 original_url: "https://antimatterdimensions.wiki.gg/wiki/Laitela/Quotes"
 original_revid: 2773
-original_fetched_at: "2026-11-15T23:01:00+08:00"
+original_fetched_at: "2026-11-17T19:34:00+08:00"
 original_license: "CC BY-SA 4.0"
 original_license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
 translation_status: "STRUCTURE CHECKED"
 review_status: "STRUCTURE CHECKED"
 ---
 
-本页收录[莱特拉](https://antimatterdimensions.wiki.gg/wiki/Lai%27tela)（符号为莱特拉符号）在游戏中的全部引语，按触发条件排列。随着玩家推进，祂从自信转为困惑，最后连话都说不完整。
+本页收录[莱特拉](https://antimatterdimensions.wiki.gg/wiki/Lai%27tela)（符号 ᛝ，卢恩字母 Ingwaz）在游戏中的全部引语，按触发条件排列。随着玩家推进，祂从自信转为困惑，最后连话都说不完整。
 
 ## 引语
 
@@ -141,9 +141,9 @@ review_status: "STRUCTURE CHECKED"
 
 ## 来源与许可
 
-- 原文：[Laitela/Quotes](https://antimatterdimensions.wiki.gg/wiki/Laitela/Quotes)（页面 ID 920；修订 ID 2773；抓取于 2026-11-15）
+- 原文：[Laitela/Quotes](https://antimatterdimensions.wiki.gg/wiki/Laitela/Quotes)（页面 ID 920；修订 ID 2773；首次抓取于 2026-11-15；2026-11-17 复核抓取，修订 ID 未变）
 - 原文贡献者与修订历史：[页面历史](https://antimatterdimensions.wiki.gg/index.php?title=Laitela/Quotes&action=history)
-- 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译全部引语与触发条件，把引语模板的「结束条件/换行」标记改为段落与引用块，把莱特拉符号改为文字描述，移除导航模板与模板结构，图片未转载；本页按相同许可共享。
+- 许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。本页为**简体中文翻译（改编）**，已修改：翻译全部引语与触发条件，把引语模板的「结束条件/换行」标记改为段落与引用块，把原站符号字体改为 Unicode 字符 ᛝ，移除导航模板与模板结构，图片未转载；本页按相同许可共享。
 - 原文图片未转载：原文该页不含图片或其它媒体，仅有文字台词。
 
 ## 相关条目
