@@ -1,6 +1,6 @@
 ---
 title: "发布状态"
-description: "截至 2026-11-16：Android a12b5cd6 正式 GitHub Release、云端发布作业及第四渠道核实边界"
+description: "发布事实截至 2026-11-16、发布策略核对截至 2026-11-17：Android 正式 GitHub Release 与四渠道核实边界"
 tags:
   - 发布
 ---
