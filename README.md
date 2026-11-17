@@ -25,14 +25,14 @@ node scripts/verify-build.mjs
 push main -> .github/workflows/deploy-wiki.yml -> GitHub Pages（artifact: public/）。
 PR 触发 pr-check.yml（不部署）。
 
-## AI 功能：仅每日整理一次
+## AI 草稿：停止自动生成（2026-11-17）
 
-**唯一 AI 任务**为 `.github/workflows/ai-knowledge-sync.yml`，每天北京时间 **18:30** 触发一次。该工作流只读扫描白名单来源的变化，最多处理两个来源、每个来源最多两个片段，在可信余额达到 ¥10 且不处于高峰停工时段时调用 DeepSeek；没有变化或已有待审草稿 PR 时不重复消费 Token。
+**Wiki 不再自动调用 DeepSeek 生成知识草稿，也不再由定时任务自动创建草稿 PR。** 原 `.github/workflows/ai-knowledge-sync.yml` 已移除，关闭每日 18:30 的 `schedule` 入口；不创建替代的定时、PR 触发或自动 AI 同步任务。
 
-- 只生成 `content/ai-drafts/` 下的待审核草稿和 GitHub PR，**不自动合并、不直接修改公开正文**。
-- 删除 PR 首次 AI 审查、AI 问答、独立 AI 检索索引及 Wiki 仓库 Kody/Kodus AI 审查配置。普通 PR 检查、Quartz 内建搜索和 Pages 部署不依赖模型，照常运行。
-- DeepSeek 余额低于 ¥10、查询失败或无法验证同一账户余额时默认停止模型调用；不在用户规定的高峰/收尾时段调用模型。仅允许 schedule 触发，不开放额外手动 AI 入口。
-- 当日没有可处理来源时记录跳过，不为追求“每日必须消耗”而制造草稿。过去的 AI 证据保留用于追溯，不在网站发布未审核内容。
+- 仅在用户明确要求具体条目或资料整理时开展针对性写作，先核实原始来源，再按正常 PR 与内容审阅流程发布。不得为了保持产出自动扫描并批量生成条目。
+- 现有 `content/ai-drafts/`、`.ai/state.json`、`evidence/ai-sync/` 及历史 PR 保留供追溯；未审草稿仍不进入公开网站或搜索。
+- `scripts/ai/` 为未自动调用的历史实现；不得未经用户新的明确授权恢复工作流或调用模型。
+- 普通 `KB PR check`、Quartz 搜索、GitHub Pages 部署及 HTTPS 校验继续工作，不依赖上述 AI 草稿功能。外部 Kody/Codex GitHub App 的实际启用情况以 GitHub 为准，本次不改其审查配置。
 
 ## 强制 HTTPS
 

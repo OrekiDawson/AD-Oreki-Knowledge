@@ -35,11 +35,13 @@
 
 流畅性、解释深度与事实真实性仍依靠人工复核，CI 不做逐字审计。
 
-## 每日一次 AI 知识整理
+## AI 草稿自动化已停用（2026-11-17）
 
-唯一 AI Workflow：`.github/workflows/ai-knowledge-sync.yml`，每天 18:30（UTC+8）由 `schedule` 触发。调用前确认余额不低于 ¥10、处于允许时段；余额未知/不足或模型凭据不可用则跳过。若有来源变化且无未审草稿 PR，只生成 GitHub 待审草稿 PR，不直接发布正文。
+已按用户要求移除 `.github/workflows/ai-knowledge-sync.yml`，不再在每天 18:30 触发 DeepSeek 模型调用或生成草稿 PR，也不新增其他自动 AI 草稿任务。需要新的 Wiki 条目时，仅根据用户明确提出的内容和实际来源执行人工核验、正常 PR 与审阅。
 
-**不存在**首个 PR AI 审查、Issue AI 问答、Wiki Kody/Kodus 审查和独立 AI 关键词索引。PR 与 Pages 使用 Quartz 原生搜索及确定性质量检查。人工审阅与版权核验要求不变。
+保留历史 `content/ai-drafts/`、`.ai/state.json`、`evidence/ai-sync/` 和 `scripts/ai/` 用于追溯，均不再由定时 Workflow 自动执行。不要为恢复旧同步任务而自行调用模型或创建新的触发器。
+
+正常 `KB PR check`、Quartz 原生搜索、Pages 与 HTTPS 验证继续运行；外部 GitHub App 的真实审查状态以 GitHub 为准，避免把旧文档中的「未启用 Kody」当作现状。人工内容审阅与版权核验要求保持不变。
 
 ## 历史归档工作流
 
@@ -52,10 +54,10 @@
 
 - 不提交 Token、私钥、用户存档、私人路径、内部服务器地址。
 - `scripts/check-content.mjs` 会扫描 `cfat_`/`ghp_`/`sk-`/私钥/`/home/oreki/` 等模式，命中即失败。
-- AI 生成的草稿 PR 必须人工逐条核对来源 Commit 后合并；工作流禁止自动合并。
+- 旧有 AI 草稿和 PR 仍须逐条核对来源 Commit 后才能用于正式正文；不因草稿已合并到 Git 仓库就视为已正式审校。
 - 不在 `pull_request_target` 中执行外部 PR 代码。
 
 ## 回滚
 
 - 站点回滚：main 上 revert 对应合并提交，推送后自动重新部署。
-- 来源状态回滚：删除 `.ai/state.json` 中对应条目即可让下次同步重新处理该来源。
+- 历史 AI 同步状态：`.ai/state.json` 仅作追溯，无自动「下次同步」；禁止通过重启定时工作流重做旧草稿。
