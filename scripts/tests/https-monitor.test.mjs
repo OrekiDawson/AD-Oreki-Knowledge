@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { evaluate } from "../https-monitor.mjs";
+import { evaluate, HTTPS_SMOKE_PATHS } from "../https-monitor.mjs";
 
 const base = () => ({
   pages: { ok: true, cname: "wiki.oreki.net", https_enforced: true, cert_state: "approved", cert_expires: "2027-01-01T00:00:00Z" },
@@ -78,4 +78,11 @@ test("Pages API 不可读时 UNKNOWN（不假报 PASS）", () => {
 test("跳转到非预期域名 FAIL", () => {
   const input = base(); input.redirect = { ok: true, status: 302, location: "https://example.com/" };
   assert.equal(evaluate(input).overall, "FAIL");
+});
+
+test("HTTPS 监控使用 Quartz 正式构建提供的页面与索引", () => {
+  assert.deepEqual(HTTPS_SMOKE_PATHS, [
+    "/", "/index.html", "/static/contentIndex.json", "/architecture/kotlin-runtime",
+  ]);
+  assert.equal(HTTPS_SMOKE_PATHS.includes("/static/knowledge-index.json"), false);
 });
