@@ -16,7 +16,7 @@ tags:
 
 第一次阅读建议从 [[ow-dimensions|维度]]、[[ow-infinity|无限]]、[[ow-eternity|永恒]]、[[ow-reality|现实]] 依次开始。要找具体系统，可直接进入 [[ow-challenges|挑战]]、[[ow-time-studies|时间研究]]、[[ow-dilation|时间膨胀]] 与 [[ow-celestials|天神]]。
 
-**翻译覆盖与内容质量是两个指标**：目前 35/68 篇完成结构核对，但逐段语义审校与游戏内复核覆盖率仍为 0%。阅读具体数字或条件时，最好同时核对译文页底的英文原文链接和修订 ID。
+**翻译覆盖与内容质量是两个指标**：目前 60/68 篇完成结构核对，但逐段语义审校与游戏内复核覆盖率仍为 0%。阅读具体数字或条件时，最好同时核对译文页底的英文原文链接和修订 ID。
 
 ## 来源、许可与署名
 
@@ -31,13 +31,16 @@ tags:
 | 指标 | 数值 |
 | --- | --- |
 | 原版正文条目总数（主命名空间 article） | 68 |
-| 已完成翻译与**结构核对**（STRUCTURE CHECKED） | 35 |
+| 已完成翻译与**结构核对**（STRUCTURE CHECKED） | 60 |
 | 已完成逐段语义审校（REVIEWED） | 0 |
 | 已与游戏源码/运行证据核实（VERIFIED AGAINST GAME） | 0 |
 | 已翻译未核对（TRANSLATED） | 0 |
 | 许可阻塞（BLOCKED） | 0 |
+| 尚未开始（NOT STARTED） | 8 |
 | **已审校覆盖率** | **0 / 68（0.0%）** |
-| 结构核对覆盖率 | 35 / 68（51.5%） |
+| 结构核对覆盖率 | 60 / 68（88.2%） |
+
+> 说明：本表按 [source-manifest.json](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/translation/source-manifest.json) 统计；批次十六至二十一的篇目清单由 wiki-editorial 维护，尚未列入下方批次表。
 
 > 口径（详见 [[wiki-rules|知识库规则]]「内容验收等级」）：
 > - **STRUCTURE CHECKED**：章节、表格、公式、来源/许可字段与原站结构一致——**不算语义审校**，不计入已审校覆盖率；
@@ -157,9 +160,21 @@ tags:
 
 > 至此**七位天神的正篇全部译完并完成逐页核对**（第十三、十四批合计 7 篇，均为 STRUCTURE CHECKED（未做逐段语义审校））。
 
+## 第十五批（已完成翻译与结构核对）
+
+| 中文条目 | 原文 | 修订 ID |
+| --- | --- | --- |
+| [[ow-effarig-quotes|鹿颈长·引语]] | [Effarig/Quotes](https://antimatterdimensions.wiki.gg/wiki/Effarig/Quotes) | 2775 |
+| [[ow-nameless-ones-quotes|无名氏·引语]] | [The Nameless Ones/Quotes](https://antimatterdimensions.wiki.gg/wiki/The_Nameless_Ones/Quotes) | 2790 |
+| [[ow-v-quotes|薇·引语]] | [V/Quotes](https://antimatterdimensions.wiki.gg/wiki/V/Quotes) | 2784 |
+| [[ow-ra-quotes|太阳神·引语]] | [Ra/Quotes](https://antimatterdimensions.wiki.gg/wiki/Ra/Quotes) | 2782 |
+| [[ow-laitela-quotes|莱特拉·引语]] | [Laitela/Quotes](https://antimatterdimensions.wiki.gg/wiki/Laitela/Quotes) | 2773 |
+
+> 第十五批 5 篇已完成引语块、触发条件、台词行与许可字段的结构核对；逐段语义审校仍待复核，因此记为 **STRUCTURE CHECKED**，不计入已审校覆盖率。核对记录见 [audit-2026-11-15.md](https://github.com/OrekiDawson/AD-Oreki-Knowledge/blob/main/docs/translation/reviews/audit-2026-11-15.md) 追加节。
+
 ## 后续批次（按游戏流程排序）
 
-1. 天神子页面：Teresa / Effarig / The Nameless Ones / V / Ra / Lai'tela / Pelle 的 Quotes，以及 Pelle/Upgrades、Pelle 惩罚页；
+1. 剩余子页面：Pelle/Quotes（长台词页）、Pelle 惩罚页；
 2. 符文、复兴、自动机、符文炼金、虚幻升级、高级符文机制；
 3. 普通挑战与无限挑战、永恒挑战明细、成就（含秘密成就）、自动购买器；
 4. 计数频率、永恒里程碑、永恒升级、保存库、快捷操作、版本历史与其余攻略/秘密内容。

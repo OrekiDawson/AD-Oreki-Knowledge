@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15T18:11:27.303Z",
+ "generated_at": "2026-11-17T10:54:18.017Z",
  "source": {
   "site": "https://antimatterdimensions.wiki.gg",
   "api": "https://antimatterdimensions.wiki.gg/api.php",
@@ -26,11 +26,11 @@
  "coverage": {
   "total_pages": 68,
   "translated": 0,
-  "structure_checked": 55,
+  "structure_checked": 60,
   "reviewed": 0,
   "verified": 0,
   "blocked": 0,
-  "not_started": 13
+  "not_started": 8
  },
  "pages": [
   {
@@ -1244,16 +1244,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
-   "last_source_check": "2026-11-15",
-   "notes": ""
+   "zh_title": "鹿颈长·引语",
+   "path": "content/original/ow-effarig-quotes.md",
+   "priority": 4,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
+   "last_source_check": "2026-11-17",
+   "notes": "batch15：引语全文与触发条件完整翻译（引语块逐块对应原站）；结构与许可字段核对通过，逐段语义审校待复核"
   },
   {
    "title": "Eternities",
@@ -1998,16 +1998,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
-   "last_source_check": "2026-11-15",
-   "notes": ""
+   "zh_title": "莱特拉·引语",
+   "path": "content/original/ow-laitela-quotes.md",
+   "priority": 4,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
+   "last_source_check": "2026-11-17",
+   "notes": "batch15：引语全文与触发条件完整翻译（引语块逐块对应原站）；结构与许可字段核对通过，逐段语义审校待复核"
   },
   {
    "title": "Main Page",
@@ -2307,16 +2307,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
-   "last_source_check": "2026-11-15",
-   "notes": ""
+   "zh_title": "太阳神·引语",
+   "path": "content/original/ow-ra-quotes.md",
+   "priority": 4,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
+   "last_source_check": "2026-11-17",
+   "notes": "batch15：引语全文与触发条件完整翻译（引语块逐块对应原站）；结构与许可字段核对通过，逐段语义审校待复核"
   },
   {
    "title": "Reality",
@@ -2675,16 +2675,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
-   "last_source_check": "2026-11-15",
-   "notes": ""
+   "zh_title": "无名氏·引语",
+   "path": "content/original/ow-nameless-ones-quotes.md",
+   "priority": 4,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
+   "last_source_check": "2026-11-17",
+   "notes": "batch15：引语全文与触发条件完整翻译（引语块逐块对应原站）；结构与许可字段核对通过，逐段语义审校待复核"
   },
   {
    "title": "Tickspeed",
@@ -2906,16 +2906,16 @@
     "Pages with navboxes"
    ],
    "type": "article",
-   "zh_title": "",
-   "path": "",
-   "priority": 99,
-   "status": "NOT STARTED",
-   "review_status": "NOT REVIEWED",
-   "license_status": "CC-BY-SA-4.0-PENDING-PAGE-CHECK",
-   "third_party": "UNKNOWN",
-   "media_omitted": false,
-   "last_source_check": "2026-11-15",
-   "notes": ""
+   "zh_title": "薇·引语",
+   "path": "content/original/ow-v-quotes.md",
+   "priority": 4,
+   "status": "STRUCTURE CHECKED",
+   "review_status": "STRUCTURE CHECKED",
+   "license_status": "CC-BY-SA-4.0-CONFIRMED",
+   "third_party": "NONE-DETECTED-TEXT-ONLY",
+   "media_omitted": true,
+   "last_source_check": "2026-11-17",
+   "notes": "batch15：引语全文与触发条件完整翻译（引语块逐块对应原站）；结构与许可字段核对通过，逐段语义审校待复核"
   }
  ]
 }
