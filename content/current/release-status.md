@@ -33,7 +33,7 @@ tags:
 - [候选构建 #43735315296](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43735315296)：PASS。
 - [候选独立验证 #43735739171](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43735739171)：PASS。
 - [正式发布 #43761268754](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43761268754)：SUCCESS。
-- 版本身份由 [release-gate-policy.json](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/scripts/release-gate-policy.json) 提供：MOD `versionCode 30210001`，原版 3.21.0 基线的 `30210000` 不是新发布号。
+- 版本身份：本页所述已发布 MOD 的 `versionCode` 为 `30210001`；[2026-11-17 核对的当前发布策略](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/scripts/release-gate-policy.json)记录 `lastPublishedVersionCode=30210001`、下一候选 `versionCode=30210002`（**未证明发布**）。官方 3.21.0 基线 `30210000` 不作为此次 MOD 新发布号。
 
 **验证边界：** 当前 Wiki 尚未逐项读取这版 APK 对应的八项 AVD 场景、完整 180 分钟发布级运行记录和本地 SSH/SFTP 拉取回执，因此本页不额外声明它们全部独立 PASS。需要进一步核查时应直接读取上述 Run 的 Artifact 与项目报告，不以发布标题代替证据。
 
