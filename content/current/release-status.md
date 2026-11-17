@@ -9,6 +9,10 @@ tags:
 
 **证据时点：正式发布事实核实于 2026 年 11 月 16 日（UTC+8）；发布策略核对于 2026 年 11 月 17 日。**
 
+2026-11-17 复核：[[ci-cd|CI/CD 与受保护门禁]] 已把 2026-11-15 的签名环境等待与 AGP-only 静态失败标为历史状态，当前发布结论以本页与公开 Run 为准。
+
+[[agp|AGP 构建管线]] 的 2026-11-15 静态失败同样按历史记录处理；受保护候选构建与正式发布已成功，AGP-only 是否完全满足仍需重跑脚本并按 Issue #25/#61 验收。
+
 ## 当前可下载的版本
 
 [Android 3.21.0（a12b5cd6）GitHub Release](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/releases/tag/android-update-3.21.0-a12b5cd6) 已于 **2026-11-16 05:04（UTC+8）** 发布，APK 文件名 `AD-Oreki-Edition-3.21.0.apk`，大小 **81,587,691 字节**，SHA-256：
