@@ -9,6 +9,8 @@ tags:
 
 正式构建、签名、验签与发布必须走受保护的 GitHub Actions 流水线，而不是在本机手动打包上传。理解流水线分工，才能判断「现在到底卡在哪一步」。本条目解释工作流职责、门禁冻结点与常见误区。
 
+**最后核实：2026-11-17（UTC+8）**；历史 Run 状态与当前发布状态分开记录，当前结论以 [[release-status|发布状态]] 为准。
+
 ## 工作流分工
 
 | 工作流 | 作用 | 是否受保护 |
@@ -30,13 +32,11 @@ tags:
 - 失败修流水线，不修门禁；不得删除测试、吞异常或改预期来制造 PASS。
 - 有强制人工批准的环境（如 `android-signing`），必须获得批准，不能由自动化替代。
 
-## 当前阻塞点
+## 历史阻塞与当前状态
 
-1. **签名环境未批准**：Run [43679508810](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43679508810) 的构建 Job 自 2026-11-15T05:05Z 起 waiting，等待 `android-signing` 环境批准。
-2. **AGP-only 门禁 fail-closed**：本地静态复核 `python3 scripts/enforce_agp_only.py candidate` 退出码 1；工作流仍含旧链调用。
-3. **真实通关未达成**：180 分钟长跑 FAIL（最近完整跑次），新长跑进行中。
-
-推断（INFERRED）：即使批准签名环境，候选构建也可能因 AGP-only 门禁失败；这尚未在 Run 中实际发生。
+1. **签名环境未批准（历史，已解除）**：2026-11-15 的 Run [43679508810](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43679508810) 当时等待 `android-signing` 批准。2026-11-16 的[候选构建 #43735315296](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43735315296)、[独立验证 #43735739171](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43735739171) 与[正式发布 #43761268754](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43761268754) 均为 SUCCESS，[Release `android-update-3.21.0-a12b5cd6`](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/releases/tag/android-update-3.21.0-a12b5cd6) 已公开。**不能把 2026-11-15 的等待写成现行 BLOCKED**。
+2. **AGP-only 静态复核失败（历史，2026-11-15）**：当时 `python3 scripts/enforce_agp_only.py candidate` 退出码 1；该结果不能外推为 2026-11-16 发布链失败。全面原生化仍按 Android Issue [#25](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/issues/25)、[#61](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/issues/61) 的分闭包验收。
+3. **真实通关**：R113-01 的 180 分钟 FAIL 是历史跑次；最新发布 APK 的八项 AVD、完整新档与 180 分钟证据仍须按 [[release-status|发布状态]] 的核验边界检查，不能以历史 FAIL 或历史 PASS 互相替代。
 
 ## 记录字段
 
@@ -51,8 +51,8 @@ tags:
 
 ## 已确认与未确认
 
-- **已确认**：工作流分工与保护环境；Run 43679508810 的等待状态；AGP-only 静态复核失败；2026-11-12 曾完成一次四渠道发布（见 [历史归档](/history/)）。
-- **未确认**：本轮候选构建、验签与发布（BLOCKED / NOT RUN）。
+- **已确认（2026-11-17 核对）**：工作流分工与保护环境；2026-11-16 候选构建、独立验证与正式发布均 SUCCESS，公开 Release 存在；2026-11-12 曾完成一次四渠道发布（见 [历史归档](/history/)）。
+- **仍未确认**：最新发布 APK 的八项 AVD 完整场景、180 分钟发布级运行记录与本地 SSH/SFTP 实物回执；CI 发布作业 SUCCESS 不能代替这些验收。
 
 ## 相关条目
 
