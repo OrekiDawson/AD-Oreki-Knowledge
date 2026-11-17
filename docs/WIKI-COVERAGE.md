@@ -2,7 +2,7 @@
 
 > 本页是只读汇总，由 docs/translation/source-manifest.json 与 content/original/ 生成；等级定义见 content/wiki-rules.md「内容验收等级」。由 wiki-editorial 维护，译文与 manifest 由 wiki-translation 维护。
 
-## 覆盖总览（最后核对 2026-11-17 19:10 UTC+8）
+## 覆盖总览（最后核对 2026-11-17 19:21 UTC+8）
 
 | 指标 | 数值 |
 | --- | --- |
