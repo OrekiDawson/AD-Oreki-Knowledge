@@ -31,11 +31,13 @@ tags:
 | 混合运行时 P0 闭环 | [PR #88](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/88)，合并 `ae734966`；[报告](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/ae734966bf712faca3ff7bbb389d8724a8efe7e5/reports/R113-01/P0-CLOSURE.md) |
 | 180 分钟长跑 FAIL | [PR #90](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/90)，合并 `d950d110`；[结果](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/d950d1102f13e81f78dfdcdfb308359ee3eb1633/reports/R113-01/180min-RESULT.md) |
 | 天神策略叶子修复 | [PR #91](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/91)，合并 `4a800464`；[报告](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/4a800464ef820bf6e3fcb692a835ee2c2c749aec/reports/R113-01/CELESTIAL-LEAVES-FIX.md) |
-| 现实自动永恒复位修复（进行中） | [PR #92](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92)，分支 `r114-01/reality-autoeternity` |
+| 现实自动永恒复位修复 | [PR #92](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92)，合并 `951fa231`；现行自动化专题见 [[automation]] |
 | 签名环境阻塞 | [Run 43679508810](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/actions/runs/43679508810) |
 | 目录迁移 | [PR #83](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/83)、[PR #84](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/84) |
 | R103 四渠道发布 | [交付报告](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/R103-%E4%BA%A4%E4%BB%98%E6%8A%A5%E5%91%8A.md) |
 | R101 非法永恒页签修复 | [reports/R101-p0-fix](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/tree/main/reports/R101-p0-fix) |
+| Web R121 真实新档终局 | [完成记录](https://github.com/OrekiDawson/AD-Oreki-Edition-Web/blob/f7044da0f80a50ccbe5cd827fea717b4d5a1eae6/reports/R104/web/r121-01/README.md)，[摘要](https://github.com/OrekiDawson/AD-Oreki-Edition-Web/blob/f7044da0f80a50ccbe5cd827fea717b4d5a1eae6/reports/R104/web/r121-01/summary.json) |
+| Android R121 EC/现实自动化停滞 | [P1 报告（固定提交）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/a1617a9e0d652a16ba050be25bb3f5b1a5ef1c43/reports/R121-01/R121-01-P1-post-ec-infinite-reset.md)，[PR #204](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/204) |
 
 ## 原版游戏资料
 

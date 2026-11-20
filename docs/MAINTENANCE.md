@@ -21,6 +21,10 @@
 4. PR -> `KB PR check`（构建 + 内容检查 + 产物检查）。
 5. 合并 main -> `Deploy wiki to GitHub Pages`（构建、部署、线上验收）。
 
+浏览器验收脚本不把 Playwright 写进生产依赖。干净检出首次运行前执行
+`npm i -D playwright`；若使用外部已安装模块，设置
+`KB_PLAYWRIGHT=<模块绝对路径>`。站点地址可用 `KB_URL=<URL>` 覆盖。
+
 ## 内容检查（`scripts/check-content.mjs`）
 
 机器可判断的规则会被 CI 拦截，当前包括：

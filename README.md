@@ -8,17 +8,17 @@
 - 构建：Quartz 5 + Node 24（本地 Node 26 时 esbuild service 会 SIGBUS，请用 Node 24 构建）
 - 内容：content/ 下 Markdown，frontmatter + 证据区
 - 检查：scripts/check-content.mjs（页面/链接/敏感信息/术语）、scripts/verify-build.mjs（产物）
-- 验收：scripts/acceptance.cjs（Chromium 手机视口，搜索/导航/反向链接/图谱/暗色/溢出）
+- 验收：`node scripts/acceptance.cjs`（Chromium 手机视口，搜索/导航/反向链接/图谱/暗色/溢出）；首次使用先运行 `npm i -D playwright`，或设置 `KB_PLAYWRIGHT=<已安装 Playwright 模块路径>`。
 
-## 项目状态与开发成本（2026-11-17）
+## 项目状态与开发成本（2026-11-20）
 
-**当前状态：项目休眠（PROJECT_PAUSED）。** 维护者已暂停付费开发，未来是否恢复以明确授权为准；现有源码、PR、Issues、Release、测试证据和部署记录保留。休眠不等于已有缺陷修复完成，也不代表历史候选版本通过稳定版验收。
+**当前状态：项目开发休眠，Wiki 内容维护节奏恢复（`WIKI_CONTENT_CADENCE_ACTIVE`）。** 用户已单独授权每 48 小时至少交付一版合格 Wiki 内容；这不代表恢复 Android/Web 全体开发、自动 AI 草稿或无人值守付费任务。现有源码、PR、Issues、Release、测试证据和部署记录继续保留。
 
 - **费用门禁**：恢复开发前须明确批准人民币预算、周期、Provider 和任务范围；预算消耗达到 80% 时预警，达到 100% 时停止新增付费调用；DeepSeek 可用余额低于 ¥10 时维持已有全员暂停规则。禁止通过换 Key、模型或账号规避预算。
-- **Kody / Kodus**：当前已撤销 DeepSeek API Key，没有可用的大模型 Provider 时，Kody 可能显示 `Skipped` / 未审查。这是**审查未完成**，不是 PASS、无缺陷或自动批准；不得为绕过费用限制恢复 Provider，也不得绕过适用的最终提交审查、Critical/P0/P1、Review Threads 全部解决、Required Checks 与发布门禁。PR 在条件不满足时保持 Draft / BLOCKED。
-- **自动化边界**：不主动启动付费 Agent、Kody 审查、定时 AI 写作或新测试；不使用长时间 `sleep` 和空转轮询维持 Agent。已公开的网站与已有仓库不因休眠自动删除或撤销。README 只说明管理状态，本身不能阻止云端计费；订阅与 Provider 需要在相应平台管理。
+- **Kody / Kodus**：用户已授权恢复 Kody 审查，但只允许 Balanced，严禁 Heavy。DeepSeek 余额低于 ¥10、预算耗尽、Provider 不可用或仓库未纳入 Kodus 时，审查仍应标 `BLOCKED` / `KODY NOT RUN`，不得以 CI 绿灯冒充审查 PASS。
+- **自动化边界**：自动 AI 草稿、定时模型写作和无人值守付费任务仍停用；只按用户明确内容需求进行人工来源核验与正常 PR。已公开的网站与已有仓库不因休眠自动删除或撤销。README 只说明管理状态，本身不能阻止云端计费；订阅与 Provider 需要在相应平台管理。
 
-**知识库特别说明**：原有“每 48 小时更新”目标在用户明确停工期间暂停；不得为满足频率自动生成 AI 草稿或提交空内容。知识库已发布内容和许可证不变，恢复更新需实际核验来源与公开站点部署。
+**知识库特别说明**：用户已于 2026-11-20 恢复“每 48 小时至少一版合格内容”节奏。只更新规则、索引、README 或空提交不算内容版本；每次必须核验来源、通过 PR CI、必要 Kody Balanced 审查、Pages 部署和线上验证。不得为满足频率自动生成低质量条目。
 
 ## 本地构建
 

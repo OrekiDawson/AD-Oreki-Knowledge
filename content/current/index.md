@@ -12,7 +12,7 @@ tags:
 
 - [[project-status|当前项目状态]]：双端目标、Web 通关证据、Android 新版构建与发布。
 - [[release-status|发布状态]]：哪一个 APK 已发布、可核对的 SHA-256、GitHub/网盘/SFTP 分别有哪些证据。
-- [[known-issues|待核实事项与历史误判]]：下一步的真实验证工作，以及旧版 BUG 如何与最新版本区分。
+- [[known-issues|待核实事项与已知问题]]：现行待验证交付项与 Android 两项自动化 P1 的处理状态。
 
 ## 怎样判断 PASS
 
