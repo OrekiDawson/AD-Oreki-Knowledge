@@ -4,8 +4,9 @@
 const path = require('node:path');
 const fs = require('node:fs');
 
-const PLAYWRIGHT = process.env.KB_PLAYWRIGHT || '/home/oreki/AD-Oreki-Unified/worktrees/web/r113-web-p1/node_modules/playwright';
-const { chromium } = require(PLAYWRIGHT);
+// 默认使用当前 Node 模块解析；需要指定外部工作树时通过 KB_PLAYWRIGHT 显式覆盖，
+// 不把任何维护者的私人绝对路径写入仓库。
+const { chromium } = require(process.env.KB_PLAYWRIGHT || 'playwright');
 
 const BASE = process.env.KB_URL || 'http://localhost:8081';
 const OUT = process.env.KB_OUT || 'evidence/playwright-mobile.json';

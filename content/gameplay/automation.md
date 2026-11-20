@@ -58,13 +58,21 @@ Android 端的自动化已经从历史 Smali 实现迁移到 Kotlin 业务代码
 - 玩家手动关闭「自动永恒」后，托管层必须**粘滞尊重**，直到玩家自己重新打开；
 - 原版 Reality 结算会把自动永恒开关复位（这是原版设计行为，不是 MOD 写坏），MOD 托管层只负责在**确认是原版复位**时补回开关，并区分玩家手动关闭的情况。
 
-这条区分由 `OrekiAutoEternityAdoption` 落盘到 `oreki_prefs` 实现，不依赖一次性内存标记，因此应用重启后仍然有效。该修复**目前仍在验证中（PR #92）**，不能写成已验证完成。
+这条区分由 `OrekiAutoEternityAdoption` 落盘到 `oreki_prefs` 实现，不依赖一次性内存标记，因此应用重启后仍然有效。Reality 复位后的补回和玩家手动关闭的粘滞语义已在 [PR #92](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92) 合入，并有 AVD 状态变化记录。后续首次现实门槛与坍缩策略又分别在 [PR #158](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/158)、[PR #179](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/179) 修正；这些提交完成不等于所有版本的真实终局均已通过。
+
+## 重置后的“曾完成无限”必须保留
+
+自动化的早期门禁需要判断当前是否仍处于“第一次无限之前”。问题在于，永恒挑战和 Reality 会合法清空当前 `infinities`、IP、Break，甚至清空低层永恒计数；如果门禁只用这些**当前值**，历史进度会在重置后看起来像新档。
+
+正确判据必须承认不可逆结算产物：大永恒次数、永恒次数和现实次数都能证明无限层曾经完成。运行期的 `OrekiStageAuto.onAutoBuyerTick()` 一旦误判为新档就会提前返回，后续挑战、Reality 与终局逻辑都不会执行。R121 KVM 新档因此先后在 EC5 后停约 649 秒、首现实后停约 570 秒；第二个停点只剩 `realities=1` 可识别。
+
+R121 的源码修复只扩展这个只读阶段判据，不写资源、不改门槛、不跳过挑战，也没有把“已修复”扩展成“已通关”。当前证据、失败时间线与 PR 状态见 [[2026-11-20-r121-android-kvm]]。
 
 ## 验证与已知限制
 
 验证分几层做。功能层是同一 APK 连续运行 5 分钟，确认 0 FATAL、0 ABI 崩溃、0 ANR，并检查 logcat 里 `OREKI_SCHED`、`OREKI_ACHAUDIT`、`OREKI_GUI` 等标记持续输出。行为层要确认资源真实扣费、购买来自原版入口、阶段切换后行为正确（见 [[stage-gates|阶段门禁]]）。持久化层看重启与读档后的开关状态，尤其是玩家手动关闭的项不被覆盖。这些检查不能只看界面表现，最终以存档字段和日志为准。
 
-阶段判断依赖 GUI 阶段真值（`OrekiGuiStage.kt`），而阶段判定本身出过缺陷，所以自动化是否正确首先取决于阶段判定是否正确；相关排查见 [[stage-gates]]。部分历史模块（例如静默的 `OrekiChallengeAuto`）没有日志，只能靠额外探针观察。完整 180 分钟内的自动化表现目前仍无终局结论，Android 与 Web 的自动化等价性也尚未独立验收（见 [[parity|双端行为一致性]]）。
+阶段判断依赖 GUI 阶段真值（`OrekiGuiStage.kt`），而阶段判定本身出过缺陷，所以自动化是否正确首先取决于阶段判定是否正确；相关排查见 [[stage-gates]]。部分历史模块（例如静默的 `OrekiChallengeAuto`）没有日志，只能靠额外探针观察。R121 已完成 Web 真实新档终局，但 Android 最新候选仍在复验；不能用 Web 的通关时间替代 Android 自动化验收，Android 与 Web 的自动化等价性也尚未独立验收（见 [[parity|双端行为一致性]]）。
 
 实际核查时，抓 logcat 确认动作经过 `allow()` 而不是逐帧直调，再对比存档中的资源与购买记录确认扣费真实发生，最后手动关闭总开关或单项配置，确认立即停止且不会被自动恢复。
 

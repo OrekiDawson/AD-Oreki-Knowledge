@@ -51,14 +51,14 @@ DS1 需要 5000 TT，是时间膨胀的入口；`PlayerProgress.dilationUnlocked
 
 ## MOD 的「现实次数卡住」问题
 
-2026-11-15 的真实新档长跑中，第 1 次现实（576.7 秒）与第 2 次现实（1218.6 秒）都能发生，但之后 `realities` 长时间停在 2，`canReality=false` 持续，RM 顶到原版硬上限。随后定位到「现实之后原版自动永恒复位」把现实条件反复重置；修复已提交（PR #92，**仍在验证，未合并**）。[[2026-11-15-r113-180min-fail|R113-01 长跑 FAIL 记录]] · [[2026-11-15-r114-reality-autoeternity|R114-01 修复进行中]]
+2026-11-15 的真实新档长跑中，第 1 次现实（576.7 秒）与第 2 次现实（1218.6 秒）都能发生，但之后 `realities` 长时间停在 2，`canReality=false` 持续，RM 顶到原版硬上限。随后定位到「现实之后原版自动永恒复位」把现实条件反复重置；[PR #92](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92) 已合并，后续又用 [PR #158](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/158) 修正现实后 IP 死锁，并加入首次现实前的永恒里程碑门槛。
 
-因此本条目只写机制与已确认现象：**「现实次数不再增长」的根因与修复效果尚未完成验收，不能写成已解决。**
+这些修复解释了历史上“现实次数停在 2”和“现实后 IP 冻结”的机制，但不能推出所有 Android 构建都已通过终局。R121 仍有一次真实跑次在首现实后暴露了阶段判据停滞，见 [[2026-11-20-r121-android-kvm]]；现行 Android 结论仍以完整新档验收为准。
 
 ## 已确认与未确认
 
 - **已确认**：现实可用判据、重置清空范围、`maxID1` 每现实重置、respec 抖动机制与频率。
-- **未确认**：R114-01 修复的最终效果（长跑进行中，NOT RUN）；Android 与 Web 自动化是否等价（NOT RUN，见 [[parity]]）。
+- **未确认**：Android R121 修复后的完整终局与通关后持续确认（NOT RUN）；Android 与 Web 自动化是否逐场景等价（NOT RUN，见 [[parity]]）。
 - **不适用**：不同平台版本的阈值可能不同，引用具体数字时请同时对版本与来源。
 
 ## 如何核查
@@ -72,7 +72,7 @@ DS1 需要 5000 TT，是时间膨胀的入口；`PlayerProgress.dilationUnlocked
 - [docs/FACTS.md §22（DS6 只活一帧）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/eternity.md#f-22)
 - [docs/FACTS.md §23（EC 分叉抖动）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/automation/strategy.md#f-23)
 - [docs/FACTS.md §8.10（IU15 与 `maxID1`）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/main/docs/facts/game/endgame.md#f-8-10)
-- [Android PR #92（现实自动永恒复位修复，进行中）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92)
+- [Android PR #92（现实自动永恒复位修复，已合并）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92)
 
 - [社区 Wiki：Reality](https://antimatterdimensions.wiki.gg/wiki/Reality)
 - [官方源码：现实时间研究 DS6](https://github.com/IvarK/AntimatterDimensionsSourceCode/blob/5409e320cecef96a917cca1dfb68f1f183e499ca/src/core/secret-formula/eternity/time-studies/dilation-time-studies.js)

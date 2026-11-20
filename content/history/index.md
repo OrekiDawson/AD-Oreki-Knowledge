@@ -20,7 +20,8 @@ tags:
 | 2026-11-15 | [[2026-11-15-r113-180min-fail|R113-01 新档 180 分钟长跑 FAIL]] | 180.1 分钟未通关，creditsFinished=false、realities=2 |
 | 2026-11-15 | [[2026-11-15-celestial-leaves-fix|天神策略叶子缺失与补实现]] | 叶子补齐 PASS；realities 仍卡在 2 |
 | 2026-11-15 | [[2026-11-15-signing-blocked|签名环境阻塞与 AGP-only fail-closed]] | 候选构建 BLOCKED；AGP-only 门禁静态复核失败 |
-| 2026-11-15 | [[2026-11-15-r114-reality-autoeternity|R114-01 现实自动永恒复位修复（进行中）]] | 修复已提交；长跑验证 NOT RUN |
+| 2026-11-15 | [[2026-11-15-r114-reality-autoeternity|R114-01 现实自动永恒复位修复]] | 修复已合并；首次现实门槛后续在 R116/R119 继续修正 |
+| 2026-11-20 | [[2026-11-20-r121-android-kvm|R121 Android KVM 新档与自动化 P1 停滞]] | 到首现实；两次重置后自动化停摆；终局 NOT RUN |
 
 ## 归档规则
 
