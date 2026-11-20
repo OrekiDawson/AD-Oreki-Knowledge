@@ -20,7 +20,7 @@ tags:
 | --- | --- |
 | 根因 | 已用真实 AVD logcat 证据确认：Reality 之后原版自动永恒复位把现实条件重置，导致 `realities` 停在 2 |
 | 修复提交 | `70a8329a` → `aadebba7` → `53febade` → `6c7dbb87` |
-| PR | [Android PR #92](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92)，合并提交 `951fa231` |
+| PR | [Android PR #92](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/92)，**OPEN，未合并、未发布** |
 | 当时长跑 | 新真新档自 20:07:19 开始，截至 21:22 `realities=6`、`creditsFinished=false`，终局 **NOT RUN** |
 | 附带修正 | `imaginaryUpgradeBits` 位号改为 Android 移植版内部 id：莱特拉 bit4、佩勒 bit14 |
 
@@ -29,6 +29,7 @@ tags:
 ## 后续变化与是否仍然有效
 
 - 复位后的自动永恒补回语义已经合入，并在后续 R116/R119 继续修正首次现实门槛与 EC 门禁；这些修复不能替代当前版本的完整终局验收。
+- PR #92 后续由合并提交 `951fa231` 合入；该事实发生在上面的「当时结论」之后。
 - 当时记录中的 `realities=6` 只是过程数据，不是通关结论。
 - 前序 180 分钟 FAIL 记录见 [[2026-11-15-r113-180min-fail]]；策略叶子修复见 [[2026-11-15-celestial-leaves-fix]]。
 

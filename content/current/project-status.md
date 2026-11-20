@@ -38,7 +38,7 @@ Android 当前公开可下载版本仍是旧正式版 a12b5cd6；R121 的最新 
 
 ## 发布边界
 
-已发布的 Android release 仍是 `android-update-3.21.0-a12b5cd6`，详见 [[release-status]]。R121 的 `versionCode=30210002`、`modState=development`，当前没有把它写成正式 Release，也没有四渠道发布结论。
+已发布的 Android release 仍是 `android-update-3.21.0-a12b5cd6`，详见 [[release-status]]。R121 的 `versionCode=30210002`、`modVersionState=development`，当前没有把它写成正式 Release，也没有四渠道发布结论。
 
 ## 进一步阅读
 

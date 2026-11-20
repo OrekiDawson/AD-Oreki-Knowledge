@@ -27,7 +27,7 @@ Android 当前 [发布策略](https://github.com/OrekiDawson/AD-Oreki-Edition-An
 - 历史已发布上限仍是 `30210001`；
 - 新档硬上限仍是 `10800s`。
 
-因此 `30210002` 不能因为版本号大于上一版就自动称为稳定版。R121 的 `43e3f4fc…f1ac` APK 已安装到 KVM 并完成设备回拉 SHA 校验，但终局运行暴露了自动化 P1，当前只属于**开发候选**。它的最终源码仍由 [PR #204](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/204) 推进。
+因此 `30210002` 不能因为版本号大于上一版就自动称为稳定版。R121 的 `43e3f4fc…f1ac` APK 已安装到 KVM 并完成设备回拉 SHA 校验，但其真实新档跑次（到首次现实）暴露了自动化 P1，终局仍未运行，当前只属于**开发候选**。它的最终源码仍由 [PR #204](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/pull/204) 推进。
 
 ## 证据分级
 

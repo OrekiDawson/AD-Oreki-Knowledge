@@ -6,7 +6,16 @@ const fs = require('node:fs');
 
 // 默认使用当前 Node 模块解析；需要指定外部工作树时通过 KB_PLAYWRIGHT 显式覆盖，
 // 不把任何维护者的私人绝对路径写入仓库。
-const { chromium } = require(process.env.KB_PLAYWRIGHT || 'playwright');
+let chromium;
+try {
+  ({ chromium } = require(process.env.KB_PLAYWRIGHT || 'playwright'));
+} catch (error) {
+  console.error(
+    '需要 Playwright。请运行 `npm i -D playwright`，或通过 `KB_PLAYWRIGHT=<模块绝对路径>` 指定已安装模块。',
+  );
+  console.error(String(error).slice(0, 300));
+  process.exit(2);
+}
 
 const BASE = process.env.KB_URL || 'http://localhost:8081';
 const OUT = process.env.KB_OUT || 'evidence/playwright-mobile.json';

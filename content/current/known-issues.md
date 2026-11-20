@@ -26,7 +26,7 @@ tags:
 
 修复前的 KVM 记录显示 EC1～EC3 每次完成后要等约 9 分钟才启动下一挑战，原因是永恒层坍缩固定等待成长窗口。R121 已加入受约束的 Break 恢复：只在首现实前、挑战外、Break 丢失、可坍缩且不可永恒时提前结算，并要求投影 IP 足够。定向真实存档在约 10 秒触发坍缩、约 30 秒恢复 Break；最终 APK 仍需完整新档验证。
 
-状态：**定向复验 PASS；完整终局仍 NOT RUN**。见 [[2026-11-20-r121-android-kvm]]。
+状态：**定向复验 PASS；完整终局仍 NOT RUN**。定向时间线、存档来源与证据目录见 [R121 Break 恢复报告](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/a1617a9e0d652a16ba050be25bb3f5b1a5ef1c43/reports/R121-01/R121-01-P1-break-recovery.md) 与 [[2026-11-20-r121-android-kvm]]。
 
 ## 仍需验证的交付项
 

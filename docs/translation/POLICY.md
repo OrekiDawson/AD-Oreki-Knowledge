@@ -94,6 +94,9 @@ review_status: "NOT REVIEWED"      # NOT REVIEWED / STRUCTURE CHECKED / REVIEWED
   - `node scripts/check-translation.mjs`（翻译专区来源/许可/状态一致性）
   - `node scripts/verify-build.mjs`（构建产物、旧 URL、类目）
   - `node scripts/acceptance.cjs`（Chromium 手机视口）
+
+  首次运行浏览器验收前执行 `npm i -D playwright`，或在环境中设置
+  `KB_PLAYWRIGHT=<已安装 Playwright 模块路径>`。
 - 批次提交前逐页核对：章节齐全、公式与表格无缺行缺列、术语一致、内部链接可用、来源块完整。
 - 合并后由 `deploy-wiki.yml` 部署；翻译页与 MOD 页同站但分区显示。
 
