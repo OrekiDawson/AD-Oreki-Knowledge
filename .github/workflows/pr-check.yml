@@ -23,16 +23,29 @@ jobs:
             const files=await github.paginate(github.rest.pulls.listFiles,{
               ...context.repo,pull_number:pr.number,per_page:100
             });
-            const commits=await github.paginate(github.rest.pulls.listCommits,{
-              ...context.repo,pull_number:pr.number,per_page:100
-            });
-            const taskIds=[...new Set(([pr.title,pr.body||"",...commits.map(c=>c.commit.message)].join("\n")
-              .match(/\bR\d{2,3}-\d{2,3}\b/g)||[]))];
-            const mechanical=/\[(package-lock\.json|pnpm-lock\.yaml|yarn\.lock|Cargo\.lock)\]|\/(generated|build|dist|node_modules)\//i;
+            let commits=[];
+            try {
+              commits=await github.paginate(github.rest.pulls.listCommits,{
+                ...context.repo,pull_number:pr.number,per_page:100
+              });
+            } catch (err) {
+              core.info("无法读取提交列表，继续使用标题与正文："+String(err?.message||err).slice(0,200));
+            }
+            const taskText=[pr.title,pr.body||"",...commits.map(c=>c.commit.message)].join("\n");
+            const declaredTaskIds=[...new Set(taskText.match(
+              /\bR\d{2,3}-(?:\d{2,3}\b|[^\s，。；、,.;:：()（）\[\]*_\/]+)/g
+            )||[])];
+            const bareRounds=[...new Set(taskText.match(/\bR\d{2,3}\b(?!-)/g)||[])];
+            const taskIds=declaredTaskIds.length ? declaredTaskIds :
+              bareRounds.map(id=>id+"（未带子编号）");
+            const mechanical=path =>
+              /\.gen\.(js|mjs|ts)$/i.test(path) ||
+              /^(reports|test-results|playwright-report|reconstructed)\//i.test(path) ||
+              /(^|\/)(package-lock\.json|pnpm-lock\.yaml|yarn\.lock|Cargo\.lock|gradle\.lockfile)$|(^|\/)(generated|build|dist|node_modules)\//i.test(path);
             let effective=0, generated=0;
             for(const f of files){
               const lines=(f.additions||0)+(f.deletions||0);
-              if(mechanical.test(f.filename)) generated+=lines; else effective+=lines;
+              if(mechanical(f.filename)) generated+=lines; else effective+=lines;
             }
             const warnings=[];
             if(taskIds.length>1) warnings.push(`检测到多个任务编号 ${taskIds.join("、")}；请证明属于同一不可拆分目标，否则拆分`);
