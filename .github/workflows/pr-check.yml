@@ -6,8 +6,46 @@ on:
 
 permissions:
   contents: read
+  pull-requests: read
 
 jobs:
+  scope:
+    name: PR 原子化与范围提示
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: 只读汇总 PR 元数据
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const pr=context.payload.pull_request;
+            const files=await github.paginate(github.rest.pulls.listFiles,{
+              ...context.repo,pull_number:pr.number,per_page:100
+            });
+            const commits=await github.paginate(github.rest.pulls.listCommits,{
+              ...context.repo,pull_number:pr.number,per_page:100
+            });
+            const taskIds=[...new Set(([pr.title,pr.body||"",...commits.map(c=>c.commit.message)].join("\n")
+              .match(/\bR\d{2,3}-\d{2,3}\b/g)||[]))];
+            const mechanical=/\[(package-lock\.json|pnpm-lock\.yaml|yarn\.lock|Cargo\.lock)\]|\/(generated|build|dist|node_modules)\//i;
+            let effective=0, generated=0;
+            for(const f of files){
+              const lines=(f.additions||0)+(f.deletions||0);
+              if(mechanical.test(f.filename)) generated+=lines; else effective+=lines;
+            }
+            const warnings=[];
+            if(taskIds.length>1) warnings.push(`检测到多个任务编号 ${taskIds.join("、")}；请证明属于同一不可拆分目标，否则拆分`);
+            if(pr.changed_files>15) warnings.push(`修改文件 ${pr.changed_files} 个，超过目标阈值 15`);
+            if(effective>400) warnings.push(`有效变更 ${effective} 行，超过目标阈值 400`);
+            if(effective>800) warnings.push("有效变更超过 800 行；默认拆分，或记录不可拆分的原子理由");
+            if(generated) warnings.push(`另有 ${generated} 行锁文件/生成物，已单独统计`);
+            await core.summary
+              .addHeading("PR 原子化与范围提示")
+              .addRaw(`目标：${pr.title}\n\n文件：${pr.changed_files}；有效变更：${effective} 行；生成/锁文件：${generated} 行；任务编号：${taskIds.join("、")||"未声明"}`)
+              .addRaw(`\n\n${warnings.length ? warnings.map(x=>"- "+x).join("\n") : "未触发范围预警。"}`)
+              .write();
+            core.info(warnings.join("；")||"PR 范围未触发预警");
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 20
