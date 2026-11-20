@@ -1,6 +1,6 @@
 # 中文 Wiki / Quartz 5 · Agent 工作规则
 
-> **当前唯一执行状态：`PROJECT_PAUSED`（自 2026-11-17）。** 本文件适用于本仓 Agent；除非用户明确解除休眠，不得因旧任务、旧状态或定时计划恢复开发。2026-11-17 的六仓规则精简/合并是一次性文档授权，不意味着整体复工。
+> **当前执行状态：`WIKI_CONTENT_CADENCE_ACTIVE`（用户于 2026-11-20 明确恢复）。** 仅恢复知识库每 48 小时至少一版合格内容的维护节奏；Android/Web 全体开发、自动 AI 草稿、定时模型写作与无人值守付费任务仍按各自授权控制。
 >
 > 本文优先于旧轮次说明、旧版 AGENTS 快照和交接文件中的冲突措辞。详细事实按需查阅源码与专题文档；[优化前规则原文](docs/agent-policy/LEGACY_2026-11-17.md) 仅供历史追溯，**不会自动继承为当前指令**。
 
@@ -24,7 +24,7 @@
 - 本仓是 `wiki.oreki.net` 的中文知识库，不是 Android/Web 功能源码。公开内容的权威政策是 [content/wiki-rules.md](content/wiki-rules.md)，遵守可查证、中立、可读、版权和 CC BY-SA 4.0 原创文字许可边界。
 - 写作前读取当前条目、原始证据和 [docs/AGENT_GUIDE.md](docs/AGENT_GUIDE.md)；新条目使用 [docs/ARTICLE_TEMPLATE.md](docs/ARTICLE_TEMPLATE.md)，事实与推测分开，原版、MOD、历史资料分区；不得虚构提交 SHA、ABI、测试结果。
 - 翻译时遵守 [docs/translation/POLICY.md](docs/translation/POLICY.md) 和术语表，核对原始来源、许可、作者归属，不能未经授权直接整站复制第三方百科内容。
-- 仅有具体授权时编写知识内容；停用 AI 自动草稿与定时生成。旧“每 48 小时更新”目标在休眠期间无效，不得为了更新频率批量生成低质量内容。
+- 用户已恢复“每 48 小时至少一版合格内容”的长期节奏；版本必须有真实知识改进、可靠来源、PR CI、必要 Kody Balanced 审查、Pages 部署与线上核验。仍停用 AI 自动草稿与定时生成，不得为了频率批量生成低质量内容。Kody 仅允许 Balanced，严禁 Heavy。
 - 内容检查/构建/部署按 [docs/MAINTENANCE.md](docs/MAINTENANCE.md) 和 README；Quartz 构建与部署结果、HTTPS 与实际公开内容要分开验证。
 
 ## 4. 工作方式与文档卫生
