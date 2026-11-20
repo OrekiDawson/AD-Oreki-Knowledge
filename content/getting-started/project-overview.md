@@ -31,7 +31,7 @@ Android 基于官方 **3.21.0** 冻结基线；Web 依据 **2026-07-17** 的上�
 
 - **Android 已有新的公开 GitHub Release**： [3.21.0（a12b5cd6）](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/releases/tag/android-update-3.21.0-a12b5cd6)。四渠道交付状态的精确边界见 [[release-status]]。
 - **Web 已记录真实新档终局 PASS**：默认 **3000×**、空浏览器存储，`isGameEnd` 于墙钟 **10,451.1 秒**首次为真；固定证据见 [完成记录](https://github.com/OrekiDawson/AD-Oreki-Edition-Web/blob/f7044da0f80a50ccbe5cd827fea717b4d5a1eae6/reports/R104/web/r121-01/README.md)。
-- **Android R121 仍在真实验收**：KVM 新档已到首现实，但终局未产生；重置后阶段判据 P1 的运行复验为 **NOT RUN**，将在包含两项修复的新构建中实跑；EC 切换固定等待 P1 的定向复验为 **PASS**，完整终局仍为 **NOT RUN**。旧 R113 FAIL 不能代替当前结论。详见 [[project-status]]。
+- **Android R121 仍在真实验收**：KVM 新档已到首现实，但终局未产生；重置后阶段判据 P1 的运行复验为 **NOT RUN**，将在包含两项修复的新构建中实跑；EC 切换固定等待 P1 的定向复验为 **PASS**（[固定报告](https://github.com/OrekiDawson/AD-Oreki-Edition-Android/blob/a1617a9e0d652a16ba050be25bb3f5b1a5ef1c43/reports/R121-01/R121-01-P1-break-recovery.md)），完整终局仍为 **NOT RUN**。旧 R113 FAIL 不能代替当前结论。详见 [[project-status]]。
 
 ## 接下来读什么
 
