@@ -1,87 +1,54 @@
-# 反物质维度MOD 知识库
+# 反物质维度 MOD 中文知识库
 
-反物质维度 MOD（Oreki Edition）技术知识库。GitHub 是权威事实源，本仓库是 Quartz 5 知识展示与检索层。
+[**访问知识库：wiki.oreki.net**](https://wiki.oreki.net)
 
-- 站点：https://wiki.oreki.net（自定义域名；默认地址 https://orekidawson.github.io/AD-Oreki-Knowledge/）
-- **公开的正式知识库规则**：https://wiki.oreki.net/wiki-rules（网站首页、目录与页脚均可进入）
-- **规则页专用名称**：`反物质维度MOD Wiki:知识库规则`；普通条目标题、正文保持自然简体中文，不加前缀，URL 保持不变。
-- 构建：Quartz 5 + Node 24（本地 Node 26 时 esbuild service 会 SIGBUS，请用 Node 24 构建）
-- 内容：content/ 下 Markdown，frontmatter + 证据区
-- 检查：scripts/check-content.mjs（页面/链接/敏感信息/术语）、scripts/verify-build.mjs（产物）
-- 验收：`node scripts/acceptance.cjs`（Chromium 手机视口，搜索/导航/反向链接/图谱/暗色/溢出）；首次使用先运行 `npm i -D playwright`，或设置 `KB_PLAYWRIGHT=<已安装 Playwright 模块路径>`。
+本仓库为《反物质维度》（Antimatter Dimensions）及 **Oreki Edition** Android/Web MOD 提供中文百科与技术资料，使用 Quartz 5 构建，并通过 GitHub Pages 发布。欢迎从游戏玩法开始读，也可以查找开发原理与实测证据。
 
-## 项目状态与开发成本（2026-11-20）
+## 阅读入口
 
-**当前状态：项目开发休眠，Wiki 内容维护节奏恢复（`WIKI_CONTENT_CADENCE_ACTIVE`）。** 用户已单独授权每 48 小时至少交付一版合格 Wiki 内容；这不代表恢复 Android/Web 全体开发、自动 AI 草稿或无人值守付费任务。现有源码、PR、Issues、Release、测试证据和部署记录继续保留。
+- **玩家内容**：原版游戏介绍、[原版 Wiki 中文翻译](https://wiki.oreki.net/original/)、[玩法机制](https://wiki.oreki.net/gameplay/)、MOD 教程和常见问题。
+- **开发者内容**：[项目架构](https://wiki.oreki.net/architecture/)、[逆向与技术映射](https://wiki.oreki.net/reverse-engineering/)、[构建交付](https://wiki.oreki.net/build/)及[历史证据](https://wiki.oreki.net/history/)。
+- **事实与发布**：[当前项目状态](https://wiki.oreki.net/current/)、[知识库规则](https://wiki.oreki.net/wiki-rules)、[版权与许可](https://wiki.oreki.net/copyright)。
 
-- **费用门禁**：恢复开发前须明确批准人民币预算、周期、Provider 和任务范围；预算消耗达到 80% 时预警，达到 100% 时停止新增付费调用；DeepSeek 可用余额低于 ¥10 时维持已有全员暂停规则。禁止通过换 Key、模型或账号规避预算。
-- **Kody / Kodus**：用户已授权恢复 Kody 审查，但只允许 Balanced，严禁 Heavy。DeepSeek 余额低于 ¥10、预算耗尽、Provider 不可用或仓库未纳入 Kodus 时，审查仍应标 `BLOCKED` / `KODY NOT RUN`，不得以 CI 绿灯冒充审查 PASS。
-- **自动化边界**：自动 AI 草稿、定时模型写作和无人值守付费任务仍停用；只按用户明确内容需求进行人工来源核验与正常 PR。已公开的网站与已有仓库不因休眠自动删除或撤销。README 只说明管理状态，本身不能阻止云端计费；订阅与 Provider 需要在相应平台管理。
+**信息架构正在渐进调整为 `/player/` 与 `/developer/` 双专区。** 上面列出的是当前已有的阅读路径，不能把规划中的新 URL 当成已经上线。迁移必须保留旧页面的链接兼容，并验证移动端导航与搜索。
 
-**知识库特别说明**：用户已于 2026-11-20 恢复“每 48 小时至少一版合格内容”节奏。只更新规则、索引、README 或空提交不算内容版本；每次必须核验来源、通过 PR CI、必要 Kody Balanced 审查、Pages 部署和线上验证。不得为满足频率自动生成低质量条目。
+## 内容原则
+
+1. **人类读者优先**：用自然简体中文解释玩法及术语。原版机制、MOD 改动和历史结论分别说明，避免把 PR 日志直接当百科正文。
+2. **结论可核查**：重要事实提供原始源码、Commit、PR、运行报告或官方出处；标明适用版本与核实时间，不能把构建、运行和正式发布混成一个 PASS。
+3. **AI Summary 仅属于开发者专区**：可对已核实技术正文提供标识清晰、可折叠、有证据的摘要；玩家正文不放机器专用摘要。未审 AI 草稿不进入公开 HTML、RSS、搜索或索引。
+4. **版权明确**：本站可授权的原创百科文字采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)；第三方代码、图片、翻译材料仍受各自许可证和署名义务约束。
+
+正式内容规范以 [知识库规则](content/wiki-rules.md) 为准；新条目参考 [中文条目模板](docs/ARTICLE_TEMPLATE.md)，翻译遵守 [翻译政策](docs/translation/POLICY.md)。如旧模板与“开发者专区允许经审核 AI Summary”的新约束冲突，应在专门的内容 PR 中同步修订，不擅自把未审内容公开。
 
 ## 本地构建
 
-~~~bash
+使用 Node.js **24**（项目文档记录 Node 26 环境曾触发 esbuild SIGBUS），按仓库现有依赖和 Quartz 插件配置执行：
+
+```bash
 npm ci
 npx quartz plugin install --from-config
 node scripts/check-content.mjs
 npx quartz build
 node scripts/verify-build.mjs
-~~~
+```
 
-## 部署
+需要 Chromium 手机视口验证时，运行 `node scripts/acceptance.cjs`；首次使用 Playwright 或采用已安装模块的配置见 [维护说明](docs/MAINTENANCE.md)。
 
-push main -> .github/workflows/deploy-wiki.yml -> GitHub Pages（artifact: public/）。
-PR 触发 pr-check.yml（不部署）。
+代码仓只存储 Markdown、配置、脚本和必要证据；Quartz 的具体引导、检查和验证流程以当前构建配置与维护文档为准。
 
-## AI 草稿：停止自动生成（2026-11-17）
+## 发布与运行状态
 
-**Wiki 不再自动调用 DeepSeek 生成知识草稿，也不再由定时任务自动创建草稿 PR。** 原 `.github/workflows/ai-knowledge-sync.yml` 已移除，关闭每日 18:30 的 `schedule` 入口；不创建替代的定时、PR 触发或自动 AI 同步任务。
+- `main` 分支触发 `.github/workflows/deploy-wiki.yml` 发布 GitHub Pages；PR 使用 `pr-check.yml` 验证，不直接部署。
+- 正式站点必须使用 `https://wiki.oreki.net` 并通过服务器端 Enforce HTTPS 和线上核验；[Pages 设置](https://github.com/OrekiDawson/AD-Oreki-Wiki/settings/pages)。
+- 长期目标为每 **48 小时**交付一版有实质价值的合格内容，但不能用空提交、规则修改或低质量 AI 生成条目凑数。
+- 旧定时 AI 草稿生成保持停用。付费 Kody 审查和其他自动化以最新用户授权、实际云端配置和 GitHub 工作流为准，不能从 README 推断当前已启用。
 
-- 仅在用户明确要求具体条目或资料整理时开展针对性写作，先核实原始来源，再按正常 PR 与内容审阅流程发布。不得为了保持产出自动扫描并批量生成条目。
-- 现有 `content/ai-drafts/`、`.ai/state.json`、`evidence/ai-sync/` 及历史 PR 保留供追溯；未审草稿仍不进入公开网站或搜索。
-- `scripts/ai/` 为未自动调用的历史实现；不得未经用户新的明确授权恢复工作流或调用模型。
-- 普通 `KB PR check`、Quartz 搜索、GitHub Pages 部署及 HTTPS 校验继续工作，不依赖上述 AI 草稿功能。外部 Kody/Codex GitHub App 的实际启用情况以 GitHub 为准，本次不改其审查配置。
+## 仓库与贡献
 
-## 强制 HTTPS
+- [AGENTS.md](AGENTS.md)：Agent 长期执行约束。
+- [docs/AGENT_GUIDE.md](docs/AGENT_GUIDE.md)：编辑与事实核查指引。
+- [docs/MAINTENANCE.md](docs/MAINTENANCE.md)：构建、PR、部署与回滚流程。
+- [LICENSE-CONTENT.md](LICENSE-CONTENT.md)：原创内容许可范围；`LICENSE.txt` 的软件许可及上游声明另行适用。
 
-正式域名：**https://wiki.oreki.net**。GitHub Pages 必须启用服务器端 `Enforce HTTPS`，不能用 Quartz 链接或浏览器端 JavaScript 跳转代替。
-
-仓库管理员在 [Settings → Pages](https://github.com/OrekiDawson/AD-Oreki-Knowledge/settings/pages) 中确认：
-
-1. Custom domain 为 `wiki.oreki.net`，DNS 的 `wiki` CNAME 指向 `orekidawson.github.io`。
-2. GitHub Pages 的 HTTPS 证书签发完成后，选中 **Enforce HTTPS**。
-3. 完成后重新运行 `.github/workflows/deploy-wiki.yml`，`verify-online` 必须通过。
-
-`scripts/verify-https.sh` 会从 GitHub Pages API 检查 `https_enforced=true`，并使用正常 TLS 证书校验访问 HTTPS 页面，确认 HTTP 请求收到指向相同域名 HTTPS 的 301/302/307/308 跳转。证书尚未签发、设置未开启或出现 HTTP 回退时，验收明确 FAIL，不得以 HTTP 200 代替。
-
-GitHub Actions 的普通 `GITHUB_TOKEN` 不具备修改 Pages 管理设置所需的 Administration 写权限，因此正式 Enforce HTTPS 开关由具有仓库管理权限的账户操作，不向 Actions 添加个人管理员 Token。
-
-## 版权与内容许可
-
-**本站有权授权的原创百科文字采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)**，允许署名转载、改写、翻译和商业使用，改编作品按相同或兼容许可共享。转载应说明作者、具体条目地址、许可链接与修改情况。
-
-- [版权与许可（公开页面）](https://wiki.oreki.net/copyright)
-- [原创文字许可范围（仓库文件）](LICENSE-CONTENT.md)
-- 本仓库既有 [LICENSE.txt](LICENSE.txt) 中的 **MIT 软件许可及上游版权声明不变**；第三方游戏素材、代码和图片不由本站再授权。
-
-## 中文百科式写作
-
-本站正文以简体中文、通俗解释、客观核查为主。统一依据 [知识库规则全文](content/wiki-rules.md)（旧路径 [docs/CONTENT_QUALITY.md](docs/CONTENT_QUALITY.md) 为兼容入口），新条目参考 [中文知识条目模板](docs/ARTICLE_TEMPLATE.md)。Quartz 网站的 [知识库编写规范](https://wiki.oreki.net/getting-started/editorial-guidelines) 向读者介绍这些原则。
-
-**人类读者优先**：技术名称、API、哈希保持原文并附中文解释；每条重大结论可点到原始证据；不设置单独的 AI 检索摘要，站内检索依赖 Quartz 原生搜索；正文以读者体验为先。
-
-知识库已从中文维基百科的官方方针中选择适合技术文档的原则：中立表述、可供查证、来源质量、禁止无证据推断、文明协作与版权署名。具体改写和原始方针链接统一放在公开的 [知识库规则页](content/wiki-rules.md)，不复制方针原文，也不直接套用百科条目收录门槛。
-
-## 内容质量门禁
-
-正式知识条目的验收标准见 [docs/CONTENT_QUALITY.md](docs/CONTENT_QUALITY.md)。核心标准是：**可点击的固定来源、具体机制和验证步骤、事实等级、适用范围、最新状态**，不能以页面数量或构建 PASS 代替事实正确性。
-
-未经人工审核的 AI 草稿仍存于 GitHub 的 `content/ai-drafts/` 供回查，但不得发布到 Quartz、公开搜索索引或问答检索。当前状态必须以真实上游 PR / 运行报告为准。
-
-## 内容纪律
-
-- 不编造 Commit、行号、ABI 描述符与测试结果。
-- 被推翻结论保留历史解释，标注「旧结论 → 新证据 → 当前判断」。
-- 不把私有构建产物、用户存档、Token、内部路径写入公开仓库。
+问题反馈请附具体页面、失效链接、原始证据与建议修正，不包含 Token、私钥、私人路径或用户存档。
