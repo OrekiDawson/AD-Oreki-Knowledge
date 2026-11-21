@@ -44,6 +44,16 @@ const home = fs.readFileSync(path.join(PUB, "index.html"), "utf8");
 for (const term of ["玩家专区", "开发者专区", "知识库规则", "玩法机制"]) {
   if (!home.includes(term)) fail("首页缺少文案: " + term);
 }
+for (const href of [
+  "https://wiki.oreki.net/player/",
+  "https://wiki.oreki.net/developer/",
+  "https://wiki.oreki.net/wiki-rules",
+  "https://wiki.oreki.net/copyright",
+]) {
+  if (!home.includes('href="' + href + '"') && !home.includes("href='" + href + "'")) {
+    fail("首页页脚缺少关键链接: " + href);
+  }
+}
 
 // 规则页、版权页、游戏总览、类目页
 for (const slug of ["wiki-rules", "copyright", "antimatter-dimensions"]) {

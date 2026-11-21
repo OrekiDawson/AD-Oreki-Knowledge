@@ -77,4 +77,4 @@ aliases:
 
 ## 相关条目
 
-[现实](/player/original/ow-reality) · [时间研究](/player/original/ow-time-studies)（待翻译） · [天神系统（MOD 专题）](/player/gameplay/celestials)
+[现实](/player/original/ow-reality) · [时间研究](/player/original/ow-time-studies) · [天神系统（MOD 专题）](/player/gameplay/celestials)
