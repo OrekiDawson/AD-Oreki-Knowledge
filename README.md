@@ -1,8 +1,10 @@
 # 反物质维度MOD 知识库
 
-反物质维度 MOD（Oreki Edition）技术知识库。GitHub 是权威事实源，本仓库是 Quartz 5 知识展示与检索层。
+反物质维度 MOD（Oreki Edition）双专区知识库。GitHub 是权威事实源，本仓库是 Quartz 5 玩家专区与开发者专区的展示和检索层。
 
-- 站点：https://wiki.oreki.net（自定义域名；默认地址 https://orekidawson.github.io/AD-Oreki-Knowledge/）
+- 站点：https://wiki.oreki.net（自定义域名；仓库地址 `OrekiDawson/AD-Oreki-Wiki`）
+- 玩家专区：https://wiki.oreki.net/player/
+- 开发者专区：https://wiki.oreki.net/developer/
 - **公开的正式知识库规则**：https://wiki.oreki.net/wiki-rules（网站首页、目录与页脚均可进入）
 - **规则页专用名称**：`反物质维度MOD Wiki:知识库规则`；普通条目标题、正文保持自然简体中文，不加前缀，URL 保持不变。
 - 构建：Quartz 5 + Node 24（本地 Node 26 时 esbuild service 会 SIGBUS，请用 Node 24 构建）
@@ -15,7 +17,7 @@
 **当前状态：项目开发休眠，Wiki 内容维护节奏恢复（`WIKI_CONTENT_CADENCE_ACTIVE`）。** 用户已单独授权每 48 小时至少交付一版合格 Wiki 内容；这不代表恢复 Android/Web 全体开发、自动 AI 草稿或无人值守付费任务。现有源码、PR、Issues、Release、测试证据和部署记录继续保留。
 
 - **费用门禁**：恢复开发前须明确批准人民币预算、周期、Provider 和任务范围；预算消耗达到 80% 时预警，达到 100% 时停止新增付费调用；DeepSeek 可用余额低于 ¥10 时维持已有全员暂停规则。禁止通过换 Key、模型或账号规避预算。
-- **Kody / Kodus**：用户已授权恢复 Kody 审查，但只允许 Balanced，严禁 Heavy。DeepSeek 余额低于 ¥10、预算耗尽、Provider 不可用或仓库未纳入 Kodus 时，审查仍应标 `BLOCKED` / `KODY NOT RUN`，不得以 CI 绿灯冒充审查 PASS。
+- **Kody / Kodus**：用户已授权恢复 Kody 审查，但只允许 Balanced，严禁 Heavy。DeepSeek 余额低于 ¥10、预算耗尽、Provider 不可用或仓库未纳入 Kodus 时，审查仍应标 `BLOCKED` / `KODY NOT RUN`，不得以 CI 绿灯冒充审查 PASS。Wiki 审查使用独立统计，不占用 Android/Web 每日共享 100 次池。
 - **自动化边界**：自动 AI 草稿、定时模型写作和无人值守付费任务仍停用；只按用户明确内容需求进行人工来源核验与正常 PR。已公开的网站与已有仓库不因休眠自动删除或撤销。README 只说明管理状态，本身不能阻止云端计费；订阅与 Provider 需要在相应平台管理。
 
 **知识库特别说明**：用户已于 2026-11-20 恢复“每 48 小时至少一版合格内容”节奏。只更新规则、索引、README 或空提交不算内容版本；每次必须核验来源、通过 PR CI、必要 Kody Balanced 审查、Pages 部署和线上验证。不得为满足频率自动生成低质量条目。
@@ -23,11 +25,7 @@
 ## 本地构建
 
 ~~~bash
-npm ci
-npx quartz plugin install --from-config
-node scripts/check-content.mjs
-npx quartz build
-node scripts/verify-build.mjs
+bash scripts/build-site.sh
 ~~~
 
 ## 部署
@@ -48,7 +46,7 @@ PR 触发 pr-check.yml（不部署）。
 
 正式域名：**https://wiki.oreki.net**。GitHub Pages 必须启用服务器端 `Enforce HTTPS`，不能用 Quartz 链接或浏览器端 JavaScript 跳转代替。
 
-仓库管理员在 [Settings → Pages](https://github.com/OrekiDawson/AD-Oreki-Knowledge/settings/pages) 中确认：
+仓库管理员在 [Settings → Pages](https://github.com/OrekiDawson/AD-Oreki-Wiki/settings/pages) 中确认：
 
 1. Custom domain 为 `wiki.oreki.net`，DNS 的 `wiki` CNAME 指向 `orekidawson.github.io`。
 2. GitHub Pages 的 HTTPS 证书签发完成后，选中 **Enforce HTTPS**。
@@ -68,9 +66,9 @@ GitHub Actions 的普通 `GITHUB_TOKEN` 不具备修改 Pages 管理设置所需
 
 ## 中文百科式写作
 
-本站正文以简体中文、通俗解释、客观核查为主。统一依据 [知识库规则全文](content/wiki-rules.md)（旧路径 [docs/CONTENT_QUALITY.md](docs/CONTENT_QUALITY.md) 为兼容入口），新条目参考 [中文知识条目模板](docs/ARTICLE_TEMPLATE.md)。Quartz 网站的 [知识库编写规范](https://wiki.oreki.net/getting-started/editorial-guidelines) 向读者介绍这些原则。
+本站正文以简体中文、通俗解释、客观核查为主。统一依据 [知识库规则全文](content/wiki-rules.md)（旧路径 [docs/CONTENT_QUALITY.md](docs/CONTENT_QUALITY.md) 为兼容入口），新条目参考 [中文知识条目模板](docs/ARTICLE_TEMPLATE.md)。Quartz 网站的 [知识库编写规范](https://wiki.oreki.net/developer/editorial-guidelines) 介绍这些原则。
 
-**人类读者优先**：技术名称、API、哈希保持原文并附中文解释；每条重大结论可点到原始证据；不设置单独的 AI 检索摘要，站内检索依赖 Quartz 原生搜索；正文以读者体验为先。
+**人类读者优先**：技术名称、API、哈希保持原文并附中文解释；每条重大结论可点到原始证据。玩家正文不嵌入 AI Summary；开发者专区可使用已审核、默认折叠、带固定来源的摘要。站内检索依赖 Quartz 原生搜索。
 
 知识库已从中文维基百科的官方方针中选择适合技术文档的原则：中立表述、可供查证、来源质量、禁止无证据推断、文明协作与版权署名。具体改写和原始方针链接统一放在公开的 [知识库规则页](content/wiki-rules.md)，不复制方针原文，也不直接套用百科条目收录门槛。
 
