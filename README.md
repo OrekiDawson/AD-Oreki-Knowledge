@@ -1,4 +1,6 @@
-# 反物质维度MOD 知识库
+# 反物质维度 MOD 中文知识库
+
+[**访问知识库：wiki.oreki.net**](https://wiki.oreki.net)
 
 反物质维度 MOD（Oreki Edition）双专区知识库。GitHub 是权威事实源，本仓库是 Quartz 5 玩家专区与开发者专区的展示和检索层。
 
@@ -12,37 +14,48 @@
 - 检查：scripts/check-content.mjs（页面/链接/敏感信息/术语）、scripts/verify-build.mjs（产物）
 - 验收：`node scripts/acceptance.cjs`（Chromium 手机视口，搜索/导航/反向链接/图谱/暗色/溢出）；首次使用先运行 `npm i -D playwright`，或设置 `KB_PLAYWRIGHT=<已安装 Playwright 模块路径>`。
 
-## 项目状态与开发成本（2026-11-20）
+## 阅读入口
 
-**当前状态：项目开发休眠，Wiki 内容维护节奏恢复（`WIKI_CONTENT_CADENCE_ACTIVE`）。** 用户已单独授权每 48 小时至少交付一版合格 Wiki 内容；这不代表恢复 Android/Web 全体开发、自动 AI 草稿或无人值守付费任务。现有源码、PR、Issues、Release、测试证据和部署记录继续保留。
+- **玩家内容**：原版游戏介绍、[原版 Wiki 中文翻译](https://wiki.oreki.net/player/original/)、[玩法机制](https://wiki.oreki.net/player/gameplay/)、MOD 教程和常见问题。
+- **开发者内容**：[项目架构](https://wiki.oreki.net/developer/architecture/)、[逆向与技术映射](https://wiki.oreki.net/developer/reverse-engineering/)、[构建交付](https://wiki.oreki.net/developer/build/)及[历史证据](https://wiki.oreki.net/developer/history/)。
+- **事实与发布**：[当前项目状态](https://wiki.oreki.net/developer/current/project-status)、[知识库规则](https://wiki.oreki.net/wiki-rules)、[版权与许可](https://wiki.oreki.net/copyright)。
 
-- **费用门禁**：恢复开发前须明确批准人民币预算、周期、Provider 和任务范围；预算消耗达到 80% 时预警，达到 100% 时停止新增付费调用；DeepSeek 可用余额低于 ¥10 时维持已有全员暂停规则。禁止通过换 Key、模型或账号规避预算。
-- **Kody / Kodus**：用户已授权恢复 Kody 审查，但只允许 Balanced，严禁 Heavy。DeepSeek 余额低于 ¥10、预算耗尽、Provider 不可用或仓库未纳入 Kodus 时，审查仍应标 `BLOCKED` / `KODY NOT RUN`，不得以 CI 绿灯冒充审查 PASS。Wiki 审查使用独立统计，不占用 Android/Web 每日共享 100 次池。
-- **自动化边界**：自动 AI 草稿、定时模型写作和无人值守付费任务仍停用；只按用户明确内容需求进行人工来源核验与正常 PR。已公开的网站与已有仓库不因休眠自动删除或撤销。README 只说明管理状态，本身不能阻止云端计费；订阅与 Provider 需要在相应平台管理。
+**双专区现已正式提供。** 首页、`/player/`、`/developer/`、旧 URL 兼容与移动端导航均通过构建和本地 Chromium 验收；正式线上状态以合并部署后的 HTTPS 验证为准。
 
-**知识库特别说明**：用户已于 2026-11-20 恢复“每 48 小时至少一版合格内容”节奏。只更新规则、索引、README 或空提交不算内容版本；每次必须核验来源、通过 PR CI、必要 Kody Balanced 审查、Pages 部署和线上验证。不得为满足频率自动生成低质量条目。
+## 内容原则
+
+1. **人类读者优先**：用自然简体中文解释玩法及术语。原版机制、MOD 改动和历史结论分别说明，避免把 PR 日志直接当百科正文。
+2. **结论可核查**：重要事实提供原始源码、Commit、PR、运行报告或官方出处；标明适用版本与核实时间，不能把构建、运行和正式发布混成一个 PASS。
+3. **AI Summary 仅属于开发者专区**：可对已核实技术正文提供标识清晰、可折叠、有证据的摘要；玩家正文不放机器专用摘要。未审 AI 草稿不进入公开 HTML、RSS、搜索或索引。
+4. **版权明确**：本站可授权的原创百科文字采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)；第三方代码、图片、翻译材料仍受各自许可证和署名义务约束。
+
+正式内容规范以 [知识库规则](content/wiki-rules.md) 为准；新条目参考 [中文条目模板](docs/ARTICLE_TEMPLATE.md)，翻译遵守 [翻译政策](docs/translation/POLICY.md)。如旧模板与“开发者专区允许经审核 AI Summary”的新约束冲突，应在专门的内容 PR 中同步修订，不擅自把未审内容公开。
 
 ## 本地构建
+
+使用 Node.js **24** 构建；运行：
 
 ~~~bash
 bash scripts/build-site.sh
 ~~~
 
-## 部署
+需要 Chromium 手机视口验证时，运行 `node scripts/acceptance.cjs`；首次使用 Playwright 或采用已安装模块的配置见 [维护说明](docs/MAINTENANCE.md)。
 
-push main -> .github/workflows/deploy-wiki.yml -> GitHub Pages（artifact: public/）。
-PR 触发 pr-check.yml（不部署）。
+代码仓只存储 Markdown、配置、脚本和必要证据；Quartz 的具体引导、检查和验证流程以当前构建配置与维护文档为准。
 
-## AI 草稿：停止自动生成（2026-11-17）
+## 发布与运行状态
 
-**Wiki 不再自动调用 DeepSeek 生成知识草稿，也不再由定时任务自动创建草稿 PR。** 原 `.github/workflows/ai-knowledge-sync.yml` 已移除，关闭每日 18:30 的 `schedule` 入口；不创建替代的定时、PR 触发或自动 AI 同步任务。
+- `main` 分支触发 `.github/workflows/deploy-wiki.yml` 发布 GitHub Pages；PR 使用 `pr-check.yml` 验证，不直接部署。
+- 正式站点必须使用 `https://wiki.oreki.net` 并通过服务器端 Enforce HTTPS 和线上核验；[Pages 设置](https://github.com/OrekiDawson/AD-Oreki-Wiki/settings/pages)。
+- 长期目标为每 **48 小时**交付一版有实质价值的合格内容，但不能用空提交、规则修改或低质量 AI 生成条目凑数。
+- 旧定时 AI 草稿生成保持停用。付费 Kody 审查和其他自动化以最新用户授权、实际云端配置和 GitHub 工作流为准，不能从 README 推断当前已启用。
 
-- 仅在用户明确要求具体条目或资料整理时开展针对性写作，先核实原始来源，再按正常 PR 与内容审阅流程发布。不得为了保持产出自动扫描并批量生成条目。
-- 现有 `content/ai-drafts/`、`.ai/state.json`、`evidence/ai-sync/` 及历史 PR 保留供追溯；未审草稿仍不进入公开网站或搜索。
-- `scripts/ai/` 为未自动调用的历史实现；不得未经用户新的明确授权恢复工作流或调用模型。
-- 普通 `KB PR check`、Quartz 搜索、GitHub Pages 部署及 HTTPS 校验继续工作，不依赖上述 AI 草稿功能。外部 Kody/Codex GitHub App 的实际启用情况以 GitHub 为准，本次不改其审查配置。
+## 仓库与贡献
 
-## 强制 HTTPS
+- [AGENTS.md](AGENTS.md)：Agent 长期执行约束。
+- [docs/AGENT_GUIDE.md](docs/AGENT_GUIDE.md)：编辑与事实核查指引。
+- [docs/MAINTENANCE.md](docs/MAINTENANCE.md)：构建、PR、部署与回滚流程。
+- [LICENSE-CONTENT.md](LICENSE-CONTENT.md)：原创内容许可范围；`LICENSE.txt` 的软件许可及上游声明另行适用。
 
 正式域名：**https://wiki.oreki.net**。GitHub Pages 必须启用服务器端 `Enforce HTTPS`，不能用 Quartz 链接或浏览器端 JavaScript 跳转代替。
 
@@ -83,3 +96,5 @@ GitHub Actions 的普通 `GITHUB_TOKEN` 不具备修改 Pages 管理设置所需
 - 不编造 Commit、行号、ABI 描述符与测试结果。
 - 被推翻结论保留历史解释，标注「旧结论 → 新证据 → 当前判断」。
 - 不把私有构建产物、用户存档、Token、内部路径写入公开仓库。
+
+问题反馈请附具体页面、失效链接、原始证据与建议修正，不包含 Token、私钥、私人路径或用户存档。
