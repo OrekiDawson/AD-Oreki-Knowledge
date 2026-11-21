@@ -15,6 +15,7 @@
 - **合并底线**：真实 P0/P1 与阻塞性问题必须修复或有充分反证；必要线程、审批、Ruleset、Required Checks 与测试均满足后正常合并。不得强推、跳过平台保护、虚构审核或将 `Skipped` / `KODY NOT RUN` 写作 PASS。文档变更不机械运行无关游戏长跑。
 - **Kodus 的规则分层**：通用审查标准归 Kodus Global Rules，项目执行规范归本仓 `AGENTS.md`；不重复抄写为项目级 Kody Rules。Kody 从仓库文件读指令与否以实际配置/证据核实。自动生成的规则先审批去重，只有真正跨仓适用的候选可提升 Global，不能默认未经批准直接生效。
 - **Kody 动态授权与费用**：Kody 仅限 Balanced，严禁 Heavy。每次启用付费审查先确认最新用户授权、云端配置、工作流与预算；处于暂停/不确定状态时不得主动触发，也不得重新连接付费 Provider。Android/Web 若获准恢复，遵守两仓共享 UTC+8 自然日 100 次主动审查请求、80 次预警、按原始评论 ID 去重、无单仓 50 次硬上限；这并非模型 API 硬计费上限。旧 Oreki Audit 等链路是否启用须检查实时设置，禁止重复触发。
+- **Wiki Kody 自动审查**：Wiki 通过 Kodus 仓库级原生自动审查，为具备实际文件改动且进入 Ready 状态的 PR 发起 Kody；Draft 不提前审查，转 Ready 或 Ready PR 新提交后按仓库配置自动审查，同一 HEAD 与配置不得重复主动请求。确实无文件改动的 PR 是唯一常规豁免。自动 `Kody Code Review` 为 `skipped`、运行中、超时、Provider 不可用或只有 Codex Review 时均不得视为 Kody PASS；Agent 必须核对真实回执，在确认未重复、授权与预算允许时人工兜底。Wiki 审查额度独立统计，仍遵守 Balanced、80%/100% 预警停付；审查门禁受阻时复用第 1 节 `BLOCKED` 状态，仅指 Kody 自动审查未完成或不可用，不代表 PASS，并在对应任务记录中注明原因与兜底条件。
 
 ## 3. 执行效率与反馈
 
